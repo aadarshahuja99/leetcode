@@ -40,7 +40,7 @@ public class Solution {
         }
         // revert the current path status when you backtrack to the previous call
         currentPath[current] = 0;
-        ans.AddLast(current);
+        ans.AddLast(current); // upon no detection of cycle for all paths from the current node, add it to the answer
         return true;
     }
 }
