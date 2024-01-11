@@ -49,10 +49,6 @@ public class Solution {
                 current++;
             }
         }
-        if(remaining > 0)
-        {
-            return false;
-        }
         return true;
     }
 }
