@@ -1,5 +1,9 @@
 public class Solution {
     public int FindJudge(int n, int[][] trust) {
+        if(trust.Length < n-1)
+        {
+            return -1;
+        }
         List<List<int>> adjList = new();
         int[] indegree = new int[n];
         int[] outDegree = new int[n];
