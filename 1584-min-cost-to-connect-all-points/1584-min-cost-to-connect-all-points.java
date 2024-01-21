@@ -6,14 +6,12 @@ class Solution {
             return 0;
         }
         int n = points.length;
-        int size = (n)*(n-1)/2;
         PriorityQueue<QueueElement> pq = new PriorityQueue<QueueElement>(new Comparator<QueueElement>() {
             public int compare(QueueElement q1, QueueElement q2)
             {
                 return q1.getDistance()-q2.getDistance();
             }
         });
-        int k=0;
         ArrayList<ArrayList<QueueElement>> adjList = new ArrayList<ArrayList<QueueElement>>();
         for(int i=0; i<n; i++){
             adjList.add(new ArrayList<QueueElement>());
@@ -35,7 +33,6 @@ class Solution {
             var top = pq.poll();
             int dist = top.getDistance();
             int current = top.getNode();
-            // System.out.println("adding "+dist+" from current: "+current);
             if(visited[current] == 1)
             {
                 continue;
