@@ -2,7 +2,6 @@ class Solution {
     int max = 0;
     public int maxSatisfaction(int[] satisfaction) {
         Arrays.sort(satisfaction);
-        int[][] dp = new int[satisfaction.length+1][satisfaction.length+1];
         int[] next = new int[satisfaction.length+1];
         for(int current = satisfaction.length-1; current >= 0; current--)
         {
