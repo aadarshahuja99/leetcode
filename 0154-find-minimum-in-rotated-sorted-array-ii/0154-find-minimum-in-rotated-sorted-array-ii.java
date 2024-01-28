@@ -17,47 +17,23 @@ class Solution {
                 end--;
                 continue;
             }
-            if(nums[mid] == nums[end])
+            if(nums[mid] > nums[end])
             {
-                if(nums[start] > nums[mid])
+                int current = nums[start];
+                if(current < min)
                 {
-                    int current = nums[mid];
-                    if(current < min)
-                    {
-                        min = current;
-                    }
-                    end = mid-1;
+                    min = current;
                 }
-                else
-                {
-                    int current = nums[start];
-                    if(current < min)
-                    {
-                        min = current;
-                    }
-                    start = mid+1;
-                }
+                start = mid+1;
             }
             else
             {
-                if(nums[end] > nums[mid])
+                int current = nums[mid];
+                if(current < min)
                 {
-                    int current = nums[mid];
-                    if(current < min)
-                    {
-                        min = current;
-                    }
-                    end = mid-1;
+                    min = current;
                 }
-                else
-                {
-                    int current = nums[start];
-                    if(current < min)
-                    {
-                        min = current;
-                    }
-                    start = mid+1;
-                }
+                end = mid-1;
             }
         }
         return min;
