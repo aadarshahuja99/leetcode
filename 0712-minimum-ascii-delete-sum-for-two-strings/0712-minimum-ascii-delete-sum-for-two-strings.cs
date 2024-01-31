@@ -11,7 +11,6 @@ public class Solution {
         int sum1 = 0;
         while(i>=0)
         {
-            Console.WriteLine((int)s1[i]);
             sum1 += (int)s1[i];
             i--;
         }
@@ -21,7 +20,6 @@ public class Solution {
             sum2 += (int)s2[j];
             j--;
         }
-        Console.WriteLine(sum1+" "+sum2);
         return sum1+sum2-2*len;
     }
     private int LCS(string s1, string s2, int[,] dp)
@@ -41,32 +39,5 @@ public class Solution {
             }
         }
         return dp[s1.Length,s2.Length];
-    }
-    private int GetValue(string s, string lcs)
-    {
-        int i=0;
-        int j=0;
-        int ans=0;
-        while(j<lcs.Length)
-        {
-            if(s[i] == lcs[j])
-            {
-                i++;
-                j++;
-            }
-            else
-            {
-                // Console.WriteLine($"adding {(int)s[i]} to {ans} for {s[i]}");
-                ans += (int)s[i];
-                i++;
-            }
-        }
-        while(i<s.Length)
-        {
-            // Console.WriteLine($"adding {(int)s[i]} to {ans} for {s[i]}");
-            ans+=(int)s[i];
-            i++;
-        }
-        return ans;
     }
 }
