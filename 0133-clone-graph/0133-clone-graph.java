@@ -38,21 +38,19 @@ class Solution {
     private Node dfs(Node current)
     {
         int val = current.val;
-        ArrayList<Node> adjs = new ArrayList<Node>();
-        Node clone = new Node(val,adjs);
+        Node clone = new Node(val,new ArrayList<Node>());
         set.put(val,clone);
         for(Node adj : current.neighbors)
         {
             if(!set.containsKey(adj.val))
             {
-                adjs.add(dfs(adj));
+                clone.neighbors.add(dfs(adj));
             }
             else
             {
-                adjs.add(set.get(adj.val));
+                clone.neighbors.add(set.get(adj.val));
             }
         }
-        clone.neighbors = adjs;
         return clone;
     }
 }
