@@ -1,7 +1,8 @@
 class Solution {
     public int networkBecomesIdle(int[][] edges, int[] patience) {
-        ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
-        for(int i=0; i<patience.length; i++)
+        ArrayList<ArrayList<Integer>> adjList = new ArrayList<>();
+        int n = patience.length;
+        for(int i=0; i<n; i++)
         {
             adjList.add(new ArrayList<Integer>());
         }
@@ -10,66 +11,39 @@ class Solution {
             adjList.get(edge[0]).add(edge[1]);
             adjList.get(edge[1]).add(edge[0]);
         }
-        LinkedList<QueueElement> q = new LinkedList<QueueElement>();
-        q.addLast(new QueueElement(0,0));
-        int[] distances = new int[patience.length];
-        Arrays.fill(distances,Integer.MAX_VALUE);
-        distances[0] = 0;
-        while(q.size() > 0)
+        int[] times = new int[n];
+        Queue<int[]> queue = new LinkedList<>();
+        Arrays.fill(times,Integer.MAX_VALUE);
+        queue.add(new int[] { 0,0 });
+        times[0] = 0;
+        while(queue.size() > 0)
         {
-            QueueElement top = q.removeFirst();
-            int index = top.getIndex();
-            int distance = top.getDistance();
-            for(int node : adjList.get(index))
+            var top = queue.poll();
+            int time = top[1];
+            int topNode = top[0];
+            for(int node : adjList.get(topNode))
             {
-                if(distance + 1 < distances[node])
+                if(times[node] != Integer.MAX_VALUE)
                 {
-                    distances[node] = distance + 1;
-                    q.addLast(new QueueElement(node, distances[node]));
+                    continue;
                 }
+                times[node] = time+1;
+                queue.add(new int[] { node, times[node] });
             }
         }
-        int max = 0;
-        for(int i=1; i<distances.length; i++)
+        int ans = Integer.MIN_VALUE;
+        for(int i=1; i<n; i++)
         {
-            // System.out.println("distance for "  + i + " = " + distances[i]);
-            int current = 2*distances[i];
-            if(2*distances[i] <= patience[i])
+            int numResends = 2*times[i]/patience[i];
+            if((2*times[i])%patience[i] == 0)
             {
-                // do nothing
+                numResends -= 1;
             }
-            else
-            {
-                if((2*distances[i])%patience[i] == 0)
-                {
-                    current += (((2*distances[i])/patience[i]) - 1)*patience[i];
-                }
-                else
-                {
-                    current += ((2*distances[i])/patience[i])*patience[i];
-                }
-            }
-            max = Math.max(max,current);
-            // System.out.println("max after "  + i + " = " + max + " current for i = " + current);
+            int lastResendTime = numResends*patience[i];
+            int lastReplyTime = 2*times[i] + lastResendTime;
+            // System.out.println(lastReplyTime+" "+i);
+            ans = Math.max(ans, lastReplyTime);
         }
-        return max+1;
-    }
-    class QueueElement
-    {
-        private int index;
-        private int distance;
-        public QueueElement(int i, int d)
-        {
-            index = i;
-            distance = d;
-        }
-        public int getDistance()
-        {
-            return distance;
-        }
-        public int getIndex()
-        {
-            return index;
-        }
+        return ans+1;
     }
 }
