@@ -1,43 +1,41 @@
 class Solution {
     public int scoreOfParentheses(String s) {
-        if(s.length() == 2)
-        {
-            return 1;
-        }
-        s = "("+s+")";
-        int[] pairs = new int[s.length()];
-        Stack<Integer> stack = new Stack<>();
-        int i=0;
+        // intuitive solution:
+        // push 0 to stack for each '('
+        // if current == ')', and stack top == 0 ? pop the top and push 1 to stack.
+        // Else if top != 0, keep popping and adding non zero elements from the stack until the top becomes 0. Pop the top and multiply the 
+        // sum with 2
+        Stack<Integer> stack = new Stack<Integer>();
         for(char c : s.toCharArray())
         {
-            if(c=='(')
+            if(c == '(')
             {
-                stack.push(i);
-                i++;
+                stack.push(0);
             }
             else
             {
-                pairs[i] = stack.peek();
-                pairs[stack.peek()] = i;
-                stack.pop();
-                i++;
+                if(stack.peek() == 0)
+                {
+                    stack.pop();
+                    stack.push(1);
+                }
+                else
+                {
+                    int sum = 0;
+                    while(stack.peek() != 0)
+                    {
+                        sum += stack.pop();
+                    }
+                    stack.pop();
+                    stack.push(2*sum);
+                }
             }
         }
-        return (getAns(0,s.length()-1,pairs))/2;
-    }
-    private int getAns(int start, int end, int[] pairs)
-    {
-        if(start == end-1)
-        {
-            return 1;
-        }
         int ans = 0;
-        int idx = start+1;
-        while(idx<end)
+        while(!stack.isEmpty())
         {
-            ans += getAns(idx,pairs[idx],pairs);
-            idx = pairs[idx]+1;
+            ans += stack.pop();
         }
-        return ans*2;
+        return ans;
     }
 }
