@@ -40,7 +40,6 @@ public class Solution {
                 lcs = str1[i-1] + lcs;
                 i--;
                 j--;
-                length--;
             }
             else
             {
