@@ -66,6 +66,6 @@ class Solution {
                 }
             }
         }
-        return distances[grid.length-1][grid[0].length-1];
+        return -1;
     }
 }
