@@ -15,11 +15,32 @@
  */
 class Solution {
     public void flatten(TreeNode root) {
-        // root left right, so in recursion we have to do right left root
-        dfs(root);
+        // using something similar to Morris traversal. The key idea is to connect the rightmost guy in the left subtree with the right child of the current node and then update the links
+        if(root == null)
+        {
+            return;
+        }
+        TreeNode current = root;
+        while(current != null)
+        {
+            if(current.left != null)
+            {
+                TreeNode leftSubtree = current.left;
+                TreeNode iterator = leftSubtree;
+                while(iterator.right != null)
+                {
+                    iterator = iterator.right;
+                }
+                iterator.right = current.right;
+                current.right = current.left;
+                current.left = null;
+            }
+            current = current.right;
+        }
     }
     private TreeNode dfs(TreeNode root)
     {
+        // more intuitive solution than striver's
         if(root == null)
         {
             return null;
