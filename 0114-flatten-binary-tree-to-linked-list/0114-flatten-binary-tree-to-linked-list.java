@@ -14,21 +14,32 @@
  * }
  */
 class Solution {
-    TreeNode prev = null;
     public void flatten(TreeNode root) {
         // root left right, so in recursion we have to do right left root
         dfs(root);
     }
-    private void dfs(TreeNode root)
+    private TreeNode dfs(TreeNode root)
     {
         if(root == null)
         {
-            return;
+            return null;
         }
-        dfs(root.right);
-        dfs(root.left);
-        root.right = prev;
-        root.left = null;
-        prev = root;
+        TreeNode rightMostFromLeft = dfs(root.left);
+        TreeNode rightMostFromRight = dfs(root.right);
+        if(root.left != null)
+        {
+            rightMostFromLeft.right = root.right;
+            root.right = root.left;
+            root.left = null;
+        }
+        if(rightMostFromRight != null)
+        {
+            return rightMostFromRight;
+        }
+        if(rightMostFromLeft != null)
+        {
+            return rightMostFromLeft;
+        }
+        return root;
     }
 }
