@@ -31,7 +31,7 @@ class Solution {
         int previous = -2;
         for(int i=0; i<nums.length;)
         {
-            if(current < nums[i] || i == previous+1)
+            if(current < nums[i])
             {
                 i+=1;
                 continue;
