@@ -18,7 +18,6 @@ class Solution {
         PriorityQueue<int[]> queue = new PriorityQueue<>((a,b) -> {
             return a[0] - b[0];
         });
-        int[][] visited = new int[n][k+1];
         // distance, node, k
         queue.add(new int[] { 0, src, k });
         while(queue.size() > 0)
@@ -28,11 +27,12 @@ class Solution {
             int distance = top[0];
             int remainingStops = top[2];
             // System.out.println(remainingStops+" "+distance+" "+currentNode);
-            if(remainingStops < 0 || visited[currentNode][remainingStops] == 1)
+            // || visited[currentNode][remainingStops] == 1
+            if(remainingStops < 0 )
             {
                 continue;
             }
-            visited[currentNode][remainingStops] = 1;
+            // visited[currentNode][remainingStops] = 1;
             for(int[] node : adjList.get(currentNode))
             {
                 int distanceToChild = distance + node[1];
