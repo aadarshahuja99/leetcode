@@ -18,11 +18,7 @@ class Solution {
                 if(mat[i][j] == 1)
                 {
                     int candidate = getLongestLineLength(i, j, 0, mat, m, n, cache);
-                    if(candidate == 0)
-                    {
-                        candidate = 1;
-                    }
-                    ans = Math.max(ans, getLongestLineLength(i, j, 0, mat, m, n, cache));
+                    ans = Math.max(ans, candidate);
                 }
             }
         }
