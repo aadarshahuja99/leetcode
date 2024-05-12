@@ -31,7 +31,7 @@ class Solution {
 
         ans[0] += Math.abs(left) + Math.abs(right); // add the moves from left and right subtrees to the answer
 
-        // return the surplus
+        // return the surplus/deficit
         // if current node has one coin, then current.val - 1 is 0, implying no moves are needed for the current node
         // if current.val > 1, then some outgoing moves will be needed for current
         // similarly, if current.val < 1, incoming moves will be needed
