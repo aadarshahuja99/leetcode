@@ -15,16 +15,17 @@
  */
 class Solution {
     HashMap<TreeNode,Integer> childSums;
-    HashMap<TreeNode,Integer> remSums;
     long ans = 0;
     int modulo = 1000000007;
     public int maxProduct(TreeNode root) {
         childSums = new HashMap<>();
-        remSums = new HashMap<>();
-        remSums.put(root,0);
         dfs(root);
-        getAns(root.left,root);
-        getAns(root.right,root);
+        int totalSum = childSums.get(root);
+        for(Map.Entry<TreeNode,Integer> sumPair : childSums.entrySet())
+        {
+            long current = 1L*sumPair.getValue()*(1L*totalSum - 1L*sumPair.getValue());
+            ans = Math.max(ans, current);
+        }
         return (int)(ans%modulo);
     }
     private int dfs(TreeNode current)
@@ -35,21 +36,7 @@ class Solution {
         }
         int left = dfs(current.left);
         int right = dfs(current.right);
-        childSums.put(current, left+right);
+        childSums.put(current, left+right+current.val);
         return current.val + left + right;
-    }
-    private void getAns(TreeNode current, TreeNode parent)
-    {
-        if(current == null)
-        {
-            return;
-        }
-        int remSum = parent.val + remSums.get(parent) + childSums.get(parent) - childSums.get(current) - current.val;
-        remSums.put(current,remSum);
-        // System.out.println(current.val+" "+(childSums.get(current))+" "+remSum);
-        long candidate = (1L*(childSums.get(current)+current.val)*remSums.get(current));
-        ans = Math.max(ans, candidate);
-        getAns(current.left,current);
-        getAns(current.right, current);
     }
 }
