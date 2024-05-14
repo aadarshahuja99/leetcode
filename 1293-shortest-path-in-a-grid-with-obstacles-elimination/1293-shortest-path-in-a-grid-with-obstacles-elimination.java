@@ -1,48 +1,65 @@
 class Solution {
     public int shortestPath(int[][] grid, int k) {
-        // dijstra's algorithm
         int m = grid.length;
         int n = grid[0].length;
-        int[][] distances = new int[m][n];
-        for(int[] row : distances)
+        // naming this as memo, because we are memoizing the shortest path encountered so far. This is not the same as dp.
+        // In dp, we traverse to the final state (explore the entire current path), and, then decide. Here, we look back in time and not look forward.
+        // In a way, this is greedy plus memoization
+        int[][][] memo = new int[m][n][k+1];
+        for(int[][] mat : memo)
         {
-            Arrays.fill(row,Integer.MAX_VALUE);
+            for(int[] row : mat)
+            {
+                Arrays.fill(row,Integer.MAX_VALUE);
+            }
         }
-        distances[0][0] = 0;
-        int[] dr = new int[] { 0,1,0,-1 };
-        int[] dc = new int[] { 1,0,-1,0 };  
+        for(int i=0; i<=k; i++)
+        {
+            memo[0][0][i] = 0;
+        }
         Queue<int[]> queue = new LinkedList<int[]>();
-        queue.add(new int[] { 0,0,0,0 });
+        queue.add(new int[] { 0,0,k });
+        int[] dr = new int[] { 0,1,0,-1 };
+        int[] dc = new int[] { 1,0,-1,0 };
+        int dist = 0;
         while(queue.size() > 0)
         {
-            var top = queue.poll();
-            int currentDistance = top[2];
-            int row = top[0];
-            int col = top[1];
-            for(int i=0; i<4; i++)
+            int size = queue.size();
+            dist++;
+            for(int i=0; i<size; i++)
             {
-                int removed = top[3];
-                int newRow = row + dr[i];
-                int newCol = col + dc[i];
-                int candidate = currentDistance + 1;
-                if(newRow >= 0 && newRow < m && newCol >= 0 && newCol < n)
+                var top = queue.poll();
+                int row = top[0];
+                int col = top[1];
+                int obs = top[2];
+                for(int j=0; j<4; j++)
                 {
-                    if(grid[newRow][newCol] == 1)
+                    int newRow = row + dr[j];
+                    int newCol = col + dc[j];
+                    if(newRow < 0 || newRow >= m || newCol < 0 || newCol >= n)
                     {
-                        removed += 1;
+                        continue;
                     }
-                    if(candidate < distances[newRow][newCol] && removed <= k)
+                    if(grid[newRow][newCol] == 0 && memo[newRow][newCol][obs] > dist)
                     {
-                        distances[newRow][newCol] = candidate;
-                        queue.add(new int[] { newRow, newCol, candidate, removed });
+                        memo[newRow][newCol][obs] = dist;
+                        // System.out.println("pushing "+dist+" to queue for "+newRow+" "+newCol+" from "+row+" "+col+" "+obs);
+                        queue.add(new int[] { newRow,newCol,obs });
+                    }
+                    if(obs > 0 && grid[newRow][newCol] == 1 && memo[newRow][newCol][obs-1] > dist)
+                    {
+                        memo[newRow][newCol][obs-1] = dist;
+                        // System.out.println("pushing "+dist+" to queue for "+newRow+" "+newCol+" from "+row+" "+col+" "+obs);
+                        queue.add(new int[] { newRow,newCol,obs-1 });
                     }
                 }
             }
         }
-        if(distances[m-1][n-1] == Integer.MAX_VALUE)
+        int min = Integer.MAX_VALUE;
+        for(int i=0; i<=k; i++)
         {
-            return -1;
+            min = Math.min(memo[m-1][n-1][i], min);
         }
-        return distances[m-1][n-1];
+        return min == Integer.MAX_VALUE ? -1 : min;
     }
 }
