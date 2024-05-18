@@ -11,13 +11,14 @@ class Solution {
             }
             else
             {
-                // consider the case:  3,5,0,2 ..... the next element can either be 2 or 4 for example, we have to support both cases
+                // consider the case:  3,5,0,2 ..... the next element can either be 1 or 4 for example, we have to support both cases
                 while(stack.size() > 0 && (stack.peek()[0] <= nums[i]))
                 {
                     stack.pop();
                 }
-                if(stack.size() > 0 && stack.peek()[0] > nums[i] && stack.peek()[1] < nums[i])
+                if(stack.size() > 0 && stack.peek()[1] < nums[i])
                 {
+                    System.out.println(stack.peek()[0] + " " + stack.peek()[1] + " " + nums[i]);
                     return true;
                 }
                 stack.push(new int[] { nums[i], min });
