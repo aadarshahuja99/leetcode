@@ -8,7 +8,7 @@ class Solution {
         List<Integer> ans = new ArrayList<>(Collections.nCopies(nums.length, 0));
         for(int i=n-1; i>=0; i--)
         {
-            ans.set(i, getCount(nums[i] + 10000, BIT, treeSize) - hash[nums[i] + 10000]);
+            ans.set(i, getCount(nums[i] + 10000 - 1, BIT, treeSize));
             hash[nums[i] + 10000]++;
             update(nums[i] + 10000, BIT, treeSize);
         }
