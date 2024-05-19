@@ -19,7 +19,7 @@ class Solution {
                 currentStatus = currentStatus || checkIfTheStringCanBeSplit(i+1, currentValue, i == s.length()-1 ? numSplits : numSplits+1, s);
                 if(currentStatus)
                 {
-                    System.out.println("returning true for currentValue " + currentValue);
+                    // System.out.println("returning true for currentValue " + currentValue);
                     return true;
                 }
             }
