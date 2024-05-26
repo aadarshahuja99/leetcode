@@ -30,23 +30,16 @@ class Solution {
                 }
             }
         }
-        if(windowMap.size() <= k)
+        while(windowMap.size() > k)
         {
-            ans = Math.max(ans, right-left);
-        }
-        else
-        {
-            while(windowMap.size() > k)
+            windowMap.put(s.charAt(left), windowMap.get(s.charAt(left)) - 1);
+            if(windowMap.get(s.charAt(left)) == 0)
             {
-                windowMap.put(s.charAt(left), windowMap.get(s.charAt(left)) - 1);
-                if(windowMap.get(s.charAt(left)) == 0)
-                {
-                    windowMap.remove(s.charAt(left));
-                }
-                left++;
+                windowMap.remove(s.charAt(left));
             }
-            ans = Math.max(ans, right - left);
+            left++;
         }
+        ans = Math.max(ans, right - left);
         return ans;
     }
 }
