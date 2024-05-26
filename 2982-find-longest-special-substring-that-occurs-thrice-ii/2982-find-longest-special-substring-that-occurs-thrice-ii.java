@@ -26,7 +26,7 @@ class Solution {
         for(int i=0; i<26; i++)
         {
             int count = 0;
-            System.out.println((char)(i + 97));
+            // System.out.println((char)(i + 97));
             for(int j=n; j>=1; j--)
             {
                 // System.out.println(countHash[i][j]+" "+j);
