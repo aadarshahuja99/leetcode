@@ -17,7 +17,7 @@ class Solution {
             int count = 0;
             for(int j=i; j<nums.length; j++)
             {
-                currentHash = ((199*currentHash) + nums[j]);
+                currentHash = ((1000000007*currentHash) + nums[j]);
                 if(nums[j]%p == 0)
                 {
                     count++;
