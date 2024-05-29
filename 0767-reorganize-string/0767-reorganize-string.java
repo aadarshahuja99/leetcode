@@ -26,9 +26,8 @@ class Solution {
             int[] top = maxHeap.poll();
             char c = (char)(97 + top[0]);
             top[1]--;
-            // System.out.println(c+" "+top[1]);
-            sb.append(c);
             queue.add(top);
+            sb.append(c);
             if(queue.size() == 2)
             {
                 var queueTop = queue.poll();
