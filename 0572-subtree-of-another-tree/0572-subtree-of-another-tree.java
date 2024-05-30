@@ -21,7 +21,7 @@ class Solution {
     {
         if(root == null || subRoot == null)
         {
-            return root == null && subRoot == null;
+            return root == subRoot;
         }
         if(checkIfTreesMatch(root, subRoot))
         {
