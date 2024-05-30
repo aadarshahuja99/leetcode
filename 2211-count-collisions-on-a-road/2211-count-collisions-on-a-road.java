@@ -15,19 +15,10 @@ class Solution {
                     stack.push('S');
                     ans++;
                 }
-                else if(stack.peek() == 'R' && c == 'L')
+                else if(stack.peek() == 'R' && c != 'R')
                 {
-                    ans += 2;
+                    ans += c == 'L' ? 2 : 1;
                     stack.pop();
-                    while(stack.size() > 0 && stack.peek() == 'R')
-                    {
-                        ans++;
-                        stack.pop();
-                    }
-                    stack.push('S');
-                }
-                else if(stack.peek() == 'R' && c == 'S')
-                {
                     while(stack.size() > 0 && stack.peek() == 'R')
                     {
                         ans++;
