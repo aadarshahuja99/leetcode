@@ -1,7 +1,6 @@
 class Solution {
     public int lengthLongestPath(String input) {
         Stack<int[]> stack = new Stack<>();
-        stack.push(new int[] { 0, 3 });
         int maxLength = 0;
         for(String component : input.split("\n"))
         {
