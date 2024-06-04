@@ -9,22 +9,22 @@ class Solution {
         {
             counts[c-97][1]++;
         }
-        if(k == 0)
-        {
-            String ans = "";
-            for(int i=0; i<26; i++)
-            {
-                if(counts[i][1] > 0)
-                {
-                    char c = (char)(i + 97);
-                    for(int j=0; j<counts[i][1]; j++)
-                    {
-                        ans += c;
-                    }
-                }
-            }
-            return ans;
-        }
+        // if(k == 0)
+        // {
+        //     String ans = "";
+        //     for(int i=0; i<26; i++)
+        //     {
+        //         if(counts[i][1] > 0)
+        //         {
+        //             char c = (char)(i + 97);
+        //             for(int j=0; j<counts[i][1]; j++)
+        //             {
+        //                 ans += c;
+        //             }
+        //         }
+        //     }
+        //     return ans;
+        // }
         PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a,b) -> {
             return b[1] - a[1];
         });
@@ -45,7 +45,7 @@ class Solution {
             // System.out.println(c+" "+top[1]);
             sb.append(c);
             queue.add(top);
-            if(queue.size() == k)
+            if(queue.size() == k || k == 0)
             {
                 var queueTop = queue.poll();
                 if(queueTop[1] > 0)
