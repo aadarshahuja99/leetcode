@@ -1,3 +1,7 @@
 # Write your MySQL query statement below
-select t.name from (select emp.name as name, COUNT(e.id) cnt from Employee emp inner join Employee e on emp.id = e.managerId group by
-emp.id having cnt >= 5) as t;
+select query.name from (
+    select e.name as name from (
+        select distinct employee.managerId as id, COUNT(employee.id) OVER (PARTITION BY employee.managerId) as employee_count
+        from employee
+    ) t, Employee e where t.employee_count >= 5 AND t.id = e.id
+) query;
