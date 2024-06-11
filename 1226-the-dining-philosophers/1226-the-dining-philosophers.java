@@ -40,7 +40,7 @@ class DiningPhilosophers {
             forkStatus[leftForkId] = true;
             putLeftFork.run();
             
-            lock.notifyAll();
+            lock.notify();
         }
     }
 }
