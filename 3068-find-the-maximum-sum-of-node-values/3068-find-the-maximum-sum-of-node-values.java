@@ -21,8 +21,8 @@ class Solution {
         {
             return cache[current][isEven];
         }
-        long take = (1l*nums[current]^k) + getAns(current+1, isEven == 1 ? 0 : 1, k, nums, cache);
-        long notTake = (1l*nums[current]) + getAns(current+1, isEven, k, nums, cache);
+        long take = (nums[current]^k) + getAns(current+1, isEven == 1 ? 0 : 1, k, nums, cache);
+        long notTake = (nums[current]) + getAns(current+1, isEven, k, nums, cache);
         // System.out.println(take+" "+notTake+" "+current+" "+isEven+", "+(nums[current]^k)+" "+nums[current]);
         return cache[current][isEven] = Math.max(take, notTake);
     }
