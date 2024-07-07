@@ -3,7 +3,6 @@ class Solution {
         int n = nums.length, m = (n + 1) >> 1;
         int[] copy = Arrays.copyOf(nums, n);
         int median = kthSmallestNumber(nums, m);
-        
         for (int i = 0, j = 0, k = n - 1; j <= k;) {
             if (copy[j] < median) {
                 swap(copy, i++, j++);
@@ -13,18 +12,11 @@ class Solution {
                 j++;
             }
         }
-            
         for (int i = m - 1, j = 0; i >= 0; i--, j += 2) nums[j] = copy[i];
         for (int i = n - 1, j = 1; i >= m; i--, j += 2) nums[j] = copy[i];
     }
 
     private int kthSmallestNumber(int[] nums, int k) {
-        Random random = new Random();
-        
-        for (int i = nums.length - 1; i >= 0; i--) {
-            swap(nums, i, random.nextInt(i + 1));
-        }
-        
         int l = 0, r = nums.length - 1;
         k--;
             
@@ -45,11 +37,9 @@ class Solution {
         
     private int getMiddle(int[] nums, int l, int r) {
         int i = l;
-        
         for (int j = l + 1; j <= r; j++) {
             if (nums[j] < nums[l]) swap(nums, ++i, j);
         }
-        
         swap(nums, l, i);
         return i;
     }
