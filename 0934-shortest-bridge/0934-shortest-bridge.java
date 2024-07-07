@@ -22,14 +22,6 @@ class Solution {
                 break;
             }
         }
-        // for(int i=0; i<m; i++)
-        // {
-        //     for(int j=0; j<n; j++)
-        //     {
-        //         System.out.print(visited[i][j]+" ");
-        //     }
-        //     System.out.println();
-        // }
         Queue<int[]> queue = new LinkedList<>();
         for(List<Integer> pos : boundary)
         {
