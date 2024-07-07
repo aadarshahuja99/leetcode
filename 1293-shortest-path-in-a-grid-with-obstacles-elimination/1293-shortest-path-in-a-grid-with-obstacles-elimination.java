@@ -5,23 +5,26 @@ class Solution {
         // naming this as memo, because we are memoizing the shortest path encountered so far. This is not the same as dp.
         // In dp, we traverse to the final state (explore the entire current path), and, then decide. Here, we look back in time and not look forward.
         // In a way, this is greedy plus memoization
-        int[][][] memo = new int[m][n][k+1];
-        for(int[][] mat : memo)
-        {
-            for(int[] row : mat)
-            {
-                Arrays.fill(row,Integer.MAX_VALUE);
-            }
-        }
-        for(int i=0; i<=k; i++)
-        {
-            memo[0][0][i] = 0;
-        }
+        // int[][] memo = new int[m][n];
+        // for(int[] row : mat)
+        // {
+        //     Arrays.fill(row,Integer.MAX_VALUE);
+        // }
+        // for(int i=0; i<=k; i++)
+        // {
+        //     memo[0][0][i] = 0;
+        // }
         Queue<int[]> queue = new LinkedList<int[]>();
         queue.add(new int[] { 0,0,k });
         int[] dr = new int[] { 0,1,0,-1 };
         int[] dc = new int[] { 1,0,-1,0 };
         int dist = 0;
+        boolean[][][] visited = new boolean[m][n][k+1];
+        visited[0][0][k] = true;
+        for(int i=0; i<=k; i++)
+        {
+            visited[0][0][i] = true;
+        }
         while(queue.size() > 0)
         {
             int size = queue.size();
@@ -32,6 +35,10 @@ class Solution {
                 int row = top[0];
                 int col = top[1];
                 int obs = top[2];
+                if(row == m-1 && col == n-1)
+                {
+                    return dist - 1;
+                }
                 for(int j=0; j<4; j++)
                 {
                     int newRow = row + dr[j];
@@ -40,26 +47,22 @@ class Solution {
                     {
                         continue;
                     }
-                    if(grid[newRow][newCol] == 0 && memo[newRow][newCol][obs] > dist)
+                    int candidateDistance = grid[newRow][newCol];
+                    if(candidateDistance == 1 && obs >= 1 && !visited[newRow][newCol][obs-1])
                     {
-                        memo[newRow][newCol][obs] = dist;
-                        // System.out.println("pushing "+dist+" to queue for "+newRow+" "+newCol+" from "+row+" "+col+" "+obs);
-                        queue.add(new int[] { newRow,newCol,obs });
+                        visited[newRow][newCol][obs-1] = true;
+                        // System.out.println(dist+" pushing: "+newRow+" "+newCol+" "+(obs-1));
+                        queue.add(new int[] { newRow, newCol, obs-1 });
                     }
-                    if(obs > 0 && grid[newRow][newCol] == 1 && memo[newRow][newCol][obs-1] > dist)
+                    else if(candidateDistance == 0 && !visited[newRow][newCol][obs])
                     {
-                        memo[newRow][newCol][obs-1] = dist;
-                        // System.out.println("pushing "+dist+" to queue for "+newRow+" "+newCol+" from "+row+" "+col+" "+obs);
-                        queue.add(new int[] { newRow,newCol,obs-1 });
+                        visited[newRow][newCol][obs] = true;
+                        // System.out.println(dist+" pushing: "+newRow+" "+newCol+" "+(obs));
+                        queue.add(new int[] { newRow, newCol, obs });
                     }
                 }
             }
         }
-        int min = Integer.MAX_VALUE;
-        for(int i=0; i<=k; i++)
-        {
-            min = Math.min(memo[m-1][n-1][i], min);
-        }
-        return min == Integer.MAX_VALUE ? -1 : min;
+        return -1;
     }
 }
