@@ -1,19 +1,23 @@
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
-        int[] buckets = new int[1000002];
+        int max = 0;
         for(int[] interval : intervals)
         {
-            buckets[interval[0]]++;
-            buckets[interval[1]]--;
+            max = Math.max(max, interval[1]);
         }
-
-        int runningSum = 0;
-        int maxRoomsAtAnyInstant = 0;
-        for(int num : buckets)
+        int[] hash = new int[max+2];
+        for(int[] interval : intervals)
         {
-            runningSum += num;
-            maxRoomsAtAnyInstant = Math.max(maxRoomsAtAnyInstant, runningSum);
+            hash[interval[0]]++;
+            hash[interval[1]]--;
         }
-        return maxRoomsAtAnyInstant;
+        int total = 0;
+        int ans = 0;
+        for(int i=0; i<hash.length; i++)
+        {
+            total += hash[i];
+            ans = Math.max(ans, total);
+        }
+        return ans;
     }
 }
