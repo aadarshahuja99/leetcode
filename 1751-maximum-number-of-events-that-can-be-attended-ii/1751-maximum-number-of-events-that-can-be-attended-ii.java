@@ -7,10 +7,10 @@ class Solution {
             }
         });
         int[][] dp = new int[events.length][k+1];
-        for(int[] row : dp)
-        {
-            Arrays.fill(row,-1);
-        }
+        // for(int[] row : dp)
+        // {
+        //     Arrays.fill(row,0);
+        // }
         return getAns(0,k,events,dp);
     }
     private int getAns(int current, int k, int[][] events, int[][] dp)
@@ -19,7 +19,7 @@ class Solution {
         {
             return 0;
         }
-        if(dp[current][k] != -1)
+        if(dp[current][k] != 0)
         {
             return dp[current][k];
         }
