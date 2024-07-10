@@ -1,87 +1,55 @@
 class Solution {
     public int mostBooked(int n, int[][] meetings) {
-        Arrays.sort(meetings, new Comparator<int[]>()
-        {
-            public int compare(int[] m1, int[] m2)
-            {
-                return m1[0]-m2[0];
-            }
-        });
-        Queue<int[]> q = new LinkedList<>();
-        PriorityQueue<int[]> active = new PriorityQueue<int[]>(new Comparator<int[]>()
-        {
-            public int compare(int[] p1, int[] p2)
-            {
-                if(p1[0] != p2[0])
-                {
-                    return p1[0] - p2[0];
-                }
-                return p1[1] - p2[1];
-            }
-        });
-        active.add(new int[] {0,0});
-        for(int i=0; i<meetings.length; i++)
-        {
-            q.add(meetings[i]);
-        }
         int[] count = new int[n];
-        int current = 0;
-        while(q.size() > 0)
+        Arrays.sort(meetings, (a,b) -> {
+            return a[0] == b[0] ? a[1] - b[1] : a[0] - b[0];
+        });
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> {
+            return a[1] == b[1] ? a[0] - b[0] : a[1] - b[1];
+        });
+        TreeSet<Integer> set = new TreeSet<>();
+        for(int i=0; i<n; i++)
         {
-            var queueTop = q.poll();
-            int newEnd = queueTop[1];
-            int size = active.size();
-            int it = 0;
-            List<int[]> list = new ArrayList<>();
-            while(it < size && active.peek()[0] <= queueTop[0])
+            set.add(i);
+        }
+        int i=0;
+        int delay = 0;
+        while(i < meetings.length)
+        {
+            while(pq.size() > 0 && pq.peek()[1] <= meetings[i][0])
             {
-                list.add(active.poll());
-                it++;
-                // System.out.println(active.size());
+                set.add(pq.poll()[0]);
             }
-            for(var pair : list)
+            if(pq.size() == n)
             {
-                // System.out.println("updating room "+pair[1]);
-                active.add(new int[]{ 0,pair[1] });
-            }
-            // System.out.println(active.size()+" "+active.peek());
-            var pqTop = active.peek();
-            if(pqTop[0] > queueTop[0])
-            {
-                if(current < n-1)
-                {
-                    count[current+1]++;
-                    current++;
-                    // System.out.println("1 assigning "+queueTop[0]+","+queueTop[1]+" to "+current);
-                    active.add(new int[] {newEnd,current});
-                }
-                else
-                {
-                    newEnd += pqTop[0] - queueTop[0];
-                    active.poll();
-                    count[pqTop[1]]++;
-                    // System.out.println("2 assigning "+queueTop[0]+","+queueTop[1]+" to "+pqTop[1]);
-                    active.add(new int[] {newEnd,pqTop[1]});
-                }
+                int[] top = pq.poll();
+                count[top[0]]++;
+                delay += top[1] - (meetings[i][0] + delay);
+                // System.out.println("1: adding "+top[0]+" to queue, new total delay: "+delay+" meeting "+meetings[i][0]+", "+meetings[i][1]+" end time: "+(top[1] +  + meetings[i][1] - meetings[i][0]));
+                pq.add(new int[] { top[0], top[1] + meetings[i][1] - meetings[i][0] });
             }
             else
             {
-                active.poll();
-                count[pqTop[1]]++;
-                // System.out.println("3 assigning "+queueTop[0]+","+queueTop[1]+" to "+pqTop[1]);
-                active.add(new int[] {newEnd,pqTop[1]});
+                int first = set.first();
+                count[first]++;
+                set.remove(first);
+                // System.out.println("2: adding "+first+" to queue. Meeting "+meetings[i][0]+", "+meetings[i][1]+" end time: "+ (delay + meetings[i][1] ));
+                pq.add(new int[] { first, meetings[i][1] });
             }
+            i++;
         }
         int ans = 0;
-        int element = 0;
-        for(int i=0; i<n; i++)
+        int idx = 0;
+        int ansIdx = 0;
+        for(int num : count)
         {
-            if(ans < count[i])
+            if(num > ans)
             {
-                ans = count[i];
-                element = i;
+                ans = num;
+                ansIdx = idx;
             }
+            idx++;
         }
-        return element;
+        return ansIdx;
     }
 }
