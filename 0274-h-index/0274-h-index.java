@@ -14,14 +14,10 @@ class Solution {
         {
             nums[citation]++;
         }
-        if(nums[nums.length-1] >= nums.length-1)
+        if(nums[max] >= max)
         {
-            return nums.length-1;
+            return max;
         }
-        // for(int num : set)
-        // {
-        //     System.out.println(num);
-        // }
         for(int i=max-1; i>=0; i--)
         {
             nums[i] += nums[i+1];
