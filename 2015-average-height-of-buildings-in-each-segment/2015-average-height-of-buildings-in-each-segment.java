@@ -47,7 +47,7 @@ class Solution {
             {
                 continue;
             }
-            if(prev >= 0 && lastAverage >= 0)
+            if(lastAverage >= 0)
             {
                 intermediate.add(new int[] { prev, key, lastAverage });
             }
