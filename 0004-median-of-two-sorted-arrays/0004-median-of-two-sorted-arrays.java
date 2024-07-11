@@ -56,6 +56,6 @@ class Solution {
                 start = mid1 + 1;
             }
         }
-        return isOddLength ? larger[left-1] : ((double)larger[left-1] + (n1 == n2 ? (double)smaller[0] : Math.min((double)larger[left], (double)smaller[0])))/2.0;
+        return isOddLength ? larger[left-1] : ((double)larger[left-1] + (left == n2 ? (double)smaller[0] : Math.min((double)larger[left], (double)smaller[0])))/2.0;
     }
 }
