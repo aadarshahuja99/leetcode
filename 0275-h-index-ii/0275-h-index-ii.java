@@ -21,6 +21,6 @@ class Solution {
                 end = mid - 1;
             }
         }
-        return hIndex == -1 ? numberOfCitations - start : hIndex;
+        return numberOfCitations - start;
     }
 }
