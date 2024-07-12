@@ -4,7 +4,6 @@ class Solution {
         Queue<int[]> queue = new LinkedList<>();
         int m = maze.length;
         int n = maze[0].length;
-        boolean[][] visited = new boolean[m][n];
         queue.add(start);
         int[][] distances = new int[m][n];
         for(int[] row : distances)
