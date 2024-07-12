@@ -5,27 +5,32 @@ class Solution {
         });
         int n = events.length;
         int ans = 0;
-        int i=0;
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-        int currentDay = 0;
-        while(i < n || !pq.isEmpty())
+        int lastEnd = 0;
+        for(int i=0; i<n;)
         {
-            if(pq.isEmpty())
+            int currentEnd = events[i][1];
+            if(currentEnd <= lastEnd)
             {
-                currentDay = events[i][0];
-            }
-            while(i < n && events[i][0] <= currentDay)
-            {
-                pq.add(events[i][1]);
                 i++;
+                continue;
             }
-            pq.poll();
-            ans++;
-            currentDay++;
-            while(!pq.isEmpty() && pq.peek() < currentDay)
+            int currentStart = Math.max(events[i][0], lastEnd + 1);
+            int j=i+1;
+            int count = 1;
+            int days = currentEnd - currentStart + 1;
+            // System.out.println(currentEnd+" "+currentStart);
+            while(j < n && events[j][0] <= currentEnd && count < days)
             {
-                pq.poll();
+                currentEnd = Math.max(currentEnd, events[j][1]);
+                days = currentEnd - currentStart + 1;
+                j++;
+                count++;
             }
+            // System.out.println("curr end "+currentEnd+" last end "+lastEnd+" "+count+" "+days);
+            // System.out.println();
+            lastEnd = currentEnd;
+            ans += Math.min(count, days);
+            i=j;
         }
         return ans;
     }
