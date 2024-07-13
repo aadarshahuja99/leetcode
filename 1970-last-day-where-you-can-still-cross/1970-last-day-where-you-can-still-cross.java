@@ -1,10 +1,10 @@
 class Solution {
     public int latestDayToCross(int row, int col, int[][] cells) {
-        HashMap<Integer,Integer> cellDrowningDayMap = new HashMap<>();
+        int[][] cellDrowningDayMap = new int[row][col];
         int idx = 0;
         for(int[] cell : cells)
         {
-            cellDrowningDayMap.put(col*(cell[0] - 1) + (cell[1] - 1), idx);
+            cellDrowningDayMap[cell[0]-1][cell[1]-1] = idx;
             idx++;
         }
         int start = 0;
@@ -25,12 +25,12 @@ class Solution {
         }
         return ans;
     }
-    private boolean check(int guess, HashMap<Integer,Integer> cellDrowningDayMap, int m, int n)
+    private boolean check(int guess, int[][] cellDrowningDayMap, int m, int n)
     {
         boolean[][] visited = new boolean[m][n];
         for(int j=0; j<n; j++)
         {
-            if(!visited[0][j] && cellDrowningDayMap.get(j) >= guess)
+            if(!visited[0][j] && cellDrowningDayMap[0][j] >= guess)
             {
                 // System.out.println("map value = "+cellDrowningDayMap.get(j)+" for "+j);
                 if(dfs(0, j, visited, cellDrowningDayMap, guess))
@@ -43,7 +43,7 @@ class Solution {
         // System.out.println("2: " + guess);
         return false;
     }
-    private boolean dfs(int row, int col, boolean[][] visited, HashMap<Integer,Integer> cellDrowningDayMap, int guess)
+    private boolean dfs(int row, int col, boolean[][] visited, int[][] cellDrowningDayMap, int guess)
     {
         int m = visited.length;
         int n = visited[0].length;
@@ -54,11 +54,11 @@ class Solution {
         {
             int nR = row + delta[i][0];
             int nC = col + delta[i][1];
-            if(nR == m-1 && cellDrowningDayMap.get(nR*n + nC) >= guess)
+            if(nR == m-1 && cellDrowningDayMap[nR][nC] >= guess)
             {
                 return true;
             }
-            if(validatePosition(nR, nC, m, n) && !visited[nR][nC] && cellDrowningDayMap.get(nR*n + nC) >= guess)
+            if(validatePosition(nR, nC, m, n) && !visited[nR][nC] && cellDrowningDayMap[nR][nC] >= guess)
             {
                 // System.out.println("2: map value = "+cellDrowningDayMap.get(nR*n + nC)+" for "+nR+" ,"+nC);
                 ans = ans || dfs(nR, nC, visited, cellDrowningDayMap, guess);
