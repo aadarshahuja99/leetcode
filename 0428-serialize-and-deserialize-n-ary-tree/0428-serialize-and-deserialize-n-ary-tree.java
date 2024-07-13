@@ -51,10 +51,12 @@ class Codec {
 	
     // Decodes your encoded data to tree.
     public Node deserialize(String data) {
+        System.out.println(data);
         if(data.equals(""))
         {
             return null;
         }
+        System.out.println(data);
         String[] values = data.split(" ");
         Queue<Node> queue = new LinkedList<>();
         Node root = new Node(Integer.parseInt(values[0]), new ArrayList<Node>());
