@@ -14,20 +14,18 @@
  * }
  */
 class Solution {
+    TreeNode lastNode = null;
+    TreeNode firstIncorrect = null;
+    TreeNode lastIncorrect = null;
+    TreeNode current = null;
     public void recoverTree(TreeNode root) {
         // morris inorder traversal + last popped element
-        TreeNode lastNode = null;
-        TreeNode firstIncorrect = null;
-        TreeNode lastIncorrect = null;
-        TreeNode current = root;
+        current = root;
         while(current != null)
         {
             if(current.left == null)
             {
-                var changed = helper(current,lastNode,firstIncorrect,lastIncorrect);
-                firstIncorrect = changed.getKey();
-                lastIncorrect = changed.getValue();
-                lastNode = current;
+                helper();
                 current = current.right;
             }
             else
@@ -39,11 +37,8 @@ class Solution {
                 }
                 if(leftChild.right == current)
                 {
-                    var changed = helper(current,lastNode,firstIncorrect,lastIncorrect);
-                    firstIncorrect = changed.getKey();
-                    lastIncorrect = changed.getValue();
+                    helper();
                     leftChild.right = null;
-                    lastNode = current;
                     current = current.right;
                 }
                 else
@@ -58,13 +53,9 @@ class Solution {
         lastIncorrect.val = temp;
         return;
     }
-    private Pair<TreeNode,TreeNode> helper(TreeNode current, TreeNode lastNode, TreeNode firstIncorrect, TreeNode lastIncorrect)
+    private void helper()
     {
-        if(lastNode == null)
-        {
-            lastNode = current;
-        }
-        else
+        if(lastNode != null)
         {
             int currentValue = current.val;
             if(currentValue < lastNode.val)
@@ -80,6 +71,6 @@ class Solution {
                 }
             }
         }
-        return new Pair<TreeNode,TreeNode>(firstIncorrect, lastIncorrect);
+        lastNode = current;
     }
 }
