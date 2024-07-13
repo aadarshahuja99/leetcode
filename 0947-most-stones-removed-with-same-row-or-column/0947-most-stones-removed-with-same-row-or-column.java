@@ -1,98 +1,78 @@
 class Solution {
     public int removeStones(int[][] stones) {
-        // the max no of stones that can be removed are the n - number of components. Here, a component is a set of stones that either share a row or a column.
-        int max = 0;
-        for(int i=0; i<stones.length; i++)
+        int m = stones.length;
+        int n = stones[0].length;
+        int maxRow = 0;
+        int maxCol = 0;
+        for(int[] stone : stones)
         {
-            max = Math.max(max,stones[i][0]);
-            max = Math.max(max,stones[i][1]);
+            maxRow = Math.max(maxRow, stone[0]);
+            maxCol = Math.max(maxCol, stone[1]);
         }
-        DisjointSet ds = new DisjointSet(stones,max);
-        for(int i=0; i<stones.length; i++)
+        maxRow++;
+        maxCol++;
+        DisjointSet ds = new DisjointSet(maxRow + maxCol);
+        for(int[] stone : stones)
         {
-            for(int j=0; j<stones.length; j++)
-            {
-                if(i==j)
-                {
-                    continue;
-                }
-                int keyi = stones[i][0]*(max+1) + stones[i][1];
-                int keyj = stones[j][0]*(max+1) + stones[j][1];
-                ds.connect(keyi,keyj);
-            }
+            ds.union(stone[0], maxRow + stone[1]);
         }
-        return stones.length - ds.getComponents();
+        return stones.length - ds.getNumberOfComponents();
     }
     class DisjointSet
     {
-        private int[] parent;
-        private HashMap<Integer,Integer> size;
-        int mat = 0;
-        public DisjointSet(int[][] stones,int max)
+        int[] parent;
+        int[] size;
+        public DisjointSet(int n)
         {
-            int n = max+1;
-            mat = n;
-            parent = new int[n*n];
-            Arrays.fill(parent,-1);
-            size = new HashMap<Integer,Integer>();
-            for(int[] stone : stones)
+            parent = new int[n];
+            size= new int[n];
+            for(int i=0; i<n; i++)
             {
-                int i=stone[0];
-                int j=stone[1];
-                int key = i*n+j;
-                parent[key] = key;
-                size.put(key,1);
+                parent[i] = i;
             }
         }
         private int findParent(int u)
         {
-            int temp = u;
-            while(temp != parent[temp])
-            {
-                temp = parent[temp];
-            }
-            parent[u] = temp;
-            return temp;
+            return (parent[u] == u ? u : findParent(parent[u]));
         }
-        public void connect(int u, int v)
+        public void union(int u, int v)
         {
-            int r1 = u/mat;
-            int c1 = u%mat;
-            int r2= v/mat;
-            int c2 = v%mat;
-            if(r1 == r2 || c1 == c2)
+            int uParent = findParent(u);
+            int vParent = findParent(v);
+            if(uParent == vParent)
             {
-                int parU = findParent(u);
-                int parV = findParent(v);
-                if(parU == parV)
-                {
-                    return;
-                }
-                if(size.get(parU) < size.get(parV))
-                {
-                    parent[parU] = parV;
-                    int newSize = size.get(parV)+size.get(parU);
-                    size.replace(parV,newSize);
-                }
-                else
-                {
-                    parent[parV] = parU;
-                    int newSize = size.get(parU)+size.get(parV);
-                    size.replace(parU,newSize);
-                }
+                return;
+            }
+            if(size[uParent] == 0)
+            {
+                size[uParent] = 1;
+            }
+            if(size[vParent] == 0)
+            {
+                size[vParent] = 1;
+            }
+            if(size[uParent] > size[vParent])
+            {
+                parent[vParent] = uParent;
+                size[uParent] += size[vParent];
+            }
+            else
+            {
+                parent[uParent] = vParent;
+                size[vParent] += size[uParent];
             }
         }
-        public int getComponents()
+        public int getNumberOfComponents()
         {
-            int ans = 0;
+            int count = 0;
             for(int i=0; i<parent.length; i++)
             {
-                if(parent[i] == i)
+                if(findParent(i) == i && size[findParent(i)] > 0)
                 {
-                    ans++;
+                    count++;
                 }
             }
-            return ans;
+            return count;
         }
     }
 }
