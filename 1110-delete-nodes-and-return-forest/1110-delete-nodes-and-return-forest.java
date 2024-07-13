@@ -14,62 +14,23 @@
  * }
  */
 class Solution {
+    Set<Integer> to_delete_set;
+    List<TreeNode> res;
     public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
-        HashSet<TreeNode> roots = new HashSet<>();
-        roots.add(root);
-        for(int node : to_delete)
-        {
-            for(TreeNode currentRoot : roots)
-            {
-                if(deleteNode(currentRoot, null, false, roots, node))
-                {
-                    break;
-                }
-            }
-        }
-        List<TreeNode> ans = new ArrayList<>();
-        for(TreeNode current : roots)
-        {
-            ans.add(current);
-        }
-        return ans;
+        to_delete_set = new HashSet<>();
+        res = new ArrayList<>();
+        for (int i : to_delete)
+            to_delete_set.add(i);
+        helper(root, true);
+        return res;
     }
-    private boolean deleteNode(TreeNode root, TreeNode parent, boolean isLeftChild, HashSet<TreeNode> roots, int value)
-    {
-        if(root == null)
-        {
-            return false;
-        }
-        if(root.val == value)
-        {
-            if(parent != null)
-            {
-                if(isLeftChild)
-                {
-                    parent.left = null;
-                }
-                else
-                {
-                    parent.right = null;
-                }
-            }
-            else
-            {
-                roots.remove(root);
-            }
-            if(root.left != null || root.right != null)
-            {
-                if(root.left != null)
-                {
-                    roots.add(root.left);
-                }
-                if(root.right != null)
-                {
-                    roots.add(root.right);
-                }
-            }
-            return true;
-        }
-        return deleteNode(root.left, root, true, roots, value) || deleteNode(root.right, root, false, roots, value);
+
+    private TreeNode helper(TreeNode node, boolean is_root) {
+        if (node == null) return null;
+        boolean deleted = to_delete_set.contains(node.val);
+        if (is_root && !deleted) res.add(node);
+        node.left = helper(node.left, deleted);
+        node.right =  helper(node.right, deleted);
+        return deleted ? null : node;
     }
 }
