@@ -2,19 +2,17 @@ class Solution {
     public boolean verifyPreorder(int[] preorder) {
         int minLimit = Integer.MIN_VALUE;
         int i = 0;
-        
+        Stack<Integer> stack = new Stack<>();
         for (int num: preorder) {
-            while (i > 0 && preorder[i - 1] < num) {
-                minLimit = preorder[i - 1];
-                i--;
+            while (stack.size() > 0 && stack.peek() < num) {
+                minLimit = stack.pop();
             }
             
             if (num < minLimit) {
                 return false;
             }
             
-            preorder[i] = num;
-            i++;
+            stack.push(num);
         }
         
         return true;
