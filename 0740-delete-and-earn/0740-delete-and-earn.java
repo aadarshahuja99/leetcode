@@ -5,37 +5,42 @@ class Solution {
         {
             countMap.put(num, countMap.getOrDefault(num,0) + 1);
         }
-        HashMap<Integer,Integer> cache = new HashMap<>();
-        return getMaxPoints(countMap.firstKey(), countMap, cache);
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int k : countMap.keySet())
+        {
+            list.add(k);
+        }
+        int[] cache = new int[list.size()];
+        Arrays.fill(cache, -1);
+        return getMaxPoints(0, countMap, cache, list);
     }
-    private int getMaxPoints(int current, TreeMap<Integer,Integer> map, HashMap<Integer,Integer> cache)
+    private int getMaxPoints(int current, TreeMap<Integer,Integer> map, int[] cache, ArrayList<Integer> list)
     {
-        if(current == 0)
+        if(current >= list.size())
         {
             return 0;
         }
-        if(cache.containsKey(current))
+        if(cache[current] != -1)
         {
-            return cache.get(current);
+            return cache[current];
         }
         int ans = 0;
-        var nextKey = map.higherKey(current);
-        int notDelete = getMaxPoints(nextKey == null ? 0 : nextKey, map, cache);
-        int delete = current*map.get(current);
-        if(nextKey != null)
+        var nextKey = current;
+        int val = list.get(current);
+        while(nextKey < list.size() && list.get(nextKey) <= val+1)
         {
-            if(nextKey == current+1)
-            {
-                var next = map.higherKey(nextKey);
-                delete += getMaxPoints(next == null ? 0 : next, map, cache);
-            }
-            else
-            {
-                delete += getMaxPoints(nextKey, map, cache);
-            }
+            nextKey++;
         }
+        int nextKey1 = current;
+        while(nextKey1 < list.size() && list.get(nextKey1) == val)
+        {
+            nextKey1++;
+        }
+        int notDelete = getMaxPoints(nextKey1, map, cache, list);
+        int delete = val*map.get(val) + getMaxPoints(nextKey, map, cache, list);
+        // System.out.println(notDelete+" "+delete+" "+ nextKey +"," + nextKey1 + " for " +val);
         ans = Math.max(delete, notDelete);
-        cache.put(current, ans);
+        cache[current] = ans;
         return ans;
     }
 }
