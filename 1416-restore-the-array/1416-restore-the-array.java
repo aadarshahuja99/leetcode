@@ -28,7 +28,7 @@ class Solution {
         for(int i=current; i<Math.min(current + digits, s.length()); i++)
         {
             val = 10*val + (s.charAt(i) - 48)*1L;
-            if(val <= (long)k && (i+1 == s.length() || s.charAt(i+1) != '0'))
+            if(val <= k && (i+1 == s.length() || s.charAt(i+1) != '0'))
             {
                 ways = (ways%mod + getAns(i+1, k, digits, s, cache)%mod)%mod;
             }
