@@ -9,7 +9,7 @@ class Solution {
                 i--;
             }
             
-            if (num <= minLimit) {
+            if (num < minLimit) {
                 return false;
             }
             
