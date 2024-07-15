@@ -35,10 +35,10 @@ class Solution {
                 tree[treeIndex] = val;
                 return;
             }
-            int mid = ss + (se - ss)/2;
+            int mid = ss + (se - ss)/2; // used to binary search the segment tree array in update
             if(mid >= idx)
             {
-                updateHelper(val, idx, 2*treeIndex+1, ss, mid);
+                updateHelper(val, idx, 2*treeIndex+1, ss, mid); // treeIndex is the index in the array
             }
             else
             {
@@ -60,7 +60,7 @@ class Solution {
             {
                 return tree[treeIndex];
             }
-            int mid = ss + (se - ss)/2;
+            int mid = ss + (se - ss)/2; // used to find the ranges in query
             int left = queryHelper(ss, mid, l, r, 2*treeIndex+1);
             int right = queryHelper(mid+1, se, l, r, 2*treeIndex+2);
             return Math.max(left, right);
