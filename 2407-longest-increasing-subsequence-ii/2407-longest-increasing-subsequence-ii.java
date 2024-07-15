@@ -22,11 +22,11 @@ class Solution {
         public SegmentTree(int n)
         {
             size = n;
-            tree = new int[4*100001];
+            tree = new int[4*n];
         }
         public void update(int val, int idx)
         {
-            updateHelper(val, idx, 0, 0, 100000);
+            updateHelper(val, idx, 0, 0, size);
         }
         private void updateHelper(int val, int idx, int treeIndex, int ss, int se)
         {
@@ -48,7 +48,7 @@ class Solution {
         }
         public int query(int l, int r)
         {
-            return queryHelper(0, 100000, l, r, 0);
+            return queryHelper(0, size, l, r, 0);
         }
         public int queryHelper(int ss, int se, int l, int r, int treeIndex)
         {
