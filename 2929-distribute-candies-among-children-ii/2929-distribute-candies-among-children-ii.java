@@ -4,9 +4,13 @@ class Solution {
         for(int i=0; i<=limit; i++)
         {
             int remaining = n-i;
-            if(remaining > 2*limit || remaining < 0)
+            if(remaining > 2*limit)
             {
                 continue;
+            }
+            if(remaining < 0)
+            {
+                break;
             }
             int min = Math.max(remaining-limit, 0);
             int max = Math.min(limit, remaining);
