@@ -17,7 +17,7 @@ class Solution {
         Random r = new Random();
         int idx = r.nextInt(1, total+1);
         int start = 0;
-        int end = pre.length;
+        int end = pre.length-1;
         int ceil = -1;
         while(start <= end)
         {
