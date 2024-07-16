@@ -53,7 +53,6 @@ class Solution {
         }
         if(!(prev.val <= insertVal && current.val >= insertVal))
         {
-            current = head.next;
             while(current.val >= prev.val)
             {
                 prev = current;
