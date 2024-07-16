@@ -1,15 +1,16 @@
 class Solution {
     List<String> ans = new ArrayList<String>();
     public List<String> wordBreak(String s, List<String> wordDict) {
-        Trie root = new Trie();
+        HashSet<String> set = new HashSet<>();
         for(String str : wordDict)
         {
-            root.insert(str);
+            // root.insert(str);
+            set.add(str);
         }
-        getAns(0, s, root, "");
+        getAns(0, s, set, "");
         return ans;
     }
-    private void getAns(int current, String s, Trie root , String sentence)
+    private void getAns(int current, String s, HashSet<String> root , String sentence)
     {
         int size = s.length();
         if(current == size)
@@ -20,7 +21,7 @@ class Solution {
         for(int i = current; i<size; i++)
         {
             temp += s.charAt(i);
-            if(root.search(temp))
+            if(root.contains(temp))
             {
                 // System.out.println("match for " + temp);
                 getAns(i+1, s, root, sentence + temp + " ");
