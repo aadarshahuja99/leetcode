@@ -16,27 +16,22 @@ class Solution {
         Arrays.sort(ratios, (a,b) -> {
             return Double.compare(a[0], b[0]);
         });
-        double ans = Double.MAX_VALUE;
         PriorityQueue<double[]> pq = new PriorityQueue<double[]>((a,b) -> {
             return Double.compare(b[1],a[1]);
         });
         double qualitySum = 0;
-        for(int i=k-1; i<n; i++)
+        for(int j=0; j<k; j++)
         {
-            double currentRatio = ratios[i][0];
-            qualitySum += ratios[i][1];
-            if(pq.size() == 0)
-            {
-                for(int j=0; j<k-1; j++)
-                {
-                    pq.add(ratios[j]);
-                    qualitySum += ratios[j][1];
-                }
-            }
-            ans = Math.min(ans, qualitySum*currentRatio);
-            pq.add(ratios[i]);
+            pq.add(ratios[j]);
+            qualitySum += ratios[j][1];
+        }
+        double ans = qualitySum*ratios[k-1][0];
+        for(int i=k; i<n; i++)
+        {
             var top = pq.poll();
-            qualitySum -= top[1];
+            qualitySum += ratios[i][1] - top[1];
+            pq.add(ratios[i]);
+            ans = Math.min(ans, qualitySum*ratios[i][0]);
         }
         return ans;
     }
