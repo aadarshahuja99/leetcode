@@ -19,14 +19,10 @@ class Solution {
             return cache[currentIndex][lastSign];
         }
         long startNew = nums[currentIndex]*1l + getAns(currentIndex+1, 1, nums, cache);
-        long continued = 0l;
+        long continued = Long.MIN_VALUE;
         if(lastSign == 1)
         {
             continued = -nums[currentIndex]*1l + getAns(currentIndex+1, 0, nums, cache);
-        }
-        else
-        {
-            continued = nums[currentIndex]*1l + getAns(currentIndex+1, 1, nums, cache);
         }
         return cache[currentIndex][lastSign] = Math.max(startNew, continued);
     }
