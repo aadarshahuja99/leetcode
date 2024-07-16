@@ -31,11 +31,7 @@ class Solution {
         long numberOfStoresNeeded = 0;
         for(int i=0; i<numberOfProducts; i++)
         {
-            numberOfStoresNeeded += (long)(quantities[i]/guess);
-            if((quantities[i]%guess) > 0)
-            {
-                numberOfStoresNeeded++;
-            }
+            numberOfStoresNeeded += (long)Math.ceil((double)quantities[i]/guess);
         }
         // System.out.println(guess+" "+(numberOfStoresNeeded <= n));
         return numberOfStoresNeeded <= n;
