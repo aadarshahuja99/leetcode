@@ -10,6 +10,6 @@ class Solution extends SolBase {
         {
             random = (rand7() - 1)*7 + rand7();
         }while(random > 40);
-        return (random-1)%10 + 1;
+        return (random)%10 + 1;
     }
 }
