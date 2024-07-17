@@ -3,7 +3,7 @@ class Solution {
         DisjointSet ds = new DisjointSet(n);
         for(int i=threshold+1; i<=n; i++)
         {
-            for(int j=i; j<=n; j+=i)
+            for(int j=2*i; j<=n; j+=i)
             {
                 ds.union(i,j);
             }
