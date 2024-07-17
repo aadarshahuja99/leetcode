@@ -20,11 +20,11 @@ class Solution {
         {
             map.put(inorder[i], i);
         }
-        return getAns(0, preorder.length-1, 0, inorder.length-1, map, preorder);
+        return getAns(0, preorder.length-1, 0, map, preorder);
     }
-    private TreeNode getAns(int start, int end, int inStart, int inEnd, HashMap<Integer,Integer> map, int[] pre)
+    private TreeNode getAns(int start, int end, int inStart, HashMap<Integer,Integer> map, int[] pre)
     {
-        if(start > end || inStart > inEnd)
+        if(start > end)
         {
             return null;
         }
@@ -33,8 +33,8 @@ class Solution {
         int idx = map.get(val);
         int leftLength = idx - inStart;
         // System.out.println(val+" "+idx+" "+leftLength);
-        current.left = getAns(start+1, start+leftLength, inStart, idx-1, map, pre);
-        current.right = getAns(start+leftLength+1, end, idx+1, inEnd, map, pre);
+        current.left = getAns(start+1, start+leftLength, inStart, map, pre);
+        current.right = getAns(start+leftLength+1, end, idx+1, map, pre);
         return current;
     }
 }
