@@ -1,9 +1,6 @@
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
         // simple range sum problem
-        Arrays.sort(trips, (a,b) -> {
-            return a[1] - b[1];
-        });
         int[] numberOfPassengers = new int[1001];
         for(int i=0; i<trips.length; i++)
         {
