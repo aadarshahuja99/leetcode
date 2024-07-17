@@ -4,7 +4,18 @@ class Solution {
         int n = words.length;
         if(n == 1)
         {
-            return words[0];
+            StringBuilder sb = new StringBuilder();
+            HashSet<Character> set = new HashSet<>();
+            for(char c : words[0].toCharArray())
+            {
+                if(set.contains(c))
+                {
+                    continue;
+                }
+                set.add(c);
+                sb.append(c);
+            }
+            return sb.toString();
         }
 
         for(int i=0; i<26; i++)
