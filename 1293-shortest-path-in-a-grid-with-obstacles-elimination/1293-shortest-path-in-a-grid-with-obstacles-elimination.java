@@ -48,13 +48,13 @@ class Solution {
                         continue;
                     }
                     int candidateDistance = grid[newRow][newCol];
-                    if(candidateDistance == 1 && obs >= 1 && !visited[newRow][newCol][obs-1])
+                    if(grid[newRow][newCol] == 1 && obs >= 1 && !visited[newRow][newCol][obs-1])
                     {
                         visited[newRow][newCol][obs-1] = true;
                         // System.out.println(dist+" pushing: "+newRow+" "+newCol+" "+(obs-1));
                         queue.add(new int[] { newRow, newCol, obs-1 });
                     }
-                    else if(candidateDistance == 0 && !visited[newRow][newCol][obs])
+                    else if(grid[newRow][newCol] == 0 && !visited[newRow][newCol][obs])
                     {
                         visited[newRow][newCol][obs] = true;
                         // System.out.println(dist+" pushing: "+newRow+" "+newCol+" "+(obs));
