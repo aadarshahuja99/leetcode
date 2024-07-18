@@ -1,6 +1,6 @@
 class Solution {
     public List<Integer> busiestServers(int k, int[] arrival, int[] load) {
-        // a single priority quueue should be enough
+        // a single priority queue should be enough
         PriorityQueue<int[]> serverStatus = new PriorityQueue<int[]>((a,b) -> {
             // 0:time, 1:index
             if(a[0] == b[0])
@@ -10,11 +10,10 @@ class Solution {
             return a[0] - b[0];
         });
         TreeSet<Integer> available = new TreeSet<>();
-        HashMap<Integer,Integer> requestCounts = new HashMap<>();
+        int[] requestCounts = new int[k];
         for(int i=0; i<k; i++)
         {
             available.add(i);
-            requestCounts.put(i,0);
         }
         int maxRequests = 0;
         
@@ -23,21 +22,24 @@ class Solution {
         {
             int currentLoad = load[i];
             int currentArrival = arrival[i];
+            // free up all the servers that are ready to be free by the arrival of the current request
             while(serverStatus.size() > 0 && serverStatus.peek()[0] <= currentArrival)
             {
                 int[] server = serverStatus.poll();
                 available.add(server[1]);
             }
+            // if all occupied, the current request is dropped
             if(available.size() == 0)
             {
                 continue;
             }
+            // process the request as per the rules
             if(available.contains(i%k))
             {
                 available.remove(i%k);
                 serverStatus.add(new int[] { currentLoad + currentArrival, i%k });
-                requestCounts.put(i%k, requestCounts.get(i%k) + 1);
-                maxRequests = Math.max(maxRequests, requestCounts.get(i%k));
+                requestCounts[i%k]++;
+                maxRequests = Math.max(maxRequests, requestCounts[i%k]);
             }
             else
             {
@@ -47,25 +49,26 @@ class Solution {
                     // find the next available higher entry in set
                     available.remove(ceil);
                     serverStatus.add(new int[] { currentLoad + currentArrival, ceil });
-                    requestCounts.put(ceil, requestCounts.get(ceil) + 1);
-                    maxRequests = Math.max(maxRequests, requestCounts.get(ceil));
+                    requestCounts[ceil]++;
+                    maxRequests = Math.max(maxRequests, requestCounts[ceil]);
                 }
                 else
                 {
                     // check for the first entry in set (wrapping around)
                     Integer floor = available.first();
+                    available.remove(floor);
                     serverStatus.add(new int[] { currentLoad + currentArrival, floor });
-                    requestCounts.put(floor, requestCounts.get(floor) + 1);
-                    maxRequests = Math.max(maxRequests, requestCounts.get(floor));
+                    requestCounts[floor]++;
+                    maxRequests = Math.max(maxRequests, requestCounts[floor]);
                 }
             }
         }
         List<Integer> ans = new ArrayList<Integer>();
-        for(Map.Entry<Integer,Integer> entry : requestCounts.entrySet())
+        for(int i=0; i<k; i++)
         {
-            if(entry.getValue() == maxRequests)
+            if(requestCounts[i] == maxRequests)
             {
-                ans.add(entry.getKey());
+                ans.add(i);
             }
         }
         return ans;
