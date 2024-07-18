@@ -2,30 +2,24 @@ class Solution {
     public boolean checkValidString(String s) {
         int openings = 0;
         int closings = 0;
-        int stars = 0;
         int n = s.length();
         for(char c : s.toCharArray())
         {
-            if(c == '(')
-            {
-                openings++;
-            }
-            else if(c == ')')
+            if(c == ')')
             {
                 closings++;
             }
             else
             {
-                stars++;
+                openings++;
             }
-            if(closings > openings + stars)
+            if(closings > openings)
             {
                 return false;
             }
         }
         openings = 0;
         closings = 0;
-        stars = 0;
         for(int i=n-1; i>=0; i--)
         {
             char c = s.charAt(i);
@@ -33,15 +27,11 @@ class Solution {
             {
                 openings++;
             }
-            else if(c == ')')
+            else
             {
                 closings++;
             }
-            else
-            {
-                stars++;
-            }
-            if(openings > closings + stars)
+            if(openings > closings)
             {
                 return false;
             }
