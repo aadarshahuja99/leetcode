@@ -52,7 +52,6 @@ class Solution {
         {
             int last = start;
             int[] endElement = data.get(totalNums-1);
-            int end = totalNums-1;
             while(map.size() == k)
             {
                 int[] startElement = data.get(start);
