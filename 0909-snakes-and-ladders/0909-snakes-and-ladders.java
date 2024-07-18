@@ -1,7 +1,7 @@
 class Solution {
     public int snakesAndLadders(int[][] board) {
         // do not over-complicate your answers.
-        // approach: apply BFS from (n-1,0) to  (0,0). 0-1 BFS will be sufficient. Also, the same node should not be visited twice. If I have already reach 13 from 17 at an earlier timestamp, then there is no need for adding 13 to the queue again for BFS
+        // approach: apply BFS from (n-1,0) to (0,0). 0-1 BFS will be sufficient. Also, the same node should not be visited twice. If I have already reach 13 from 17 at an earlier timestamp, then there is no need for adding 13 to the queue again for BFS
         Queue<int[]> queue = new LinkedList<>();
         int startRow = board.length-1;
         int startColumn = 0;
@@ -41,8 +41,10 @@ class Solution {
     {
         if(((value - 1)/n)%2 == 0)
         {
+            // for even numbered rows, col will be (val-1)%n. Think of n=10 and val = 21
             return new int[] { n-1 - ((value-1)/n), (value-1)%n };
         }
+        // for odd numbered rows, the col vals will be reversed
         return new int[] { n-1 - ((value-1)/n), (n-1) - (value-1)%n };
     }
 }
