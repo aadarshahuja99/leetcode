@@ -1,47 +1,31 @@
 class Solution {
     public long maximumSubarraySum(int[] nums, int k) {
-        int i=0;
-        int j=0;
+        int start = 0;
+        int end = 0;
         int n = nums.length;
-        long[] pre = new long[n];
-        pre[0] = (long)nums[0];
-        for(int it=1; it<n; it++)
+        long sum = 0l;
+        HashMap<Integer,Integer> map = new HashMap<>();
+        long ans = 0l;
+        while(end < n)
         {
-            pre[it] = pre[it-1] + (long)nums[it];
-        }
-        HashMap<Integer,Integer> countMap = new HashMap<>();
-        int numberOfRepeatingElements = 0;
-        long ans = 0;
-        while(j < n)
-        {
-            if(j-i < k)
+            sum += nums[end]*1l;
+            map.put(nums[end], map.getOrDefault(nums[end], 0) + 1);
+            if(end - start + 1 == k)
             {
-                countMap.put(nums[j], countMap.getOrDefault(nums[j], 0) + 1);
-                if(countMap.get(nums[j]) == 2)
+                if(map.size() == k)
                 {
-                    numberOfRepeatingElements++;
+                    // System.out.println(sum+" "+end+" "+start);
+                    ans = Math.max(ans, sum);
                 }
-                j++;
+                map.put(nums[start], map.getOrDefault(nums[start], 0) - 1);
+                if(map.get(nums[start]) == 0)
+                {
+                    map.remove(nums[start]);
+                }
+                sum -= nums[start]*1l;
+                start++;
             }
-            else if(j-i == k)
-            {
-                if(numberOfRepeatingElements == 0)
-                {
-                    long currentSum = pre[j-1] - pre[i] + nums[i];
-                    ans = Math.max(currentSum, ans);
-                }
-                countMap.put(nums[i], countMap.get(nums[i]) - 1);
-                if(countMap.get(nums[i]) == 1)
-                {
-                    numberOfRepeatingElements--;
-                }
-                i++;
-            }
-        }
-        if(numberOfRepeatingElements == 0)
-        {
-            long currentSum = pre[j-1] - pre[i] + nums[i];
-            ans = Math.max(currentSum, ans);
+            end++;
         }
         return ans;
     }
