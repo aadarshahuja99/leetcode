@@ -1,47 +1,40 @@
 class Solution {
     public int minimumObstacles(int[][] grid) {
-        // apply dijkstra's algorithm
+        // dijkstra
         int m = grid.length;
         int n = grid[0].length;
-        int[][] distances = new int[m][n];
-        int[] dr = new int[] { 0,1,0,-1 };
-        int[] dc = new int[] { 1,0,-1,0 };
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>() {
-            public int compare(int[] a, int[] b)
-            {
-                return a[2] - b[2];
-            }
+        int[][] cost = new int[m][n];
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> {
+            return a[2] - b[2];
         });
-        for(int[] row : distances)
-        {
-            Arrays.fill(row,Integer.MAX_VALUE);
-        }
-        pq.add(new int[] { 0,0,0 });
+        boolean[][] v = new boolean[m][n];
+        pq.add(new int[] { 0, 0, 0 });
+        int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}};
         while(pq.size() > 0)
         {
-            var top = pq.poll();
-            var row = top[0];
-            var col = top[1];
-            int currentDistance = top[2];
-            for(int i=0; i<4; i++)
+            int[] top = pq.poll();
+            int r = top[0];
+            int c = top[1];
+            int current = top[2];
+            // System.out.println(current+" for "+r+" "+c);
+            if(v[r][c])
             {
-                int newRow = dr[i] + row;
-                int newCol = dc[i] + col;
-                int candidateDistance = currentDistance;
-                if(newRow >= 0 && newRow < m && newCol >= 0 && newCol <n)
+                continue;
+            }
+            cost[r][c] = current;
+            v[r][c] = true;
+            for(int[] d : dirs)
+            {
+                int nr = r + d[0];
+                int nc = c + d[1];
+                if(nr < 0 || nr == m || nc < 0 || nc == n || v[nr][nc])
                 {
-                    if(grid[newRow][newCol] == 1)
-                    {
-                        candidateDistance += 1;
-                    }
-                    if(candidateDistance < distances[newRow][newCol])
-                    {
-                        distances[newRow][newCol] = candidateDistance;
-                        pq.add(new int[] { newRow, newCol, candidateDistance });
-                    }
+                    continue;
                 }
+                int addedCost = grid[nr][nc];
+                pq.add(new int[] { nr, nc, addedCost + current });
             }
         }
-        return distances[m-1][n-1];
+        return cost[m-1][n-1];
     }
 }
