@@ -48,13 +48,11 @@ class Solution {
         }
         int moves = 0;
         Queue<Integer> queue = new LinkedList<>();
-        boolean[] vis = new boolean[n];
         for(int i=0; i<n; i++)
         {
             if(deg[i] == 1)
             {
                 queue.add(i);
-                vis[i] = true;
             }
         }
         List<Integer> res = new ArrayList<>();
@@ -69,14 +67,9 @@ class Solution {
                 // System.out.println("added "+top);
                 for(int node : adjList.get(top))
                 {
-                    if(vis[node])
-                    {
-                        continue;
-                    }
                     deg[node]--;
                     if(deg[node] == 1)
                     {
-                        vis[node] = true;
                         queue.add(node);
                     }
                 }
