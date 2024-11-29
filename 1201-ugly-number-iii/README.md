@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/ugly-number-iii">1201. Ugly Number III</a></h2><h3>Medium</h3><hr><p>An <strong>ugly number</strong> is a positive integer that is divisible by <code>a</code>, <code>b</code>, or <code>c</code>.</p>
+<h2><a href="https://leetcode.com/problems/ugly-number-iii/">1201. Ugly Number III</a></h2><h3>Medium</h3><hr><p>An <strong>ugly number</strong> is a positive integer that is divisible by <code>a</code>, <code>b</code>, or <code>c</code>.</p>
 
 <p>Given four integers <code>n</code>, <code>a</code>, <code>b</code>, and <code>c</code>, return the <code>n<sup>th</sup></code> <strong>ugly number</strong>.</p>
 
