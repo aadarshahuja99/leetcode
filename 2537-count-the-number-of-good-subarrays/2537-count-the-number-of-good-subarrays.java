@@ -25,19 +25,6 @@ class Solution {
                 ans += 1l*(n - right + 1)*(leftSegmentLength + 1);
             }
         }
-        if(currentCount >= k)
-        {
-            // ans += 1l*(n-right+1);
-            int start = left;
-            while(currentCount >= k)
-            {
-                currentCount -= counts.get(nums[left]) > 1 ? counts.get(nums[left]) - 1 : 0;
-                counts.put(nums[left], counts.get(nums[left]) - 1);
-                left++;
-            }
-            int leftSegmentLength = left - start - 1;
-            ans += 1l*(n - right + 1)*(leftSegmentLength + 1);
-        }
         return ans;
     }
 }
