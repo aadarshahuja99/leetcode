@@ -1,6 +1,5 @@
 class Solution {
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
-        int[] pointers = new int[nums1.length + nums2.length];
         ArrayList<List<Integer>> answers = new ArrayList<>();
         PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
             public int compare(int[] combination1, int[] combination2)
