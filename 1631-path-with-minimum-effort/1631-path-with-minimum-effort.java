@@ -1,75 +1,46 @@
 class Solution {
     public int minimumEffortPath(int[][] heights) {
-        if(heights.length == 1 && heights[0].length == 1)
+        int m = heights.length;
+        int n = heights[0].length;
+        int[][] dist = new int[m][n];
+        for(int[] row : dist)
         {
-            return 0;
+            Arrays.fill(row, Integer.MAX_VALUE);
         }
-        int[][] effort = new int[heights.length][heights[0].length];
-        for(int[] effortRow : effort)
-        {
-            Arrays.fill(effortRow,Integer.MAX_VALUE);
-        }
-        effort[0][0] = 0;
-        PriorityQueue<QueueElement> pq = new PriorityQueue<QueueElement>(new Comparator<QueueElement>() {
-    public int compare(QueueElement n1, QueueElement n2) {
-        return n1.getDistance() - n2.getDistance();
-    }
-});
-        pq.add(new QueueElement(0,0,0));
-        int ans = Integer.MAX_VALUE;
+        dist[0][0] = 0;
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> {
+            return a[2] - b[2];
+        });
+        pq.add(new int[] { 0, 0, 0 });
+        int[][] DIRS = {{0,1}, {1,0}, {0,-1}, {-1,0}};
+        boolean[][] v = new boolean[m][n];
         while(pq.size() > 0)
         {
-            QueueElement top = pq.poll();
-            int row = top.getRow();
-            int col = top.getCol();
-            int dist = top.getDistance();
-            int[] deltaRow = {1, 0, -1, 0};
-            int[] deltaCol = {0, 1, 0, -1};
-            for(int i=0;i<4;i++)
+            var top = pq.poll();
+            int d = top[2];
+            int r = top[0];
+            int c = top[1];
+            if(r == m-1 && c == n-1)
             {
-                int newRow = row+deltaRow[i];
-                int newCol = col+deltaCol[i];
-                if(newRow >= 0 && newRow < heights.length && newCol >= 0 && newCol < heights[0].length)
+                return d;
+            }
+            if(v[r][c])
+            {
+                continue;
+            }
+            v[r][c] = true;
+            for(int[] dir : DIRS)
+            {
+                int nr = r+dir[0];
+                int nc = c+dir[1];
+                if(nr < 0 || nr == m || nc < 0 || nc == n || v[nr][nc])
                 {
-                    // this is to compute the max effort on the current path
-                    int newEffort = Math.max(Math.abs(heights[newRow][newCol] - heights[row][col]), dist);
-                    // this if block ensures that the globally min effort value is stored in each cell
-                    if(newEffort < effort[newRow][newCol])
-                    {
-                        effort[newRow][newCol] = newEffort;
-                        pq.add(new QueueElement(newRow,newCol,effort[newRow][newCol]));
-                    }
+                    continue;
                 }
+                int current = Math.abs(heights[nr][nc] - heights[r][c]);
+                pq.add(new int[] { nr, nc, Math.max(current, d) });
             }
         }
-        return effort[heights.length-1][heights[0].length-1];
-    }
-    class QueueElement
-    {
-        private int row;
-        private int col;
-        private int dist;
-        public QueueElement(int r, int c, int d)
-        {
-            row = r;
-            col = c;
-            dist = d;
-        }
-        public void setDistance(int d)
-        {
-            dist = d;
-        }
-        public int getDistance()
-        {
-            return dist;
-        }
-        public int getRow()
-        {
-            return row;
-        }
-        public int getCol()
-        {
-            return col;
-        }
+        return -1;
     }
 }
