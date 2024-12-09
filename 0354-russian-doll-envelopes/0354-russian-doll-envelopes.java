@@ -18,15 +18,17 @@ class Solution {
             if(envelopes[i][1] > nums[ans-1])
             {
                 nums[ans] = envelopes[i][1];
+                System.out.println("added "+envelopes[i][0]+","+envelopes[i][1]);
                 ans++;
             }
             else
             {
                 int idx = ceil(envelopes[i][1], nums, ans);
-                if(idx == -1)
-                {
-                    continue;
-                }
+                // if(idx == -1)
+                // {
+                //     continue;
+                // }
+                // System.out.println("swapped "+envelopes[i][0]+","+envelopes[i][1]+" with "+nums[idx]);
                 // System.out.println("idx for i: "+i+" = "+idx);
                 nums[idx] = envelopes[i][1];
             }
