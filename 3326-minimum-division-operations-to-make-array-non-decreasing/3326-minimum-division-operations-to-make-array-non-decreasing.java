@@ -27,7 +27,6 @@ class Solution {
     }
     private int getProperDivisionAnswer(int num)
     {
-        int ans = -1;
         int temp = num;
         for(int p=2; p*p <= temp; p++)
         {
@@ -35,16 +34,8 @@ class Solution {
             {
                 return p;
             }
-            while(num%p == 0)
-            {
-                num = num/p;
-            }
-        }
-        if(num > 1)
-        {
-            ans = num;
         }
         // System.out.println(ans+" for "+num);
-        return ans;
+        return num;
     }
 }
