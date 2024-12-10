@@ -29,7 +29,7 @@ class Solution {
             int mid1 = start + (end - start)/2;
             int mid2 = left - mid1 - 2;
 
-            int l1 = mid1 < 0 ? Integer.MIN_VALUE : smaller[mid1];
+            int l1 = smaller[mid1];
             int l2 = mid2 < 0 ? Integer.MIN_VALUE : larger[mid2];
             int r1 = mid1+1 >= n1 ? Integer.MAX_VALUE : smaller[mid1+1];
             int r2 = mid2+1 >= n2 ? Integer.MAX_VALUE : larger[mid2+1];
