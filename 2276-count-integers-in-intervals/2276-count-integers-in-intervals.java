@@ -1,13 +1,13 @@
 class CountIntervals {
     TreeMap<Integer,Integer> map;
-    int integers;
+    int uniqueIntegersPresentOverall;
     public CountIntervals() {
         map = new TreeMap<>();
-        integers = 0;
+        uniqueIntegersPresentOverall = 0;
     }
     
     public void add(int left, int right) {
-        integers += insert(left, right);
+        uniqueIntegersPresentOverall += insert(left, right);
     }
 
     private int insert(int start, int end)
@@ -30,7 +30,7 @@ class CountIntervals {
     }
 
     public int count() {
-        return integers;
+        return uniqueIntegersPresentOverall;
     }
 }
 
