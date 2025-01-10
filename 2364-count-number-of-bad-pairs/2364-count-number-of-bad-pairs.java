@@ -1,23 +1,14 @@
 class Solution {
     public long countBadPairs(int[] nums) {
-        // rephrase the inequality. Find the number of pairs that satisfy the euality and subtract them from n(n-1)/2
         HashMap<Integer,Integer> map = new HashMap<>();
-        long goodPairs = 0;
-        long n = nums.length;
+        int n = nums.length;
+        // map.put(nums[0], 1);
+        long ans = 0;
         for(int i=0; i<n; i++)
         {
-            int candidate = nums[i]-i;
-            if(map.containsKey(candidate))
-            {
-                goodPairs += map.get(candidate);
-                map.put(candidate, map.get(candidate)+1);
-            }
-            else
-            {
-                map.put(candidate,1);
-            }
+            ans += i*1l - map.getOrDefault(nums[i] - i, 0)*1l;
+            map.put(nums[i] - i, map.getOrDefault(nums[i] - i, 0) + 1);
         }
-        long totalPairs = n*(n-1)/2;
-        return totalPairs - goodPairs;
+        return ans;
     }
 }
