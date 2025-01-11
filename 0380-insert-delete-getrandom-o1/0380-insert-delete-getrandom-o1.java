@@ -1,12 +1,10 @@
 class RandomizedSet {
     HashMap<Integer,Integer> map;
     List<Integer> list;
-    int active;
     Random r;
     public RandomizedSet() {
         map = new HashMap<>();
         list = new ArrayList<>();
-        active = 0;
         r = new Random();
     }
     
@@ -17,16 +15,6 @@ class RandomizedSet {
         }
         list.add(val);
         map.put(val, list.size() - 1);
-        // System.out.println();
-        // for(int i=0; i<list.size(); i++)
-        // {
-        //     System.out.print(list.get(i)+" ");
-        //     if(i < active)
-        //     {
-        //         System.out.print(" act ");
-        //     }
-        // }
-        // System.out.println(active);
         return true;
     }
     
@@ -36,17 +24,12 @@ class RandomizedSet {
             return false;
         }
         int index = map.get(val);
-        // System.out.println(index+" "+list.size());
         int temp = list.get(list.size()-1);
         list.set(list.size()-1, val);
         list.set(index, temp);
         map.put(temp, index);
         map.remove(val);
         list.remove(list.size() - 1);
-        // if(active > 0)
-        // {
-        //     System.out.println("2: "+list.get(active-1)+" "+val);
-        // }
         return true;
     }
     
