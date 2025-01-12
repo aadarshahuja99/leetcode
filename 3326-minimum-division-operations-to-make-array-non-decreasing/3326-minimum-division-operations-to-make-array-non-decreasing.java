@@ -28,7 +28,7 @@ class Solution {
     private int getProperDivisionAnswer(int num)
     {
         int temp = num;
-        for(int p=2; p*p <= temp; p++)
+        for(int p=3; p*p <= temp; p++)
         {
             if(num%p == 0)
             {
