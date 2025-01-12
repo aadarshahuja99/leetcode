@@ -13,6 +13,7 @@ class Solution {
         int ans = getAns(0, k, digits, s, cache);
         return ans;
     }
+    // front partition dp
     private int getAns(int current, int k, int digits, String s, int[] cache)
     {
         if(current == s.length())
@@ -27,7 +28,7 @@ class Solution {
         long val = 0;
         for(int i=current; i<Math.min(current + digits, s.length()); i++)
         {
-            val = 10*val + (s.charAt(i) - 48)*1L;
+            val = 10*val + (s.charAt(i) - '0')*1L;
             if(val <= k && (i+1 == s.length() || s.charAt(i+1) != '0'))
             {
                 ways = (ways%mod + getAns(i+1, k, digits, s, cache)%mod)%mod;
