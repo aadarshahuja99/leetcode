@@ -12,7 +12,7 @@ class Solution {
             // System.out.println(skill[i]+" "+skill[j]+" "+desiredSum);
             if(current != desiredSum)
             {
-                return -1l;
+                return -1;
             }
             ans += skill[i]*skill[j];
             i++;
