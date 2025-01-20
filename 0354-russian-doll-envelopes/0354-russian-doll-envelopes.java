@@ -18,7 +18,7 @@ class Solution {
             if(envelopes[i][1] > nums[ans-1])
             {
                 nums[ans] = envelopes[i][1];
-                System.out.println("added "+envelopes[i][0]+","+envelopes[i][1]);
+                // System.out.println("added "+envelopes[i][0]+","+envelopes[i][1]);
                 ans++;
             }
             else
