@@ -35,13 +35,9 @@ class Solution {
             int val2 = nr*grid[0].length + nc;
             if(vis[nr][nc])
             {
-                if(ds.find(val1) == ds.find(val2))
-                {
-                    // System.out.println("found for "+nr+", "+nc+" and "+r+", "+c);
-                    return true;
-                }
+                // System.out.println("found for "+nr+", "+nc+" and "+r+", "+c);
+                return true;
             }
-            ds.union(val1, val2);
             if(dfs(nr, nc, r, c, vis, grid))
             {
                 return true;
