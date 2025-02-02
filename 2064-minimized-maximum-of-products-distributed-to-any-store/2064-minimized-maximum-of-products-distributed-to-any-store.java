@@ -1,39 +1,46 @@
 class Solution {
     public int minimizedMaximum(int n, int[] quantities) {
-        Arrays.sort(quantities);
-        long totalProducts = 0;
-        int numberOfProducts = quantities.length;
-        for(int i=0; i<numberOfProducts; i++)
+        int max = 0;
+        for(int q : quantities)
         {
-            totalProducts += 1L*quantities[i];
+            max = Math.max(max, q);
         }
-        long start = 1;
-        long end  = totalProducts;
-        long ans = -1;
-        // System.out.println(quantities.length + " ");
-        while(start <= end)
+        int ans = 0;
+        int min = 1;
+        while(min <= max)
         {
-            long mid = start + (end-start)/2; 
-            if(check(mid, quantities, n, numberOfProducts))
+            int m = min + (max - min)/2;
+            if(check(m, n, quantities))
             {
-                end = mid-1;
-                ans = mid;
+                ans = m;
+                max = m-1;
             }
             else
             {
-                start = mid+1;
+                min = m+1;
             }
         }
-        return (int)ans;
+        return ans;
     }
-    private boolean check(long guess, int[] quantities, int n, int numberOfProducts)
+    private boolean check(int guess, int n, int[] q)
     {
-        long numberOfStoresNeeded = 0;
-        for(int i=0; i<numberOfProducts; i++)
+        int idx = 0;
+        int curr = q[idx];
+        for(int i=0; i<n; )
         {
-            numberOfStoresNeeded += (long)Math.ceil((double)quantities[i]/guess);
+            int stores = curr%guess == 0 ? curr/guess : (curr/guess)+1;
+            i += stores;
+            idx++;
+            if(idx == q.length && i<=n)
+            {
+                return true;
+            }
+            if(idx == q.length)
+            {
+                return false;
+            }
+            curr = q[idx];
         }
-        // System.out.println(guess+" "+(numberOfStoresNeeded <= n));
-        return numberOfStoresNeeded <= n;
+        return false;
     }
 }
