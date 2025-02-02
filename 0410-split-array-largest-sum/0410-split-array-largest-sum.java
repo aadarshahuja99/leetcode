@@ -38,14 +38,6 @@ class Solution {
                 // System.out.println("sum = "+sum+" for element: "+count+" idx: "+idx+" current: "+current);
                 idx++;
             }
-            if(idx == nums.length)
-            {
-                if(sum <= current)
-                {
-                    count++;
-                    break;
-                }
-            }
             count++;
         }
         // System.out.println("count = "+count+" for current: "+current);
