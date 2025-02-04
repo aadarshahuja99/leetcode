@@ -7,14 +7,9 @@ class TimeMap {
     public void set(String key, String value, int timestamp) {
         if(!map.containsKey(key))
         {
-            TreeMap<Integer,String> valuesMap = new TreeMap<>();
-            valuesMap.put(timestamp, value);
-            map.put(key, valuesMap);
+            map.put(key, new TreeMap<>());
         }
-        else
-        {
-            map.get(key).put(timestamp, value);
-        }
+        map.get(key).put(timestamp, value);
     }
     
     public String get(String key, int timestamp) {
@@ -22,12 +17,12 @@ class TimeMap {
         {
             return "";
         }
-        var floor = map.get(key).floorEntry(timestamp);
-        if(floor == null)
+        var floorEntry = map.get(key).floorEntry(timestamp);
+        if(floorEntry == null)
         {
             return "";
         }
-        return floor.getValue();
+        return floorEntry.getValue();
     }
 }
 
