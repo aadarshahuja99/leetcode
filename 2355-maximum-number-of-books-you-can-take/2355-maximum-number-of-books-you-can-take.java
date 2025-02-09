@@ -1,9 +1,7 @@
 class Solution {
     
-    int[] books;
     long[] cache;
     public long maximumBooks(int[] books) {
-        this.books = books;
         cache = new long[books.length];
 
         Stack<Integer> booksShelvesToCheck = new Stack<>();
