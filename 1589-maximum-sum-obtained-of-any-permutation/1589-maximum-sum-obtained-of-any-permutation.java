@@ -49,7 +49,7 @@ class Solution {
         while(pq.size() > 0)
         {
             // System.out.println(pq.peek()+" "+counts[it]);
-            ans = (ans%mod + (((1l*counts[it])%mod)*((pq.poll()*1l)%mod))%mod)%mod;
+            ans = (ans%mod + (((1l*counts[it]))*((pq.poll()*1l)))%mod)%mod;
             it++;
         }
         return (int)ans;
