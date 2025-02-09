@@ -1,10 +1,7 @@
 class Solution {
     
     int[] books;
-    long[] cache;    
-
-    int MAX_VALUE = 100_000;
-    
+    long[] cache;
     public long maximumBooks(int[] books) {
         this.books = books;
         cache = new long[books.length];
