@@ -6,7 +6,7 @@ class Solution {
         long ans = 0;
         for(int i=0; i<n; i++)
         {
-            ans += i*1l - map.getOrDefault(nums[i] - i, 0)*1l;
+            ans += i - map.getOrDefault(nums[i] - i, 0);
             map.put(nums[i] - i, map.getOrDefault(nums[i] - i, 0) + 1);
         }
         return ans;
