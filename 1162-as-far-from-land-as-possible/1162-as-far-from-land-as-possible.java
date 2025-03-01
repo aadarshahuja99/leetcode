@@ -40,7 +40,7 @@ class Solution {
                     {
                         continue;
                     }
-                    if(dist[nr][nc] > steps)
+                    if(dist[nr][nc] == Integer.MAX_VALUE)
                     {
                         dist[nr][nc] = steps;
                         q.add(new int[] { nr, nc });
