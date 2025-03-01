@@ -7,10 +7,10 @@ class Solution {
         }
         ArrayList<List<String>> output = new ArrayList<>();
         Trie current = trie;
-        String searched = "";
+        StringBuilder searched = new StringBuilder("");
         for(char c : searchWord.toCharArray())
         {
-            searched += c;
+            searched.append(c);
             var ans = trie.search(c, current, searched);
             current = ans.getKey();
             output.add(ans.getValue());
@@ -40,7 +40,7 @@ class Solution {
             }
             current.isEndOfWord = true;
         }
-        public Pair<Trie,List<String>> search(char c, Trie begin, String last)
+        public Pair<Trie,List<String>> search(char c, Trie begin, StringBuilder str)
         {
             Trie current = begin;
             int index = c - 97;
@@ -51,13 +51,14 @@ class Solution {
             else
             {
                 current = null;
-                return new Pair<Trie,List<String>>(null, new ArrayList<String>());
+                return new Pair<Trie,List<String>>(current, new ArrayList<String>());
             }
             List<String> result = new ArrayList<String>();
-            dfs(current, last, result);
-            return new Pair<Trie,List<String>>(current, result);
+            Trie toBeReturned = current;
+            dfs(current, str, result);
+            return new Pair<Trie,List<String>>(toBeReturned, result);
         }
-        private void dfs(Trie current, String str, List<String> result)
+        private void dfs(Trie current, StringBuilder str, List<String> result)
         {
             if(result.size() == 3)
             {
@@ -65,13 +66,15 @@ class Solution {
             }
             if(current.isEndOfWord)
             {
-                result.add(str);
+                result.add(str.toString());
             }
             for(int i=0; i<26; i++)
             {
                 if(current.references[i] != null)
                 {
-                    dfs(current.references[i], str+(char)(97+i), result);
+                    str.append((char)(i + 97));
+                    dfs(current.references[i], str, result);
+                    str.deleteCharAt(str.length() - 1);
                 }
             }
         }
