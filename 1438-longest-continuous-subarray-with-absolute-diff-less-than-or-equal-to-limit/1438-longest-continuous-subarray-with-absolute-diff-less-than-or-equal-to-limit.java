@@ -6,7 +6,7 @@ class Solution {
         int j = 0;
         int n = nums.length;
         int ans = 1;
-        // for the current subarray, calculate its maximum and minimum using 
+        // for the current subarray, calculate its maximum and minimum using queue
         while(j < n)
         {
             while(minQueue.size() > 0 && minQueue.peekLast() > nums[j])
@@ -48,7 +48,7 @@ class Solution {
             }
             j++;
         }
-        ans = Math.max(ans, j-i);
+        // ans = Math.max(ans, j-i);
         return ans;
     }
 }
