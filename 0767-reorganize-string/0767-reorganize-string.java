@@ -1,37 +1,43 @@
 class Solution {
+    // most efficient solution in linear time from editorial (for reference)
     public String reorganizeString(String s) {
-        StringBuilder sb = new StringBuilder();
-        PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a,b) -> {
-            return b[1] - a[1];
-        });
-        int[] last = {-1, -1};
-        int[] counts = new int[26];
-        for(char c : s.toCharArray())
-        {
-            counts[c-'a']++;
+        var charCounts = new int[26];
+        for (char c : s.toCharArray()) {
+            charCounts[c - 'a']++;
         }
-        for(int i=0; i<26; i++)
-        {
-            if(counts[i] > 0)
-            {
-                maxHeap.add(new int[] { 'a'+i, counts[i] });
+        int maxCount = 0, letter = 0;
+        for (int i = 0; i < charCounts.length; i++) {
+            if (charCounts[i] > maxCount) {
+                maxCount = charCounts[i];
+                letter = i;
             }
         }
-        while(maxHeap.size() > 0)
-        {
-            int[] top = maxHeap.poll();
-            sb.append((char)top[0]);
-            top[1]--;
-            if(last[0] != -1 && last[1] > 0)
-            {
-                maxHeap.add(last);
-            }
-            last = top;
-        }
-        if(sb.length() < s.length())
-        {
+        if (maxCount > (s.length() + 1) / 2) {
             return "";
         }
-        return sb.toString();
+        var ans = new char[s.length()];
+        int index = 0;
+
+        // Place the most frequent letter
+        while (charCounts[letter] > 0) {
+            ans[index] = (char) (letter + 'a');
+            index += 2;
+            charCounts[letter]--;
+        }
+
+        // Place rest of the letters in any order
+        for (int i = 0; i < charCounts.length; i++) {
+            while (charCounts[i] > 0) {
+                // this if condition will only be executed ONCE if the early empty return condition does not happen
+                if (index >= s.length()) {
+                    index = 1;
+                }
+                ans[index] = (char) (i + 'a');
+                index += 2;
+                charCounts[i]--;
+            }
+        }
+
+        return String.valueOf(ans);
     }
 }
