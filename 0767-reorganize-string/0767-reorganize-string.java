@@ -1,7 +1,7 @@
 class Solution {
     public String reorganizeString(String s) {
         StringBuilder sb = new StringBuilder();
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> {
+        PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a,b) -> {
             return b[1] - a[1];
         });
         int[] last = {-1, -1};
@@ -14,17 +14,17 @@ class Solution {
         {
             if(counts[i] > 0)
             {
-                pq.add(new int[] { 'a'+i, counts[i] });
+                maxHeap.add(new int[] { 'a'+i, counts[i] });
             }
         }
-        while(pq.size() > 0)
+        while(maxHeap.size() > 0)
         {
-            int[] top = pq.poll();
+            int[] top = maxHeap.poll();
             sb.append((char)top[0]);
             top[1]--;
             if(last[0] != -1 && last[1] > 0)
             {
-                pq.add(last);
+                maxHeap.add(last);
             }
             last = top;
         }
