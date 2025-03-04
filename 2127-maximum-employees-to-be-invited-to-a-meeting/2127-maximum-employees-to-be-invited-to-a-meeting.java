@@ -36,8 +36,10 @@ class Solution {
                     ++length;
                 }
                 if (length == 2) {
+                    // if the current cycle has a length of 2, simply take the 2 loop cycle and add the longest paths that end at each of the endpoints of the loop
                     result2 += 2 + dp[i] + dp[favorite[i]];
                 } else {
+                    // if more than 2 size loop exists, we can only consider this as a possible solution
                     result = Math.max(result, length);
                 }
             }
