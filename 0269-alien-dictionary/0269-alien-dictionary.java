@@ -22,8 +22,9 @@ class Solution {
         {
             adjList.add(new ArrayList<>());
         }
-        HashMap<Integer,Integer> indegree = new HashMap<>();
+        HashSet<Integer> letters = new HashSet<>();
         HashSet<Integer> otherLetters = new HashSet<>(); 
+        int[] indegree = new int[26];
         for(int i=0; i<n-1; i++)
         {
             int j=0;
@@ -34,19 +35,19 @@ class Solution {
             String secondWord = words[i+1];
             while(j < firstWordLength && k < secondWordLength)
             {
-                int firstIndex = firstWord.charAt(j) - 97;
-                int secondIndex = secondWord.charAt(k) - 97;
-                if(firstWord.charAt(j) != secondWord.charAt(k))
+                int firstIndex = firstWord.charAt(j) - 'a';
+                int secondIndex = secondWord.charAt(k) - 'a';
+                if(firstIndex != secondIndex)
                 {
                     adjList.get(firstIndex).add(secondIndex);
-                    indegree.put(firstIndex, indegree.getOrDefault(firstIndex, 0));
-                    indegree.put(secondIndex, indegree.getOrDefault(secondIndex, 0) + 1);
+                    indegree[secondIndex]++;
                     otherLetters.remove(firstIndex);
                     otherLetters.remove(secondIndex);
+                    letters.add(firstIndex);
+                    letters.add(secondIndex);
                     break;
                 }
                 otherLetters.add(firstIndex);
-                otherLetters.add(secondIndex);
                 j++;
                 k++;
             }
@@ -56,20 +57,20 @@ class Solution {
             }
             while(j < firstWordLength)
             {
-                otherLetters.add(firstWord.charAt(j) - 97);
+                otherLetters.add(firstWord.charAt(j) - 'a');
                 j++;
             }
 
             while(k < secondWordLength)
             {
-                otherLetters.add(secondWord.charAt(k) - 97);
+                otherLetters.add(secondWord.charAt(k) - 'a');
                 k++;
             }
         }
         Queue<Integer> bfsQueue = new LinkedList<>();
-        for(int key : indegree.keySet())
+        for(int key : letters)
         {
-            if(indegree.get(key) == 0)
+            if(indegree[key] == 0)
             {
                 bfsQueue.add(key);
             }
@@ -80,15 +81,11 @@ class Solution {
         {
             var top = bfsQueue.poll();
             visited++;
-            sb.append((char)(top+97));
+            sb.append((char)(top+'a'));
             for(int node : adjList.get(top))
             {
-                if(indegree.get(node) == 0)
-                {
-                    continue;
-                }
-                indegree.put(node, indegree.get(node) - 1);
-                if(indegree.get(node) == 0)
+                indegree[node]--;
+                if(indegree[node] == 0)
                 {
                     bfsQueue.add(node);
                 }
@@ -96,12 +93,12 @@ class Solution {
         }
         for(int node : otherLetters)
         {
-            if(!indegree.containsKey(node))
+            if(!letters.contains(node))
             {
-                sb.append((char)(node + 97));
+                sb.append((char)(node + 'a'));
             }
         }
-        if(visited < indegree.size())
+        if(visited < letters.size())
         {
             return "";
         }
