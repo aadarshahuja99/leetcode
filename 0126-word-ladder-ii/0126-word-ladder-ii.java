@@ -59,7 +59,7 @@ class Solution {
             currentAns.remove(currentAns.size() - 1);
             return;
         }
-        for(String word : vis.get(current).words)
+        for(String word : vis.get(current).parents)
         {
             backTrack(word, ans, vis, currentAns, start);
         }
@@ -88,15 +88,15 @@ class Solution {
     class Element
     {
         int val;
-        HashSet<String> words;
+        HashSet<String> parents;
         public Element(int v)
         {
-            words = new HashSet<>();
+            parents = new HashSet<>();
             val = v;
         }
         public void addWord(String w)
         {
-            words.add(w);
+            parents.add(w);
         }
     }
 }
