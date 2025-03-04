@@ -35,14 +35,7 @@ class Solution {
             int newCol = col + deltaCol[i];
             if(newRow >= 0 && newRow < grid.length && newCol >= 0 && newCol < grid[0].length && grid[newRow][newCol] > grid[row][col])
             {
-                if(dp[newRow][newCol] == -1)
-                {
-                    max = Math.max(max, 1 + dfs(newRow,newCol,grid[row][col],grid,visited,dp));
-                }
-                else
-                {
-                    max = Math.max(max, 1 + dp[newRow][newCol]);
-                }
+                max = Math.max(max, 1 + dfs(newRow,newCol,grid[row][col],grid,visited,dp));
             }
         }
         dp[row][col] = max;
