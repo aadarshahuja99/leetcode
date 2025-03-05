@@ -33,10 +33,6 @@ class Solution {
             ans = endTime;
             for(int node : adjList.get(top[1]))
             {
-                if(indegree[node] == 0)
-                {
-                    continue;
-                }
                 indegree[node]--;
                 if(indegree[node] == 0)
                 {
