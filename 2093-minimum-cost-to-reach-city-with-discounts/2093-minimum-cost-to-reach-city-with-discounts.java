@@ -30,6 +30,10 @@ class Solution {
             int cost = top[1];
             int node = top[0];
             int discountsAvailable = top[2];
+            if(node == n-1)
+            {
+                return cost;
+            }
             for(int[] child : adjList.get(node))
             {
                 if(distances[child[0]][discountsAvailable] > cost + child[1])
@@ -46,11 +50,6 @@ class Solution {
                 }
             }
         }
-        int minCost = Integer.MAX_VALUE;
-        for(int i=0; i<=discounts; i++)
-        {
-            minCost = Math.min(minCost, distances[n-1][i]);
-        }
-        return minCost == Integer.MAX_VALUE ? -1 : minCost;
+        return -1;
     }
 }
