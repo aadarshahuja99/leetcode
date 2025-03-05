@@ -1,40 +1,69 @@
-class Solution {
+public class Solution {
+
+    // Directions for movement: right, left, down, up
+    private final int[][] directions = {
+        { 0, 1 },
+        { 0, -1 },
+        { 1, 0 },
+        { -1, 0 },
+    };
+
     public int minimumObstacles(int[][] grid) {
-        // dijkstra
-        int m = grid.length;
-        int n = grid[0].length;
-        int[][] cost = new int[m][n];
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> {
-            return a[2] - b[2];
-        });
-        boolean[][] v = new boolean[m][n];
-        pq.add(new int[] { 0, 0, 0 });
-        int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}};
-        while(pq.size() > 0)
-        {
-            int[] top = pq.poll();
-            int r = top[0];
-            int c = top[1];
-            int current = top[2];
-            // System.out.println(current+" for "+r+" "+c);
-            if(v[r][c])
-            {
-                continue;
-            }
-            cost[r][c] = current;
-            v[r][c] = true;
-            for(int[] d : dirs)
-            {
-                int nr = r + d[0];
-                int nc = c + d[1];
-                if(nr < 0 || nr == m || nc < 0 || nc == n || v[nr][nc])
-                {
-                    continue;
-                }
-                int addedCost = grid[nr][nc];
-                pq.add(new int[] { nr, nc, addedCost + current });
+        int m = grid.length, n = grid[0].length;
+
+        // Distance matrix to store the minimum obstacles removed to reach each cell
+        int[][] minObstacles = new int[m][n];
+
+        // Initialize all cells with a large value, representing unvisited cells
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                minObstacles[i][j] = Integer.MAX_VALUE;
             }
         }
-        return cost[m-1][n-1];
+
+        minObstacles[0][0] = 0;
+
+        Deque<int[]> deque = new ArrayDeque<>();
+        deque.add(new int[] { 0, 0, 0 }); // {obstacles, row, col}
+
+        while (!deque.isEmpty()) {
+            int[] current = deque.poll();
+            int obstacles = current[0], row = current[1], col = current[2];
+            if(row == m-1 && col == n-1)
+            {
+                return obstacles;
+            }
+
+            // Explore all four possible directions from the current cell
+            for (int[] dir : directions) {
+                int newRow = row + dir[0], newCol = col + dir[1];
+
+                if (
+                    isValid(grid, newRow, newCol) &&
+                    minObstacles[newRow][newCol] == Integer.MAX_VALUE
+                ) {
+                    if (grid[newRow][newCol] == 1) {
+                        // If it's an obstacle, add 1 to obstacles and push to the back
+                        minObstacles[newRow][newCol] = obstacles + 1;
+                        deque.addLast(
+                            new int[] { obstacles + 1, newRow, newCol }
+                        );
+                    } else {
+                        // If it's an empty cell, keep the obstacle count and push to the front
+                        minObstacles[newRow][newCol] = obstacles;
+                        deque.addFirst(new int[] { obstacles, newRow, newCol });
+                    }
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    // Helper method to check if the cell is within the grid bounds
+    private boolean isValid(int[][] grid, int row, int col) {
+        return (
+            row >= 0 && col >= 0 && row < grid.length && col < grid[0].length
+        );
     }
 }
