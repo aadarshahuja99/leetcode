@@ -1,72 +1,55 @@
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
-        if(n==1)
+        int visCount = 0;
+        ArrayList<ArrayList<int[]>> adj = new ArrayList<>();
+        for(int i=0; i<n; i++)
         {
-            return 0;
+            adj.add(new ArrayList<>());
         }
-        ArrayList<ArrayList<QueueElement>> adjList = new ArrayList<ArrayList<QueueElement>>();
-        for(int i=0;i<n;i++)
+        for(int[] edge : times)
         {
-            adjList.add(new ArrayList<QueueElement>());
+            adj.get(edge[0]-1).add(new int[] { edge[1]-1, edge[2] });
         }
-        for(int i=0; i<times.length; i++)
-        {
-            adjList.get(times[i][0]-1).add(new QueueElement(times[i][1]-1,times[i][2]));
-        }
-        PriorityQueue<QueueElement> pq = new PriorityQueue<QueueElement>(new Comparator<QueueElement>() {
-    public int compare(QueueElement n1, QueueElement n2) {
-        return n1.getDistance() - n2.getDistance();
-    }
-});
+        boolean[] vis = new boolean[n];
         int[] distances = new int[n];
-        Arrays.fill(distances,Integer.MAX_VALUE);
+        Arrays.fill(distances, Integer.MAX_VALUE);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> {
+            return a[1] - b[1];
+        });
         distances[k-1] = 0;
-        pq.add(new QueueElement(k-1,0));
+        pq.add(new int[] { k-1, 0 });
+        int maxDistance = 0;
         while(pq.size() > 0)
         {
-            QueueElement top = pq.poll();
-            int index = top.getIndex();
-            int dist = top.getDistance();
-            for(QueueElement node : adjList.get(index))
+            int[] top = pq.poll();
+            int current = top[0];
+            int dist = top[1];
+            // System.out.println("removed "+top[0]+", "+top[1]+" from pq");
+            if(vis[current])
             {
-                if(distances[node.getIndex()] > dist + node.getDistance())
+                continue;
+            }
+            maxDistance = Math.max(maxDistance, dist);
+            vis[current] = true;
+            visCount++;
+            for(int[] node : adj.get(current))
+            {
+                if(vis[node[0]])
                 {
-                    distances[node.getIndex()] = dist+node.getDistance();
-                    pq.add(new QueueElement(node.getIndex(),distances[node.getIndex()]));
+                    continue;
+                }
+                if(dist + node[1] < distances[node[0]])
+                {
+                    // System.out.println("pushing "+(dist + node[1])+" to pq for node "+node[0]);
+                    distances[node[0]] = dist + node[1];
+                    pq.add(new int[] { node[0], distances[node[0]] });
                 }
             }
         }
-        int max = Integer.MIN_VALUE;
-        for(int i=0; i<distances.length; i++)
+        if(visCount < n)
         {
-            if(distances[i] == Integer.MAX_VALUE)
-            {
-                return -1;
-            }
-            max = Math.max(max,distances[i]);
+            return -1;
         }
-        return max;
-    }
-    class QueueElement
-    {
-        private int index;
-        private int dist;
-        public QueueElement(int i, int d)
-        {
-            index = i;
-            dist = d;
-        }
-        public void setDistance(int d)
-        {
-            dist = d;
-        }
-        public int getDistance()
-        {
-            return dist;
-        }
-        public int getIndex()
-        {
-            return index;
-        }
+        return maxDistance;
     }
 }
