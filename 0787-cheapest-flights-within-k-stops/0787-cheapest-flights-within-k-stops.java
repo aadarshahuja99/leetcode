@@ -13,7 +13,7 @@ class Solution {
         Arrays.fill(distances,Integer.MAX_VALUE);
         distances[src] = 0;
         Queue<int[]> queue = new LinkedList<>();
-        // node, node, k
+        // node, distance, k
         queue.add(new int[] { src, 0, k });
         while(queue.size() > 0)
         {
