@@ -17,7 +17,7 @@ class Solution {
         pq.add(new long[] { 0, 0, 0l });
         distance[0][0] = 0;
         boolean[][] vis = new boolean[rows][cols];
-        vis[0][0] = true;
+        int[][] delta = {{0,1}, {1,0}, {0,-1}, {-1,0}};
         while(pq.size() > 0)
         {
             long[] top = pq.poll();
@@ -27,8 +27,12 @@ class Solution {
             {
                 return (int)top[2];
             }
+            if(vis[r][c])
+            {
+                continue;
+            }
+            vis[r][c] = true;
             long time = top[2];
-            int[][] delta = {{0,1}, {1,0}, {0,-1}, {-1,0}};
             for(int[] d : delta)
             {
                 int nr = d[0] + r;
@@ -42,7 +46,6 @@ class Solution {
                     continue;
                 }
                 long newCost = 0l;
-                vis[nr][nc] = true;
                 if(time < grid[nr][nc])
                 {
                     int addedCost = (grid[nr][nc] - time)%2 == 0 ? 1 : 0;
