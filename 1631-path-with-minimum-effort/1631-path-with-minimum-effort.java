@@ -40,7 +40,7 @@ class Solution {
                 int currentJump = Math.abs(heights[nr][nc] - heights[r][c]);
                 if(Math.max(currentJump,d) < dist[nr][nc])
                 {
-                    dist[nr][nc] = current;
+                    dist[nr][nc] = currentJump;
                     pq.add(new int[] { nr, nc, Math.max(currentJump, d) });
                 }
             }
