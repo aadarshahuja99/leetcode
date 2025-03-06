@@ -1,6 +1,6 @@
 class Solution {
     public int nextGreaterElement(int n) {
-        // knuth's algorithm
+        // Knuth's algorithm
         int peakIndex = -1;
         var digits = getDigits(n);
         int i = digits.size() - 1;
@@ -38,7 +38,7 @@ class Solution {
         {
             rightHalf.add(digits.get(it));
         }
-        Collections.sort(rightHalf);
+        Collections.reverse(rightHalf);
         for(int it = peakIndex; it < digits.size(); it++)
         {
             digits.set(it, rightHalf.get(it-peakIndex));
@@ -48,7 +48,6 @@ class Solution {
         {
             val = val*10 + digits.get(it);
         }
-        System.out.println(val);
         if(val > Integer.MAX_VALUE)
         {
             return -1;
