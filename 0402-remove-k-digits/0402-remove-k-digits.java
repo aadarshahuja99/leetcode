@@ -33,14 +33,14 @@ class Solution {
         {
             idx++;
         }
+        if(idx == intermediate.length())
+        {
+            return "0";
+        }
         while(idx < intermediate.length())
         {
             ans.append(intermediate.charAt(idx));
             idx++;
-        }
-        if(ans.length() == 0)
-        {
-            return "0";
         }
         return ans.toString();
     }
