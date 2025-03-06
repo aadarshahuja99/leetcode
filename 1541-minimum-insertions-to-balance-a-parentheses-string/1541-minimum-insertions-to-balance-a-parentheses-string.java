@@ -1,52 +1,52 @@
 class Solution {
     public int minInsertions(String s) {
+        // stack with encoding. Similar question: longest valid parenthesis substring
+        // for '(': 
+        //      1. if empty stack or 2 at top? push 2 to stack
+        //.     2. else, (if 1 at top), need to add a ')' for the 1 at top, incr ans, pop, then push 2
+        // for ')':
+        //.     1. if empty stack, push 1 to the stack, incr the ans (for adding an '(' for the current ')')
+        //.     2. else, if 1 at the top, pop the 1
+        //      3. Else, (if top==2), make the top as 1 and continue
         Stack<Integer> stack = new Stack<>();
-        int diff=0;
-        int openDiff=0;
-        int idx = 0;
-        int halfDiff=0;
-        while(idx < s.length())
+        int ans = 0;
+        for(char ch : s.toCharArray())
         {
-            char c = s.charAt(idx);
-            if(c == '(')
+            if(ch == '(')
             {
-                if(stack.size() > 0 && stack.peek() == 1)
+                if(stack.isEmpty() || stack.peek() == 2)
                 {
-                    openDiff++;
-                    stack.pop();
-                }
-                stack.push(2);
-            }
-            else
-            {
-                if(stack.size() == 0)
-                {
-                    if(idx+1 < s.length() && s.charAt(idx+1) == ')')
-                    {
-                        diff++;
-                        idx++;
-                    }
-                    else
-                    {
-                        halfDiff++;
-                    }
+                    stack.push(2);
                 }
                 else
                 {
-                    int currCount = stack.pop();
-                    if(currCount == 2)
-                    {
-                        stack.push(1);
-                    }
+                    ans++;
+                    stack.pop();
+                    stack.push(2);
                 }
             }
-            idx++;
+            else
+            {
+                if(stack.isEmpty())
+                {
+                    stack.push(1);
+                    ans++; // adding an '('
+                }
+                else if(stack.peek() == 2)
+                {
+                    stack.pop();
+                    stack.push(1);
+                }
+                else
+                {
+                    stack.pop();
+                }
+            }
         }
-        int stackDiff = 0;
         while(stack.size() > 0)
         {
-            stackDiff += stack.pop();
+            ans += stack.pop();
         }
-        return openDiff + stackDiff + diff + halfDiff*2;
+        return ans;
     }
 }
