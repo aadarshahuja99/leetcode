@@ -4,7 +4,7 @@ class Solution {
         Arrays.sort(heaters);
         int numHouses = houses.length;
         int start = 0;
-        int end = 1000000000;
+        int end = Math.max(houses[numHouses - 1] - houses[0] + 1, heaters[heaters.length - 1]);
         int ans = 0;
         while(start <= end)
         {
@@ -27,7 +27,7 @@ class Solution {
         int heaterIndex = 0;
         while(houseIndex < houses.length && heaterIndex < heaters.length)
         {
-            if(houses[houseIndex] == heaters[heaterIndex] || (houses[houseIndex] >= heaters[heaterIndex] - current && houses[houseIndex] < heaters[heaterIndex]))
+            if(houses[houseIndex] >= heaters[heaterIndex] - current && houses[houseIndex] <= heaters[heaterIndex] + current)
             {
                 houseIndex++;
             }
@@ -35,11 +35,7 @@ class Solution {
             {
                 return false;
             }
-            else if(houses[houseIndex] > heaters[heaterIndex] && houses[houseIndex] <= heaters[heaterIndex] + current)
-            {
-                houseIndex++;
-            }
-            else if(houses[houseIndex] > heaters[heaterIndex] + current)
+            else
             {
                 heaterIndex++;
             }
