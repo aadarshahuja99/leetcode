@@ -1,51 +1,50 @@
 class Solution {
-    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] workers) {
-        int numJobs = difficulty.length;
-        int numWorkers = workers.length;
-        int[][] jobs = new int[numJobs][2];
-        for(int i=0; i<numJobs; i++)
+    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
+        int jobs = profit.length;
+        int[] pre = new int[jobs];
+        Integer[][] combined = new Integer[jobs][2];
+        for(int i=0; i<jobs; i++)
         {
-            jobs[i][0] = difficulty[i];
-            jobs[i][1] = profit[i];
+            combined[i][0] = difficulty[i];
+            combined[i][1] = profit[i];
         }
-        Arrays.sort(jobs, (a,b) -> {
+        Arrays.sort(combined, (a, b) -> {
             return a[0] - b[0];
         });
-        int[] maxProfit = new int[numJobs];
-        maxProfit[0] = jobs[0][1];
-        int max = jobs[0][1];
-        for(int i=1; i<numJobs; i++)
+        pre[0] = combined[0][1];
+        for(int i=1; i<jobs; i++)
         {
-            max = Math.max(max, jobs[i][1]);
-            maxProfit[i] = max;
+            pre[i] = Math.max(pre[i-1], combined[i][1]);
         }
         int ans = 0;
-        for(int worker : workers)
+        for(int w : worker)
         {
-            int start = 0;
-            int end = numJobs-1;
-            int j = -1;
-            while(start <= end)
+            int floor = findFloor(combined, w);
+            if(floor != -1)
             {
-                int mid = start + (end-start)/2;
-                if(jobs[mid][0] <= worker)
-                {
-                    j = mid;
-                    start = mid+1;
-                }
-                else
-                {
-                    end = mid-1;
-                }
+                ans += pre[floor];
             }
-            if(j == -1)
-            {
-                continue;
-            }
-            int p = maxProfit[j];
-            // System.out.println(p+" for "+worker);
-            ans += p;
         }
         return ans;
+    }
+    private int findFloor(Integer[][] combined, int t)
+    {
+        int floor = -1;
+        int s = 0;
+        int e = combined.length-1;
+        while(s <= e)
+        {
+            int m = s + (e - s)/2;
+            if(combined[m][0] <= t)
+            {
+                floor = m;
+                s = m+1;
+            }
+            else
+            {
+                e = m-1;
+            }
+        }
+        return floor;
     }
 }
