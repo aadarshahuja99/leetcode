@@ -33,26 +33,18 @@ class Solution {
             // System.out.println("loop: "+index+" "+count);
             if(bloomDay[index] <= guess)
             {
-                if(k == 1)
+                int j = index+1;
+                while(j < n && bloomDay[j] <= guess && j - index < k)
+                {
+                    j++;
+                }
+                if(j - index == k)
                 {
                     count++;
-                    if(count == m)
-                    {
-                        return true;
-                    }
-                    index++;
-                    continue;
                 }
-                int j = index+1;
-                while(j < n && bloomDay[j] <= guess)
+                if(count == m)
                 {
-                    if(j-index+1 == k)
-                    {
-                        count++;
-                        j++;
-                        break;
-                    }
-                    j++;
+                    return true;
                 }
                 index=j;
             }
@@ -60,13 +52,7 @@ class Solution {
             {
                 index++;
             }
-            if(count == m)
-            {
-                // System.out.println(guess);
-                return true;
-            }
         }
-        // System.out.println(guess+" "+count);
         return false;
     }
 }
