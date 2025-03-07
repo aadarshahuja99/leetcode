@@ -25,22 +25,14 @@ class Solution {
     private boolean check(int guess, int n, int[] q)
     {
         int idx = 0;
-        int curr = q[idx];
-        for(int i=0; i<n; )
+        int count = 0;
+        while(idx < q.length)
         {
+            int curr = q[idx];
             int stores = curr%guess == 0 ? curr/guess : (curr/guess)+1;
-            i += stores;
+            count += stores;
             idx++;
-            if(idx == q.length && i<=n)
-            {
-                return true;
-            }
-            if(idx == q.length)
-            {
-                return false;
-            }
-            curr = q[idx];
         }
-        return false;
+        return count <= n;
     }
 }
