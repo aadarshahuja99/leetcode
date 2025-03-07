@@ -3,7 +3,6 @@ class Solution {
         int s = 0;
         int n = nums.length;
         int e = n-1;
-        System.out.println("len: "+n);
         while(s <= e)
         {
             int mid = s + (e - s)/2;
