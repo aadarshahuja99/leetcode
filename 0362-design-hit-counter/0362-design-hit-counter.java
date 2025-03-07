@@ -10,10 +10,6 @@ class HitCounter {
         {
             timeStamps.poll();
         }
-        if(timeStamps.size() == MAX_QUEUE_SIZE)
-        {
-            timeStamps.poll();
-        }
         timeStamps.add(timestamp);
     }
     
