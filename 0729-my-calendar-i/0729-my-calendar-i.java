@@ -1,52 +1,26 @@
-import java.util.SortedMap;
 class MyCalendar {
-    TreeMap<Integer,Integer> map;
+    TreeMap<Integer,Integer> events;
     public MyCalendar() {
-        map = new TreeMap<Integer,Integer>();
+        events = new TreeMap<>();
     }
     
-    public boolean book(int start, int end) {
-        var nextStart = map.ceilingEntry(start);
-        var previousStart = map.floorEntry(start);
-        // first entry
-        if(nextStart == null && previousStart == null)
+    public boolean book(int startTime, int endTime) {
+        var floorEntry = events.floorEntry(startTime);
+        var ceilingEntry = events.ceilingEntry(startTime);
+        if(floorEntry == null || floorEntry.getValue() <= startTime)
         {
-            map.put(start, end);
-            return true;
-        }
-        else if(previousStart == null)
-        {
-            // the current interval is the first interval
-            if(nextStart.getKey() < end)
+            if(ceilingEntry == null || ceilingEntry.getKey() >= endTime)
             {
-                return false;
+                events.put(startTime, endTime);
+                return true;
             }
-            map.put(start, end);
-            return true;
         }
-        else if(nextStart == null)
-        {
-            if(previousStart.getValue() > start)
-            {
-                return false;
-            }
-            map.put(start, end);
-            return true; 
-        }
-        else
-        {
-            if(nextStart.getKey() < end || previousStart.getValue() > start)
-            {
-                return false;
-            }
-            map.put(start, end);
-            return true;
-        }
+        return false;
     }
 }
 
 /**
  * Your MyCalendar object will be instantiated and called as such:
  * MyCalendar obj = new MyCalendar();
- * boolean param_1 = obj.book(start,end);
+ * boolean param_1 = obj.book(startTime,endTime);
  */
