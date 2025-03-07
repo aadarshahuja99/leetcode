@@ -16,7 +16,7 @@ class Solution {
                 e--;
                 continue;
             }
-            if(nums[mid] >= nums[s] && nums[mid] >= nums[e])
+            if(nums[mid] >= nums[s])
             {
                 // left half is sorted
                 if(target <= nums[mid] && target >= nums[s])
@@ -30,7 +30,7 @@ class Solution {
                     s = mid + 1;
                 }
             }
-            else if (nums[mid] <= nums[s] && nums[mid] <= nums[e])
+            else
             {
                 // right half is sorted
                 if(nums[mid] <= target && target <= nums[e])
@@ -42,18 +42,6 @@ class Solution {
                 {
                     // search in the unsorted half
                     e = mid - 1;
-                }
-            }
-            else
-            {
-                // s, mid, e are all sorted
-                if(target < nums[mid])
-                {
-                    e = mid - 1;
-                }
-                else
-                {
-                    s = mid + 1;
                 }
             }
         }
