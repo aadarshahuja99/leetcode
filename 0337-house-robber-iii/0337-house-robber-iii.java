@@ -32,15 +32,14 @@ class Solution {
         {
             cache.put(root, new HashMap<>());
         }
+        int dontRob = getMaxMoney(root.left, 1, cache) + getMaxMoney(root.right, 1, cache);
         if(canRob == 1)
         {
-            int maxAns = Math.max(root.val + getMaxMoney(root.left, 0, cache) + getMaxMoney(root.right, 0, cache),
-            getMaxMoney(root.left, 1, cache) + getMaxMoney(root.right, 1, cache));
+            int maxAns = Math.max(root.val + getMaxMoney(root.left, 0, cache) + getMaxMoney(root.right, 0, cache), dontRob);
             cache.get(root).put(canRob, maxAns);
-            return cache.get(root).get(canRob);
+            return maxAns;
         }
-        int ans = getMaxMoney(root.left, 1, cache) + getMaxMoney(root.right, 1, cache);
-        cache.get(root).put(canRob, ans);
-        return cache.get(root).get(canRob);
+        cache.get(root).put(canRob, dontRob);
+        return dontRob;
     }
 }
