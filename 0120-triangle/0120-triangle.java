@@ -1,11 +1,23 @@
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
-        int[][] cache = new int[triangle.size()][triangle.size()];
-        for(int[] row : cache)
+        int n = triangle.size();
+        int[] next = new int[n];
+        for(int i=0; i<n; i++)
         {
-            Arrays.fill(row, -1);
+            next[i] = triangle.get(n-1).get(i);
         }
-        return getAns(0, 0, triangle, cache);
+        for(int row = n-2; row >= 0; row--)
+        {
+            int[] current = new int[n];
+            for(int col = row; col >= 0; col--)
+            {
+                int moveToSameCol = triangle.get(row).get(col) + next[col];
+                int moveToDiffCol = triangle.get(row).get(col) + next[col+1];
+                current[col] = Math.min(moveToSameCol, moveToDiffCol);
+            }
+            next = current;
+        }
+        return next[0];
     }
     private int getAns(int row, int col, List<List<Integer>> triangle, int[][] cache)
     {
