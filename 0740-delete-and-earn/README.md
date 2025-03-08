@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/delete-and-earn">740. Delete and Earn</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code>. You want to maximize the number of points you get by performing the following operation any number of times:</p>
+<h2><a href="https://leetcode.com/problems/delete-and-earn/description/?envType=company&envId=amazon&favoriteSlug=amazon-six-months">740. Delete and Earn</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code>. You want to maximize the number of points you get by performing the following operation any number of times:</p>
 
 <ul>
 	<li>Pick any <code>nums[i]</code> and delete it to earn <code>nums[i]</code> points. Afterwards, you must delete <b>every</b> element equal to <code>nums[i] - 1</code> and <strong>every</strong> element equal to <code>nums[i] + 1</code>.</li>
