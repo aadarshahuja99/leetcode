@@ -1,49 +1,30 @@
-class Solution {
-    ArrayList<List<String>> ans = new ArrayList<List<String>>();
-    LinkedList<String> list = new LinkedList<String>();
+public class Solution {
     public List<List<String>> partition(String s) {
-        compute(0,s,0);
-        return ans;
-    }
-    private void compute(int current, String s, int addedLength)
-    {
-        if(current == s.length())
-        {
-            if(addedLength != s.length())
-            {
-                return;
-            }
-            ans.add(new ArrayList<String>(list));
-        }
-        String temp = "";
-        for(int k=current; k<s.length(); k++)
-        {
-            temp += s.charAt(k);
-            if(isPalindrome(temp))
-            {
-                // take
-                list.addLast(temp);
-                addedLength += k-current+1;
-                compute(k+1,s,addedLength);
-                // revert
-                list.removeLast();
-                addedLength -= k-current+1;
+        List<List<String>> res = new ArrayList<>();
+        boolean[][] dp = new boolean[s.length()][s.length()];
+        for(int i = 0; i < s.length(); i++) {
+            for(int j = 0; j <= i; j++) {
+                if(s.charAt(i) == s.charAt(j) && (i - j <= 2 || dp[j+1][i-1])) {
+                    dp[j][i] = true;
+                }
             }
         }
+        helper(res, new ArrayList<>(), dp, s, 0);
+        return res;
     }
-    private boolean isPalindrome(String s)
-    {
-        if(s.length() == 1)
-        {
-            return true;
+    
+    private void helper(List<List<String>> res, List<String> path, boolean[][] dp, String s, int pos) {
+        if(pos == s.length()) {
+            res.add(new ArrayList<>(path));
+            return;
         }
-        int i=0;
-        int j=s.length()-1;
-        while(i<j && s.charAt(i) == s.charAt(j))
-        {
-            i++;
-            j--;
+        
+        for(int i = pos; i < s.length(); i++) {
+            if(dp[pos][i]) {
+                path.add(s.substring(pos,i+1));
+                helper(res, path, dp, s, i+1);
+                path.remove(path.size()-1);
+            }
         }
-        return i>=j;
     }
 }
