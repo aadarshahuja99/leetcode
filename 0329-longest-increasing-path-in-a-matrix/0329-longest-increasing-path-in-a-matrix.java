@@ -13,13 +13,13 @@ class Solution {
             {
                 if(visited[i][j] == 0)
                 {
-                    dfs(i,j,-1,matrix,visited,dp);
+                    dfs(i,j,matrix,visited,dp);
                 }
             }
         }
         return ans;
     }
-    private int dfs(int row, int col, int parent, int[][] grid, int[][] visited, int[][] dp)
+    private int dfs(int row, int col, int[][] grid, int[][] visited, int[][] dp)
     {
         visited[row][col] = 1;
         int[] deltaRow = new int[] { 0,1,0,-1 };
@@ -35,7 +35,7 @@ class Solution {
             int newCol = col + deltaCol[i];
             if(newRow >= 0 && newRow < grid.length && newCol >= 0 && newCol < grid[0].length && grid[newRow][newCol] > grid[row][col])
             {
-                max = Math.max(max, 1 + dfs(newRow,newCol,grid[row][col],grid,visited,dp));
+                max = Math.max(max, 1 + dfs(newRow,newCol,grid,visited,dp));
             }
         }
         dp[row][col] = max;
