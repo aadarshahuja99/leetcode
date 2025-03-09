@@ -15,20 +15,20 @@
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
-        return dfs(root.left, root.val, Long.MIN_VALUE) && dfs(root.right, Long.MAX_VALUE, root.val);
+        return getAns(root, Long.MAX_VALUE, Long.MIN_VALUE);
     }
-    private boolean dfs(TreeNode current, long maxPossibleValue, long minPossibleValue)
+    private boolean getAns(TreeNode c, long max, long min)
     {
-        if(current == null)
+        if(c == null)
         {
             return true;
         }
-        if(current.val < maxPossibleValue && current.val > minPossibleValue)
+        if(c.val >= max || c.val <= min)
         {
-            boolean isLeftSubTreeValid = dfs(current.left, current.val, minPossibleValue);
-            boolean isRightSubTreeValid = dfs(current.right, maxPossibleValue, current.val);
-            return isLeftSubTreeValid && isRightSubTreeValid;
+            return false;
         }
-        return false;
+        boolean leftStatus = getAns(c.left, c.val, min);
+        boolean rightStatus = getAns(c.right, max, c.val);
+        return leftStatus && rightStatus;
     }
 }
