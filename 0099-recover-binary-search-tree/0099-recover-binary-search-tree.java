@@ -14,18 +14,20 @@
  * }
  */
 class Solution {
-    TreeNode lastNode = null;
-    TreeNode firstIncorrect = null;
-    TreeNode lastIncorrect = null;
-    TreeNode current = null;
     public void recoverTree(TreeNode root) {
         // morris inorder traversal + last popped element
-        current = root;
+        TreeNode lastNode = null;
+        TreeNode firstIncorrect = null;
+        TreeNode lastIncorrect = null;
+        TreeNode current = root;
         while(current != null)
         {
             if(current.left == null)
             {
-                helper();
+                var changed = helper(current,lastNode,firstIncorrect,lastIncorrect);
+                firstIncorrect = changed.getKey();
+                lastIncorrect = changed.getValue();
+                lastNode = current;
                 current = current.right;
             }
             else
@@ -37,8 +39,11 @@ class Solution {
                 }
                 if(leftChild.right == current)
                 {
-                    helper();
+                    var changed = helper(current,lastNode,firstIncorrect,lastIncorrect);
+                    firstIncorrect = changed.getKey();
+                    lastIncorrect = changed.getValue();
                     leftChild.right = null;
+                    lastNode = current;
                     current = current.right;
                 }
                 else
@@ -53,9 +58,13 @@ class Solution {
         lastIncorrect.val = temp;
         return;
     }
-    private void helper()
+    private Pair<TreeNode,TreeNode> helper(TreeNode current, TreeNode lastNode, TreeNode firstIncorrect, TreeNode lastIncorrect)
     {
-        if(lastNode != null)
+        if(lastNode == null)
+        {
+            lastNode = current;
+        }
+        else
         {
             int currentValue = current.val;
             if(currentValue < lastNode.val)
@@ -71,6 +80,6 @@ class Solution {
                 }
             }
         }
-        lastNode = current;
+        return new Pair<TreeNode,TreeNode>(firstIncorrect, lastIncorrect);
     }
 }
