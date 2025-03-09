@@ -1,4 +1,4 @@
-class Solution { // 13 ms, faster than 57.37%
+class Solution {
     public final int MAX = 100, INF = 100 * 10000; // maximum distance = N * MAX_POS = 100 * 10^4 = 10^6
     int[][] costs = new int[MAX][MAX];
     Integer[][] memo = new Integer[MAX][MAX];
