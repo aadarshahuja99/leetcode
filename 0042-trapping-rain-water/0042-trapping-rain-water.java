@@ -1,5 +1,6 @@
 class Solution {
     public int trap(int[] nums) {
+        // intuitive O(N) space solution
         int n = nums.length;
         int maxSoFar = nums[0];
         int[] rightMax = new int[n];
@@ -14,11 +15,10 @@ class Solution {
         {
             maxSoFar = Math.max(maxSoFar, nums[i]);
             int limit = Math.min(rightMax[i], maxSoFar);
-            if(limit <= nums[i])
+            if(limit > nums[i])
             {
-                continue;
+                ans += limit - nums[i];
             }
-            ans += limit - nums[i];
         }
         return ans;
     }
