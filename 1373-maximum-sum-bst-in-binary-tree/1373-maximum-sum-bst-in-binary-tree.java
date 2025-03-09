@@ -24,6 +24,7 @@ class Solution {
     {
         if(root == null)
         {
+            // returns sum of the values in the subtree, max value in the subtree, min value in the subtree, isValid BST at current root
             return new DFSElement(0,Integer.MIN_VALUE,Integer.MAX_VALUE,true);
         }
         var left = getAns(root.left);
