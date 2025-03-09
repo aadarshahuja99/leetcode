@@ -7,7 +7,6 @@ class Solution {
         long lcmAC = 1L*a*c/(computeHCF(a,c));
         long lcmABC = 1L*lcmBC*a/(computeHCF((int)lcmBC, a));
         long start = 0;
-        System.out.println(lcmAB + " " + lcmBC + " " + lcmAC + " " + lcmABC); 
         long end = 2*1000000000;
         long ans = -1;
         while(start <= end)
@@ -28,7 +27,6 @@ class Solution {
     private boolean check(long guess, int a, int b, int c, long lcmAB, long lcmBC, long lcmAC, long lcmABC, int n)
     {
         long count = (guess)/a + (guess)/b + (guess)/c - (guess/lcmAB) - ((guess)/lcmBC) - ((guess)/lcmAC) + ((guess)/lcmABC);
-        // System.out.println(guess+" "+count);
         return count >= (long)n;
     }
     private int computeHCF(int a, int b)
