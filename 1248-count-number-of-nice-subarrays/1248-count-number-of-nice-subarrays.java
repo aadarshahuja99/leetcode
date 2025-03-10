@@ -1,5 +1,9 @@
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {
+        return helper(nums, k) - helper(nums, k-1);
+    }
+    private int helper(int[] nums, int k)
+    {
         int oddCount = 0;
         int start = 0;
         int end = 0;
@@ -12,41 +16,15 @@ class Solution {
                 oddCount++;
             }
             end++;
-            if(oddCount == k)
+            while(oddCount > k)
             {
-                // we have a candidate
-                int currentCount = 0;
-                while(oddCount == k)
-                {
-                    currentCount++;
-                    if(nums[start]%2 == 1)
-                    {
-                        oddCount--;
-                    }
-                    start++;
-                }
-                ans += currentCount;
-                while(end < n && nums[end]%2 != 1)
-                {
-                    end++;
-                    ans += currentCount;
-                }
-            }
-        }
-        if(oddCount == k)
-        {
-            // we have a candidate
-            int currentCount = 0;
-            while(oddCount == k)
-            {
-                currentCount++;
                 if(nums[start]%2 == 1)
                 {
                     oddCount--;
                 }
                 start++;
             }
-            ans += currentCount;
+            ans += (end - start);
         }
         return ans;
     }
