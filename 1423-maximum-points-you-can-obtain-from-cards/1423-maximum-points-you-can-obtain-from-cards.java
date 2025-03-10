@@ -1,20 +1,20 @@
 class Solution {
     public int maxScore(int[] cardPoints, int k) {
-        // 2 pointers
-        int front = 0;
+        int current = 0;
         for(int i=0; i<k; i++)
         {
-            front += cardPoints[i];
+            current += cardPoints[i];
         }
-        int ans = front;
-        int it = cardPoints.length-1;
-        int startIndex = k-1;
-        while(it >= cardPoints.length-k)
+        int ans = current;
+        int j=cardPoints.length-1;
+        int it = 1;
+        while(j >= cardPoints.length - k)
         {
-            front = front - cardPoints[startIndex] + cardPoints[it];
-            ans = Math.max(ans, front);
-            it--;
-            startIndex--;
+            current = current - cardPoints[k-it] + cardPoints[j];
+            // System.out.println("ns "+current + " at "+ j);
+            ans = Math.max(ans, current);
+            j--;
+            it++;
         }
         return ans;
     }
