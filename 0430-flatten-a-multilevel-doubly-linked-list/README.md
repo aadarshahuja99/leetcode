@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list">430. Flatten a Multilevel Doubly Linked List</a></h2><h3>Medium</h3><hr><p>You are given a doubly linked list, which contains nodes that have a next pointer, a previous pointer, and an additional <strong>child pointer</strong>. This child pointer may or may not point to a separate doubly linked list, also containing these special nodes. These child lists may have one or more children of their own, and so on, to produce a <strong>multilevel data structure</strong> as shown in the example below.</p>
+<h2><a href="https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/?envType=company&envId=amazon&favoriteSlug=amazon-six-months">430. Flatten a Multilevel Doubly Linked List</a></h2><h3>Medium</h3><hr><p>You are given a doubly linked list, which contains nodes that have a next pointer, a previous pointer, and an additional <strong>child pointer</strong>. This child pointer may or may not point to a separate doubly linked list, also containing these special nodes. These child lists may have one or more children of their own, and so on, to produce a <strong>multilevel data structure</strong> as shown in the example below.</p>
 
 <p>Given the <code>head</code> of the first level of the list, <strong>flatten</strong> the list so that all the nodes appear in a single-level, doubly linked list. Let <code>curr</code> be a node with a child list. The nodes in the child list should appear <strong>after</strong> <code>curr</code> and <strong>before</strong> <code>curr.next</code> in the flattened list.</p>
 
@@ -44,7 +44,7 @@ After flattening the multilevel linked list it becomes:
 <p>&nbsp;</p>
 <p><strong>How the multilevel linked list is represented in test cases:</strong></p>
 
-<p>We use the multilevel linked list from <strong class="example">Example 1</strong> above:</p>
+<p>We use the multilevel linked list from <strong>Example 1</strong> above:</p>
 
 <pre>
  1---2---3---4---5---6--NULL
