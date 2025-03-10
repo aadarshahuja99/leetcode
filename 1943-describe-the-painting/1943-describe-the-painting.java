@@ -17,13 +17,12 @@ class Solution {
         for(int key: map.keySet()) {
             // System.out.println(prev+" "+key+" "+sum);
             if(sum != 0) { // Ignore the unpainted interval
-                result.add(Arrays.asList((long)prev, (long)key, sum)); // Add the interval
+                result.add(Arrays.asList(1l*prev, 1l*key, sum)); // Add the interval
             }
 
             sum += map.get(key);
             prev = key;
         }
-
         return result;
     }
 }
