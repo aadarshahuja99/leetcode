@@ -15,37 +15,46 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
+        // 1st solution: HM<OriginalNode, NewNode>
+        // optimized
+        // 1. Insert a copied node of each current node next to it in the original list
         if(head == null)
         {
-            return head;
+            return null;
         }
-        HashMap<Node,Node> visited = new HashMap<>();
-        Node current = head;
-        Node newCurrent = new Node(current.val);
-        Node newHead = newCurrent;
-        visited.put(current, newCurrent);
-        while(current != null)
+        Node cur = head;
+        while(cur != null)
         {
-            if(current.next != null && visited.containsKey(current.next))
+            Node clonedNode = new Node(cur.val);
+            Node next = cur.next;
+            cur.next = clonedNode;
+            clonedNode.next = next;
+            cur = next;
+        }
+        cur = head;
+        Node newHead = cur.next;
+        // copy random pointers
+        while(cur != null)
+        {
+            if(cur.random != null)
             {
-                newCurrent.next = visited.get(current.next);
+                cur.next.random = cur.random.next;
             }
-            else if(current.next != null)
+            cur = cur.next.next;
+        }
+
+        cur = head;
+        // copy next pointers
+        while(cur != null)
+        {
+            Node next = cur.next.next;
+            Node copy = cur.next;
+            if(next != null)
             {
-                newCurrent.next = new Node(current.next.val);
-                visited.put(current.next, newCurrent.next);
+                copy.next = next.next;
             }
-            if(current.random != null && visited.containsKey(current.random))
-            {
-                newCurrent.random = visited.get(current.random);
-            }
-            else if(current.random != null)
-            {
-                newCurrent.random = new Node(current.random.val);
-                visited.put(current.random, newCurrent.random);
-            }
-            current = current.next;
-            newCurrent = newCurrent.next;
+            cur.next = next;
+            cur = cur.next;
         }
         return newHead;
     }
