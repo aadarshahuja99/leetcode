@@ -1,4 +1,5 @@
 class Solution {
+    int[][] moves = {{0,1}, {1,0}, {0,-1}, {-1,0}};
     public List<String> findWords(char[][] board, String[] words) {
         List<String> ans = new ArrayList<String>();
         int m = board.length;
@@ -38,14 +39,10 @@ class Solution {
         {
             return;
         }
-        if(next.wordEnds.size() > 0)
+        if(next.wordIndex >= 0)
         {
-            for(int idx : next.wordEnds)
-            {
-                present.add(idx);
-            }
+            present.add(next.wordIndex);
         }
-        int[][] moves = {{0,1}, {1,0}, {0,-1}, {-1,0}};
         int m = board.length;
         int n = board[0].length;
         for(int i=0; i<4; i++)
@@ -67,11 +64,11 @@ class Solution {
     class Trie
     {
         Trie[] references;
-        List<Integer> wordEnds;
+        int wordIndex;
         public Trie()
         {
             references = new Trie[26];
-            wordEnds = new ArrayList<>();
+            wordIndex = -1;
         }
         public void insert(String word, int index)
         {
@@ -85,7 +82,7 @@ class Solution {
                 }
                 current = current.references[alphabetIndex];
             }
-            current.wordEnds.add(index);
+            current.wordIndex = index;
         }
         public Trie search(Trie current, char c)
         {
