@@ -44,6 +44,7 @@ class Solution {
                 }
                 lastGroupEnd = unreversedGroupStart;
                 lastGroupEnd.next = null;
+                c = 0;
             }
             else
             {
@@ -54,7 +55,6 @@ class Solution {
                 }
                 break;
             }
-            c = 0;
         }
         return head;
     }
