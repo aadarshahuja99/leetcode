@@ -13,11 +13,11 @@ class Solution {
         {
             if(nums[i] == nums[i-1])
             {
-                if(countOfCurrent < target)
+                countOfCurrent++;
+                if(countOfCurrent <= target)
                 {
                     nums[pointer++] = nums[i];
                 }
-                countOfCurrent++;
             }
             else
             {
