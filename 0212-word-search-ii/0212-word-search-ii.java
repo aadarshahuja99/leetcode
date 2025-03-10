@@ -18,6 +18,7 @@ class Solution {
                 boolean[][] visited = new boolean[m][n];
                 visited[i][j] = true;
                 dfs(i, j, board, visited, present, trie);
+                visited[i][j] = false;
                 if(present.size() == words.length)
                 {
                     break;
