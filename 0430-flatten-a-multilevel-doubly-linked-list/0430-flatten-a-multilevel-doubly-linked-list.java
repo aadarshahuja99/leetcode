@@ -18,10 +18,6 @@ class Solution {
     }
     private Node flattenListHelper(Node current, Node nodeToBeAppended, Node head)
     {
-        if(current == null)
-        {
-            return head;
-        }
         if(current.next == null && current.child == null)
         {
             if(nodeToBeAppended != null)
