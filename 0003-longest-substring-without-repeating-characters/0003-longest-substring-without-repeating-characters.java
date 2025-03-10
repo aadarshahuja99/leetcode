@@ -12,8 +12,7 @@ class Solution {
             j++;
             if(counts.get(cj) > 1)
             {
-                ans = Math.max(ans, j-i-1);
-                while(s.charAt(i) != cj)
+                while(counts.get(cj) > 1)
                 {
                     char c = s.charAt(i);
                     counts.put(c, counts.get(c) - 1);
@@ -23,10 +22,8 @@ class Solution {
                     }
                     i++;
                 }
-                counts.put(cj, 1);
-                i++;
-                // System.out.println("new i = "+i+" for current j = "+j);
             }
+            ans = Math.max(ans, j - i);
         }
         ans = Math.max(ans, j-i);
         return ans;
