@@ -40,19 +40,19 @@ class Solution {
             counter++;
         }
         afterEnd = current;
-        ListNode revStart = null;
+        ListNode reversedListStart = null;
         if(beforeStart == null)
         {
-            revStart = head;
+            reversedListStart = head;
             head = prev;
         }
         else
         {
-            revStart = beforeStart.next;
+            reversedListStart = beforeStart.next;
             beforeStart.next = prev;
         }
         // System.out.println(afterEnd.val);
-        revStart.next = afterEnd;
+        reversedListStart.next = afterEnd;
         return head;
     }
 }
