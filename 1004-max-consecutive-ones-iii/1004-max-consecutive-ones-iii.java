@@ -11,10 +11,6 @@ class Solution {
             {
                 zeroCount++;
             }
-            if(zeroCount <= k)
-            {
-                ans = Math.max(ans, end - start + 1);
-            }
             end++;
             while(zeroCount > k)
             {
@@ -24,9 +20,6 @@ class Solution {
                 }
                 start++;
             }
-        }
-        if(zeroCount <= k)
-        {
             ans = Math.max(ans, end - start);
         }
         return ans;
