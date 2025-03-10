@@ -26,10 +26,10 @@ class Solution {
             if(aCount > 0 && bCount > 0 && cCount > 0)
             {
                 // we have a candidate
-                int currentCount = 0;
+                int lengthOfLeftExtraPart = 0;
                 while(aCount > 0 && bCount > 0 && cCount > 0)
                 {
-                    currentCount++;
+                    lengthOfLeftExtraPart++;
                     if(s.charAt(start) == 'a'){
                         aCount--;
                     }
@@ -43,30 +43,8 @@ class Solution {
                     }
                     start++;
                 }
-                ans += currentCount*(length - end + 1);
+                ans += lengthOfLeftExtraPart*(length - end + 1);
             }
-        }
-        if(aCount > 0 && bCount > 0 && cCount > 0)
-        {
-            // we have a candidate
-            int currentCount = 0;
-            while(aCount > 0 && bCount > 0 && cCount > 0)
-            {
-                currentCount++;
-                if(s.charAt(start) == 'a'){
-                    aCount--;
-                }
-                else if(s.charAt(start) == 'b')
-                {
-                    bCount--;
-                }
-                else
-                {
-                    cCount--;
-                }
-                start++;
-            }
-            ans += currentCount;
         }
         return ans;
     }
