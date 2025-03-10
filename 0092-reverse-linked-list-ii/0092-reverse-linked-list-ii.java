@@ -39,7 +39,6 @@ class Solution {
             }
             counter++;
         }
-        afterEnd = current;
         ListNode reversedListStart = null;
         if(beforeStart == null)
         {
@@ -52,7 +51,7 @@ class Solution {
             beforeStart.next = prev;
         }
         // System.out.println(afterEnd.val);
-        reversedListStart.next = afterEnd;
+        reversedListStart.next = current;
         return head;
     }
 }
