@@ -28,7 +28,7 @@ class Solution {
                 idx++;
             }
         }
-        ans[idx] = deque.removeFirst();
+        ans[idx] = deque.peekFirst();
         return ans;
     }
 }
