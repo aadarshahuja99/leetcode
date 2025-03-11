@@ -20,35 +20,30 @@ class Solution {
                 maxQueue.pollLast();
             }
             maxQueue.addLast(nums[j]);
+
+            j++;
             
             int min = minQueue.peekFirst();
             int max = maxQueue.peekFirst();
-            if(max - min <= limit)
+            
+            while(maxQueue.peekFirst() - minQueue.peekFirst() > limit)
             {
-                ans = Math.max(ans, j-i+1);
-            }
-            else
-            {
-                while(maxQueue.peekFirst() - minQueue.peekFirst() > limit)
+                if(maxQueue.peekFirst() == nums[i])
                 {
-                    if(maxQueue.peekFirst() == nums[i])
-                    {
-                        maxQueue.pollFirst();
-                    }
-                    if(minQueue.peekFirst() == nums[i])
-                    {
-                        minQueue.pollFirst();
-                    }
-                    i++;
-                    if(maxQueue.size() == 0 || minQueue.size() == 0)
-                    {
-                        break;
-                    }
+                    maxQueue.pollFirst();
+                }
+                if(minQueue.peekFirst() == nums[i])
+                {
+                    minQueue.pollFirst();
+                }
+                i++;
+                if(maxQueue.size() == 0 || minQueue.size() == 0)
+                {
+                    break;
                 }
             }
-            j++;
+            ans = Math.max(ans, j - i);
         }
-        // ans = Math.max(ans, j-i);
         return ans;
     }
 }
