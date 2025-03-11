@@ -1,46 +1,24 @@
 class Solution {
     public int deleteAndEarn(int[] nums) {
-        TreeMap<Integer,Integer> countMap = new TreeMap<>();
-        for(int num : nums)
-        {
-            countMap.put(num, countMap.getOrDefault(num,0) + 1);
+        HashMap<Integer, Integer> points = new HashMap<>();
+        int maxNumber = 0;
+        
+        // Precompute how many points we gain from taking an element
+        for (int num : nums) {
+            points.put(num, points.getOrDefault(num, 0) + num);
+            maxNumber = Math.max(maxNumber, num);
         }
-        ArrayList<Integer> list = new ArrayList<>();
-        for(int k : countMap.keySet())
-        {
-            list.add(k);
+        
+        // Declare our array along with base cases
+        int[] maxPoints = new int[maxNumber + 1];
+        maxPoints[1] = points.getOrDefault(1, 0);
+        
+        for (int num = 2; num <= maxNumber; num++) {
+            // Apply recurrence relation
+            int gain = points.getOrDefault(num, 0);
+            maxPoints[num] = Math.max(maxPoints[num - 1], maxPoints[num - 2] + gain);
         }
-        int[] cache = new int[list.size()];
-        Arrays.fill(cache, -1);
-        return getMaxPoints(0, countMap, cache, list);
-    }
-    private int getMaxPoints(int current, TreeMap<Integer,Integer> map, int[] cache, ArrayList<Integer> list)
-    {
-        if(current >= list.size())
-        {
-            return 0;
-        }
-        if(cache[current] != -1)
-        {
-            return cache[current];
-        }
-        int ans = 0;
-        var nextKey = current;
-        int val = list.get(current);
-        while(nextKey < list.size() && list.get(nextKey) <= val+1)
-        {
-            nextKey++;
-        }
-        int nextKey1 = current;
-        while(nextKey1 < list.size() && list.get(nextKey1) == val)
-        {
-            nextKey1++;
-        }
-        int notDelete = getMaxPoints(nextKey1, map, cache, list);
-        int delete = val*map.get(val) + getMaxPoints(nextKey, map, cache, list);
-        // System.out.println(notDelete+" "+delete+" "+ nextKey +"," + nextKey1 + " for " +val);
-        ans = Math.max(delete, notDelete);
-        cache[current] = ans;
-        return ans;
+        
+        return maxPoints[maxNumber];
     }
 }
