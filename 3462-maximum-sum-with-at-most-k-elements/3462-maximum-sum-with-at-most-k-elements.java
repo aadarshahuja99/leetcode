@@ -24,10 +24,6 @@ class Solution {
                 pointers[i]++;
             }
         }
-        if(maxHeap.size() == 0)
-        {
-            return 0;
-        }
         long ans = 0l;
         while(k > 0)
         {
