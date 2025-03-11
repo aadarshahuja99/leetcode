@@ -1,16 +1,16 @@
 class Solution {
+    ArrayList<List<String>> finalAns;
     public List<List<String>> solveNQueens(int n) {
-        ArrayList<List<String>> result = new ArrayList<>();
-        // ArrayList<List<Integer>> intermediateResult = new ArrayList<>();
+        finalAns = new ArrayList<>();
         char[][] board = new char[n][n];
         for(char[] row : board)
         {
             Arrays.fill(row, '.');
         }
-        solve(0, 0, board, result, n);
-        return result;
+        solve(0, 0, board, n);
+        return finalAns;
     }
-    private void solve(int currentRow, int columnStatus, char[][] board, ArrayList<List<String>> finalAns, int n)
+    private void solve(int currentRow, int columnStatus, char[][] board, int n)
     {
         if(currentRow == n)
         {
@@ -21,18 +21,12 @@ class Solution {
         {
             if((columnStatus&(1<<i)) > 0)
             {
+                // only consider a column if it has not been taken so far
                 continue;
             }
             boolean isValid = true;
+            // check for diagonal attacks from 3 directions
             for(int r=currentRow, c=i; r>=0 && c>=0; r--, c--)
-            {
-                if(board[r][c] == 'Q')
-                {
-                    isValid = false;
-                    break;
-                }
-            }
-            for(int r=currentRow, c=i; r<n && c>=0; r++, c--)
             {
                 if(board[r][c] == 'Q')
                 {
@@ -53,7 +47,7 @@ class Solution {
                 continue;
             }
             board[currentRow][i] = 'Q';
-            solve(currentRow + 1, columnStatus|(1<<i), board, finalAns, n);
+            solve(currentRow + 1, columnStatus|(1<<i), board, n);
             board[currentRow][i] = '.';
         }
     }
