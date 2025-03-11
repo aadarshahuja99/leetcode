@@ -1,5 +1,6 @@
 class Solution {
     int MOD = 1_000_000_007;
+    // same question as max subsequence score
     public int maxPerformance(int n, int[] speed, int[] efficiency, int k) {
         int[][] combined = new int[n][2];
         for(int i=0; i<n; i++)
@@ -11,7 +12,7 @@ class Solution {
         });
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         long sum = 0;
-        int ans = (int)((sum*combined[k-1][1])%MOD);
+        long ans = 0;
         int idx = 0;
         for(int[] eng : combined)
         {
@@ -22,9 +23,9 @@ class Solution {
             sum += (eng[0]);
             minHeap.add(eng[0]);
             // System.out.println("sum = "+sum+" at idx = "+idx+" and eff: "+eng[1]);
-            ans = Math.max(ans, (int)((sum*eng[1])%MOD));
+            ans = Math.max(ans, (sum*eng[1]));
             idx++;
         }
-        return ans;
+        return (int)(ans%MOD);
     }
 }
