@@ -3,7 +3,7 @@ class Solution {
         int n = s.length();
         int count = 0;
         int[][] prefixSums = new int[n][26];
-        int[][] suffixSums = new int[n][26];
+        int[] suffixSums = new int[26];
         HashSet<Integer>[] sets = new HashSet[26];
         for(int i=0; i<26; i++)
         {
@@ -21,14 +21,10 @@ class Solution {
         for(int i=n-2; i>=1; i--)
         {
             int c = s.charAt(i+1) - 'a';
+            suffixSums[c]++;
             for(int j=0; j<26; j++)
             {
-                suffixSums[i][j] = suffixSums[i+1][j];
-                if(j == c)
-                {
-                    suffixSums[i][j] = 1 + suffixSums[i+1][j];
-                }
-                int limit = Math.min(suffixSums[i][j], prefixSums[i][j]);
+                int limit = Math.min(suffixSums[j], prefixSums[i][j]);
                 if(!sets[s.charAt(i) - 'a'].contains(j) && limit > 0)
                 {
                     count++;
