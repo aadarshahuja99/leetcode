@@ -10,18 +10,15 @@ class Solution {
             char cj = s.charAt(j);
             counts.put(cj, counts.getOrDefault(cj, 0) + 1);
             j++;
-            if(counts.get(cj) > 1)
+            while(counts.get(cj) > 1)
             {
-                while(counts.get(cj) > 1)
+                char c = s.charAt(i);
+                counts.put(c, counts.get(c) - 1);
+                if(counts.get(c) == 0)
                 {
-                    char c = s.charAt(i);
-                    counts.put(c, counts.get(c) - 1);
-                    if(counts.get(c) == 0)
-                    {
-                        counts.remove(c);
-                    }
-                    i++;
+                    counts.remove(c);
                 }
+                i++;
             }
             ans = Math.max(ans, j - i);
         }
