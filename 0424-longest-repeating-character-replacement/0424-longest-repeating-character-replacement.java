@@ -12,15 +12,12 @@ class Solution {
             counts[s.charAt(end) - 'A']++;
             maxFreq = Math.max(counts[s.charAt(end) - 'A'], maxFreq);
             end++;
-            if((end - start) - maxFreq <= k)
-            {
-                ans = Math.max(ans, end - start);
-            }
-            else
+            while(end - start - maxFreq > k)
             {
                 counts[s.charAt(start) - 'A']--;
                 start++;
             }
+            ans = Math.max(ans, end - start);
         }
         return ans;
     }
