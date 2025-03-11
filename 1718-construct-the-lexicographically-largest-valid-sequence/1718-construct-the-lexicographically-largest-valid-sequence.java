@@ -1,10 +1,10 @@
 class Solution {
     int[] ans;
     public int[] constructDistancedSequence(int n) {
-        getAns(0, n, new int[2*n-1], new HashSet<>());
+        getAns(0, n, new int[2*n-1], (int)Math.pow(2,n) - 1);
         return ans;
     }
-    private boolean getAns(int currentIndex, int n, int[] arr, HashSet<Integer> used)
+    private boolean getAns(int currentIndex, int n, int[] arr, int state)
     {
         if(currentIndex == 2*n-1)
         {
@@ -17,7 +17,7 @@ class Solution {
         }
         if(arr[currentIndex] != 0)
         {
-            if(getAns(currentIndex+1, n, arr, used))
+            if(getAns(currentIndex+1, n, arr, state))
             {
                 return true;
             }
@@ -26,19 +26,19 @@ class Solution {
         {
             for(int i=n; i>=1; i--)
             {
-                if(!used.contains(i) && ((currentIndex + (i) < 2*n-1 && arr[currentIndex + i] == 0) || (i == 1)))
+                if((state&(1<<(i-1))) > 0 && ((currentIndex + (i) < 2*n-1 && arr[currentIndex + i] == 0) || (i == 1)))
                 {
-                    used.add(i);
+                    state = (state^(1<<(i-1)));
                     arr[currentIndex] = i;
                     if(i != 1)
                     {
                         arr[currentIndex + i] = i;
                     }
-                    if(getAns(currentIndex+1, n, arr, used))
+                    if(getAns(currentIndex+1, n, arr, state))
                     {
                         return true;
                     }
-                    used.remove(i);
+                    state = (state^(1<<(i-1)));
                     arr[currentIndex] = 0;
                     if(i != 1)
                     {
