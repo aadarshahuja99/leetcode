@@ -31,14 +31,6 @@ class Solution {
                     break;
                 }
             }
-            for(int r=currentRow, c=i; r<n && c>=0; r++, c--)
-            {
-                if(board[r][c] == 'Q')
-                {
-                    isValid = false;
-                    break;
-                }
-            }
             for(int r=currentRow, c=i; r>=0 && c<n; r--, c++)
             {
                 if(board[r][c] == 'Q')
