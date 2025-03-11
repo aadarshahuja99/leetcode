@@ -6,15 +6,27 @@ class Solution {
         long dist = startFuel;
         int res = 0;
         int idx = 0;
+        int n = stations.length;
         while (true) {
-            while (idx < stations.length && stations[idx][0] <= dist) {
+            if(dist >= target)
+            {
+                return res;
+            }
+            // dist that can be reached so far is less than the target, thus refuelling is required.
+            // we greedily choose the station that has already been traversed and can help us get the farthest away from the current level end (i.e dist value)
+            while (idx < n && stations[idx][0] <= dist) {
                 queue.offer(stations[idx][1]); // for the current level, choose the station that can give the most fuel
                 idx++;
             }
-            
-            if (dist >= target) return res;
-            if (queue.isEmpty()) return -1;
-            dist += queue.poll();
+            if(queue.size() > 0)
+            {
+                dist += queue.poll();
+            }
+            else
+            {
+                // dist is less than target and we do not have refueling stops
+                return -1;
+            }
             res++;
         }
     }
