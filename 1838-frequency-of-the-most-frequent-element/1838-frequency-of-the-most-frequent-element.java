@@ -9,17 +9,17 @@ class Solution {
         while(end < n)
         {
             total += nums[end];
-            long desired = 1l*(end - start + 1)*nums[end];
+            end++;
+            long desired = 1l*(end - start)*nums[end-1];
             long ops = desired - total;
             while(ops > k)
             {
-                desired -= nums[end];
+                desired -= nums[end-1];
                 total -= nums[start];
                 start++;
                 ops = desired - total;
             }
-            ans = Math.max(ans, end - start + 1);
-            end++;
+            ans = Math.max(ans, end - start);
         }
         return ans;
     }
