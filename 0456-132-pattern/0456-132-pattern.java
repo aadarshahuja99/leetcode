@@ -7,7 +7,6 @@ class Solution {
             if(min >= nums[i])
             {
                 min = nums[i];
-                continue;
             }
             else
             {
@@ -18,7 +17,6 @@ class Solution {
                 }
                 if(stack.size() > 0 && stack.peek()[1] < nums[i])
                 {
-                    System.out.println(stack.peek()[0] + " " + stack.peek()[1] + " " + nums[i]);
                     return true;
                 }
                 stack.push(new int[] { nums[i], min });
