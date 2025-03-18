@@ -1,88 +1,61 @@
 class Solution {
     public int longestNiceSubarray(int[] nums) {
+        int[] bitMap = new int[32];
         int n = nums.length;
-        int[] setBits = new int[32];
-        int start=0;
-        int end=0;
-        int violatingBits = 0;
+        int[][] masks = new int[n][32];
+        int idx = 0;
+        for(int num : nums)
+        {
+            masks[idx] = convertToBits(num);
+            idx++;
+        }
+        int s = 0;
+        int e = 0;
         int ans = 0;
-        while(end < n)
+        int inValidCount = 0;
+        while(e < n)
         {
-            if(violatingBits == 0)
+            int i = 0;
+            for(int bit : masks[e])
             {
-                violatingBits = setBitsAndCheckForViolation(nums[end], setBits);
-                // for(int i=0; i<32; i++)
-                // {
-                //     System.out.print(setBits[i]+" ");
-                // }
-                // System.out.println();
-                end++;
-            }
-            else
-            {
-                ans = Math.max(ans, end-start-1);
-                // System.out.println(end+" "+start);
-                // remove start until violatingBits becomes zero
-                while(start < n && violatingBits > 0)
+                bitMap[i] += bit;
+                if(bitMap[i] > 1)
                 {
-                    violatingBits = removeBits(nums[start], setBits, violatingBits);
-                    start++;
+                    inValidCount++;
                 }
-                // for(int i=0; i<32; i++)
-                // {
-                //     System.out.print(setBits[i]+" ");
-                // }
-                // System.out.println();
-                // System.out.println("after fixing: "+start+" "+end);
+                i++;
             }
-        }
-        if(violatingBits > 0)
-        {
-            ans = Math.max(ans, end-start-1);
-        }
-        else
-        {
-            ans = Math.max(end-start, ans);
+            e++;
+            while(inValidCount > 0)
+            {
+                i = 0;
+                for(int bit : masks[s])
+                {
+                    bitMap[i] -= bit;
+                    if(bitMap[i] == 1 && bit == 1)
+                    {
+                        inValidCount--;
+                    }
+                    i++;
+                }
+                s++;
+            }
+            ans = Math.max(ans, e - s);
         }
         return ans;
     }
-    private int setBitsAndCheckForViolation(int number, int[] setBits)
+    private int[] convertToBits(int num)
     {
+        int[] ans = new int[32];
         int idx = 0;
-        int violatingBits = 0;
-        int temp = number;
-        while(temp > 0)
+        while(idx < 32)
         {
-            if((number&(1<<idx)) > 0)
+            if((num&(1<<idx)) > 0)
             {
-                setBits[idx]++;
-                if(setBits[idx] > 1)
-                {
-                    violatingBits++;
-                }
+                ans[31 - idx] = 1;
             }
-            temp = temp>>1;
             idx++;
         }
-        return violatingBits;
-    }
-    private int removeBits(int number, int[] setBits, int violatingBits)
-    {
-        int idx = 0;
-        int temp = number;
-        while(temp > 0)
-        {
-            if((number&(1<<idx)) > 0)
-            {
-                setBits[idx]--;
-                if(setBits[idx] == 1)
-                {
-                    violatingBits--;
-                }
-            }
-            temp = temp>>1;
-            idx++;
-        }
-        return violatingBits;
+        return ans;
     }
 }
