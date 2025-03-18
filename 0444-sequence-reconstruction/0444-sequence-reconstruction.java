@@ -54,10 +54,6 @@ class Solution {
             sequence.add(top);
             for(int node : adjList.get(top))
             {
-                if(indegree[node] == 0)
-                {
-                    continue;
-                }
                 indegree[node]--;
                 if(indegree[node] == 0)
                 {
