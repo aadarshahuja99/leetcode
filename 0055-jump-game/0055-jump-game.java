@@ -4,22 +4,25 @@ class Solution {
         int currentLevelStart = 0;
         int currentLevelEnd = 0;
         int n = nums.length;
-        while(currentLevelEnd < n-1)
+        while(currentLevelEnd <= n-1)
         {
             int farthestFromCurrentLevel = currentLevelEnd;
-            int it = currentLevelStart;
-            while(it <= currentLevelEnd)
+            while(currentLevelStart <= currentLevelEnd)
             {
-                farthestFromCurrentLevel = Math.max(farthestFromCurrentLevel, it + nums[it]);
-                it++;
+                farthestFromCurrentLevel = Math.max(farthestFromCurrentLevel, currentLevelStart + nums[currentLevelStart]);
+                currentLevelStart++;
             }
             currentLevelStart = currentLevelEnd+1;
             currentLevelEnd = farthestFromCurrentLevel;
+            if(currentLevelEnd >= n-1)
+            {
+                return true;
+            }
             if(currentLevelStart > currentLevelEnd)
             {
                 return false;
             }
         }
-        return true;
+        return false;
     }
 }
