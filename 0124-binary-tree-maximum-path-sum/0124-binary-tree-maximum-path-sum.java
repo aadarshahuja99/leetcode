@@ -29,9 +29,8 @@ class Solution {
         int leftTreeSum = dfs(current.left, max);
         int rightTreeSum = dfs(current.right, max);
         int currentSum = leftTreeSum + rightTreeSum + current.val;
-        // System.out.println(current.val+" "+currentSum+" "+max[0]);
         max[0] = Math.max(max[0], currentSum);
         int valueToBeReturned = current.val + Math.max(rightTreeSum, leftTreeSum);
-        return valueToBeReturned > 0 ? valueToBeReturned : 0;
+        return valueToBeReturned > 0 ? valueToBeReturned : 0; // kandane on trees
     }
 }
