@@ -53,7 +53,7 @@ class Solution {
                 {
                     lastGroupEnd.next = unreversedGroupStart;
                 }
-                break;
+                cur = null;
             }
         }
         return head;
