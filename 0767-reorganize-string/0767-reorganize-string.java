@@ -26,7 +26,7 @@ class Solution {
         }
 
         // Place rest of the letters in any order
-        for (int i = 0; i < charCounts.length; i++) {
+        for (int i = 0; i < 26; i++) {
             while (charCounts[i] > 0) {
                 // this if condition will only be executed ONCE if the early empty return condition does not happen
                 if (index >= s.length()) {
