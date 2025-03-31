@@ -14,7 +14,7 @@ class BoundedBlockingQueue {
                 this.wait();
             }
             queue.add(element);
-            notifyAll();
+            this.notifyAll();
         }
     }
     
@@ -27,7 +27,7 @@ class BoundedBlockingQueue {
                 this.wait();
             }
             top = queue.poll();
-            notifyAll();
+            this.notifyAll();
         }
         return top;
     }
