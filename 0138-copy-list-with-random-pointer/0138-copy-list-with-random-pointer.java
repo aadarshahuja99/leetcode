@@ -54,7 +54,7 @@ class Solution {
                 copy.next = next.next;
             }
             cur.next = next;
-            cur = cur.next;
+            cur = next;
         }
         return newHead;
     }
