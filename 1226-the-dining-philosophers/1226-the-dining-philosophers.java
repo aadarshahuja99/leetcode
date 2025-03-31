@@ -24,7 +24,6 @@ class DiningPhilosophers {
             }
             forkStatus[leftForkId] = false;
             pickLeftFork.run();
-            lock.notify();
             while(!forkStatus[rightForkId])
             {
                 lock.wait();
@@ -40,7 +39,7 @@ class DiningPhilosophers {
             forkStatus[leftForkId] = true;
             putLeftFork.run();
             
-            lock.notify();
+            lock.notifyAll();
         }
     }
 }
