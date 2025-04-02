@@ -30,7 +30,7 @@ class Solution {
         nums[peakIdx] = temp;
         int end = nums.length-1;
         int start = peakIdx+1;
-        while(start <= end)
+        while(start < end)
         {
             int t = nums[start];
             nums[start] = nums[end];
