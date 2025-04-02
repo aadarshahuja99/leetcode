@@ -19,6 +19,7 @@ class Solution {
                 }
                 else
                 {
+                    // search in unsorted half
                     s = mid + 1;
                 }
             }
