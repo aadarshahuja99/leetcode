@@ -33,14 +33,16 @@ class Solution {
             if(current < nums[i])
             {
                 i+=1;
-                continue;
             }
-            k--;
-            if(k == 0)
+            else
             {
-                return true;
+                k--;
+                if(k == 0)
+                {
+                    return true;
+                }
+                i+=2;
             }
-            i+=2;
         }
         return false;
     }
