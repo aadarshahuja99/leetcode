@@ -28,7 +28,6 @@ class Solution {
         }
         String intermediate = sb.reverse().toString();
         int idx = 0;
-        StringBuilder ans = new StringBuilder();
         while(idx < intermediate.length() && intermediate.charAt(idx) == '0')
         {
             idx++;
@@ -37,6 +36,7 @@ class Solution {
         {
             return "0";
         }
+        StringBuilder ans = new StringBuilder();
         while(idx < intermediate.length())
         {
             ans.append(intermediate.charAt(idx));
