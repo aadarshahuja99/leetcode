@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/max-stack">716. Max Stack</a></h2><h3>Hard</h3><hr><p>Design a max stack data structure that supports the stack operations and supports finding the stack&#39;s maximum element.</p>
+<h2><a href="https://leetcode.com/problems/max-stack/?envType=company&envId=amazon&favoriteSlug=amazon-three-months">716. Max Stack</a></h2><h3>Hard</h3><hr><p>Design a max stack data structure that supports the stack operations and supports finding the stack&#39;s maximum element.</p>
 
 <p>Implement the <code>MaxStack</code> class:</p>
 
