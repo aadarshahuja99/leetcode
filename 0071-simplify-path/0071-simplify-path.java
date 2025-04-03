@@ -10,21 +10,19 @@ class Solution {
             }
             if(component.equals(".."))
             {
-                if(pathList.size() > 1)
+                if(pathList.size() > 0)
                 {
-                    pathList.removeLast();
                     pathList.removeLast();
                 }
             }
             else
             {
-                pathList.addLast("/");
-                pathList.addLast(component);
+                pathList.addLast(String.format("/%s", component));
             }
         }
         if(pathList.isEmpty())
         {
-            pathList.addLast("/");
+            return "/";
         }
         StringBuilder sb = new StringBuilder();
         for(String component : pathList)
