@@ -19,7 +19,7 @@ class Solution {
             if(nums[mid] >= nums[s])
             {
                 // left half is sorted
-                if(target <= nums[mid] && target >= nums[s])
+                if(target < nums[mid] && target >= nums[s])
                 {
                     // search in the sorted half
                     e = mid - 1;
@@ -33,7 +33,7 @@ class Solution {
             else
             {
                 // right half is sorted
-                if(nums[mid] <= target && target <= nums[e])
+                if(nums[mid] < target && target <= nums[e])
                 {
                     // search in the sorted half
                     s = mid + 1;
