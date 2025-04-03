@@ -20,6 +20,7 @@ class Solution {
                 }
                 else
                 {
+                    // partially satisfied '(' at the top of the stack
                     ans++;
                     stack.pop();
                     stack.push(2);
