@@ -39,11 +39,7 @@ class Solution {
             for(int node : nodes)
             {
                 int ultimateParent = ds.findParent(node);
-                if(!nodeGroupsByComponent.containsKey(ultimateParent))
-                {
-                    nodeGroupsByComponent.put(ultimateParent, 0);
-                }
-                nodeGroupsByComponent.put(ultimateParent, nodeGroupsByComponent.get(ultimateParent)+1);
+                nodeGroupsByComponent.put(ultimateParent, nodeGroupsByComponent.getOrDefault(ultimateParent, 0)+1);
             }
             for(Map.Entry<Integer,Integer> entry : nodeGroupsByComponent.entrySet())
             {
