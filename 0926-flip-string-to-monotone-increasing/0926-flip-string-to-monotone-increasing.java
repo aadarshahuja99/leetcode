@@ -18,8 +18,6 @@ class Solution {
             }
             ans = Math.min(ans, oneOnLeft + zeroOnRight);
         }
-        // partition at ending
-        ans = Math.min(ans, oneOnLeft);
         return ans;
     }
 }
