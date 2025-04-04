@@ -34,7 +34,7 @@ public class Solution {
             queue.offer(new Cell(i, n - 1, heights[i][n - 1]));
         }
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n-1; i++) {
             visited[0][i] = true;
             visited[m - 1][i] = true;
             queue.offer(new Cell(0, i, heights[0][i]));
