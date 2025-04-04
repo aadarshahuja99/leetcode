@@ -31,6 +31,6 @@ class Solution {
         int currentSum = leftTreeSum + rightTreeSum + current.val;
         max[0] = Math.max(max[0], currentSum);
         int valueToBeReturned = current.val + Math.max(rightTreeSum, leftTreeSum);
-        return valueToBeReturned > 0 ? valueToBeReturned : 0; // kandane on trees
+        return Math.max(0, valueToBeReturned); // kandane on trees
     }
 }
