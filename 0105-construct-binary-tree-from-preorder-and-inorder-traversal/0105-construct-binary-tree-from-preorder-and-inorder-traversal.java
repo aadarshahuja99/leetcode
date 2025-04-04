@@ -32,7 +32,6 @@ class Solution {
         TreeNode current = new TreeNode(val);
         int idx = map.get(val);
         int leftLength = idx - inStart;
-        // System.out.println(val+" "+idx+" "+leftLength);
         current.left = getAns(start+1, start+leftLength, inStart, map, pre);
         current.right = getAns(start+leftLength+1, end, idx+1, map, pre);
         return current;
