@@ -21,11 +21,12 @@ class Solution {
             }
             else
             {
+                
                 if(isAFile)
                 {
                     maxLength = Math.max(maxLength, stack.peek()[1] + component.length());
                 }
-                // System.out.println((component.length() - tabs + stack.peek()[1]) + "  " + tabs + " " + maxLength);
+                // we only push the length of the path without tabs count in the second parameter, if there is a file after the current path, then the file component's number of tabs will be equal to the total number of slashes needed in the file path length, which is why only component.length() + stack.peek()[1] is done in answer computation
                 stack.push(new int[] { tabs, component.length() + stack.peek()[1] - tabs });
             }
         }
