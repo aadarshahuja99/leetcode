@@ -23,14 +23,15 @@ class Solution {
             head.next = null;
             return next;
         }
-        ListNode cur2 = head;
+        // assume 1->2->3->4 and n = 2. cur = 3, prev = 1
+        ListNode prev = head;
         while(cur.next != null)
         {
             cur = cur.next;
-            cur2 = cur2.next;
+            prev = prev.next;
         }
-        ListNode next = cur2.next.next;
-        cur2.next = next;
+        ListNode next = prev.next.next;
+        prev.next = next;
         return head;
     }
 }
