@@ -38,10 +38,11 @@ class Solution {
                     continue;
                 }
                 int currentJump = Math.abs(heights[nr][nc] - heights[r][c]);
-                if(Math.max(currentJump,d) < dist[nr][nc])
+                int pathMax = Math.max(currentJump,d);
+                if(pathMax < dist[nr][nc])
                 {
                     dist[nr][nc] = currentJump;
-                    pq.add(new int[] { nr, nc, Math.max(currentJump, d) });
+                    pq.add(new int[] { nr, nc, pathMax });
                 }
             }
         }
