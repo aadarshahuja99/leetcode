@@ -10,6 +10,7 @@ class Solution {
         for(int[] row : cost)
         { Arrays.fill(row, Integer.MAX_VALUE); }
         cost[0][0] = 0;
+        v[0][0][0] = true;
         while(q.size() > 0)
         {
             int[] top = q.poll();
@@ -17,12 +18,6 @@ class Solution {
             int c = top[1];
             int currentObs = top[2];
             int current = top[3];
-            // System.out.println(current+" "+currentObs+" for "+r+" "+c);
-            if(v[r][c][currentObs])
-            {
-                continue;
-            }
-            v[r][c][currentObs] = true;
             cost[r][c] = current;
             if(r == m-1 && c == n-1)
             {
@@ -39,6 +34,7 @@ class Solution {
                 int addedCost = grid[nr][nc];
                 if(currentObs + addedCost <= k && !v[nr][nc][currentObs + addedCost])
                 {
+                    v[nr][nc][currentObs + addedCost] = true;
                     cost[nr][nc] = current+1;
                     q.add(new int[] { nr, nc, addedCost + currentObs, current+1 });
                 }
