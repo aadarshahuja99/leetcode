@@ -91,16 +91,16 @@ class Solution {
                 }
             }
         }
+        if(visited < letters.size())
+        {
+            return "";
+        }
         for(int node : otherLetters)
         {
             if(!letters.contains(node))
             {
                 sb.append((char)(node + 'a'));
             }
-        }
-        if(visited < letters.size())
-        {
-            return "";
         }
         return sb.toString();
     }
