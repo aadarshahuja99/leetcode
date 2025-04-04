@@ -1,74 +1,101 @@
 class Solution {
     public int largestIsland(int[][] grid) {
-        HashMap<Integer,Integer> parentMap = new HashMap<Integer,Integer>();
-        HashMap<Integer,Integer> sizeMap = new HashMap<Integer,Integer>();
-        for(int i=0; i<grid.length; i++)
+        int n = grid.length;
+        DSU ds = new DSU(n*n);
+        int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}};
+        int ans = 1;
+        for(int i=0; i<n; i++)
         {
-            for(int j=0; j<grid[0].length; j++)
+            for(int j=0; j<n; j++)
             {
-                if(grid[i][j] == 1 && !parentMap.containsKey(i*grid[0].length + j))
+                if(grid[i][j] == 1)
                 {
-                    sizeMap.put(i*grid[0].length + j, 1);
-                    parentMap.put(i*grid[0].length + j, i*grid[0].length + j);
-                    dfs(grid,parentMap,sizeMap,i,j);
+                    for(int[] d : dirs)
+                    {
+                        int nr = i + d[0];
+                        int nc = j + d[1];
+                        if(nr < 0 || nr == n || nc < 0 || nc == n)
+                        {
+                            continue;
+                        }
+                        if(grid[nr][nc] == 1)
+                        {
+                            ds.union(i*n + j, nr*n + nc);
+                            ans = Math.max(ans, ds.getSize(ds.find(i*n + j)));
+                        }
+                    }
                 }
             }
         }
-        int max = 0;
-        for (var entry : sizeMap.entrySet()) {
-            // System.out.println("size: "+entry.getValue() + " for parent: "+entry.getKey());
-            max = Math.max(max,entry.getValue());
-        }
-        for(int i=0; i<grid.length; i++)
+        for(int i=0; i<n; i++)
         {
-            for(int j=0; j<grid[0].length; j++)
+            for(int j=0; j<n; j++)
             {
                 if(grid[i][j] == 0)
                 {
-                    HashSet<Integer> set = new HashSet<Integer>();
-                    int[] deltaR = { 1, 0, -1, 0 };
-                    int[] deltaC = { 0, -1, 0, 1 };
-                    int candidate = 1;
-                    for(int k=0; k<4; k++)
+                    HashSet<Integer> islands = new HashSet<>();
+                    for(int[] d : dirs)
                     {
-                        int newR = i + deltaR[k];
-                        int newC = j + deltaC[k];
-                        int key = newR*grid[0].length + newC;
-                        // System.out.println("for newR:  "+newR+" and newC: "+newC+" current key: "+key);
-                        if(newR >= 0 && newR < grid.length && newC >= 0 && newC < grid[0].length && parentMap.containsKey(key))
+                        int nr = i+d[0];
+                        int nc = j+d[1];
+                        if(nr < 0 || nr == n || nc < 0 || nc == n || grid[nr][nc] == 0)
                         {
-                            set.add(parentMap.get(key));
+                            continue;
                         }
+                        int p = ds.find(nr*n + nc);
+                        islands.add(p);
                     }
-                    for(int p : set)
+                    int candidate = 0;
+                    for(int p : islands)
                     {
-                        // System.out.println("adding "+sizeMap.get(p)+" to candidate " + "for parent : " + p);
-                        candidate += sizeMap.get(p);
+                        candidate += ds.getSize(p);
                     }
-                    // System.out.println(i + " " + j + " c: " + candidate + " max: " + max);
-                    max = Math.max(max,candidate);
+                    ans = Math.max(ans, candidate+1);
                 }
             }
         }
-        return max;
+        return ans;
     }
-    private void dfs(int[][] grid, HashMap<Integer,Integer> parentMap, HashMap<Integer,Integer> sizeMap, int r, int c)
+    class DSU
     {
-        int[] deltaR = { 1, 0, -1, 0 };
-        int[] deltaC = { 0, -1, 0, 1 };
-        for(int i=0; i<4; i++)
+        int[] p;
+        int[] s;
+        DSU(int n)
         {
-            int newR = r + deltaR[i];
-            int newC = c + deltaC[i];
-            if(newR >= 0 && newR < grid.length && newC >= 0 && newC < grid[0].length && grid[newR][newC] == 1 && !parentMap.containsKey(newR*grid[0].length + newC))
+            p = new int[n];
+            s = new int[n];
+            for(int i=0; i<n; i++)
             {
-                parentMap.put(newR*grid[0].length + newC, parentMap.get(r*grid[0].length + c));
-                int key=newR*grid[0].length+newC;
-                // System.out.println("parent of: "+ key + " is = "+parentMap.get(r*grid[0].length + c));
-                int val = sizeMap.get(parentMap.get(r*grid[0].length + c));
-                sizeMap.replace(parentMap.get(r*grid[0].length + c),val+1);
-                dfs(grid,parentMap,sizeMap,newR,newC);
+                p[i] = i;
             }
+            Arrays.fill(s, 1);
+        }
+        int find(int u)
+        {
+            return p[u] = (p[u] == u ? u : find(p[u]));
+        }
+        public void union(int u, int v)
+        {
+            int uParent = find(u);
+            int vParent = find(v);
+            if(uParent == vParent)
+            {
+                return;
+            }
+            if(s[uParent] >= s[vParent])
+            {
+                s[uParent] += s[vParent];
+                p[vParent] = uParent;
+            }
+            else
+            {
+                s[vParent] += s[uParent];
+                p[uParent] = vParent;
+            }
+        }
+        public int getSize(int node)
+        {
+            return s[node];
         }
     }
 }
