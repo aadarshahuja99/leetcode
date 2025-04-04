@@ -1,71 +1,31 @@
 class Solution {
     public int subarraysWithKDistinct(int[] nums, int k) {
-        if(nums.length == 1)
-        {
-            return nums.length;
+        return slidingWindowAtMost(nums, k) - slidingWindowAtMost(nums, k - 1);
+    }
+
+    // Helper function to count the number of subarrays with at most k distinct elements.
+    private int slidingWindowAtMost(int[] nums, int distinctK) {
+        // To store the occurrences of each element.
+        Map<Integer, Integer> freqMap = new HashMap<>();
+        int left = 0, totalCount = 0;
+
+        // Right pointer of the sliding window iterates through the array.
+        for (int right = 0; right < nums.length; ) {
+            freqMap.put(nums[right], freqMap.getOrDefault(nums[right], 0) + 1);
+            right++;
+            // If the number of distinct elements in the window exceeds k,
+            // we shrink the window from the left until we have at most k distinct elements.
+            while (freqMap.size() > distinctK) {
+                freqMap.put(nums[left], freqMap.get(nums[left]) - 1);
+                if (freqMap.get(nums[left]) == 0) {
+                    freqMap.remove(nums[left]);
+                }
+                left++;
+            }
+
+            // Update the total count by adding the length of the current subarray.
+            totalCount += (right - left);
         }
-        int i=0;
-        int j=1;
-        HashMap<Integer,Integer> map = new HashMap<>();
-        int ans = 0;
-        int distinctCount = 1;
-        map.put(nums[0],1);
-        while(j<nums.length)
-        {
-            if(distinctCount < k)
-            {
-                if(map.containsKey(nums[j]))
-                {
-                    map.put(nums[j], map.get(nums[j]) + 1);
-                }
-                else
-                {
-                    map.put(nums[j], 1);
-                    distinctCount++;
-                }
-                j++;
-            }
-            else if(distinctCount == k)
-            {
-                int it = j;
-                while(it < nums.length && map.containsKey(nums[it]))
-                {
-                    it++;
-                }
-                int options = it-j;
-                while(i <= j && distinctCount == k)
-                {
-                    ans += options+1;
-                    map.put(nums[i], map.get(nums[i])-1);
-                    if(map.get(nums[i]) == 0)
-                    {
-                        map.remove(nums[i]);
-                        distinctCount--;
-                    }
-                    i++;
-                }
-            }
-        }
-        if(distinctCount == k)
-        {
-            int it = j;
-            while(it < nums.length && map.containsKey(nums[it]))
-            {
-                it++;
-            }
-            int options = it-j;
-            while(i <= j && distinctCount == k)
-            {
-                ans += options+1;
-                map.put(nums[i], map.get(nums[i])-1);
-                if(map.get(nums[i]) == 0)
-                {
-                    map.remove(nums[i]);
-                    distinctCount--;
-                }
-                i++;
-            }
-        }
-        return ans;
+        return totalCount;
     }
 }
