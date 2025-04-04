@@ -1,4 +1,18 @@
 class Solution {
+    class Element
+    {
+        int val;
+        HashSet<String> parents;
+        public Element(int v)
+        {
+            parents = new HashSet<>();
+            val = v;
+        }
+        public void addWord(String w)
+        {
+            parents.add(w);
+        }
+    }
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         Queue<String> q = new LinkedList<>();
         q.add(beginWord);
@@ -17,7 +31,6 @@ class Solution {
                     shouldBreak = true;
                     break;
                 }
-                int idx = 0;
                 for(String s : wordList)
                 {
                     if(compare(s, top) && !vis.containsKey(s))
@@ -84,19 +97,5 @@ class Solution {
             }
         }
         return diff == 1;
-    }
-    class Element
-    {
-        int val;
-        HashSet<String> parents;
-        public Element(int v)
-        {
-            parents = new HashSet<>();
-            val = v;
-        }
-        public void addWord(String w)
-        {
-            parents.add(w);
-        }
     }
 }
