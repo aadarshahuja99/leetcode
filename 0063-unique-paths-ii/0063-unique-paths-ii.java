@@ -1,11 +1,11 @@
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        if(obstacleGrid[0][0] == 1)
+        int numRows = obstacleGrid.length;
+        int numColumns = obstacleGrid[0].length;
+        if(obstacleGrid[0][0] == 1 || obstacleGrid[numRows-1][numColumns-1] == 1)
         {
             return 0;
         }
-        int numRows = obstacleGrid.length;
-        int numColumns = obstacleGrid[0].length;
         int[][] dp = new int[numRows][numColumns];
         for(int[] row : dp)
         {
@@ -17,10 +17,6 @@ class Solution {
     {
         if(currentRow == numRows-1 && currentColumn == numColumns-1)
         {
-            if(grid[currentRow][currentColumn] == 1)
-            {
-                return 0;
-            }
             return 1;
         }
         if(dp[currentRow][currentColumn] != -1)
