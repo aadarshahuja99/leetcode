@@ -10,33 +10,54 @@
  */
 class Solution {
     public ListNode swapPairs(ListNode head) {
-        if(head == null || head.next == null)
+        return reverseKGroup(head, 2);
+    }
+    private ListNode reverseKGroup(ListNode head, int k) {
+        ListNode lastGroupEnd = null;
+        ListNode cur = head;
+        ListNode prev = null;
+        int c = 0;
+        while(cur != null)
         {
-            return head;
-        }
-        ListNode current = head.next;
-        ListNode prev = head;
-        ListNode previousToPrev = null;
-        while(current != null)
-        {
-            ListNode next = current.next;
-            current.next = prev;
-            prev.next = next;
-            if(previousToPrev != null)
+            ListNode unreversedGroupStart = cur;
+            ListNode tmp = cur;
+            while(c < k && tmp != null)
             {
-                previousToPrev.next = current;
+                tmp = tmp.next;
+                c++;
+            }
+            if(c == k)
+            {
+                c = 0;
+                while(cur != null && c < k)
+                {
+                    ListNode next = cur.next;
+                    cur.next = prev;
+                    prev = cur;
+                    cur = next;
+                    c++;
+                }
+                if(lastGroupEnd != null)
+                {
+                    lastGroupEnd.next = prev;
+                }
+                else
+                {
+                    head = prev;
+                }
+                lastGroupEnd = unreversedGroupStart;
+                lastGroupEnd.next = null;
+                c = 0;
             }
             else
             {
-                head = current;
+                // System.out.println("c is less than k "+" unrev start "+unreversedGroupStart.val+" lastEnd "+lastGroupEnd.val);
+                if(lastGroupEnd != null)
+                {
+                    lastGroupEnd.next = unreversedGroupStart;
+                }
+                cur = null;
             }
-            if(next == null)
-            {
-                break;
-            }
-            previousToPrev = prev;
-            current = next.next;
-            prev = next;
         }
         return head;
     }
