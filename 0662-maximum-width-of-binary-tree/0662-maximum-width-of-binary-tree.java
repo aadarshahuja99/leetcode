@@ -26,12 +26,12 @@ class Solution {
             for(int i=0; i<s; i++)
             {
                 var top = q.poll();
-                if(levelMin == -1)
+                if(i == 0)
                 {
-                    levelMin = top.val;
+                    levelMin = top.index;
                 }
-                int current = top.val - levelMin;
-                levelMax = Math.max(levelMax, top.val);
+                int current = top.index - levelMin;
+                levelMax = Math.max(levelMax, top.index);
                 if(top.node.left != null)
                 {
                     q.add(new Element(top.node.left, 2*current+1));
@@ -47,12 +47,12 @@ class Solution {
     }
     class Element
     {
-        int val;
+        int index;
         TreeNode node;
         public Element(TreeNode r, int v)
         {
             node = r;
-            val = v;
+            index = v;
         }
     }
 }
