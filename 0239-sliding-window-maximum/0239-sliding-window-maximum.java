@@ -8,16 +8,13 @@ class Solution {
         int idx = 0;
         while(end < n)
         {
-            if(end - start < k)
+            while(deque.size() > 0 && deque.peekLast() < nums[end])
             {
-                while(deque.size() > 0 && deque.peekLast() < nums[end])
-                {
-                    deque.removeLast();
-                }
-                deque.addLast(nums[end]);
-                end++;
+                deque.removeLast();
             }
-            else
+            deque.addLast(nums[end]);
+            end++;
+            if(end - start == k)
             {
                 ans[idx] = deque.peekFirst();
                 if(deque.peekFirst() == nums[start])
@@ -28,7 +25,6 @@ class Solution {
                 idx++;
             }
         }
-        ans[idx] = deque.peekFirst();
         return ans;
     }
 }
