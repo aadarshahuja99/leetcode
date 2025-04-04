@@ -4,61 +4,39 @@ class Solution {
         {
             return -1;
         }
-        LinkedList<QueueElement> q = new LinkedList<QueueElement>();
-        q.addLast(new QueueElement(0,0,1));
-        int[][] visited = new int[grid.length][grid.length];
-        visited[0][0] = 1;
+        LinkedList<int[]> q = new LinkedList<int[]>();
+        q.addLast(new int[] { 0,0 });
+        int n = grid.length;
+        boolean[][] visited = new boolean[n][n];
+        int length = 0;
+        int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}, {1,1}, {1,-1}, {-1,1}, {-1,-1}};
+        visited[0][0] = true;
         while(q.size() > 0)
         {
-            QueueElement top = q.removeFirst();
-            int row = top.getRow();
-            int col = top.getCol();
-            int dist = top.getDistance();
-            if(row == grid.length-1 && col == grid.length - 1)
+            length++;
+            int s = q.size();
+            for(int i=0; i<s; i++)
             {
-                return dist;
-            }
-            int[] deltaRow = {1, 1, -1, -1, 1, 0, -1, 0};
-            int[] deltaCol = {-1, 1, -1, 1, 0, 1, 0, -1};
-            for(int i=0;i<8;i++)
-            {
-                int newRow = row+deltaRow[i];
-                int newCol = col+deltaCol[i];
-                if(newRow >= 0 && newRow < grid.length && newCol >= 0 && newCol < grid.length && visited[newRow][newCol] == 0 && grid[newRow][newCol] == 0)
+                int[] top = q.removeFirst();
+                int r = top[0];
+                int c = top[1];
+                if(r == n-1 && c == n-1)
                 {
-                    visited[newRow][newCol] = 1;
-                    q.addLast(new QueueElement(newRow,newCol,dist+1));
+                    return length;
+                }
+                for(int[] d : dirs)
+                {
+                    int nr = r+d[0];
+                    int nc = c+d[1];
+                    if(nr < 0 || nr == n || nc < 0 || nc == n || visited[nr][nc] || grid[nr][nc] == 1)
+                    {
+                        continue;
+                    }
+                    visited[nr][nc] = true;
+                    q.addLast(new int[] { nr, nc });
                 }
             }
         }
         return -1;
-    }
-    class QueueElement
-    {
-        private int row;
-        private int col;
-        private int dist;
-        public QueueElement(int r, int c, int d)
-        {
-            row = r;
-            col = c;
-            dist = d;
-        }
-        public void setDistance(int d)
-        {
-            dist = d;
-        }
-        public int getDistance()
-        {
-            return dist;
-        }
-        public int getRow()
-        {
-            return row;
-        }
-        public int getCol()
-        {
-            return col;
-        }
     }
 }
