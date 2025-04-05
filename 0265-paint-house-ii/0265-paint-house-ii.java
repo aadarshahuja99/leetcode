@@ -27,26 +27,25 @@ class Solution {
             int currentMinColor = -1;
             for(int j=0; j<k; j++)
             {
-                int minCost = 0;
+                int currentCost = 0;
                 if(j != minColor)
                 {
-                    minCost = costs[i][j] + prevMin;
+                    currentCost = costs[i][j] + prevMin;
                 }
                 else
                 {
-                    minCost = costs[i][j] + prevSecondMin;
+                    currentCost = costs[i][j] + prevSecondMin;
                 }
-                if(minCost < min || min == -1)
+                if(currentCost < min || min == -1)
                 {
                     secondMin = min;
-                    min = minCost;
+                    min = currentCost;
                     currentMinColor = j;
                 }
-                else if(minCost < secondMin || secondMin == -1)
+                else if(currentCost < secondMin || secondMin == -1)
                 {
-                    secondMin = minCost;
+                    secondMin = currentCost;
                 }
-                // System.out.println(minCost+" "+j+" "+i+" "+costs[i][j]+" "+prevMin);
             }
             prevMin = min;
             prevSecondMin = secondMin;
