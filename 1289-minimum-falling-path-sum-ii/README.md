@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-falling-path-sum-ii">1289. Minimum Falling Path Sum II</a></h2><h3>Hard</h3><hr><p>Given an <code>n x n</code> integer matrix <code>grid</code>, return <em>the minimum sum of a <strong>falling path with non-zero shifts</strong></em>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-falling-path-sum-ii/description/">1289. Minimum Falling Path Sum II</a></h2><h3>Hard</h3><hr><p>Given an <code>n x n</code> integer matrix <code>grid</code>, return <em>the minimum sum of a <strong>falling path with non-zero shifts</strong></em>.</p>
 
 <p>A <strong>falling path with non-zero shifts</strong> is a choice of exactly one element from each row of <code>grid</code> such that no two elements chosen in adjacent rows are in the same column.</p>
 
