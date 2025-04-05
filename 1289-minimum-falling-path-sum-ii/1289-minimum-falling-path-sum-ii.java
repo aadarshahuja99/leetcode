@@ -1,33 +1,60 @@
 class Solution {
     public int minFallingPathSum(int[][] grid) {
-        int numberOfRows = grid.length;
-        int numberOfColumns = grid[0].length;
-        int[][] cache = new int[numberOfRows][numberOfColumns+1];
-        for(int[] row : cache)
-        {
-            Arrays.fill(row, -1);
-        }
-        return getAns(0, 0, grid, numberOfRows, numberOfColumns, cache);
+        return minCostII(grid);
     }
-    private int getAns(int currentRow, int lastColumn, int[][] grid, int numberOfRows, int numberOfColumns, int[][] cache)
-    {
-        if(currentRow == numberOfRows)
+    private int minCostII(int[][] costs) {
+        int minColor = Integer.MAX_VALUE;
+        int prevMin = Integer.MAX_VALUE;
+        int prevSecondMin = Integer.MAX_VALUE;
+        int k = costs[0].length;
+        int n = costs.length;
+        for(int i=0; i<k; i++)
         {
-            return 0;
-        }
-        if(cache[currentRow][lastColumn] != -1)
-        {
-            return cache[currentRow][lastColumn];
-        }
-        int ans = 2*10000;
-        for(int i=1; i<=numberOfColumns; i++)
-        {
-            if(lastColumn == i)
+            if(costs[0][i] < prevMin || prevMin == Integer.MAX_VALUE)
             {
-                continue;
+                prevSecondMin = prevMin;
+                prevMin = costs[0][i];
+                minColor = i;
             }
-            ans = Math.min(ans, grid[currentRow][i-1] + getAns(currentRow+1, i, grid, numberOfRows, numberOfColumns, cache));
+            else if(costs[0][i] < prevSecondMin || prevSecondMin == Integer.MAX_VALUE)
+            {
+                prevSecondMin = costs[0][i];
+            }
         }
-        return cache[currentRow][lastColumn] = ans;
+        int ans = prevMin;
+        // System.out.println(ans+" "+prevSecondMin+" "+minColor);
+        for(int i=1; i<n; i++)
+        {
+            int min = Integer.MAX_VALUE;
+            int secondMin = Integer.MAX_VALUE;
+            int currentMinColor = Integer.MAX_VALUE;
+            for(int j=0; j<k; j++)
+            {
+                int minCost = 0;
+                if(j != minColor)
+                {
+                    minCost = costs[i][j] + prevMin;
+                }
+                else
+                {
+                    minCost = costs[i][j] + prevSecondMin;
+                }
+                if(minCost < min || min == Integer.MAX_VALUE)
+                {
+                    secondMin = min;
+                    min = minCost;
+                    currentMinColor = j;
+                }
+                else if(minCost < secondMin || secondMin == Integer.MAX_VALUE)
+                {
+                    secondMin = minCost;
+                }
+                // System.out.println(minCost+" "+j+" "+i+" "+costs[i][j]+" "+prevMin);
+            }
+            prevMin = min;
+            prevSecondMin = secondMin;
+            minColor = currentMinColor;
+        }
+        return prevMin;
     }
 }
