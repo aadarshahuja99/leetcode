@@ -23,9 +23,6 @@ class Solution {
 
             j++;
             
-            int min = minQueue.peekFirst();
-            int max = maxQueue.peekFirst();
-            
             while(maxQueue.peekFirst() - minQueue.peekFirst() > limit)
             {
                 if(maxQueue.peekFirst() == nums[i])
@@ -37,10 +34,6 @@ class Solution {
                     minQueue.pollFirst();
                 }
                 i++;
-                if(maxQueue.size() == 0 || minQueue.size() == 0)
-                {
-                    break;
-                }
             }
             ans = Math.max(ans, j - i);
         }
