@@ -6,18 +6,18 @@ class Solution {
         {
             for(int col = matrix[0].length-1; col>=0; col--)
             {
-                int bottom = dp[row+1][col];
-                int right = dp[row][col+1];
-                int diagonal = dp[row+1][col+1];
-                if(matrix[row][col] == '1')
+                if(matrix[row][col] == '0')
                 {
-                    int ans = 1 + Math.min(Math.min(bottom, right), diagonal);
-                    max = Math.max(max,ans);
-                    dp[row][col] = ans;
+                    dp[row][col] = 0;
                 }
                 else
                 {
-                    dp[row][col] = 0;
+                    int bottom = dp[row+1][col];
+                    int right = dp[row][col+1];
+                    int diagonal = dp[row+1][col+1];
+                    int ans = 1 + Math.min(Math.min(bottom, right), diagonal);
+                    max = Math.max(max,ans);
+                    dp[row][col] = ans;
                 }
             }
         }
@@ -41,13 +41,11 @@ class Solution {
         {
             int ans = 1 + Math.min(Math.min(bottom, right), diagonal);
             max = Math.max(max,ans);
-            dp[row][col] = ans;
-            return ans;
+            return dp[row][col] = ans;
         }
         else
         {
-            dp[row][col] = 0;
-            return 0;
+            return dp[row][col] = 0;
         }
     }
 }
