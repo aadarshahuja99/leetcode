@@ -16,10 +16,6 @@ class Solution {
         Arrays.sort(list, (a,b) -> {
             return a[0] - b[0];
         });
-        // for(int[] a : list)
-        // {
-        //     System.out.println(a[0]+","+a[1]);
-        // }
         int start = 0;
         int end = n-1;
         int ans = 0;
@@ -46,19 +42,18 @@ class Solution {
             {
                 continue;
             }
-            int current = list[i][0];
-            if(b >= current)
+            int currentJump = list[i][0];
+            if(b >= currentJump)
             {
-                // System.out.println("can jump using " + current + " bricks to "+list[i][1]);
-                b -= current;
+                b -= currentJump;
             }
             else if(l >= 1)
             {
-                // System.out.println("can jump using ladder to "+list[i][0]);
                 l--;
             }
             else
             {
+                // jump not possible to list[i][1]
                 return false;
             }
         }
