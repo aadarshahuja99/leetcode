@@ -1,7 +1,7 @@
 class Solution {
     public long minCost(int n, int[][] cost) {
         int limit = n%2 == 1 ? n/2 + 1 : n/2;
-        long[][][] dp = new long[n][4][4];
+        long[][][] dp = new long[limit][4][4];
         for(long[][] nr : dp)
         {
             for(long[] r : nr)
