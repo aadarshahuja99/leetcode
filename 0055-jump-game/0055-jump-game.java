@@ -4,7 +4,7 @@ class Solution {
         int currentLevelStart = 0;
         int currentLevelEnd = 0;
         int n = nums.length;
-        while(currentLevelEnd <= n-1)
+        while(currentLevelEnd < n-1)
         {
             int farthestFromCurrentLevel = currentLevelEnd;
             while(currentLevelStart <= currentLevelEnd)
@@ -23,6 +23,6 @@ class Solution {
                 return false;
             }
         }
-        return false;
+        return n == 1;
     }
 }
