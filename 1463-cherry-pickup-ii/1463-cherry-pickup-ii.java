@@ -8,11 +8,11 @@ class Solution {
                 Arrays.fill(nestedRow, -1);
             }
         }
-        return grid[0][0] + grid[0][grid[0].length-1] + getAns(1,0,grid[0].length-1,grid,dp);
+        return grid[0][0] + grid[0][grid[0].length-1] + getAns(0,0,grid[0].length-1,grid,dp);
     }
     private int getAns(int row, int col1, int col2, int[][] grid, int[][][] dp)
     {
-        if(row == grid.length)
+        if(row == grid.length-1)
         {
             return 0;
         }
@@ -32,11 +32,11 @@ class Solution {
                 {
                     if(c1 == c2)
                     {
-                        ans = Math.max(ans, grid[row][c1] + getAns(row+1, c1, c2, grid, dp));
+                        ans = Math.max(ans, grid[row+1][c1] + getAns(row+1, c1, c2, grid, dp));
                     }
                     else
                     {
-                        ans = Math.max(ans, grid[row][c1] + grid[row][c2] + getAns(row+1, c1, c2, grid, dp));
+                        ans = Math.max(ans, grid[row+1][c1] + grid[row+1][c2] + getAns(row+1, c1, c2, grid, dp));
                     }
                 }
             }
