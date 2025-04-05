@@ -1,37 +1,35 @@
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-        HashMap<String,ArrayList<String>> map = new HashMap<>();
-        for(String s : strs)
+        HashMap<Integer, ArrayList<String>> visited = new HashMap<>();
+        for(String str : strs)
         {
-            var enc = encode(s);
-            if(!map.containsKey(enc))
+            Integer hash = getHash(str);
+            if(!visited.containsKey(hash))
             {
-                map.put(enc, new ArrayList<>());
+                ArrayList<String> group = new ArrayList<>();
+                group.add(str);
+                visited.put(hash, group);
             }
-            map.get(enc).add(s);
+            else
+            {
+                visited.get(hash).add(str);
+            }
         }
         ArrayList<List<String>> ans = new ArrayList<>();
-        for(var entry : map.entrySet())
+        for(var entry : visited.entrySet())
         {
             ans.add(entry.getValue());
         }
         return ans;
     }
-    private String encode(String s)
+    private Integer getHash(String str)
     {
-        int[] counts = new int[26];
-        for(char c : s.toCharArray())
+        int[] letterCounts = new int[26];
+        for(char c : str.toCharArray())
         {
-            counts[c-'a']++;
+            int letterIndex = c - 97;
+            letterCounts[letterIndex]++;
         }
-        StringBuilder sb = new StringBuilder();
-        for(int i=0; i<26; i++)
-        {
-            if(counts[i] > 0)
-            {
-                sb.append(String.format("%s:%s,", i, counts[i]));
-            }
-        }
-        return sb.toString();
+        return Arrays.hashCode(letterCounts);
     }
 }
