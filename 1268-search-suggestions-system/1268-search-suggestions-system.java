@@ -72,7 +72,7 @@ class Solution {
             {
                 if(current.references[i] != null)
                 {
-                    str.append((char)(i + 97));
+                    str.append((char)(i + 'a'));
                     dfs(current.references[i], str, result);
                     str.deleteCharAt(str.length() - 1);
                 }
