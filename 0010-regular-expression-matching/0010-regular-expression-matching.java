@@ -33,10 +33,12 @@ class Solution {
         {
             if(p.charAt(j-1) == '*' && (s.charAt(i-1) == p.charAt(j-2) || p.charAt(j-2) == '.'))
             {
+                // 1st call tries for more than 1 matching, second call is for exact 1 matching, third call is for zero matching
                 return dp[i][j] = getAns(i-1, j, s, p, dp) || getAns(i, j-1, s, p, dp) || getAns(i, j-2, s, p, dp);
             }
             else if(p.charAt(j-1) == '*')
             {
+                // zero matching call
                 return dp[i][j] = getAns(i, j-2, s, p, dp);
             }
         }
