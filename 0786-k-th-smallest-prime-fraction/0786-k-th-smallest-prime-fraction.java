@@ -4,23 +4,24 @@ class Solution {
         PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
             public int compare(int[] a, int[] b)
             {
-                return arr[a[0]]*arr[n-1-b[1]] - arr[b[0]]*arr[n-1-a[1]];
+                return Double.compare(1.0*arr[a[0]]/arr[a[1]], 1.0*arr[b[0]]/arr[b[1]]);
             }
         });
-        for(int i=0; i<n; i++)
+        for(int i=0; i<n-1; i++)
         {
-            pq.add(new int[] { i,0 });
+            pq.add(new int[] { i,n-1 });
         }
         while(k-- > 1)
         {
             int[] top = pq.poll();
             int numeratorIndex = top[0];
             int denomenatorIndex = top[1];
-            if(denomenatorIndex+1 < n)
+            denomenatorIndex--;
+            if(denomenatorIndex > numeratorIndex)
             {
-                pq.add(new int[] { numeratorIndex, denomenatorIndex+1 });
+                pq.add(new int[] { numeratorIndex, denomenatorIndex });
             }
         }
-        return new int[] { arr[pq.peek()[0]], arr[arr.length - 1 - pq.peek()[1]] };
+        return new int[] { arr[pq.peek()[0]], arr[pq.peek()[1]] };
     }
 }
