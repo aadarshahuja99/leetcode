@@ -15,6 +15,6 @@ class Solution {
         while (graph.containsKey(airport) && !graph.get(airport).isEmpty()) {
             dfs(graph.get(airport).poll());
         }
-        result.add(0, airport);
+        result.addFirst(airport);
     }
 }
