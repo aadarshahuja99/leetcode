@@ -19,7 +19,7 @@ class Node {
 */
 
 class Solution {
-    HashMap<Integer,Node> set = new HashMap<Integer,Node>();
+    HashMap<Integer,Node> nodeMap = new HashMap<Integer,Node>();
     public Node cloneGraph(Node node) {
         if(node == null)
         {
@@ -39,16 +39,16 @@ class Solution {
     {
         int val = current.val;
         Node clone = new Node(val,new ArrayList<Node>());
-        set.put(val,clone);
+        nodeMap.put(val,clone);
         for(Node adj : current.neighbors)
         {
-            if(!set.containsKey(adj.val))
+            if(!nodeMap.containsKey(adj.val))
             {
                 clone.neighbors.add(dfs(adj));
             }
             else
             {
-                clone.neighbors.add(set.get(adj.val));
+                clone.neighbors.add(nodeMap.get(adj.val));
             }
         }
         return clone;
