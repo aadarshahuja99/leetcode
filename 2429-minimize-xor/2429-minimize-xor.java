@@ -37,7 +37,7 @@ class Solution {
             }
             i--;
         }
-        // after the most significant set bits of num1 have been set in answer and still some more bits are yet to be set, set the least significant ones to msbs to minimize the value
+        // after the most significant set bits of num1 have been set in answer and still some more bits are yet to be set, set the least unset significant ones to 1 to minimize the value
         if(count > 0)
         {
             i = 0;
