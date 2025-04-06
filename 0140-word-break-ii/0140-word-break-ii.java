@@ -2,15 +2,18 @@ class Solution {
     List<String> ans = new ArrayList<String>();
     public List<String> wordBreak(String s, List<String> wordDict) {
         HashSet<String> set = new HashSet<>();
+        Trie root = new Trie();
         for(String str : wordDict)
         {
-            // root.insert(str);
-            set.add(str);
+            root.insert(str);
+            // set.add(str);
         }
-        getAns(0, s, set, "");
+        boolean[] dp = new boolean[s.length()+1];
+        dp[0] = true;
+        getAns(0, s, root, "");
         return ans;
     }
-    private void getAns(int current, String s, HashSet<String> root , String sentence)
+    private void getAns(int current, String s, Trie root , String sentence)
     {
         int size = s.length();
         if(current == size)
@@ -18,13 +21,18 @@ class Solution {
             ans.add(sentence.trim());
         }
         String temp = "";
+        Trie node = root;
         for(int i = current; i<size; i++)
         {
-            temp += s.charAt(i);
-            if(root.contains(temp))
+            node = node.search(s.charAt(i));
+            if(node != null && node.isEnd)
             {
                 // System.out.println("match for " + temp);
-                getAns(i+1, s, root, sentence + temp + " ");
+                getAns(i+1, s, root, sentence + s.substring(current, i+1) + " ");
+            }
+            if(node == null)
+            {
+                break;
             }
         }
     }
@@ -51,19 +59,12 @@ class Solution {
             }
             current.isEnd = true;
         }
-        public boolean search(String s)
+        public Trie search(char c)
         {
             Trie current = this;
-            for(char c : s.toCharArray())
-            {
-                int index = c - 'a';
-                if(current.refs[index] == null)
-                {
-                    return false;
-                }
-                current = current.refs[index];
-            }
-            return current.isEnd;
+            int index = c - 'a';
+            current = current.refs[index];
+            return current;
         }
     }
 }
