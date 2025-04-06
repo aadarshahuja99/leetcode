@@ -7,12 +7,16 @@ class Solution {
     }
     private void generate(int current, List<Integer> candidate, int[] nums)
     {
-        ans.add(new ArrayList<>(candidate));
-        for(int i=current; i<nums.length; i++)
+        if(current == nums.length)
         {
-            candidate.add(nums[i]);
-            generate(i+1, candidate, nums);
-            candidate.remove(candidate.size() - 1);
+            ans.add(new ArrayList<>(candidate));
+            return;
         }
+        // dont add current
+        generate(current+1, candidate, nums);
+        // add current
+        candidate.add(nums[current]);
+        generate(current+1, candidate, nums);
+        candidate.remove(candidate.size() - 1);
     }
 }
