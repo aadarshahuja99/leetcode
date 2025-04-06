@@ -18,8 +18,10 @@ class Solution {
         {
             getParenthesis(currentIndex+1, opened+1, currentString+"(", allCombinations, n);
             getParenthesis(currentIndex+1, opened-1, currentString+")", allCombinations, n);
-            return;
         }
-        getParenthesis(currentIndex+1, opened+1, currentString+"(", allCombinations, n);
+        else
+        {
+            getParenthesis(currentIndex+1, opened+1, currentString+"(", allCombinations, n);
+        }
     }
 }
