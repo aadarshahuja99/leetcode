@@ -5,11 +5,12 @@ class Solution {
         int count = 0;
         while(i < n)
         {
+            int mask = 0;
             HashSet<Character> set = new HashSet<>();
             int j=i;
-            while(j < n && !set.contains(s.charAt(j)))
+            while(j < n && (mask&(1<<(s.charAt(j) - 'a'))) == 0)
             {
-                set.add(s.charAt(j));
+                mask = (mask|(1<<(s.charAt(j) - 'a')));
                 j++;
             }
             count++;
