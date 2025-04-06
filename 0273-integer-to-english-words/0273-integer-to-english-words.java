@@ -7,16 +7,16 @@ class Solution {
         if (num == 0) return "Zero";
 
         int i = 0;
-        String words = "";
+        StringBuilder words = new StringBuilder();
         
         while (num > 0) {
             if (num % 1000 != 0)
-                words = helper(num % 1000) +THOUSANDS[i] + " " + words;
+                words.insert(0, String.format("%s%s ",helper(num % 1000),THOUSANDS[i]));
             num /= 1000;
             i++;
         }
         
-        return words.trim();
+        return words.toString().trim();
     }
 
     private String helper(int num) {
