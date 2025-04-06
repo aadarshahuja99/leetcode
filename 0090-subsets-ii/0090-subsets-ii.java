@@ -7,16 +7,21 @@ class Solution {
     }
     private void createSubsets(int currentIndex, int[] nums, ArrayList<List<Integer>> subsets, LinkedList<Integer> currentSubset)
     {
-        subsets.add(new ArrayList<Integer>(currentSubset));
-        for(int i=currentIndex; i<nums.length; i++)
+        if(currentIndex == nums.length)
         {
-            if(i != currentIndex && nums[i-1] == nums[i])
-            {
-                continue;
-            }
-            currentSubset.addLast(nums[i]);
-            createSubsets(i+1, nums, subsets, currentSubset);
-            currentSubset.removeLast();
+            subsets.add(new ArrayList<>(currentSubset));
+            return;
         }
+        int i=currentIndex+1;
+        while(i < nums.length && nums[i] == nums[currentIndex])
+        {
+            i++;
+        }
+        // dont take
+        createSubsets(i, nums, subsets, currentSubset);
+        // take
+        currentSubset.addLast(nums[currentIndex]);
+        createSubsets(currentIndex+1, nums, subsets, currentSubset);
+        currentSubset.removeLast();
     }
 }
