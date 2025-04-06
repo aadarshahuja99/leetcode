@@ -7,18 +7,7 @@ class Solution {
         int ans = n+1;
         for(int i=0; i<n; i++)
         {
-            if(i == 0)
-            {
-                prefixSums[i] = (long)nums[i];
-                if(prefixSums[i] >= k)
-                {
-                    ans = 1;
-                    return ans;
-                }
-                list.addLast(new long[] { (long)i, prefixSums[i] });
-                continue;
-            }
-            prefixSums[i] = prefixSums[i-1] + (long)nums[i];
+            prefixSums[i] = i > 0 ? prefixSums[i-1] + nums[i] : nums[i];
             if(prefixSums[i] >= k)
             {
                 ans = Math.min(ans, i+1);
@@ -32,7 +21,7 @@ class Solution {
                 ans = Math.min(ans, i - (int)list.getFirst()[0]);
                 list.removeFirst();
             }
-            list.addLast(new long[] { (long)i, prefixSums[i] });
+            list.addLast(new long[] { i, prefixSums[i] });
         }
         return ans == n+1 ? -1 : ans;
     }
