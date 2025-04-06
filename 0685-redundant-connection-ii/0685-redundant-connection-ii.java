@@ -33,14 +33,14 @@ class Solution {
             return edges[edgeMakesCycle];
         }
         
-        /* Handle with the cyclic problem when we remove the wrong edge. */
+        /* Handle with the cyclic problem when we removed the wrong edge and need to remove the initial edge */
         if (edgeMakesCycle != -1) { 
             int v = edges[edgeRemoved][1];
             int u = parent[v];
             return new int[]{u, v};
         } 
         
-        /* CHandle with the cyclic problem when we remove the right edge. */
+        /* Handle with the cyclic problem when we remove the right edge. */
         return edges[edgeRemoved];
     }
     
