@@ -7,7 +7,7 @@ class Solution {
         int ans = 0;
         int i=0;
         PriorityQueue<Integer> pq = new PriorityQueue<>();
-        int currentDay = events[i][0];
+        int currentDay = 0;
         while(i < n || !pq.isEmpty())
         {
             if(pq.isEmpty())
