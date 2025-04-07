@@ -61,12 +61,9 @@ class Solution {
 
         // Convert sets to lists
         for (int i = 0; i < n; i++) {
-            for (int node = 0; node < n; node++) {
-                if (node == i) continue;
-                if (ancestorsSetList.get(i).contains(node)) {
-                    ancestorsList.get(i).add(node);
-                }
-            }
+            var ancestors = new ArrayList<>(ancestorsSetList.get(i));
+            Collections.sort(ancestors);
+            ancestorsList.get(i).addAll(ancestors);
         }
 
         return ancestorsList;
