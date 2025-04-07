@@ -1,59 +1,74 @@
 class Solution {
-    HashMap<Integer,HashSet> map = new HashMap<>();
+
     public List<List<Integer>> getAncestors(int n, int[][] edges) {
-        ArrayList<List<Integer>> ans = new ArrayList<List<Integer>>();
-        if(n==1)
-        {
-            ans.add(new ArrayList<Integer>());
-            return ans;
+        // Create adjacency list
+        List<Integer>[] adjacencyList = new ArrayList[n];
+        for (int i = 0; i < n; i++) {
+            adjacencyList[i] = new ArrayList<>();
         }
-        ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
-        for(int i=0; i<n; i++)
-        {
-            ans.add(new ArrayList<Integer>());
-            adjList.add(new ArrayList<Integer>());
+
+        // Fill the adjacency list and indegree array based on the edges
+        int[] indegree = new int[n];
+        for (int[] edge : edges) {
+            int from = edge[0];
+            int to = edge[1];
+            adjacencyList[from].add(to);
+            indegree[to]++;
         }
-        for(int[] edge : edges)
-        {
-            adjList.get(edge[1]).add(edge[0]);
-        }
-        int[] visited = new int[n];
-        for(int i=0; i<n; i++)
-        {
-            if(visited[i] == 0)
-            {
-                dfs(i,adjList,visited);
+
+        // Queue for nodes with no incoming edges (starting points for topological sort)
+        Queue<Integer> nodesWithZeroIndegree = new LinkedList<>();
+        for (int i = 0; i < indegree.length; i++) {
+            if (indegree[i] == 0) {
+                nodesWithZeroIndegree.add(i);
             }
         }
-        for(Map.Entry<Integer,HashSet> set : map.entrySet())
-        {
-            if(set.getValue().size() > 0)
-            {
-                ArrayList<Integer> list = new ArrayList<Integer>(set.getValue());
-                Collections.sort(list);
-                List<Integer> target = ans.get(set.getKey());
-                list.stream().forEachOrdered(target::add);
+
+        // List to store the topological order of nodes
+        List<Integer> topologicalOrder = new ArrayList<>();
+        while (!nodesWithZeroIndegree.isEmpty()) {
+            int currentNode = nodesWithZeroIndegree.poll();
+            topologicalOrder.add(currentNode);
+
+            // Reduce indegree of neighboring nodes and add them to the queue
+            // if they have no more incoming edges
+            for (int neighbor : adjacencyList[currentNode]) {
+                indegree[neighbor]--;
+                if (indegree[neighbor] == 0) {
+                    nodesWithZeroIndegree.add(neighbor);
+                }
             }
         }
-        return ans;
-    }
-    private void dfs(int current, ArrayList<ArrayList<Integer>> adjList, int[] visited)
-    {
-        visited[current] = 1;
-        map.put(current,new HashSet<Integer>());
-        HashSet<Integer> ancestors = map.get(current);
-        for(int node : adjList.get(current))
-        {
-            ancestors.add(node);
-            if(visited[node] == 0)
-            {
-                dfs(node,adjList,visited);
-            }
-            Iterator<Integer> it = map.get(node).iterator();
-            while(it.hasNext())
-            {
-                ancestors.add(it.next());
+
+        // Initialize the result list and set list for storing ancestors
+        List<List<Integer>> ancestorsList = new ArrayList<>();
+        List<Set<Integer>> ancestorsSetList = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            ancestorsList.add(new ArrayList<>());
+            ancestorsSetList.add(new HashSet<>());
+        }
+
+        // Fill the set list with ancestors using the topological order
+        for (int node : topologicalOrder) {
+            for (int neighbor : adjacencyList[node]) {
+                // Add immediate parent, and other ancestors.
+                ancestorsSetList.get(neighbor).add(node);
+                ancestorsSetList
+                    .get(neighbor)
+                    .addAll(ancestorsSetList.get(node));
             }
         }
+
+        // Convert sets to lists
+        for (int i = 0; i < n; i++) {
+            for (int node = 0; node < n; node++) {
+                if (node == i) continue;
+                if (ancestorsSetList.get(i).contains(node)) {
+                    ancestorsList.get(i).add(node);
+                }
+            }
+        }
+
+        return ancestorsList;
     }
 }
