@@ -32,7 +32,7 @@ class Solution {
         {
             if(current < nums[i])
             {
-                i+=1;
+                i++;
             }
             else
             {
