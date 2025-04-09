@@ -14,13 +14,12 @@ class Solution {
             {
                 return false;
             }
-            if(i > nums.length - k && nums[i] != 0)
+            if(i > nums.length - k && nums[i] > 0)
             {
                 return false;
             }
             operationsInCurrentWindow += nums[i];
             q.add(nums[i]);
-            nums[i] = 0;
         }
         return true;
     }
