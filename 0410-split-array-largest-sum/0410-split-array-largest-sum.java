@@ -35,12 +35,10 @@ class Solution {
             while(idx<nums.length && sum+nums[idx] <= current)
             {
                 sum += nums[idx];
-                // System.out.println("sum = "+sum+" for element: "+count+" idx: "+idx+" current: "+current);
                 idx++;
             }
             count++;
         }
-        // System.out.println("count = "+count+" for current: "+current);
         return count <= k;
     }
 }
