@@ -25,7 +25,7 @@ class Solution {
         }
         int num = 0;
         int ans = 0;
-        for(int i=current; i<s.length(); i++)
+        for(int i=current; i<Math.min(current+2, s.length()); i++)
         {
             num = num*10 + (s.charAt(i) - '0');
             if(num > 26)
