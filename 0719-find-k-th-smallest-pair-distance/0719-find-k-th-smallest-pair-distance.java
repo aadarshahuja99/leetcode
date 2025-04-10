@@ -10,7 +10,7 @@ class Solution {
         while(s <= e)
         {
             int m = s + (e - s)/2;
-            int count = 0;
+            int countValidPairs = 0;
             for(int i=0, j=1; i<n-1; i++)
             {
                 if(j == i)
@@ -21,10 +21,9 @@ class Solution {
                 {
                     j++;
                 }
-                count += (j - i - 1);
+                countValidPairs += (j - i - 1);
             }
-            // System.out.println(count+" for "+m);
-            if(count >= k)
+            if(countValidPairs >= k)
             {
                 ans = m;
                 e = m-1;
