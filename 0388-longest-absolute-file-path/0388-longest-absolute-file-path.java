@@ -17,11 +17,10 @@ class Solution {
                 {
                     maxLength = Math.max(maxLength, component.length());
                 }
-                stack.push(new int[] { tabs, component.length() });
+                stack.push(new int[] { tabs, component.length() - tabs });
             }
             else
             {
-                
                 if(isAFile)
                 {
                     maxLength = Math.max(maxLength, stack.peek()[1] + component.length());
