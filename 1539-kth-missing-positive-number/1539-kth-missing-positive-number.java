@@ -1,31 +1,11 @@
 class Solution {
     public int findKthPositive(int[] arr, int k) {
-        int[] pre = new int[arr.length];
-        int it = 1;
-        for(int i=0; i<arr.length; i++)
-        {
-            pre[i] = arr[i] - (i+1);
+        int l = 0, r = arr.length;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (arr[mid] - (mid + 1) >= k) r = mid;  //missed more or equal than k numbers, left side;
+            else l = mid + 1;   // missed less than k numbers, must be in the right side;
         }
-        int start = 0;
-        int end = arr.length-1;
-        int ans = -1;
-        while(start <= end)
-        {
-            int mid = start + (end-start)/2;
-            if(pre[mid] < k)
-            {
-                ans = mid;
-                start = mid+1;
-            }
-            else
-            {
-                end = mid-1;
-            }
-        }
-        if(ans == -1)
-        {
-            return k;
-        }
-        return arr[ans] + k - pre[ans];
+        return l + k;
     }
 }
