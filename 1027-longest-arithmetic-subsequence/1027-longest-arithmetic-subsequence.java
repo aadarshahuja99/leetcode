@@ -13,22 +13,12 @@ class Solution {
             for(int j=0; j<i; j++)
             {
                 int diff = nums[i] - nums[j];
-                if(dp[j].containsKey(diff))
+                int current = Math.max(dp[j].getOrDefault(diff, 0) + 1, 2);
+                if(current > dp[i].getOrDefault(diff, 0))
                 {
-                    int current = dp[j].get(diff) + 1;
-                    if(current > ans)
-                    {
-                        ans = current;
-                    }
-                    if(current > dp[i].getOrDefault(diff, 0))
-                    {
-                        dp[i].put(diff, current);
-                    }
+                    dp[i].put(diff, current);
                 }
-                else
-                {
-                    dp[i].put(diff, 2);
-                }
+                ans = Math.max(dp[i].get(diff), ans);
             }
         }
         return ans;
