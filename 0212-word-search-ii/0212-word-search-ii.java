@@ -17,9 +17,7 @@ class Solution {
             for(int j=0; j<n; j++)
             {
                 boolean[][] visited = new boolean[m][n];
-                visited[i][j] = true;
                 dfs(i, j, board, visited, present, trie);
-                visited[i][j] = false;
                 if(present.size() == words.length)
                 {
                     break;
@@ -34,7 +32,7 @@ class Solution {
     }
     private void dfs(int row, int col, char[][] board, boolean[][] visited, HashSet<Integer> present, Trie current)
     {
-        Trie next = current.search(current, board[row][col]);
+        Trie next = current.search(board[row][col]);
         if(next == null)
         {
             return;
@@ -43,6 +41,7 @@ class Solution {
         {
             present.add(next.wordIndex);
         }
+        visited[row][col] = true;
         int m = board.length;
         int n = board[0].length;
         for(int i=0; i<4; i++)
@@ -51,11 +50,10 @@ class Solution {
             int nextCol = col + moves[i][1];
             if(validate(nextRow, nextCol, m, n) && !visited[nextRow][nextCol])
             {
-                visited[nextRow][nextCol] = true;
                 dfs(nextRow, nextCol, board, visited, present, next);
-                visited[nextRow][nextCol] = false;
             }
         }
+        visited[row][col] = false;
     }
     private boolean validate(int r, int c, int m, int n)
     {
@@ -84,10 +82,10 @@ class Solution {
             }
             current.wordIndex = index;
         }
-        public Trie search(Trie current, char c)
+        public Trie search(char c)
         {
             int alphabetIndex = c - 'a';
-            return current.references[alphabetIndex];
+            return this.references[alphabetIndex];
         }
     }
 }
