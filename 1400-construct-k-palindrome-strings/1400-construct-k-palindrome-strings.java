@@ -13,10 +13,6 @@ class Solution {
         for(char ch : s.toCharArray())
         {
             map[ch-'a']++;
-            if(map[ch-'a'] == 1)
-            {
-                uniqueChars++;
-            }
         }
         int odds = 0;
         for(int i=0; i<26; i++)
