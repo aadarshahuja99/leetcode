@@ -1,52 +1,32 @@
 class Solution {
-    private boolean backtrack(int[] arr, int index, int count, int currSum, int k, 
-                              int targetSum, Integer mask, HashMap<Integer, Boolean> memo) {
+    private boolean getAns(int state, int count, int sum, int target, int k, int[] arr, Boolean[][] cache) {
                                   
         int n = arr.length;
-      
         // We made k - 1 subsets with target sum and last subset will also have target sum.
         if (count == k - 1) { 
             return true;
         }
-        
-        // No need to proceed further.
-        if (currSum > targetSum) { 
-            return false;
+        if(sum == target)
+        {
+            return getAns(state, count+1, 0, target, k, arr, cache);
         }
-        
-        // If we have already computed the current combination.
-        if (memo.containsKey(mask)) {
-            return memo.get(mask);
+        if(cache[state][count] != null)
+        {
+            return cache[state][count];
         }
-      
-        // When curr sum reaches target then one subset is made.
-        // Increment count and reset current sum.
-        if (currSum == targetSum) {
-            boolean ans = backtrack(arr, 0, count + 1, 0, k, targetSum, mask, memo);
-            memo.put(mask, ans);
-            return ans;
-        }
-        
-        // Try not picked elements to make some combinations.
-        for (int j = index; j < n; ++j) {
-            if (((mask >> j) & 1) == 0) {
-                // Include this element in current subset.
-                mask = (mask | (1 << j));
-                
-                // If using current jth element in this subset leads to make all valid subsets.
-                if (backtrack(arr, j + 1, count, currSum + arr[j], k, targetSum, mask, memo)) {
-                    return true;
+        boolean ans = false;
+        for(int i=0; i<n; i++)
+        {
+            if((state&(1<<i)) == 0 && (sum + arr[i]) <= target)
+            {
+                ans = ans || getAns((state^(1<<i)), count, sum+arr[i], target, k, arr, cache);
+                if(ans)
+                {
+                    return cache[state][count] = true;
                 }
-                
-                // Backtrack step.
-                mask = (mask ^ (1 << j));
             }
-        } 
-      
-        // We were not able to make a valid combination after picking each element from the array,
-        // hence we can't make k subsets.
-        memo.put(mask, false);
-        return false;
+        }
+        return cache[state][count] = ans;
     }
     
     void reverse(int[] arr) {
@@ -69,17 +49,13 @@ class Solution {
         if (totalArraySum % k != 0) { 
             return false;
         }
-      
-        // Sort in decreasing order.
-        Arrays.sort(arr);
-        reverse(arr);
         
         int targetSum = totalArraySum / k;
         Integer mask = 0;
         
         // Memoize the ans using taken element's string as key.
-        HashMap<Integer, Boolean> memo = new HashMap<>();
+        Boolean[][] memo = new Boolean[(1<<(n))][k-1];
       
-        return backtrack(arr, 0, 0, 0, k, targetSum, mask, memo);
+        return getAns(0, 0, 0, targetSum, k, arr, memo);
     }
 }
