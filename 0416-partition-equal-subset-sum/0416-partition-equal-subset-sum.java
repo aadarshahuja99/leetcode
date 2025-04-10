@@ -9,8 +9,33 @@ class Solution {
         {
             return false;
         }
-        Boolean[][] cache = new Boolean[nums.length][(s/2) + 1];
-        return getAns(0, s/2, nums, cache);
+        Boolean[][] cache = new Boolean[nums.length+1][(s/2) + 1];
+        for(int i=1; i<=s/2; i++)
+        {
+            cache[nums.length][i] = false;
+        }
+        for(int i=0; i<=nums.length; i++)
+        {
+            cache[i][0] = true;
+        }
+        for(int current = nums.length-1; current >= 0; current--)
+        {
+            for(int t = 1; t <= s/2; t++)
+            {
+                var notTake = cache[current+1][t];
+                if(nums[current] <= t)
+                {
+                    var take = cache[current+1][t-nums[current]];
+                    cache[current][t] = take || notTake;
+                }
+                else
+                {
+                    cache[current][t] = notTake;
+                }
+            }
+        }
+        return cache[0][s/2];
+        // return getAns(0, s/2, nums, cache);
     }
     private Boolean getAns(int current, int t, int[] nums, Boolean[][] cache)
     {
