@@ -43,9 +43,6 @@ class Solution {
             max = Math.max(max,ans);
             return dp[row][col] = ans;
         }
-        else
-        {
-            return dp[row][col] = 0;
-        }
+        return dp[row][col] = 0;
     }
 }
