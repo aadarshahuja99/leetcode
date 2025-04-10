@@ -7,7 +7,7 @@ class Solution {
         }
         int uniqueCharacterCount = uniqueCharacters.size();
         int ans = 0;
-        for(int i=1; i<= uniqueCharacterCount; i++)
+        for(int i=1; i<=uniqueCharacterCount; i++)
         {
             ans = Math.max(ans, getAns(s, i, k));
         }
@@ -15,67 +15,41 @@ class Solution {
     }
     private int getAns(String s, int unique, int k)
     {
-        HashMap<Character,Integer> hash = new HashMap<>();
+        int[] hash = new int[26];
         int left = 0;
         int right = 0;
         int n = s.length();
-        int fulfilled = 0;
         int ans = 0;
+        int count = 0;
+        int valid = 0;
         while(right < n)
         {
-            if(hash.size() < unique)
+            hash[s.charAt(right) - 'a']++;
+            if(hash[s.charAt(right) - 'a'] == 1)
             {
-                hash.put(s.charAt(right), hash.getOrDefault(s.charAt(right), 0) + 1);
-                if(hash.get(s.charAt(right)) == k)
-                {
-                    fulfilled++;
-                }
-                right++;
+                count++;
             }
-            else if(hash.size() == unique)
+            if(hash[s.charAt(right) - 'a'] == k)
             {
-                while(right < n && hash.containsKey(s.charAt(right)))
-                {
-                    hash.put(s.charAt(right), hash.getOrDefault(s.charAt(right), 0) + 1);
-                    right++;
-                }
-                boolean isValid = true;
-                for(int val : hash.values())
-                {
-                    if(val < k)
-                    {
-                        isValid = false;
-                        break;
-                    }
-                }
-                if(isValid)
-                {
-                    ans = Math.max(ans, right - left);
-                }
-                while(unique == hash.size())
-                {
-                    hash.put(s.charAt(left), hash.get(s.charAt(left)) - 1);
-                    if(hash.get(s.charAt(left)) == 0)
-                    {
-                        hash.remove(s.charAt(left));
-                    }
-                    left++;
-                }
+                valid++;
             }
-        }
-        if(unique == hash.size())
-        {
-            boolean isValid = true;
-            for(int val : hash.values())
+            right++;
+            while(count > unique)
             {
-                if(val < k)
+                hash[s.charAt(left) - 'a']--;
+                if(hash[s.charAt(left) - 'a'] == 0)
                 {
-                    isValid = false;
-                    break;
+                    count--;
                 }
+                if(hash[s.charAt(left) - 'a'] == k-1)
+                {
+                    valid--;
+                }
+                left++;
             }
-            if(isValid)
+            if(count == unique && valid == unique)
             {
+                // System.out.println("count = "+count+" for "+left+","+(right-1));
                 ans = Math.max(ans, right - left);
             }
         }
