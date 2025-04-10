@@ -1,6 +1,6 @@
 class Solution {
     public int minCostII(int[][] costs) {
-        int minColor = -1;
+        int prevMinColor = -1;
         int prevMin = -1;
         int prevSecondMin = -1;
         int k = costs[0].length;
@@ -11,15 +11,13 @@ class Solution {
             {
                 prevSecondMin = prevMin;
                 prevMin = costs[0][i];
-                minColor = i;
+                prevMinColor = i;
             }
             else if(costs[0][i] < prevSecondMin || prevSecondMin == -1)
             {
                 prevSecondMin = costs[0][i];
             }
         }
-        int ans = prevMin;
-        // System.out.println(ans+" "+prevSecondMin+" "+minColor);
         for(int i=1; i<n; i++)
         {
             int min = -1;
@@ -28,7 +26,7 @@ class Solution {
             for(int j=0; j<k; j++)
             {
                 int currentCost = 0;
-                if(j != minColor)
+                if(j != prevMinColor)
                 {
                     currentCost = costs[i][j] + prevMin;
                 }
@@ -49,7 +47,7 @@ class Solution {
             }
             prevMin = min;
             prevSecondMin = secondMin;
-            minColor = currentMinColor;
+            prevMinColor = currentMinColor;
         }
         return prevMin;
     }
