@@ -16,12 +16,13 @@ class Solution {
         }
         int length = 0;
         ListNode current = head;
-        ListNode last = null;
-        HashMap<ListNode,ListNode> previousMap = new HashMap<>();
+        ListNode lastNode = null;
         while(current != null)
         {
-            previousMap.put(current, last);
-            last = current;
+            if(current.next == null)
+            {
+                lastNode = current;
+            }
             current = current.next;
             length++;
         }
@@ -29,18 +30,17 @@ class Solution {
         {
             return head;
         }
+        lastNode.next = head;
+        current = head;
         int numberOfRotations = k%length;
-        System.out.println(numberOfRotations);
-        while(numberOfRotations > 0)
+        int moves = length - numberOfRotations - 1;
+        while(moves > 0)
         {
-            ListNode newLast = previousMap.get(last);
-            newLast.next = null;
-            // System.out.println(newLast.val+" "+last.val);
-            last.next = head;
-            head = last;
-            last = newLast;
-            numberOfRotations--;
+            current = current.next;
+            moves--;
         }
+        head = current.next;
+        current.next = null;
         return head;
     }
 }
