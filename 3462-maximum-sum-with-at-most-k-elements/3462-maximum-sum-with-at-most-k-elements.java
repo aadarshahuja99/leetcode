@@ -8,20 +8,15 @@ class Solution {
         for(int[] row : grid)
         {
             Arrays.sort(row);
-            for(int i=0; i<c/2; i++)
-            {
-                int temp = row[i];
-                row[i] = row[c-i-1];
-                row[c-i-1] = temp;
-            }
         }
         int[] pointers = new int[r];
+        Arrays.fill(pointers, c-1);
         for(int i=0; i<r; i++)
         {
-            if(limits[i] > pointers[i])
+            if(c - limits[i] - 1 < pointers[i])
             {
                 maxHeap.add(new int[] { i, grid[i][pointers[i]] });
-                pointers[i]++;
+                pointers[i]--;
             }
         }
         long ans = 0l;
@@ -30,10 +25,10 @@ class Solution {
             var top = maxHeap.poll();
             ans += top[1];
             int row = top[0];
-            if(pointers[row] < limits[row])
+            if(pointers[row] > c - limits[row] - 1)
             {
                 maxHeap.add(new int[] { row, grid[row][pointers[row]] });
-                pointers[row]++;
+                pointers[row]--;
             }
             k--;
         }
