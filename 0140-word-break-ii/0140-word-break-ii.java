@@ -6,33 +6,31 @@ class Solution {
         for(String str : wordDict)
         {
             root.insert(str);
-            // set.add(str);
         }
-        boolean[] dp = new boolean[s.length()+1];
-        dp[0] = true;
-        getAns(0, s, root, "");
+        getAns(0, s, root, new ArrayList<>());
         return ans;
     }
-    private void getAns(int current, String s, Trie root , String sentence)
+    private void getAns(int current, String s, Trie root , ArrayList<String> sentence)
     {
         int size = s.length();
         if(current == size)
         {
-            ans.add(sentence.trim());
+            ans.add(String.join(" ", sentence));
         }
         String temp = "";
         Trie node = root;
         for(int i = current; i<size; i++)
         {
             node = node.search(s.charAt(i));
-            if(node != null && node.isEnd)
-            {
-                // System.out.println("match for " + temp);
-                getAns(i+1, s, root, sentence + s.substring(current, i+1) + " ");
-            }
             if(node == null)
             {
                 break;
+            }
+            if(node.isEnd)
+            {
+                sentence.add(s.substring(current, i+1));
+                getAns(i+1, s, root, sentence);
+                sentence.remove(sentence.size() - 1);
             }
         }
     }
