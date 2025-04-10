@@ -52,9 +52,9 @@ class Solution {
         int nc = c+DIRS[dir][1];
         if(nr >= 0 && nr < m && nc < n && nc >= 0 && ((grid[r][c] == 2 && grid[nr][nc] == 0) || (grid[r][c] == 0 && grid[nr][nc] == 2)))
         {
-            dontChange += getAns(nr, nc, dir, hasChanged, m, n, grid, dp);
+            dontChange = 1 + getAns(nr, nc, dir, hasChanged, m, n, grid, dp);
         }
-        if(hasChanged != 1)
+        if(hasChanged == 0)
         {
             int change = 1;
             int i = getOtherDirs(dir);
