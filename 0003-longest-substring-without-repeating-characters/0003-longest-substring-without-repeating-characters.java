@@ -14,10 +14,6 @@ class Solution {
             {
                 char c = s.charAt(i);
                 counts.put(c, counts.get(c) - 1);
-                if(counts.get(c) == 0)
-                {
-                    counts.remove(c);
-                }
                 i++;
             }
             ans = Math.max(ans, j - i);
