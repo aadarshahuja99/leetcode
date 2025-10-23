@@ -1,5 +1,6 @@
 class Solution {
     public long maxSum(int[][] grid, int[] limits, int k) {
+        // very similar to the merge k sorted linked lists question, here we are maintaining a maxHeap of last/endmost elements from the k sorted rows of the grid and deciding whether the push the next smaller element from the row from which the last element was selected for adding to the answer based on the limits array limit for that row
         PriorityQueue<int[]> maxHeap = new PriorityQueue<>((a,b) -> {
             return b[1] - a[1];
         });
