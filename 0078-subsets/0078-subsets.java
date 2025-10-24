@@ -17,6 +17,6 @@ class Solution {
         // add current
         candidate.add(nums[current]);
         generate(current+1, candidate, nums);
-        candidate.remove(candidate.size() - 1);
+        candidate.remove(candidate.size() - 1); //back-track on the selection
     }
 }
