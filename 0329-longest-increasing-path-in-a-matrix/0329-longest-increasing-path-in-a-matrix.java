@@ -1,7 +1,6 @@
 class Solution {
     int ans = 1;
     public int longestIncreasingPath(int[][] matrix) {
-        int[][] visited = new int[matrix.length][matrix[0].length];
         int[][] dp = new int[matrix.length][matrix[0].length];
         for(int[] row : dp)
         {
@@ -11,17 +10,16 @@ class Solution {
         {
             for(int j=0; j<matrix[0].length; j++)
             {
-                if(visited[i][j] == 0)
+                if(dp[i][j] == -1)
                 {
-                    dfs(i,j,matrix,visited,dp);
+                    dfs(i,j,matrix,dp);
                 }
             }
         }
         return ans;
     }
-    private int dfs(int row, int col, int[][] grid, int[][] visited, int[][] dp)
+    private int dfs(int row, int col, int[][] grid, int[][] dp)
     {
-        visited[row][col] = 1;
         int[] deltaRow = new int[] { 0,1,0,-1 };
         int[] deltaCol = new int[] { 1,0,-1,0 };
         int max = 1;
@@ -35,7 +33,7 @@ class Solution {
             int newCol = col + deltaCol[i];
             if(newRow >= 0 && newRow < grid.length && newCol >= 0 && newCol < grid[0].length && grid[newRow][newCol] > grid[row][col])
             {
-                max = Math.max(max, 1 + dfs(newRow,newCol,grid,visited,dp));
+                max = Math.max(max, 1 + dfs(newRow,newCol,grid,dp));
             }
         }
         dp[row][col] = max;
