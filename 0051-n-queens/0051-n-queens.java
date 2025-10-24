@@ -14,6 +14,7 @@ class Solution {
     {
         if(currentRow == n)
         {
+            // if all the queens are placed in the board then add it to the list of answers
             updateAns(board, finalAns, n);
             return;
         }
@@ -25,7 +26,7 @@ class Solution {
                 continue;
             }
             boolean isValid = true;
-            // check for diagonal attacks from 3 directions
+            // check for diagonal attacks from 2 directions
             for(int r=currentRow, c=i; r>=0 && c>=0; r--, c--)
             {
                 if(board[r][c] == 'Q')
@@ -47,8 +48,8 @@ class Solution {
                 continue;
             }
             board[currentRow][i] = 'Q';
-            solve(currentRow + 1, columnStatus|(1<<i), board, n);
-            board[currentRow][i] = '.';
+            solve(currentRow + 1, columnStatus|(1<<i), board, n); // take the current row, column for a queen if it is valid
+            board[currentRow][i] = '.'; // back-track
         }
     }
 
