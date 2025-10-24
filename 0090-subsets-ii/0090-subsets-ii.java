@@ -13,6 +13,7 @@ class Solution {
             return;
         }
         int i=currentIndex+1;
+        // this while loop ensures that we do not select the same number for the same position in the current candidate subset
         while(i < nums.length && nums[i] == nums[currentIndex])
         {
             i++;
