@@ -4,7 +4,7 @@ class Solution {
         int n = arr.length;
         // We made k - 1 subsets with target sum and last subset will also have target sum.
         if (count == k - 1) { 
-            return true;
+            return state != (1<<(n)-1);
         }
         if(sum == target)
         {
