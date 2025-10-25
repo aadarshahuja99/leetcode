@@ -12,26 +12,37 @@ class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode cur = head;
         int c = 0;
-        while(c < n)
+        while(c < n-1)
         {
             cur = cur.next;
             c++;
         }
-        if(cur == null)
+        // assume 1->2->3->4 and n = 2. cur = 3, prev = 1
+        ListNode prev = null;
+        while(cur.next != null)
+        {
+            cur = cur.next;
+            if(prev == null)
+            {
+                prev = head;
+            }
+            else
+            {
+                prev = prev.next;
+            }
+        }
+        if(prev == null)
         {
             ListNode next = head.next;
             head.next = null;
             return next;
         }
-        // assume 1->2->3->4 and n = 2. cur = 3, prev = 1
-        ListNode prev = head;
-        while(cur.next != null)
+        else
         {
-            cur = cur.next;
-            prev = prev.next;
+            ListNode next = prev.next.next;
+            prev.next.next = null;
+            prev.next = next;
         }
-        ListNode next = prev.next.next;
-        prev.next = next;
         return head;
     }
 }
