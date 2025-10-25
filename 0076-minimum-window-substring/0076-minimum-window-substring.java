@@ -25,6 +25,7 @@ class Solution {
                 }
             }
             j++;
+            // while the window is valid, keep updating the answer and shrink
             while(fulfilled == targets.size())
             {
                 if(ansLength > (j - i))
