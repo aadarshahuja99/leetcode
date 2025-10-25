@@ -9,11 +9,7 @@ class Solution {
         {
             return false;
         }
-        Boolean[][] cache = new Boolean[nums.length+1][(s/2) + 1];
-        for(int i=1; i<=s/2; i++)
-        {
-            cache[nums.length][i] = false;
-        }
+        boolean[][] cache = new boolean[nums.length+1][(s/2) + 1];
         for(int i=0; i<=nums.length; i++)
         {
             cache[i][0] = true;
