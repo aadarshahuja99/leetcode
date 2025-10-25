@@ -19,64 +19,70 @@ class Solution {
         {
             return true;
         }
-        return checkForBalancedTree(root);
+        int ans = check(root);
+        return ans != -1;
     }
-    private Pair<Integer,Boolean> check(TreeNode root)
+    private int check(TreeNode root)
     {
         if(root == null)
         {
-            return new Pair<Integer,Boolean>(0, true);
+            return 0;
         }
-
-        var left = check(root.left);
-        var right = check(root.right);
-
-        int heightDifference = Math.abs(left.getKey() - right.getKey());
-        return new Pair<Integer,Boolean>(1 + Math.max(left.getKey(), right.getKey()), (heightDifference <= 1) && left.getValue() && right.getValue());
+        int leftHeight = check(root.left);
+        int rightHeight = check(root.right);
+        if(leftHeight == -1 || rightHeight == -1)
+        {
+            return -1;
+        }
+        if(Math.abs(leftHeight - rightHeight) > 1)
+        {
+            return -1;
+        }
+        return 1 + Math.max(leftHeight, rightHeight);
     }
-
     private boolean checkForBalancedTree(TreeNode root)
     {
         TreeNode current = root;
-        HashSet<TreeNode> visited = new HashSet<>();
         HashMap<TreeNode,Integer> heights = new HashMap<>();
-
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(current);
-
-        while(!stack.isEmpty())
+        while(!stack.isEmpty() || current != null)
         {
-            visited.add(stack.peek());
-            heights.put(current, 1);
-            if(stack.peek().left != null && !visited.contains(stack.peek().left))
+            if(current != null)
             {
-                heights.put(stack.peek().left,1);
-                stack.push(stack.peek().left);
-                continue;
+                stack.push(current);
+                current = current.left;
             }
-            if(stack.peek().right != null && !visited.contains(stack.peek().right))
+            else
             {
-                heights.put(stack.peek().right,1);
-                stack.push(stack.peek().right);
-                continue;
+                var top = stack.peek().right;
+                if(top == null)
+                {
+                    // both left and rigth subtrees have been traversed
+                    int leftHeight = heights.getOrDefault(stack.peek().left,0);
+                    int rightHeight = heights.getOrDefault(stack.peek().right,0);
+                    if(Math.abs(leftHeight - rightHeight) > 1)
+                    {
+                        return false;
+                    }
+                    heights.put(stack.peek(), 1 + Math.max(leftHeight, rightHeight));
+                    top = stack.pop();
+                    while(!stack.isEmpty() && top == stack.peek().right)
+                    {
+                        int left = heights.getOrDefault(stack.peek().left, 0);
+                        int right = heights.getOrDefault(stack.peek().right, 0);
+                        if(Math.abs(left - right) > 1)
+                        {
+                            return false;
+                        }
+                        heights.put(stack.peek(), 1 + Math.max(left, right));
+                        top = stack.pop();
+                    }
+                }
+                else
+                {
+                    current = top;
+                }
             }
-            int leftHeight = 0;
-            int rightHeight = 0;
-            if(stack.peek().left != null)
-            {
-                leftHeight = heights.get(stack.peek().left);
-            }
-            if(stack.peek().right != null)
-            {
-                rightHeight = heights.get(stack.peek().right);
-            }
-            // System.out.println(leftHeight+" "+rightHeight+" "+stack.peek().val);
-            if(Math.abs(leftHeight - rightHeight) > 1)
-            {
-                return false;
-            }
-            heights.put(stack.peek(), heights.get(stack.peek()) + Math.max(leftHeight, rightHeight));
-            stack.pop();
         }
         return true;
     }
