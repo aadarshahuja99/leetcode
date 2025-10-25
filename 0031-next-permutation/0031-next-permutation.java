@@ -1,5 +1,6 @@
 class Solution {
     public void nextPermutation(int[] nums) {
+        // Knuth's algorithm
         int peakIdx = -1;
         for(int i=nums.length-2; i>=0; i--)
         {
