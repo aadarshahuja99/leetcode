@@ -27,7 +27,7 @@ class Solution {
         int[] letterCounts = new int[26];
         for(char c : str.toCharArray())
         {
-            int letterIndex = c - 97;
+            int letterIndex = c - 'a';
             letterCounts[letterIndex]++;
         }
         return Arrays.hashCode(letterCounts);
