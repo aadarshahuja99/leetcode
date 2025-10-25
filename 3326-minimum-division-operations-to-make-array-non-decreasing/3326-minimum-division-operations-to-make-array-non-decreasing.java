@@ -16,11 +16,11 @@ class Solution {
             else
             {
                 nums[i] = getProperDivisionAnswer(nums[i]);
-                if(nums[i] > nums[i+1])
-                {
-                    return -1;
-                }
                 ops++;
+            }
+            if(nums[i] > nums[i+1])
+            {
+                return -1;
             }
         }
         return ops;
