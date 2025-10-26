@@ -33,12 +33,14 @@ class Solution {
         }
         if(prev == null)
         {
+            //remove the head node
             ListNode next = head.next;
             head.next = null;
             return next;
         }
         else
         {
+            // remove the node that is the next node of the 'prev' node
             ListNode next = prev.next.next;
             prev.next.next = null;
             prev.next = next;
