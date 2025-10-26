@@ -37,7 +37,6 @@ class Solution {
                 nextSmaller[i] = stack.peek()-1;
             }
             stack.push(i);
-            // System.out.println(i+": "+prevSmaller[i]+","+nextSmaller[i]);
             ans = Math.max(ans, nums[i]*(nextSmaller[i]-prevSmaller[i]+1));
         }
         return ans;
