@@ -8,6 +8,7 @@ class Solution {
         int idx = 0;
         while(end < n)
         {
+            // need to maintain a monotonic decreasing deque to store the maximums
             while(deque.size() > 0 && deque.peekLast() < nums[end])
             {
                 deque.removeLast();
