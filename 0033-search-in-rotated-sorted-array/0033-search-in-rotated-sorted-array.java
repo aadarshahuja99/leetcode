@@ -10,20 +10,21 @@ class Solution {
             {
                 return mid;
             }
-            if(nums[mid] >= nums[s] && nums[mid] > nums[e])
+            if(nums[mid] >= nums[s])
             {
-                // mid is in the bigger half
+                // left half is sorted
                 if(target < nums[mid] && target >= nums[s])
                 {
+                    // search in the sorted half
                     e = mid - 1;
                 }
                 else
                 {
-                    // search in unsorted half
+                    // search in the unsorted half
                     s = mid + 1;
                 }
             }
-            else if (nums[mid] <= nums[s] && nums[mid] < nums[e])
+            else
             {
                 // right half is sorted
                 if(nums[mid] < target && target <= nums[e])
@@ -35,18 +36,6 @@ class Solution {
                 {
                     // search in the unsorted half
                     e = mid - 1;
-                }
-            }
-            else
-            {
-                // s, mid, e are all sorted
-                if(target < nums[mid])
-                {
-                    e = mid - 1;
-                }
-                else
-                {
-                    s = mid + 1;
                 }
             }
         }
