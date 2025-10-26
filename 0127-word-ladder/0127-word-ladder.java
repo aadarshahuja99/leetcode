@@ -1,116 +1,48 @@
 class Solution {
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        boolean isPresent = false;
-        int endIndex = 1;
-        for(String word : wordList)
-        {
-            if(word.equals(endWord))
-            {
-                isPresent = true;
-                break;
-            }
-            endIndex++;
-        }
-        if(!isPresent)
-        {
-            // System.out.println("exit 1");
-            return 0;
-        }
-        ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
-        for(int i=0; i<=wordList.size(); i++)
-        {
-            adjList.add(new ArrayList<Integer>());
-        }
-        for(int i=0;i<wordList.size();i++)
-        {
-            if(check(beginWord,wordList.get(i)))
-            {
-                if(endIndex == i+1)
-                {
-                    return 2;
-                }
-                adjList.get(0).add(i+1);
-                adjList.get(i+1).add(0);
-            }
-        }
-        for(int i=0;i<wordList.size();i++)
-        {
-            for(int j=0;j<wordList.size();j++)
-            {
-                if(j==i)
-                {
-                    continue;
-                }
-                if(check(wordList.get(i),wordList.get(j)))
-                {
-                    adjList.get(j+1).add(i+1);
-                    adjList.get(i+1).add(j+1);
-                }
-            }
-        }
-        LinkedList<QueueElement> q = new LinkedList<>();
-        int[] distances = new int[wordList.size()+1];
-        Arrays.fill(distances,Integer.MAX_VALUE);
-        distances[0] = 0;
-        q.addLast(new QueueElement(0,0));
+    public int ladderLength(String beginWord, String endWord, List<String> words) {
+        Queue<String> q = new LinkedList<>();
+        int distance = 0;
+        q.add(beginWord);
+        HashSet<String> vis = new HashSet<>();
+        vis.add(beginWord);
         while(q.size() > 0)
         {
-            QueueElement top = q.removeFirst();
-            for(int node : adjList.get(top.getIndex()))
+            int s = q.size();
+            distance++;
+            for(int i=0; i<s; i++)
             {
-                if(distances[node] > top.getDistance() + 1)
+                String top = q.poll();
+                if(top.equals(endWord))
                 {
-                    distances[node] = top.getDistance() + 1;
-                    // System.out.println("distance of node : " + wordList.get(node-1) + " from src = " + distances[node]);
-                    q.addLast(new QueueElement(node,distances[node]));
+                    return distance;
+                }
+                for(String word : words)
+                {
+                    if(compare(word, top) && !vis.contains(word))
+                    {
+                        // System.out.println("added "+word+" at distance "+(distance+1));
+                        vis.add(word);
+                        q.add(word);
+                    }
                 }
             }
         }
-        if(distances[endIndex] == Integer.MAX_VALUE)
-        {
-            System.out.println("exit 2");
-            return 0;
-        }
-        return distances[endIndex] + 1;
+        return 0;
     }
-    class QueueElement
+    private boolean compare(String w1, String w2)
     {
-        private int index;
-        private int dist;
-        public QueueElement(int i, int d)
+        int diff = 0;
+        for(int i=0; i<w1.length(); i++)
         {
-            index = i;
-            dist = d;
-        }
-        public void setDistance(int d)
-        {
-            dist = d;
-        }
-        public int getDistance()
-        {
-            return dist;
-        }
-        public int getIndex()
-        {
-            return index;
-        }
-    }
-    private boolean check(String src, String dest)
-    {
-        int i=0;
-        int count=0;
-        while(i<src.length())
-        {
-            if(src.charAt(i) != dest.charAt(i))
+            if(w1.charAt(i) != w2.charAt(i))
             {
-                count++;
+                diff++;
+                if(diff > 1)
+                {
+                    return false;
+                }
             }
-            if(count > 1)
-            {
-                return false;
-            }
-            i++;
         }
-        return true;
+        return diff == 1;
     }
 }
