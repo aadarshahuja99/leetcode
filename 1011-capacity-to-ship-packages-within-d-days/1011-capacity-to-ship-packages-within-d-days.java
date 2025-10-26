@@ -1,44 +1,46 @@
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
-        int max = weights[0];
-        int sum = weights[0];
-        for(int i=1; i<weights.length; i++)
+        int s = Integer.MIN_VALUE;
+        int e = 0;
+        for(int w : weights)
         {
-            sum += weights[i];
-            max = Math.max(max,weights[i]);
+            e += w;
+            s = Math.max(w, s);
         }
-        int start = max;
-        int end = sum;
-        int ans = -1;
-        while(start <= end)
+        int ans = 0;
+        while(s <= e)
         {
-            int mid = start + (end-start)/2;
-            if(check(mid,weights,days))
+            int guess = s + (e-s)/2;
+            if(check(guess, weights, days))
             {
-                end = mid-1;
-                ans = mid;
+                ans = guess;
+                e = guess-1;
             }
             else
             {
-                start = mid+1;
+                s = guess+1;
             }
         }
         return ans;
     }
-    private boolean check(int current, int weights[], int days)
+    private boolean check(int guess, int[] weights, int days)
     {
-        int idx = 0;
-        int count = 0;
-        while(idx < weights.length)
+        int n = weights.length;
+        int index = 0;
+        int d = 0;
+        while(index < n)
         {
-            int sum = 0;
-            while(idx < weights.length && weights[idx] + sum <= current)
+            int total = 0;
+            int s = weights[index];
+            int j = index+1;
+            while(j < n && weights[j] + s <= guess)
             {
-                sum += weights[idx];
-                idx++;
+                s += weights[j];
+                j++;
             }
-            count++;
+            d++;
+            index = j;
         }
-        return count <= days;
+        return d <= days;
     }
 }
