@@ -34,7 +34,6 @@ class Solution {
         int idx = 0;
         while(!st.isEmpty())
         {
-            // System.out.println("adding "+st.peek()+" to ans array before reverse ");
             ans[idx] = st.pop();
             idx++;
         }
