@@ -8,6 +8,7 @@ class Solution {
         {
             if(nums[mid] == 0)
             {
+                // swap it with low-th guy
                 int temp = nums[mid];
                 nums[mid] = nums[low];
                 nums[low] = temp;
@@ -16,10 +17,12 @@ class Solution {
             }
             else if(nums[mid] == 1)
             {
+                // do nothing in this case
                 mid++;
             }
             else
             {
+                // swap it with high-th guy if nums[mid] = 2
                 int temp = nums[mid];
                 nums[mid] = nums[high];
                 nums[high] = temp;
