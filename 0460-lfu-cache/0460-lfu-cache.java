@@ -30,14 +30,12 @@ public class LFUCache {
     }
     
     public void put(int key, int value) {
-        if(cap<=0)
-            return;
         if(vals.containsKey(key)) {
             vals.put(key, value);
             get(key);
             return;
-        } 
-        if(vals.size() >= cap) {
+        }
+        if(vals.size() == cap) {
             int evit = lists.get(min).iterator().next();
             lists.get(min).remove(evit);
             vals.remove(evit);
