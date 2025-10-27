@@ -55,9 +55,7 @@ class Solution {
         if(carry > 0)
         {
             ans.val = carry;
-            ans.next = new ListNode();
-            ansPrev = ans;
-            ans = ans.next;
+            return ansHead;
         }
 
         ansPrev.next = null;
