@@ -9,13 +9,13 @@ class Solution {
     }
     private int getAns(int i, int j, String s, String t, int m, int n, int[][] cache)
     {
-        if(i == m)
-        {
-            return j == n ? 1 : 0;
-        }
         if(j == n)
         {
             return 1;
+        }
+        if(i == m)
+        {
+            return 0;
         }
         if(cache[i][j] != -1)
         {
