@@ -25,15 +25,12 @@ class Solution {
     }
     private int findLongestUniValuePath(TreeNode current, int[] ans)
     {
-
         if(current.left == null && current.right == null)
         {
             return 1;
         }
-        
         int leftLength = 0;
         int rightLength = 0;
-
         if(current.left != null)
         {
             leftLength = findLongestUniValuePath(current.left, ans);
@@ -50,7 +47,7 @@ class Solution {
                 rightLength = 0;
             }
         }
-        // System.out.println(leftLength+" "+rightLength+" for "+current.val);
+        // similar to diameter of a Binary Tree
         ans[0] = Math.max(ans[0], leftLength+rightLength);
         return 1 + Math.max(leftLength, rightLength);
     }
