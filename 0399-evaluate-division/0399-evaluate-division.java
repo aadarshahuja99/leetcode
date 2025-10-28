@@ -48,7 +48,6 @@ class Solution {
     }
     private double dfs(String current, String target, double resultSoFar, HashMap<String,ArrayList<Pair<String,Double>>> adjList, HashSet<String> visited)
     {
-        // System.out.println(current+" "+resultSoFar);
         if(current.equals(target))
         {
             return resultSoFar;
@@ -62,7 +61,6 @@ class Solution {
             {
                 continue;
             }
-            // System.out.println("moving to next from current "+next+", "+current);
             double currentResult = dfs(next,target,value*resultSoFar,adjList,visited);
             if(currentResult >= 0.0)
             {
