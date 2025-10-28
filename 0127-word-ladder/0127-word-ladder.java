@@ -20,7 +20,6 @@ class Solution {
                 {
                     if(compare(word, top) && !vis.contains(word))
                     {
-                        // System.out.println("added "+word+" at distance "+(distance+1));
                         vis.add(word);
                         q.add(word);
                     }
