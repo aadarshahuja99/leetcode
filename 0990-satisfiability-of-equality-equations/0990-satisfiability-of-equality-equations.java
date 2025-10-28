@@ -11,7 +11,7 @@ class Solution {
         for(String equation : equations)
         {
             // if the 2 variables provided in the current equation have been connected previously, and are now being disconnected, then it will become impossible to satisfy all equations
-            if(equation.charAt(1) == '!' && ds.findParent((int)equation.charAt(0)-97) == ds.findParent((int)equation.charAt(3)-97))
+            if(equation.charAt(1) == '!' && ds.findParent((int)equation.charAt(0)-'a') == ds.findParent((int)equation.charAt(3)-'a'))
             {
                 return false;
             }
