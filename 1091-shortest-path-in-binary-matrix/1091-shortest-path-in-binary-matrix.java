@@ -4,8 +4,8 @@ class Solution {
         {
             return -1;
         }
-        LinkedList<int[]> q = new LinkedList<int[]>();
-        q.addLast(new int[] { 0,0 });
+        Queue<int[]> q = new LinkedList<int[]>();
+        q.add(new int[] { 0,0 });
         int n = grid.length;
         boolean[][] visited = new boolean[n][n];
         int length = 0;
@@ -17,7 +17,7 @@ class Solution {
             int s = q.size();
             for(int i=0; i<s; i++)
             {
-                int[] top = q.removeFirst();
+                int[] top = q.poll();
                 int r = top[0];
                 int c = top[1];
                 if(r == n-1 && c == n-1)
@@ -33,7 +33,7 @@ class Solution {
                         continue;
                     }
                     visited[nr][nc] = true;
-                    q.addLast(new int[] { nr, nc });
+                    q.add(new int[] { nr, nc });
                 }
             }
         }
