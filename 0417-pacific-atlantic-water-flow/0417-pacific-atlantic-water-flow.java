@@ -1,49 +1,55 @@
 class Solution {
+    ArrayList<List<Integer>> commonCells = new ArrayList<>();
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
         // apply a dfs from boundary
         int numRows = heights.length;
         int numColumns = heights[0].length;
         int[][][] visited = new int[numRows][numColumns][2];
-        ArrayList<List<Integer>> commonCells = new ArrayList<>();
         for(int i=0; i<numRows; i++)
         {
-            for(int j=0; j<numColumns; j++)
+            // pacific boundary left
+            if(visited[i][0][1] == 0)
             {
-                // pacific boundary
-                if((j == 0) || (i == 0) && visited[i][j][1] == 0)
-                {
-                    dfs(i,j,visited,heights,1,commonCells);
-                }
+                dfs(i,0,visited,heights,1);
             }
         }
-        for(int i=0; i<numRows; i++)
+        for(int i=0; i<numColumns; i++)
         {
-            for(int j=0; j<numColumns; j++)
+            // pacific boundary top
+            if(visited[0][i][1] == 0)
             {
-                if((j == numColumns-1) || i == numRows-1 && visited[i][j][0] == 0)
-                {
-                    dfs(i,j,visited,heights,0,commonCells);
-                }
+                dfs(0,i,visited,heights,1);
             }
         }
+        
         for(int i=0; i<numRows; i++)
         {
-            for(int j=0; j<numColumns; j++)
+            // atlantic boundary right
+            if(visited[i][numColumns-1][0] == 0)
             {
-                if(visited[i][j][0] == 1 && visited[i][j][1] == 1)
-                {
-                    var newCell = new ArrayList<Integer>();
-                    newCell.add(i);
-                    newCell.add(j);
-                    commonCells.add(newCell);
-                }
+                dfs(i,numColumns-1,visited,heights,0);
+            }
+        }
+        for(int i=0; i<numColumns; i++)
+        {
+            // atlantic boundary bottom
+            if(visited[numRows-1][i][0] == 0)
+            {
+                dfs(numRows-1,i,visited,heights,0);
             }
         }
         return commonCells;
     }
-    private void dfs(int row, int col, int[][][] visited, int[][] heights, int isPacificOcean, ArrayList<List<Integer>> commonCells)
+    private void dfs(int row, int col, int[][][] visited, int[][] heights, int isPacificOcean)
     {
         visited[row][col][isPacificOcean] = 1;
+        if(visited[row][col][0] == visited[row][col][1])
+        {
+            ArrayList<Integer> current = new ArrayList<>();
+            current.add(row);
+            current.add(col);
+            commonCells.add(current);
+        }
         int[] deltaRow = new int[] { 1,0,-1,0 };
         int[] deltaColumn = new int[] { 0,1,0,-1 };
         for(int i=0; i<4; i++)
@@ -54,7 +60,7 @@ class Solution {
             && visited[newRow][newColumn][isPacificOcean] == 0 
             && heights[newRow][newColumn] >= heights[row][col])
             {
-                dfs(newRow,newColumn,visited,heights,isPacificOcean,commonCells);
+                dfs(newRow,newColumn,visited,heights,isPacificOcean);
             }
         }
     }
