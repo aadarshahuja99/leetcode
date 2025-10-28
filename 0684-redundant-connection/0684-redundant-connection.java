@@ -12,26 +12,21 @@ class Solution {
     }
     class DisjointSet
     {
-        int[] rank;
+        int[] size;
         int[] parent;
         public DisjointSet(int n)
         {
-            rank = new int[n];
+            size = new int[n];
             parent = new int[n];
             for(int i=0;i<n;i++)
             {
                 parent[i]=i;
             }
+            Arrays.fill(size, 1);
         }
         public int findParent(int u)
         {
-            int temp = u;
-            while(temp != parent[temp])
-            {
-                temp = parent[temp];
-            }
-            parent[u] = temp;
-            return temp;
+            return parent[u] == u ? u : findParent(parent[u]);
         }
         public boolean union(int u, int v)
         {
@@ -41,15 +36,15 @@ class Solution {
             {
                 return false;
             }
-            if(rank[uPar] < rank[vPar])
+            if(size[uPar] < size[vPar])
             {
                 parent[uPar] = vPar;
-                rank[vPar]+=1;
+                size[vPar] += size[uPar];
             }
             else
             {
                 parent[vPar] = uPar;
-                rank[uPar]+=1;
+                size[uPar] += size[vPar];
             }
             return true;
         }
