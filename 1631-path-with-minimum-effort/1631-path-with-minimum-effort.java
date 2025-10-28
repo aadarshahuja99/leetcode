@@ -11,6 +11,7 @@ class Solution {
         PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> {
             return a[2] - b[2];
         });
+        // row, col, distance
         pq.add(new int[] { 0, 0, 0 });
         int[][] DIRS = {{0,1}, {1,0}, {0,-1}, {-1,0}};
         boolean[][] v = new boolean[m][n];
