@@ -1,72 +1,73 @@
 class Solution {
     public int openLock(String[] deadends, String target) {
-        if(target.equals("0000"))
-        {
-            return 0;
-        }
-        HashSet<String> deadEnds = new HashSet<>();
+        HashSet<String> badSet = new HashSet<>();
         for(String deadEnd : deadends)
         {
-            deadEnds.add(deadEnd);
+            badSet.add(deadEnd);
         }
-        if(deadEnds.contains("0000"))
+        if(badSet.contains("0000"))
         {
             return -1;
         }
-        Queue<String> queue = new LinkedList<>();
-        queue.add("0000");
-        int moves = 0;
-        HashSet<String> visited = new HashSet<>();
-        while(queue.size() > 0)
+        char[] start = {'0','0','0','0'};
+        Queue<char[]> q = new LinkedList<>();
+        HashSet<String> vis = new HashSet<>();
+        q.add(start);
+        int levels = 0;
+        while(q.size() > 0)
         {
-            int size = queue.size();
-            moves++;
-            for(int i=0; i<size; i++)
+            levels++;
+            int s = q.size();
+            for(int i=0; i<s; i++)
             {
-                String topCode = queue.poll();
-                if(visited.contains(topCode))
+                var top = q.poll();
+                String topString = new String(top);
+                if(topString.equals(target))
                 {
-                    continue;
+                    return levels-1;
                 }
-                if(topCode.equals(target))
-                {
-                    return moves-1;
-                }
-                visited.add(topCode);
-                char[] topCodeArray = topCode.toCharArray();
                 for(int j=0; j<4; j++)
                 {
-                    char current = topCodeArray[j];
-                    char next = '*';
-                    char prev = '*';
-                    if(current == '0')
+                    char c = top[j];
+                    // increase
+                    int next = ((c - '0') + 1)%10;
+                    String nextString = "";
+                    for(int k=0; k<4; k++)
                     {
-                        next = '1';
-                        prev = '9';
+                        if(j == k)
+                        {
+                            nextString += next;
+                        }
+                        else
+                        {
+                            nextString += top[k];
+                        }
                     }
-                    else if(current == '9')
+                    if(!vis.contains(nextString) && !badSet.contains(nextString))
                     {
-                        next = '0';
-                        prev = '8';
+                        vis.add(nextString);
+                        q.add(nextString.toCharArray());
                     }
-                    else
+
+                    // decrease
+                    int prev = ((c - '0') - 1 + 10)%10; 
+                    String prevString = "";
+                    for(int k=0; k<4; k++)
                     {
-                        next = (char)(current+1);
-                        prev = (char)(current-1);
+                        if(j == k)
+                        {
+                            prevString += prev;
+                        }
+                        else
+                        {
+                            prevString += top[k];
+                        }
                     }
-                    topCodeArray[j] = next;
-                    String nextCode = new String(topCodeArray);
-                    if(!deadEnds.contains(nextCode) && !visited.contains(nextCode))
+                    if(!vis.contains(prevString) && !badSet.contains(prevString))
                     {
-                        queue.add(nextCode);
+                        vis.add(prevString);
+                        q.add(prevString.toCharArray());
                     }
-                    topCodeArray[j] = prev;
-                    String prevCode = new String(topCodeArray);
-                    if(!deadEnds.contains(prevCode) && !visited.contains(prevCode))
-                    {
-                        queue.add(prevCode);
-                    }
-                    topCodeArray[j] = current;
                 }
             }
         }
