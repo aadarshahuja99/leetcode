@@ -1,58 +1,50 @@
 class Solution {
-    public double maxProbability(int n, int[][] edges, double[] succProb, int start_node, int end_node) {
-        ArrayList<ArrayList<QueueElement>> adjList = new ArrayList<ArrayList<QueueElement>>();
-        for(int i=0;i<n;i++)
+    public double maxProbability(int n, int[][] edges, double[] succProb, int start, int end) {
+        ArrayList<List<double[]>> adj = new ArrayList<>();
+        for(int i=0; i<n; i++)
         {
-            adjList.add(new ArrayList<QueueElement>());
+            adj.add(new ArrayList<>());
         }
         int idx = 0;
-        for(int[] edge : edges)
+        for(int[] e : edges)
         {
-            adjList.get(edge[0]).add(new QueueElement(edge[1],succProb[idx]));
-            adjList.get(edge[1]).add(new QueueElement(edge[0],succProb[idx]));
+            adj.get(e[0]).add(new double[] { e[1], succProb[idx] });
+            adj.get(e[1]).add(new double[] { e[0], succProb[idx] });
             idx++;
         }
-        PriorityQueue<QueueElement> pq = new PriorityQueue<QueueElement>(new Comparator<QueueElement>() {
-            public int compare(QueueElement q1, QueueElement q2)
-            {
-                return Double.compare(q2.getProb(),q1.getProb());
-            }
+        boolean[] vis = new boolean[n];
+        double[] prob = new double[n];
+        Arrays.fill(prob, Double.MIN_VALUE);
+        // max-heap
+        PriorityQueue<double[]> q = new PriorityQueue<>((a,b) -> {
+            return Double.compare(b[1],a[1]);
         });
-        pq.add(new QueueElement(start_node,1.0));
-        double[] probabilities = new double[n];
-        probabilities[start_node]=1.0;
-        while(pq.size() > 0)
+        q.add(new double[] { start, 1.0 });
+        prob[start] = 1.0;
+        while(q.size() > 0)
         {
-            var top = pq.poll();
-            int current = top.getNode();
-            double prob = top.getProb();
-            for(QueueElement node : adjList.get(current))
+            var top = q.poll();
+            int node = (int)top[0];
+            double dist = top[1];
+            if(vis[node])
             {
-                if(probabilities[node.getNode()] < prob*node.getProb())
+                continue;
+            }
+            vis[node] = true;
+            if(node == end)
+            {
+                return dist;
+            }
+            for(double[] ed : adj.get(node))
+            {
+                double newDist = dist*ed[1];
+                if(newDist > prob[(int)ed[0]])
                 {
-                    probabilities[node.getNode()] = prob*node.getProb();
-                    pq.add(new QueueElement(node.getNode(),probabilities[node.getNode()]));
+                    prob[(int)ed[0]] = newDist;
+                    q.add(new double[] { ed[0], newDist });
                 }
             }
         }
-        return probabilities[end_node];
-    }
-    class QueueElement
-    {
-        private double prob;
-        private int node;
-        public QueueElement(int n, double p)
-        {
-            node=n;
-            prob=p;
-        }
-        public int getNode()
-        {
-            return node;
-        }
-        public double getProb()
-        {
-            return prob;
-        }
+        return 0.0;
     }
 }
