@@ -1,90 +1,65 @@
+class Disjoint{
+    int[] parent;
+    int[] size;
+    Disjoint(int n){
+        parent = new int[n];
+        size = new int[n];
+        for(int i=0;i<n;i++){
+            parent[i] = i;
+        }
+        Arrays.fill(size, 1);
+    }
+    public int find(int u){
+        return parent[u] = parent[u] == u ? u : find(parent[u]);
+    }
+    public void union(int u,int v){
+        int uPar = find(u);
+        int vPar = find(v);
+        if(size[uPar] >= size[vPar])
+        {
+            size[uPar] += size[vPar];
+            parent[uPar] = vPar;
+        }
+        else
+        {
+            size[vPar] += size[uPar];
+            parent[vPar] = uPar;
+        }
+    }
+}
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        HashMap<String,Integer> map = new HashMap<String,Integer>();
-        DisjointSet ds = new DisjointSet(accounts.size());
-        for(int i=0; i<accounts.size(); i++)
-        {
-            for(int j=1; j<accounts.get(i).size(); j++)
-            {
-                if(map.containsKey(accounts.get(i).get(j)))
-                {
-                    ds.union(i,map.get(accounts.get(i).get(j)));
-                }
-                else
-                {
-                    map.put(accounts.get(i).get(j),i);
+        int n=accounts.size();
+        Disjoint ds= new Disjoint(n);
+        Map<String,Integer> h= new HashMap<>();
+        for(int i=0;i<n;i++){
+            for(int j=1;j<accounts.get(i).size();j++){
+                String temp= accounts.get(i).get(j);
+                if(!h.containsKey(temp)){
+                    h.put(temp,i);
+                }else{
+                    ds.union(i,h.get(temp));
                 }
             }
         }
-        ArrayList<LinkedList<String>> updated = new ArrayList<LinkedList<String>>();
-        for(int i=0; i<accounts.size(); i++)
-        {
-            updated.add(new LinkedList<String>());
+        ArrayList<String>[] mergedMail = new ArrayList[n];
+        for (int i = 0; i < n; i++) mergedMail[i] = new ArrayList<String>();
+        for (Map.Entry<String, Integer> it : h.entrySet()) {
+            String mail = it.getKey();
+            int node = ds.find(it.getValue());
+            mergedMail[node].add(mail);
         }
-        for(var entry : map.entrySet())
-        {
-            String email = entry.getKey();
-            int val = entry.getValue();
-            int parent = ds.findParent(val);
-            updated.get(parent).addLast(email);
-        }
-        ArrayList<List<String>> ans = new ArrayList<List<String>>();
-        for(var list : updated)
-        {
-            if(list.size() > 0)
-            {
-                Collections.sort(list);
-                String element = list.getFirst();
-                int parent = map.get(element);
-                int ultimateParent = ds.findParent(parent);
-                list.addFirst(accounts.get(ultimateParent).get(0));
-                ans.add(new ArrayList<String>(list));
+        List<List<String>> ans= new ArrayList<>();
+         for (int i = 0; i < n; i++) {
+            if (mergedMail[i].size() == 0) continue;
+            Collections.sort(mergedMail[i]);
+            List<String> temp = new ArrayList<>();
+            temp.add(accounts.get(i).get(0));
+            for (String it : mergedMail[i]) {
+                temp.add(it);
             }
+            ans.add(temp);
         }
         return ans;
-    }
-    class DisjointSet
-    {
-        private int[] parent;
-        private int[] size;
-        public DisjointSet(int n)
-        {
-            parent = new int[n];
-            size = new int[n];
-            for(int i=0; i<n; i++)
-            {
-                parent[i] = i;
-                size[i] = 1;
-            }
-        }
-        public int findParent(int u)
-        {
-            int temp = u;
-            while(temp != parent[temp])
-            {
-                temp = parent[temp];
-            }
-            parent[u] = temp;
-            return temp;
-        }
-        public void union(int u, int v)
-        {
-            int parU = findParent(u);
-            int parV = findParent(v);
-            if(parU == parV)
-            {
-                return;
-            }
-            if(size[parU] > size[parV])
-            {
-                parent[parV] = parU;
-                size[parU] += size[parV];
-            }
-            else
-            {
-                parent[parU] = parV;
-                size[parV] += size[parU];
-            }
-        }
     }
 }
