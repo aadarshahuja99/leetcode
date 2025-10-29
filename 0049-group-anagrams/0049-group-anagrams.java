@@ -16,7 +16,7 @@ class Solution {
             }
         }
         ArrayList<List<String>> ans = new ArrayList<>();
-        for(var entry : visited.entrySet())
+        for(Map.Entry<Integer,ArrayList<String>> entry : visited.entrySet())
         {
             ans.add(entry.getValue());
         }
