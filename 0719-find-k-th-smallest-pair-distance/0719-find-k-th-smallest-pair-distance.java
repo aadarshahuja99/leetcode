@@ -10,9 +10,11 @@ class Solution {
         while(s <= e)
         {
             int m = s + (e - s)/2;
+            // check function of binary search
             int countValidPairs = 0;
             for(int i=0, j=1; i<n-1; i++)
             {
+                // intuition: for each i, find the number of pairs that satisfy the condition, this works in linear time as j loop is only done once acorss the array
                 if(j == i)
                 {
                     j = i+1;
