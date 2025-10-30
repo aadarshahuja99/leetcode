@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/print-zero-even-odd">1116. Print Zero Even Odd</a></h2><h3>Medium</h3><hr><p>You have a function <code>printNumber</code> that can be called with an integer parameter and prints it to the console.</p>
+<h2><a href="https://leetcode.com/problems/print-zero-even-odd/?envType=problem-list-v2&envId=concurrency">1116. Print Zero Even Odd</a></h2><h3>Medium</h3><hr><p>You have a function <code>printNumber</code> that can be called with an integer parameter and prints it to the console.</p>
 
 <ul>
 	<li>For example, calling <code>printNumber(7)</code> prints <code>7</code> to the console.</li>
