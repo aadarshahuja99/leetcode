@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/print-foobar-alternately">1115. Print FooBar Alternately</a></h2><h3>Medium</h3><hr><p>Suppose you are given the following code:</p>
+<h2><a href="https://leetcode.com/problems/print-foobar-alternately/?envType=problem-list-v2&envId=concurrency">1115. Print FooBar Alternately</a></h2><h3>Medium</h3><hr><p>Suppose you are given the following code:</p>
 
 <pre>
 class FooBar {
