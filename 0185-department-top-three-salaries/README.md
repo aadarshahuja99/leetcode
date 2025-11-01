@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/department-top-three-salaries">185. Department Top Three Salaries</a></h2><h3>Hard</h3><hr><p>Table: <code>Employee</code></p>
+<h2><a href="https://leetcode.com/problems/department-top-three-salaries/">185. Department Top Three Salaries</a></h2><h3>Hard</h3><hr><p>Table: <code>Employee</code></p>
 
 <pre>
 +--------------+---------+
@@ -85,3 +85,10 @@ In the Sales department:
 - Sam earns the second-highest salary
 - There is no third-highest salary as there are only two employees
 </pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>There are no employees with the <strong>exact</strong> same name, salary <em>and</em> department.</li>
+</ul>
