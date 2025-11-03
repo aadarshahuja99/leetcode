@@ -17,7 +17,6 @@ class Solution {
             }
             else if(prev == 0)
             {
-                lps[i] = 0;
                 i++;
             }
             else
