@@ -42,7 +42,7 @@ class Solution {
                 int pathMax = Math.max(currentJump,d);
                 if(pathMax < dist[nr][nc])
                 {
-                    dist[nr][nc] = currentJump;
+                    dist[nr][nc] = pathMax;
                     pq.add(new int[] { nr, nc, pathMax });
                 }
             }
