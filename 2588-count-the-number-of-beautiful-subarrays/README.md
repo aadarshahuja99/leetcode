@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-the-number-of-beautiful-subarrays">2588. Count the Number of Beautiful Subarrays</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>. In one operation, you can:</p>
+<h2><a href="https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/">2588. Count the Number of Beautiful Subarrays</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>. In one operation, you can:</p>
 
 <ul>
 	<li>Choose two different indices <code>i</code> and <code>j</code> such that <code>0 &lt;= i, j &lt; nums.length</code>.</li>
@@ -6,11 +6,13 @@
 	<li>Subtract <code>2<sup>k</sup></code> from <code>nums[i]</code> and <code>nums[j]</code>.</li>
 </ul>
 
-<p>A subarray is <strong>beautiful</strong> if it is possible to make all of its elements equal to <code>0</code> after applying the above operation any number of times.</p>
+<p>A subarray is <strong>beautiful</strong> if it is possible to make all of its elements equal to <code>0</code> after applying the above operation any number of times (including zero).</p>
 
 <p>Return <em>the number of <strong>beautiful subarrays</strong> in the array</em> <code>nums</code>.</p>
 
 <p>A subarray is a contiguous <strong>non-empty</strong> sequence of elements within an array.</p>
+
+<p><strong>Note</strong>: Subarrays where all elements are initially 0 are considered beautiful, as no operation is needed.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
