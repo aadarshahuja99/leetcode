@@ -4,7 +4,6 @@ class MinStack {
     public MinStack() {
         st = new Stack<>();
     }
-    
     public void push(int val) {
         if(minVal == null)
         {
@@ -22,7 +21,6 @@ class MinStack {
             st.push(1l*val);
         }
     }
-    
     public void pop() {
         Long val = st.peek();
         if(minVal != null && val < minVal)
@@ -35,7 +33,6 @@ class MinStack {
         }
         st.pop();
     }
-    
     public int top() {
         if(minVal != null && st.peek() < minVal)
         {
@@ -43,7 +40,6 @@ class MinStack {
         }
         return st.peek().intValue();
     }
-    
     public int getMin() {
         return minVal.intValue();
     }
