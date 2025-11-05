@@ -1,6 +1,4 @@
 class Solution {
-    private static int HALF_INT_MIN = -1073741824; // -2**30;
-
     public int divide(int dividend, int divisor) {
         // Special case: overflow.
         if (dividend == Integer.MIN_VALUE && divisor == -1) {
@@ -9,7 +7,7 @@ class Solution {
         boolean isNegative = (dividend < 0) ^ (divisor < 0);
         Long absDividend = Math.abs((long)dividend);
         Long absDivisor = Math.abs((long)divisor);
-        int ans = 0;
+        int ans = 0; // quotient
         while(absDividend >= absDivisor)
         {
             Long tempDivisor = absDivisor;
@@ -21,7 +19,7 @@ class Solution {
             }
             absDividend -= tempDivisor;
             ans += multiple;
-        }
+        } 
         return isNegative ? -ans : ans;
     }
 }
