@@ -14,7 +14,6 @@ class Solution {
         vals[10] = 5;
         vals[11] = 4;
         vals[12] = 1;
-
         HashMap<Integer,String> map = new HashMap<>();
         map.put(0, "M");
         map.put(1, "CM");
@@ -29,7 +28,6 @@ class Solution {
         map.put(10, "V");
         map.put(11, "IV");
         map.put(12, "I");
-        
         int idx = 0;
         StringBuilder sb = new StringBuilder("");
         while(num > 0)
