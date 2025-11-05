@@ -47,7 +47,7 @@ class Solution {
             if (sieve[number] == 1) {
                 // Mark all multiples of 'number' as non-prime
                 for (
-                    int multiple = number * number;
+                    int multiple = number*number;
                     multiple <= upperLimit;
                     multiple += number
                 ) {
