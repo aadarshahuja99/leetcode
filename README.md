@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0283-move-zeroes](https://github.com/aadarshahuja99/leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0915-partition-array-into-disjoint-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0915-partition-array-into-disjoint-intervals/) | Medium |
 | [1052-grumpy-bookstore-owner](https://github.com/aadarshahuja99/leetcode/tree/main/1052-grumpy-bookstore-owner/) | Medium |
@@ -31,12 +32,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/aadarshahuja99/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+| [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
 ## String
 | Problem Name | Difficulty |
@@ -69,4 +72,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 <!---LeetCode Topics End-->
