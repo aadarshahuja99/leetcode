@@ -45,7 +45,7 @@ class Solution {
         }
         int n = nums.length;
         List<Integer> ans = new ArrayList<>();
-        if(actualCount1 > (int)Math.floor(n/3))
+        if(actualCount1 > n/3)
         {
             ans.add(element1);
         }
