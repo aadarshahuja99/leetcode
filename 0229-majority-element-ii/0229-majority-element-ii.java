@@ -49,7 +49,7 @@ class Solution {
         {
             ans.add(element1);
         }
-        if(actualCount2 > (int)Math.floor(n/3))
+        if(actualCount2 > n/3)
         {
             ans.add(element2);
         }
