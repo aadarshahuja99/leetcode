@@ -15,48 +15,71 @@
  */
 class Solution {
     public TreeNode createBinaryTree(int[][] descriptions) {
-        HashMap<Integer,Integer> pMap = new HashMap<>();
-        HashMap<Integer,Integer> right = new HashMap<>();
-        HashMap<Integer,Integer> left = new HashMap<>();
-        HashSet<Integer> children = new HashSet<>();
+        HashSet<Integer> hasParent = new HashSet<>();
+        HashMap<Integer,int[]> childMap = new HashMap<>();
         for(int[] desc : descriptions)
         {
             int p = desc[0];
-            int c = desc[1];
-            int d = desc[2];
-            pMap.put(c, p);
-            if(d == 1)
+            int v = desc[1];
+            int isLeft = desc[2];
+            hasParent.add(v);
+            if(childMap.containsKey(p))
             {
-                left.put(p, c);
+                int[] children = childMap.get(p);
+                if(isLeft == 1)
+                {
+                    children[0] = v;
+                }
+                else
+                {
+                    children[1] = v;
+                }
+                childMap.put(p, children);
             }
             else
             {
-                right.put(p,c);
+                int[] children = {-1, -1};
+                if(isLeft == 1)
+                {
+                    children[0] = v;
+                }
+                else
+                {
+                    children[1] = v;
+                }
+                childMap.put(p, children);
             }
-            children.add(c);
         }
         int root = -1;
         for(int[] desc : descriptions)
         {
-            if(!children.contains(desc[0]))
+            if(!hasParent.contains(desc[0]))
             {
                 root = desc[0];
-                break;
             }
         }
-        return getTree(root, right, left);
+        TreeNode rootNode = new TreeNode(root);
+        dfs(rootNode, childMap);
+        return rootNode;
     }
-    private TreeNode getTree(int current, HashMap<Integer,Integer> right, HashMap<Integer,Integer> left)
+    private void dfs(TreeNode current, HashMap<Integer,int[]> childMap)
     {
-        TreeNode newNode = new TreeNode(current);
-        if(right.containsKey(current))
+        int val = current.val;
+        if(!childMap.containsKey(val))
         {
-            newNode.right = getTree(right.get(current), right, left);
+            return;
         }
-        if(left.containsKey(current))
+        if(childMap.get(val)[0] != -1)
         {
-            newNode.left = getTree(left.get(current), right, left);
+            TreeNode left = new TreeNode(childMap.get(val)[0]);
+            dfs(left, childMap);
+            current.left = left;
         }
-        return newNode;
+        if(childMap.get(val)[1] != -1)
+        {
+            TreeNode right = new TreeNode(childMap.get(val)[1]);
+            dfs(right, childMap);
+            current.right = right;
+        }
     }
 }
