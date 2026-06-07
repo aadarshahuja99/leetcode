@@ -1,24 +1,18 @@
 class Solution {
     public int partitionDisjoint(int[] nums) {
         int n = nums.length;
-        int[] maxTillNow = new int[n];
-        int[] minPostNow = new int[n];
-        maxTillNow[0] = nums[0];
-        int max = nums[0];
-        for(int i=1; i<n; i++)
+        int[] minFrom = new int[n];
+        int min = Integer.MAX_VALUE;
+        for(int i=n-1; i>0; i--)
         {
-            max = Math.max(nums[i], max);
-            maxTillNow[i] = max;
+            min = Math.min(nums[i], min);
+            minFrom[i] = min;
         }
-        int min = nums[n-1];
-        for(int i=n-2; i>=0; i--)
-        {
-            min = Math.min(min, nums[i+1]);
-            minPostNow[i] = min;
-        }
+        int max = Integer.MIN_VALUE;
         for(int i=0; i<n-1; i++)
         {
-            if(maxTillNow[i] <= minPostNow[i])
+            max = Math.max(max, nums[i]);
+            if(max <= minFrom[i+1])
             {
                 return i+1;
             }
