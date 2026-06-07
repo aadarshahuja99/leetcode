@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/partition-array-into-disjoint-intervals">915. Partition Array into Disjoint Intervals</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, partition it into two (contiguous) subarrays <code>left</code> and <code>right</code> so that:</p>
+<h2><a href="https://leetcode.com/problems/partition-array-into-disjoint-intervals/">915. Partition Array into Disjoint Intervals</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, partition it into two (contiguous) subarrays <code>left</code> and <code>right</code> so that:</p>
 
 <ul>
 	<li>Every element in <code>left</code> is less than or equal to every element in <code>right</code>.</li>
