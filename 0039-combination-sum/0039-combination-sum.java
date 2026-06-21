@@ -20,6 +20,12 @@ class Solution {
         list.add(nums[current]);
         getAns(current, target - nums[current], nums, list);
         list.remove(list.size() - 1);
-        getAns(current+1, target, nums, list);
+        int val = nums[current];
+        int i = current;
+        while(i < nums.length && nums[i] == val)
+        {
+            i++;
+        }
+        getAns(i, target, nums, list);
     }
 }
