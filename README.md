@@ -57,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0017-letter-combinations-of-a-phone-number](https://github.com/aadarshahuja99/leetcode/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0022-generate-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0022-generate-parentheses/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
+| [0132-palindrome-partitioning-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -110,4 +111,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0022-generate-parentheses/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
+| [0132-palindrome-partitioning-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 <!---LeetCode Topics End-->
