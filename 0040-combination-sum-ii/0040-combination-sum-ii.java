@@ -29,6 +29,6 @@ class Solution {
         // take
         currentSubset.addLast(nums[currentIndex]);
         createSubsets(currentIndex+1, rem-nums[currentIndex], nums, subsets, currentSubset);
-        currentSubset.removeLast();
+        currentSubset.removeLast(); // backtrack
     }
 }
