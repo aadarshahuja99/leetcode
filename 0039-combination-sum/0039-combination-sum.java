@@ -8,20 +8,12 @@ class Solution {
     }
     private void getAns(int current, int target, int[] nums, ArrayList<Integer> list)
     {
-        if(current == nums.length)
-        {
-            if(target == 0)
-            {
-                ans.add(new ArrayList<>(list));
-            }
-            return;
-        }
         if(target == 0)
         {
             ans.add(new ArrayList<>(list));
             return;
         }
-        if(nums[current] > target)
+        if(current == nums.length || nums[current] > target)
         {
             return;
         }
