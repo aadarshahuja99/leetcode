@@ -20,7 +20,7 @@ class Solution {
         }
         // dont take all the remaining numbers with the same value
         createSubsets(i, nums, subsets, currentSubset);
-        // take
+        // take current
         currentSubset.addLast(nums[currentIndex]);
         createSubsets(currentIndex+1, nums, subsets, currentSubset);
         currentSubset.removeLast();
