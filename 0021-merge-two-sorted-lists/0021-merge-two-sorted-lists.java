@@ -44,7 +44,6 @@ class Solution {
             {
                 head = current;
             }
-            current.next = null;
         }
         if(list1 != null)
         {
