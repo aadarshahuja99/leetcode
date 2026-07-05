@@ -51,13 +51,11 @@ class Solution {
             ans = ans.next;
             c2 = c2.next;
         }
-
         if(carry > 0)
         {
             ans.val = carry;
             return ansHead;
         }
-
         ansPrev.next = null;
         return ansHead;
     }
