@@ -18,7 +18,6 @@ class Solution {
         ListNode current = head;
         ListNode prev = null;
         ListNode beforeStart = null;
-        ListNode afterEnd = null;
         while(counter <= right)
         {
             if(counter == left)
@@ -50,7 +49,6 @@ class Solution {
             reversedListEnd = beforeStart.next;
             beforeStart.next = prev;
         }
-        // System.out.println(afterEnd.val);
         reversedListEnd.next = current;
         return head;
     }
