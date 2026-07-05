@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0086-partition-list](https://github.com/aadarshahuja99/leetcode/tree/main/0086-partition-list/) | Medium |
 | [0141-linked-list-cycle](https://github.com/aadarshahuja99/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
+| [0143-reorder-list](https://github.com/aadarshahuja99/leetcode/tree/main/0143-reorder-list/) | Medium |
 | [0148-sort-list](https://github.com/aadarshahuja99/leetcode/tree/main/0148-sort-list/) | Medium |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0283-move-zeroes](https://github.com/aadarshahuja99/leetcode/tree/main/0283-move-zeroes/) | Easy |
@@ -97,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0141-linked-list-cycle](https://github.com/aadarshahuja99/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
+| [0143-reorder-list](https://github.com/aadarshahuja99/leetcode/tree/main/0143-reorder-list/) | Medium |
 | [0148-sort-list](https://github.com/aadarshahuja99/leetcode/tree/main/0148-sort-list/) | Medium |
 | [0206-reverse-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
@@ -146,11 +148,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
+| [0143-reorder-list](https://github.com/aadarshahuja99/leetcode/tree/main/0143-reorder-list/) | Medium |
 | [0206-reverse-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0143-reorder-list](https://github.com/aadarshahuja99/leetcode/tree/main/0143-reorder-list/) | Medium |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 ## Merge Sort
 | Problem Name | Difficulty |
