@@ -1,48 +1,35 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
+public class Solution {
     public void reorderList(ListNode head) {
-        if (head == null) return;
-
-        // find the middle of linked list [Problem 876]
-        // in 1->2->3->4->5->6 find 4
-        ListNode slow = head, fast = head;
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode prev = null;
+        
         while (fast != null && fast.next != null) {
+            prev = slow;
             slow = slow.next;
             fast = fast.next.next;
         }
-
-        // reverse the second part of the list [Problem 206]
-        // convert 1->2->3->4->5->6 into 1->2->3->4 and 6->5->4
-        // reverse the second half in-place
-        ListNode prev = null, curr = slow, tmp;
-        while (curr != null) {
-            tmp = curr.next;
-
-            curr.next = prev;
-            prev = curr;
-            curr = tmp;
+        ListNode current = slow.next;
+        slow.next = null;
+        ListNode prevReverse = null;
+        while (current != null) {
+            ListNode nextNode = current.next;
+            current.next = prevReverse;
+            prevReverse = current;
+            current = nextNode;
         }
 
-        // merge two sorted linked lists [Problem 21]
-        // merge 1->2->3 and 6->5->4 into 1->6->2->5->3->4
-        ListNode first = head, second = prev;
-        while (second.next != null) {
-            tmp = first.next;
-            first.next = second;
-            first = tmp;
-
-            tmp = second.next;
-            second.next = first;
-            second = tmp;
+        ListNode current2 = prevReverse;
+        ListNode current1 = head;
+        while(current2 != null)
+        {
+            System.out.println(current2.val);
+            ListNode next1 = current1.next;
+            ListNode next2 = current2.next;
+            current1.next = current2;
+            current2.next = next1;
+            current1 = next1;
+            current2 = next2;
         }
     }
 }
