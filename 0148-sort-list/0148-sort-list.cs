@@ -18,10 +18,6 @@ public class Solution {
         ListNode mid = GetMiddleNode(head);
         ListNode next = mid.next;
         mid.next = null;
-        if(head.next!=null)
-        {
-            Console.WriteLine($"{mid.val}, {head.val}, {head.next.val}");
-        }
         var leftSortedList = SortList(head);
         var rightSortedList = SortList(next);
         return MergeTwoLists(leftSortedList, rightSortedList);
