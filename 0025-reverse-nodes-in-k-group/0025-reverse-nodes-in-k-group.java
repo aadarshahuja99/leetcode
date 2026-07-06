@@ -10,6 +10,10 @@
  */
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
+        if(k == 1)
+        {
+            return head;
+        }
         ListNode lastGroupEnd = null;
         ListNode cur = head;
         ListNode prev = null;
@@ -48,7 +52,6 @@ class Solution {
             }
             else
             {
-                // System.out.println("c is less than k "+" unrev start "+unreversedGroupStart.val+" lastEnd "+lastGroupEnd.val);
                 if(lastGroupEnd != null)
                 {
                     lastGroupEnd.next = unreversedGroupStart;
