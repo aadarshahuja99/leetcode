@@ -5,6 +5,7 @@ class Solution {
         int start = 0;
         int ans = 0;
         int n = nums.length;
+        // same as longest variable size window pattern
         while(end < n)
         {
             if(nums[end] == 0)
