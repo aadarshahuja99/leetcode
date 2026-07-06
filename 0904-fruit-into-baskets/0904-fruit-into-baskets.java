@@ -1,38 +1,27 @@
 class Solution {
     public int totalFruit(int[] fruits) {
         int numTrees = fruits.length;
-        HashMap<Integer,Integer> uniqueFruitTypes = new HashMap<>();
+        HashMap<Integer,Integer> map = new HashMap<>();
         int i=0;
         int j=0;
         int ans = 0;
         while(j < numTrees)
         {
-            if(uniqueFruitTypes.size() <= 2)
+            // consume the jth guy
+            map.put(fruits[j], map.getOrDefault(fruits[j], 0) + 1);
+            j++;
+            // if the window became invalid, then shrink it to find the longest possible valid window ending at the last consumed guy
+            while(map.size() > 2)
             {
-                uniqueFruitTypes.put(fruits[j], uniqueFruitTypes.getOrDefault(fruits[j],0) + 1);
-                j++;
-            }
-            else
-            {
-                ans = Math.max(ans, j-i-1);
-                while(uniqueFruitTypes.size() > 2)
+                map.put(fruits[i], map.get(fruits[i]) - 1);
+                if(map.get(fruits[i]) == 0)
                 {
-                    uniqueFruitTypes.put(fruits[i], uniqueFruitTypes.get(fruits[i]) - 1);
-                    if(uniqueFruitTypes.get(fruits[i]) == 0)
-                    {
-                        uniqueFruitTypes.remove(fruits[i]);
-                    }
-                    i++;
+                    map.remove(fruits[i]);
                 }
+                i++;
             }
-        }
-        if(uniqueFruitTypes.size() <= 2)
-        {
+            // compute ans
             ans = Math.max(ans, j-i);
-        }
-        else
-        {
-            ans = Math.max(ans, j-i-1);
         }
         return ans;
     }
