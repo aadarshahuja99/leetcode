@@ -15,7 +15,7 @@ class Solution {
             // if the window ending at the end-th guy is invalid, then make it valid
             while(end - start - maxFreq > k)
             {
-                // no need to update the maximum frequency again and again as for example if the current maxFreq is x then the next candidate which will give a possible longer answer has to have the maxFreq to be at least x+1, during shrinking, the maxFreq value will only decrease and that computation is not needed for computing the answer
+                // no need to update the maximum frequency again and again as for example if the current maxFreq is x then the next candidate which will give a possible longer answer has to have the maxFreq to be at least x+1. When we shrink the window, the maxFreq value will only decrease and that computation is not needed for computing the answer
                 counts[s.charAt(start) - 'A']--;
                 start++;
             }
