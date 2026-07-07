@@ -85,7 +85,6 @@ class Solution {
                 continue;
             }
             var subsets = kSumHelper(i+1, end, target - nums[i], k-1, nums);
-            System.out.println(subsets.size()+" for i = "+i+" nums[i] = "+nums[i]);
             // add current element to all valid subsets that meet the criteria
             for(var subset : subsets)
             {
