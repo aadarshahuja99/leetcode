@@ -11,7 +11,6 @@ class Solution {
         while(j >= cardPoints.length - k)
         {
             current = current - cardPoints[k-it] + cardPoints[j];
-            // System.out.println("ns "+current + " at "+ j);
             ans = Math.max(ans, current);
             j--;
             it++;
