@@ -38,7 +38,6 @@ class Solution {
                 ans = ((ans) + (k - j)) % modulo;
             }
         }
-
         return ans;
     }
 }
