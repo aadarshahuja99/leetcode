@@ -35,7 +35,7 @@ class Solution {
 
             // The number of valid positions for the second split point is k - j
             if (j < n - 1 && prefixSum[j] - prefixSum[i] >= leftSum && prefixSum[n - 1] - prefixSum[k - 1] >= prefixSum[k - 1] - prefixSum[i]) {
-                ans = ((ans%modulo) + (k - j)) % modulo;
+                ans = ((ans) + (k - j)) % modulo;
             }
         }
 
