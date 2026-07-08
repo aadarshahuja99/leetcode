@@ -14,14 +14,15 @@ class Solution {
         {
             return;
         }
+        int currentZeroSubarrayPtr = firstZero;
         for(int i=firstZero+1; i<n; i++)
         {
             if(nums[i] != 0)
             {
                 int temp = nums[i];
-                nums[i] = nums[firstZero];
-                nums[firstZero] = temp;
-                firstZero++;
+                nums[i] = nums[currentZeroSubarrayPtr];
+                nums[currentZeroSubarrayPtr] = temp;
+                currentZeroSubarrayPtr++;
             }
         }
     }
