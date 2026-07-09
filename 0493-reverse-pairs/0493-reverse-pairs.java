@@ -9,7 +9,8 @@ class Solution {
 		int mid = low + (high - low) / 2;
 		int count = mergesort(nums, low, mid) + mergesort(nums, mid+1, high);
 		for (int i = low, j = mid+1; i <= mid && j <= high;){
-			if (nums[i] > (long) nums[j] * 2){
+			if (nums[i] > (long) nums[j] * 2)
+            {
                 count += mid - i + 1;
                 j++;
             }
