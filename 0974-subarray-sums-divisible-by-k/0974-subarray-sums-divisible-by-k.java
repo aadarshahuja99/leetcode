@@ -3,6 +3,7 @@ class Solution {
         HashMap<Integer,Integer> map = new HashMap<>();
         int ans = 0;
         int sum = 0;
+        map.put(0, 1);
         for(int num : nums)
         { 
             sum += num;
@@ -12,10 +13,6 @@ class Solution {
             if(map.containsKey((sum%k + k)%k))
             {
                 ans += map.get((sum%k + k)%k);
-            }
-            if((sum%k + k)%k == 0)
-            {
-                ans++;
             }
             map.put((sum%k + k)%k, map.getOrDefault((sum%k + k)%k, 0) + 1);
         }
