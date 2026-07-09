@@ -9,20 +9,12 @@ class Solution {
         {
             currentProduct = currentProduct*nums[end];
             end++;
-            if(currentProduct < k)
+            while(start < end && currentProduct >= k)
             {
-                count += (end - start);
-                // System.out.println("added "+(end-start)+" to count "+end+","+start+","+currentProduct);
+                currentProduct = currentProduct/nums[start];
+                start++;
             }
-            else
-            {
-                while(start < end && currentProduct >= k)
-                {
-                    currentProduct = currentProduct/nums[start];
-                    start++;
-                }
-                count += (end - start);
-            }
+            count += (end - start);
         }
         return count;
     }
