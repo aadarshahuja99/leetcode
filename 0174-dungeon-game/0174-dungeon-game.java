@@ -18,7 +18,7 @@ class Solution {
         }
         if(row >= m || col >= n)
         {
-            return -1000001;
+            return Integer.MIN_VALUE;
         }
         if(cache[row][col] != -1)
         {
