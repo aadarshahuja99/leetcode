@@ -23,8 +23,8 @@ class Solution {
         {
             return dp[currentRow][currentColumn];
         }
-        int[] rowChange = new int[] { 0,1 };
-        int[] columnChange = new int[] { 1,0 };
+        int[] rowChange = { 0,1 };
+        int[] columnChange = { 1,0 };
         int paths = 0;
         for(int i=0; i<2; i++)
         {
