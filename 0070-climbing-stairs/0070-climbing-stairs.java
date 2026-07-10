@@ -1,24 +1,25 @@
 class Solution {
     public int climbStairs(int n) {
-        int[] dp = new int[n+1];
-        Arrays.fill(dp,-1);
-        return getWays(0,n,dp);
+        int[] cache = new int[n];
+        Arrays.fill(cache, -1);
+        return getAns(0, n, cache);
     }
-    private int getWays(int current, int n, int[] dp)
+    private int getAns(int index, int n, int[] cache)
     {
-        if(current == n)
+        if(index == n)
         {
             return 1;
         }
-        if(current > n)
+        if(cache[index] != -1)
         {
-            return 0;
+            return cache[index];
         }
-        if(dp[current] != -1)
+        int oneStep = getAns(index+1, n, cache);
+        if(index+2 <= n)
         {
-            return dp[current];
+            int twoStep = getAns(index+2, n, cache);
+            return cache[index] = oneStep + twoStep;
         }
-        dp[current] = getWays(current+1,n,dp) + getWays(current+2,n,dp);
-        return dp[current];
+        return cache[index] = oneStep;
     }
 }
