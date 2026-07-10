@@ -1,17 +1,48 @@
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+
         int numRows = obstacleGrid.length;
         int numColumns = obstacleGrid[0].length;
         if(obstacleGrid[0][0] == 1 || obstacleGrid[numRows-1][numColumns-1] == 1)
         {
             return 0;
         }
+
         int[][] dp = new int[numRows][numColumns];
-        for(int[] row : dp)
+
+        dp[numRows-1][numColumns-1] = 1;
+
+        for(int i=numRows-1; i>=0; i--)
         {
-            Arrays.fill(row,-1);
+            for(int j=numColumns-1; j>=0; j--)
+            {
+                if(i == numRows - 1 && j == numColumns - 1)
+                {
+                    continue;
+                }
+                int[] rowChange = { 0,1 };
+                int[] columnChange = { 1,0 };
+                int paths = 0;
+                for(int k=0; k<2; k++)
+                {
+                    int nextRow = i + rowChange[k];
+                    int nextColumn = j + columnChange[k];
+                    if(validatePosition(nextRow, nextColumn, numRows, numColumns) && obstacleGrid[nextRow][nextColumn] != 1)
+                    {
+                        paths += dp[nextRow][nextColumn];
+                    }
+                }
+                dp[i][j] = paths;
+            }
         }
-        return getUniquePaths(0, 0, obstacleGrid, numRows, numColumns, dp);
+
+        return dp[0][0];
+
+        // for(int[] row : dp)
+        // {
+        //     Arrays.fill(row,-1);
+        // }
+        // return getUniquePaths(0, 0, obstacleGrid, numRows, numColumns, dp);
     }
     private int getUniquePaths(int currentRow, int currentColumn, int[][] grid, int numRows, int numColumns, int[][] dp)
     {
