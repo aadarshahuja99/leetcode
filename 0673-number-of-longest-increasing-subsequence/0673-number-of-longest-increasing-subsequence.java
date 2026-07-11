@@ -18,14 +18,11 @@ class Solution {
                 }
             }
         }
-        
         int maxLength = 0;
         int result = 0;
-
         for (int len : length) {
             maxLength = Math.max(maxLength, len);
         }
-
         for (int i = 0; i < n; i++) {
             if (length[i] == maxLength) {
                 result += count[i];
