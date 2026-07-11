@@ -1,5 +1,6 @@
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
+        // front partitioning DP with Trie
         Trie root = new Trie();
         for(String word : wordDict)
         {
