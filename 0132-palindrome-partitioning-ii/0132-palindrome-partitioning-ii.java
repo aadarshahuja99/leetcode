@@ -1,6 +1,7 @@
 class Solution {
     public int minCut(String s) {
         int n = s.length();
+        // isPalindrome snippet is re-usable and almost exact answer for longest palindromic substring
         boolean[][] isPalindrome = new boolean[n][n];
         for(int i=0; i<n; i++)
         {
