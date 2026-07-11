@@ -15,21 +15,15 @@ class Solution {
         int ans = 1;
         for(int i=1; i<envelopes.length; i++)
         {
+            // reasoning: if width of current element is greater than the LIS last element, then its length must definitely be greater than the last element in LIS as envelopes with same length have decreasing width order and the list is sorted on the basis of increasing lengths
             if(envelopes[i][1] > nums[ans-1])
             {
-                nums[ans] = envelopes[i][1];
-                // System.out.println("added "+envelopes[i][0]+","+envelopes[i][1]);
-                ans++;
+                nums[ans++] = envelopes[i][1];
             }
             else
             {
+                // an envelope with the same length as the current one is already a part of the LIS
                 int idx = ceil(envelopes[i][1], nums, ans);
-                // if(idx == -1)
-                // {
-                //     continue;
-                // }
-                // System.out.println("swapped "+envelopes[i][0]+","+envelopes[i][1]+" with "+nums[idx]);
-                // System.out.println("idx for i: "+i+" = "+idx);
                 nums[idx] = envelopes[i][1];
             }
         }
