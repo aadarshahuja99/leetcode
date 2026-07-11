@@ -14,17 +14,13 @@ class Solution {
     }
     private int getAns(int current, int target, int[] coins, int[][] cache)
     {
-        if(current == coins.length)
-        {
-            if(target == 0)
-            {
-                return 0;
-            }
-            return Integer.MAX_VALUE;
-        }
         if(target == 0)
         {
             return 0;
+        }
+        if(current == coins.length)
+        {
+            return Integer.MAX_VALUE;
         }
         if(cache[current][target] != -1)
         {
