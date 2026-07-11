@@ -32,7 +32,7 @@ class Solution {
         {
             return cache[currentIndex];
         }
-        int ans = s.length() + 1;
+        int ans = Integer.MAX_VALUE;
         for(int i=currentIndex; i<s.length(); i++)
         {
             if(isPalindrome[currentIndex][i])
