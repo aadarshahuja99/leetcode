@@ -1,7 +1,35 @@
 class Solution {
     public boolean isMatch(String s, String p) {
-        Boolean[][] dp = new Boolean[s.length()+1][p.length()+1];
-        return getAns(s.length(), p.length(), s, p, dp);
+        int m = s.length();
+        int n = p.length();
+        boolean[][] cache = new boolean[m+1][n+1];
+        cache[0][0] = true;
+        for(int j=2; j<=n; j+=2)
+        {
+            cache[0][j] = cache[0][j-2] && p.charAt(j-1) == '*';
+        }
+        for(int i=1; i<=m; i++)
+        {
+            for(int j=1; j<=n; j++)
+            {
+                if(s.charAt(i-1) == p.charAt(j-1) || p.charAt(j-1) == '.')
+                {
+                    cache[i][j] = cache[i-1][j-1];
+                }
+                else
+                {
+                    if(p.charAt(j-1) == '*' && (s.charAt(i-1) == p.charAt(j-2) || p.charAt(j-2) == '.'))
+                    {
+                        cache[i][j] = cache[i-1][j] || cache[i][j-2];
+                    }
+                    else if(p.charAt(j-1) == '*')
+                    {
+                        cache[i][j] = cache[i][j-2];
+                    }
+                }
+            }
+        }
+        return cache[m][n];
     }
     private Boolean getAns(int i, int j, String s, String p, Boolean[][] dp)
     {
