@@ -9,12 +9,12 @@ class Solution {
     }
     private int getAns(int current, int target, int[] coins, int[][] cache)
     {
+        if(target == 0)
+        {
+            return 1;
+        }
         if(current == coins.length)
         {
-            if(target == 0)
-            {
-                return 1;
-            }
             return 0;
         }
         if(cache[current][target] != -1)
