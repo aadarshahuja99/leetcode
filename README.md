@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0974-subarray-sums-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [0992-subarrays-with-k-different-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1004-max-consecutive-ones-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1052-grumpy-bookstore-owner](https://github.com/aadarshahuja99/leetcode/tree/main/1052-grumpy-bookstore-owner/) | Medium |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/aadarshahuja99/leetcode/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
@@ -136,6 +137,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [0992-subarrays-with-k-different-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
+| [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1171-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/1171-remove-zero-sum-consecutive-nodes-from-linked-list/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
@@ -243,6 +245,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0611-valid-triangle-number](https://github.com/aadarshahuja99/leetcode/tree/main/0611-valid-triangle-number/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/aadarshahuja99/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
 ## Counting
@@ -298,6 +301,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
+| [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
