@@ -27,13 +27,17 @@ class Solution {
     }
     private int getAns(int current, int k, int[][] diffPairs, int[][] dp)
     {
-        if(current == diffPairs.length && k == 0)
+        if(current == diffPairs.length)
         {
-            return 0;
+            if(k == 0)
+            {
+                return 0;
+            }
+            return Integer.MAX_VALUE;
         }
-        if(k == 0 || current == diffPairs.length)
+        if(k == 1)
         {
-            return diffPairs.length;
+            return diffPairs[current][diffPairs.length-1];
         }
         if(dp[current][k] != -1)
         {
@@ -42,7 +46,12 @@ class Solution {
         int ans = diffPairs.length;
         for(int i=current; i<diffPairs.length; i++)
         {
-            ans = Math.min(diffPairs[current][i] + getAns(i+1,k-1,diffPairs,dp), ans);
+            int next = getAns(i+1,k-1,diffPairs,dp);
+            if(next == Integer.MAX_VALUE)
+            {
+                continue;
+            }
+            ans = Math.min(diffPairs[current][i] + next, ans);
         }
         return dp[current][k] = ans;
     }
