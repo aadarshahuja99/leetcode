@@ -9,14 +9,7 @@ class Solution {
             {
                 if(arr[j] + arr[k] == arr[i])
                 {
-                    if(cache[k][j] >= 3 && cache[k][j] + 1 > cache[i][k])
-                    {
-                        cache[i][k] = cache[k][j] + 1;
-                    }
-                    else
-                    {
-                        cache[i][k] = 3;
-                    }
+                    cache[i][k] = Math.max(3, cache[k][j] + 1);
                     ans = Math.max(ans, cache[i][k]);
                     k--;
                     j++;
