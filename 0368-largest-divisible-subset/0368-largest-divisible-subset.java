@@ -30,17 +30,10 @@ class Solution {
             }
         }
         List<Integer> list = new ArrayList<>();
-        if(ending >= 0)
+        while(ending >= 0)
         {
-            while(true)
-            {
-                list.add(nums[ending]);
-                if(lasts[ending] == -1)
-                {
-                    break;
-                }
-                ending = lasts[ending];
-            }
+            list.add(nums[ending]);
+            ending = lasts[ending];
         }
         Collections.reverse(list);
         return list;
