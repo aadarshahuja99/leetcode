@@ -155,6 +155,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/aadarshahuja99/leetcode/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/aadarshahuja99/leetcode/tree/main/0017-letter-combinations-of-a-phone-number/) | Medium |
 | [0022-generate-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0022-generate-parentheses/) | Medium |
+| [0072-edit-distance](https://github.com/aadarshahuja99/leetcode/tree/main/0072-edit-distance/) | Medium |
 | [0076-minimum-window-substring](https://github.com/aadarshahuja99/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0091-decode-ways](https://github.com/aadarshahuja99/leetcode/tree/main/0091-decode-ways/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
@@ -253,6 +254,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0062-unique-paths](https://github.com/aadarshahuja99/leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0063-unique-paths-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0063-unique-paths-ii/) | Medium |
 | [0070-climbing-stairs](https://github.com/aadarshahuja99/leetcode/tree/main/0070-climbing-stairs/) | Easy |
+| [0072-edit-distance](https://github.com/aadarshahuja99/leetcode/tree/main/0072-edit-distance/) | Medium |
 | [0091-decode-ways](https://github.com/aadarshahuja99/leetcode/tree/main/0091-decode-ways/) | Medium |
 | [0120-triangle](https://github.com/aadarshahuja99/leetcode/tree/main/0120-triangle/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/aadarshahuja99/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
