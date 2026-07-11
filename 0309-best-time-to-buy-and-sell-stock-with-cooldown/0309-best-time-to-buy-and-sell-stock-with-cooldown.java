@@ -1,32 +1,24 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        int[][] cache = new int[prices.length+1][2];
-        for(int[] row : cache)
+        int n = prices.length;
+        int[][] cache = new int[n+1][2];
+        for(int i=n-1; i>=0; i--)
         {
-            Arrays.fill(row, Integer.MIN_VALUE);
+            for(int canBuy = 0; canBuy <= 1; canBuy++)
+            {
+                int buy = 0;
+                int sell = 0;
+                if(canBuy == 1)
+                {
+                    buy = -1*prices[i] + cache[i+1][0];
+                }
+                else if(canBuy == 0)
+                {
+                    sell = prices[i] + cache[Math.min(i+2,n)][1];
+                }
+                cache[i][canBuy] = Math.max(cache[i+1][canBuy], Math.max(buy, sell));
+            }
         }
-        return getAns(0, 1, prices, cache);
-    }
-    private int getAns(int current, int canBuy, int[] prices, int[][] cache)
-    {
-        if(current >= prices.length)
-        {
-            return canBuy == 1 ? 0 : -5000001;
-        }
-        if(cache[current][canBuy] != Integer.MIN_VALUE)
-        {
-            return cache[current][canBuy];
-        }
-        int skip = getAns(current+1, canBuy, prices, cache);
-        if(canBuy == 1)
-        {
-            int buy = -prices[current] + getAns(current+1, 0, prices, cache);
-            return cache[current][canBuy] =  Math.max(buy, skip);
-        }
-        else
-        {
-            int sell = prices[current] + getAns(current+2, 1, prices, cache);
-            return cache[current][canBuy] = Math.max(sell, skip);
-        }
+        return cache[0][1];
     }
 }
