@@ -1,7 +1,33 @@
 class Solution {
     public boolean isMatch(String s, String p) {
-        Boolean[][] cache = new Boolean[s.length()+1][p.length()+1];
-        return checkForPatternMatch(s.length(), p.length(), s, p, cache);
+        int m = s.length();
+        int n = p.length();
+        boolean[][] cache = new boolean[m+1][n+1];
+        cache[0][0] = true;
+        for(int j=1; j<=n; j++)
+        {
+            cache[0][j] = cache[0][j-1] && p.charAt(j-1) == '*';
+        }
+        for(int i=1; i<=m; i++)
+        {
+            for(int j=1; j<=n; j++)
+            {
+                if(s.charAt(i-1) == p.charAt(j-1) || p.charAt(j-1) == '?')
+                {
+                    cache[i][j] = cache[i-1][j-1];
+                }
+                else if(p.charAt(j-1) == '*')
+                {
+                    cache[i][j] = cache[i-1][j-1] || cache[i-1][j] || cache[i][j-1];
+                }
+                else
+                {
+                    cache[i][j] = false;
+                }
+            }
+        }
+        return cache[m][n];
+        // return checkForPatternMatch(s.length(), p.length(), s, p, cache);
     }
     private boolean checkForPatternMatch(int currentIndexS, int currentIndexP, String s, String p, Boolean[][] cache)
     {
