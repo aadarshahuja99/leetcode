@@ -40,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0560-subarray-sum-equals-k](https://github.com/aadarshahuja99/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0611-valid-triangle-number](https://github.com/aadarshahuja99/leetcode/tree/main/0611-valid-triangle-number/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/aadarshahuja99/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
@@ -179,6 +180,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0044-wildcard-matching](https://github.com/aadarshahuja99/leetcode/tree/main/0044-wildcard-matching/) | Hard |
 | [0611-valid-triangle-number](https://github.com/aadarshahuja99/leetcode/tree/main/0611-valid-triangle-number/) | Medium |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
@@ -284,6 +286,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
