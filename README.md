@@ -327,6 +327,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0322-coin-change](https://github.com/aadarshahuja99/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
+| [0375-guess-number-higher-or-lower-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0375-guess-number-higher-or-lower-ii/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
@@ -397,6 +398,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0070-climbing-stairs](https://github.com/aadarshahuja99/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
+| [0375-guess-number-higher-or-lower-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0375-guess-number-higher-or-lower-ii/) | Medium |
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0877-stone-game](https://github.com/aadarshahuja99/leetcode/tree/main/0877-stone-game/) | Medium |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
@@ -467,6 +469,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Game Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0375-guess-number-higher-or-lower-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0375-guess-number-higher-or-lower-ii/) | Medium |
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0877-stone-game](https://github.com/aadarshahuja99/leetcode/tree/main/0877-stone-game/) | Medium |
 <!---LeetCode Topics End-->
