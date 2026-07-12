@@ -22,7 +22,6 @@ class Solution {
         {
             ans = Math.min(ans, k + Math.max(getAns(start, k-1, dp), getAns(k+1, end, dp)));
         }
-        // System.out.println(ans+" for "+start+","+end);
         return dp[start][end] = ans;
     }
 }
