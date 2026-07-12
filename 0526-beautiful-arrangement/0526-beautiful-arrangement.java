@@ -1,12 +1,11 @@
 class Solution {
     public int countArrangement(int n) {
-        int maxState = (int)Math.pow(2, 15);
-        int[][] cache = new int[n+1][maxState];
-        for(int[] row : cache)
+        int[][] cache = new int[n+1][(1<<n)];
+        for(int[] r : cache)
         {
-            Arrays.fill(row, -1);
+            Arrays.fill(r, -1);
         }
-        return getAns(1, maxState - 1, n, cache);
+        return getAns(1, 0, n, cache);
     }
     private int getAns(int current, int state, int n, int[][] cache)
     {
@@ -21,10 +20,9 @@ class Solution {
         int ans = 0;
         for(int i=1; i<=n; i++)
         {
-            int idx = i-1;
-            if((state&(1<<idx)) > 0 && (i%current == 0 || current%i == 0))
+            if((state&(1<<(i-1))) == 0 && (current%i == 0 || i%current == 0))
             {
-                ans += getAns(current+1, state^(1<<idx), n, cache);
+                ans = ans + getAns(current+1, (state|(1<<(i-1))), n, cache);
             }
         }
         return cache[current][state] = ans;
