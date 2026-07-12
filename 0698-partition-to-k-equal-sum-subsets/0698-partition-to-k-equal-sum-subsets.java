@@ -1,10 +1,9 @@
 class Solution {
     private boolean getAns(int state, int count, int sum, int target, int k, int[] arr, Boolean[][] cache) {
-                                  
         int n = arr.length;
         // We made k - 1 subsets with target sum and last subset will also have target sum.
         if (count == k - 1) { 
-            return state != (1<<(n)-1);
+            return true;
         }
         if(sum == target)
         {
