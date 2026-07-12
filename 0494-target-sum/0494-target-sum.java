@@ -6,7 +6,7 @@ class Solution {
         {
             s += num;
         }
-        int[][] cache = new int[n][1000 + Math.abs(s) + 1];
+        int[][] cache = new int[n][1000 + s + 1];
         for(int[] r : cache)
         {
             Arrays.fill(r, -1);
