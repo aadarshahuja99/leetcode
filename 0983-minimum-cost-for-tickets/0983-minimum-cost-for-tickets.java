@@ -1,65 +1,44 @@
 class Solution {
     public int mincostTickets(int[] days, int[] costs) {
-        int[] cache = new int[days.length];
-        Arrays.fill(cache, -1);
-        return getAns(0, costs, days, cache);
-    }
-    private int getAns(int current, int[] costs, int[] days, int[] cache)
-    {
-        if(current == days.length)
+        int n = days.length;
+        int[] cache = new int[n+1];
+        for(int i=n-1; i>=0; i--)
         {
-            return 0;
-        }
-        if(cache[current] != -1)
-        {
-            return cache[current];
-        }
-        int ans = Integer.MAX_VALUE;
-        for(int i=0; i<3; i++)
-        {
-            int floor = getCeil(days, days[current] + getDays(i));
-            if(floor > current)
+            int floor1Day = getFloorIndex(days[i], days);
+            int floor7Day = getFloorIndex(days[i] + 6, days);
+            int floor30Day = getFloorIndex(days[i] + 29, days);
+            int current = costs[0] + cache[floor1Day+1];
+            if(floor7Day != -1)
             {
-                int val = getAns(floor, costs, days, cache);
-                if(val == Integer.MAX_VALUE)
-                {
-                    continue;
-                }
-                ans = Math.min(ans, costs[i] + val);
+                current = Math.min(current, costs[1] + cache[floor7Day+1]);
             }
+            if(floor30Day != -1)
+            {
+                current = Math.min(current, costs[2] + cache[floor30Day+1]);
+            }
+            cache[i] = current;
         }
-        return cache[current] = ans;
+        return cache[0];
+        // return getAns(0, costs, days, cache);
     }
-    private int getDays(int idx)
-    {
-        if(idx == 0)
-        {
-            return 1;
-        }
-        if(idx == 1)
-        {
-            return 7;
-        }
-        return 30;
-    }
-    private int getCeil(int[] nums, int t)
+    private int getFloorIndex(int val, int[] days)
     {
         int s = 0;
         int ans = -1;
-        int e = nums.length-1;
+        int e = days.length-1;
         while(s <= e)
         {
-            int m = s + (e - s)/2;
-            if(nums[m] >= t)
+            int m = s + (e-s)/2;
+            if(days[m] <= val)
             {
                 ans = m;
-                e = m-1;
+                s = m+1;
             }
             else
             {
-                s = m+1;
+                e = m-1;
             }
         }
-        return ans == -1 ? nums.length : ans;
+        return ans;
     }
 }
