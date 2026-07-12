@@ -10,6 +10,7 @@ class Solution {
     }
     private int getAns(int i, int j, int[] cuts, int n, int[][] dp)
     {
+        // no cuts to perform, base case
         if(i > j)
         {
             return 0;
