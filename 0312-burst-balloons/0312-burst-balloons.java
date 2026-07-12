@@ -9,11 +9,29 @@ class Solution {
             updated[i] = nums[i-1];
         }
         int[][] dp = new int[updated.length][updated.length];
-        for(int[] row : dp)
+        // for(int[] row : dp)
+        // {
+        //     Arrays.fill(row, -1);
+        // }
+        for(int i=updated.length-2; i>=1; i--)
         {
-            Arrays.fill(row, -1);
+            for(int j=1; j<=updated.length-2; j++)
+            {
+                if(i > j)
+                {
+                    continue;
+                }
+                int maxCoins = 0;
+                for(int k=i; k<=j; k++)
+                {
+                    int currentCostToBeDoneAtLast = updated[i-1]*updated[k]*updated[j+1];
+                    maxCoins = Math.max(maxCoins, currentCostToBeDoneAtLast + dp[i][k-1] + dp[k+1][j]);
+                }
+                dp[i][j] = maxCoins;
+            }
         }
-        return countMaximumCoins(1,updated.length-2,updated,dp);
+        return dp[1][updated.length-2];
+        // return countMaximumCoins(1,updated.length-2,updated,dp);
     }
     private int countMaximumCoins(int i, int j, int[] nums, int[][] dp)
     {
