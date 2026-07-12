@@ -328,6 +328,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
+| [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
 | [0546-remove-boxes](https://github.com/aadarshahuja99/leetcode/tree/main/0546-remove-boxes/) | Hard |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
@@ -354,6 +355,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0090-subsets-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0090-subsets-ii/) | Medium |
+| [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1434-number-of-ways-to-wear-different-hats-to-each-other](https://github.com/aadarshahuja99/leetcode/tree/main/1434-number-of-ways-to-wear-different-hats-to-each-other/) | Hard |
@@ -394,6 +396,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0070-climbing-stairs](https://github.com/aadarshahuja99/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
+| [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0877-stone-game](https://github.com/aadarshahuja99/leetcode/tree/main/0877-stone-game/) | Medium |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
 ## Combinatorics
@@ -437,6 +440,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/aadarshahuja99/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0139-word-break](https://github.com/aadarshahuja99/leetcode/tree/main/0139-word-break/) | Medium |
+| [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0546-remove-boxes](https://github.com/aadarshahuja99/leetcode/tree/main/0546-remove-boxes/) | Hard |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 ## Breadth-First Search
@@ -455,11 +459,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bitmask
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1434-number-of-ways-to-wear-different-hats-to-each-other](https://github.com/aadarshahuja99/leetcode/tree/main/1434-number-of-ways-to-wear-different-hats-to-each-other/) | Hard |
 ## Game Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0877-stone-game](https://github.com/aadarshahuja99/leetcode/tree/main/0877-stone-game/) | Medium |
 <!---LeetCode Topics End-->
