@@ -26,17 +26,17 @@ class Solution {
         while(queue.size() > 0)
         {
             int size = queue.size();
-            List<Integer> currentLevel = new ArrayList<>(Collections.nCopies(size,0));
+            LinkedList<Integer> currentLevel = new LinkedList<>();
             for(int i=0; i<size; i++)
             {
                 var top = queue.poll();
                 if(isReversed)
                 {
-                    currentLevel.set(size-1-i, top.val);
+                    currentLevel.addFirst(top.val);
                 }
                 else
                 {
-                    currentLevel.set(i, top.val);
+                    currentLevel.addLast(top.val);
                 }
                 if(top.left != null)
                 {
@@ -48,7 +48,7 @@ class Solution {
                 }
             }
             isReversed = !isReversed;
-            answer.add(currentLevel);
+            answer.add(new ArrayList<>(currentLevel));
         }
         return answer;
     }
