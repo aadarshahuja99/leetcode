@@ -8,7 +8,7 @@ class Solution {
             int prev = nums[i] - difference;
             if(dp.containsKey(prev))
             {
-                int current = Math.max(dp.get(prev) + 1, 2);
+                int current = dp.get(prev) + 1;
                 dp.put(nums[i], Math.max(dp.getOrDefault(nums[i], 1), current));
                 ans = Math.max(ans, dp.get(nums[i]));
             }
