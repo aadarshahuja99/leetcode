@@ -15,30 +15,40 @@
  */
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
-        Deque<Integer> res = new ArrayDeque<>();
-		if (root == null) return new ArrayList<>(res);
-		TreeNode cur = root;
-		while (cur != null) {
-			if (cur.right != null) {
-				TreeNode p = cur.right;
-				while (p.left != null && p.left != cur) {
-					p = p.left;
-				}
-				if (p.left == null) {
-					p.left = cur;
-					res.addFirst(cur.val);
-					cur = cur.right;
-				}
-				else {
-					p.left = null;
-					cur = cur.left;
-				}
-			}
-			else {
-				res.addFirst(cur.val);
-				cur = cur.left;
-			}
-		}
-		return new ArrayList<>(res);
+        // iterative solution
+        TreeNode current = root;
+        List<Integer> ans = new ArrayList<>();
+        Stack<TreeNode> st = new Stack<>();
+        while(true)
+        {
+            if(current != null)
+            {
+                st.add(current);
+                current = current.left;
+            }
+            else
+            {
+                if(st.isEmpty())
+                {
+                    return ans;
+                }
+                TreeNode temp = st.peek().right;
+                if(temp == null)
+                {
+                    // pop the leaf node and add it to traversal
+                    temp = st.pop();
+                    ans.add(temp.val);
+                    while(!st.isEmpty() && temp == st.peek().right)
+                    {
+                        temp = st.pop();
+                        ans.add(temp.val);
+                    }
+                }
+                else
+                {
+                    current = temp;
+                }
+            }
+        }
     }
 }
