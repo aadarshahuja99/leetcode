@@ -44,10 +44,6 @@ class Solution {
                 {
                     return s1.isEmpty() && s2.isEmpty();
                 }
-                if(s1.peek().val != s2.peek().val)
-                {
-                    return false;
-                }
                 current1 = s1.pop().right;
                 current2 = s2.pop().right;
             }
