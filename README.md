@@ -237,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
@@ -255,6 +256,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
@@ -512,6 +514,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
