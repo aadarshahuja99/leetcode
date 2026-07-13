@@ -1,27 +1,26 @@
 class Solution {
     public int stoneGameII(int[] piles) {
-        // Cache needs to store results. Since 0 is a valid result, 
-        // we should initialize it to -1 to differentiate unvisited states.
-        int[][][] cache = new int[piles.length][2][piles.length + 1];
-        for (int i = 0; i < piles.length; i++) {
-            for (int j = 0; j < 2; j++) {
-                Arrays.fill(cache[i][j], -1);
+        int[][][] cache = new int[piles.length][2][piles.length+1];
+        for(int[][] r : cache)
+        {
+            for(int[] nr : r)
+            {
+                Arrays.fill(nr, -1);
             }
         }
         return getAns(0, 1, 1, piles, cache);
     }
-
-    private int getAns(int current, int isAlice, int M, int[] piles, int[][][] cache) {
+    private int getAns(int current, int isAlice, int M, int[] piles, int[][][] cache)
+    {
         int n = piles.length;
-        if (current == n) {
+        if(current == n)
+        {
             return 0;
         }
-        
-        // 1. Check cache before computing
-        if (cache[current][isAlice][M] != -1) {
+        if(cache[current][isAlice][M] != -1)
+        {
             return cache[current][isAlice][M];
         }
-
         int ans = (isAlice == 1) ? 0 : Integer.MAX_VALUE;
         int sum = 0;
 
@@ -40,9 +39,6 @@ class Solution {
                 ans = Math.min(ans, getAns(i + 1, 1, nextM, piles, cache));
             }
         }
-
-        // 3. Save to cache before returning
-        cache[current][isAlice][M] = ans;
-        return ans;
+        return cache[current][isAlice][M] = ans;
     }
 }
