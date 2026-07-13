@@ -27,13 +27,12 @@ class Solution {
             }
             else
             {
-                if(st.size() == 0)
+                if(st.isEmpty())
                 {
                     return ans;
                 }
-                var top = st.pop();
-                ans.add(top.val);
-                current = top.right;
+                ans.add(st.peek().val);
+                current = st.pop().right;
             }
         }
     }
