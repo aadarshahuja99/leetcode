@@ -15,10 +15,6 @@
  */
 class Solution {
     public boolean isBalanced(TreeNode root) {
-        if(root == null)
-        {
-            return true;
-        }
         int ans = check(root);
         return ans != -1;
     }
@@ -44,6 +40,7 @@ class Solution {
     {
         TreeNode current = root;
         HashMap<TreeNode,Integer> heights = new HashMap<>();
+        heights.put(null, 0);
         Stack<TreeNode> stack = new Stack<>();
         while(!stack.isEmpty() || current != null)
         {
@@ -58,8 +55,8 @@ class Solution {
                 if(top == null)
                 {
                     // both left and rigth subtrees have been traversed
-                    int leftHeight = heights.getOrDefault(stack.peek().left,0);
-                    int rightHeight = heights.getOrDefault(stack.peek().right,0);
+                    int leftHeight = heights.get(stack.peek().left);
+                    int rightHeight = heights.get(stack.peek().right);
                     if(Math.abs(leftHeight - rightHeight) > 1)
                     {
                         return false;
@@ -68,8 +65,8 @@ class Solution {
                     top = stack.pop();
                     while(!stack.isEmpty() && top == stack.peek().right)
                     {
-                        int left = heights.getOrDefault(stack.peek().left, 0);
-                        int right = heights.getOrDefault(stack.peek().right, 0);
+                        int left = heights.get(stack.peek().left);
+                        int right = heights.get(stack.peek().right);
                         if(Math.abs(left - right) > 1)
                         {
                             return false;
