@@ -31,10 +31,6 @@ class Solution {
         {
             return left;
         }
-        if(right != null)
-        {
-            return right;
-        }
-        return null;
+        return right;
     }
 }
