@@ -30,8 +30,9 @@ class Solution {
                 {
                     levelMin = top.index;
                 }
-                int current = top.index - levelMin;
                 levelMax = Math.max(levelMax, top.index);
+                // we are re-basing the values to 0 based indexes so that we can avoid int/long overflow in case of skewed binary tree (2^10^5 can happen if not rebased)
+                int current = top.index - levelMin;
                 if(top.node.left != null)
                 {
                     q.add(new Element(top.node.left, 2*current+1));
