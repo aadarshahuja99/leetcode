@@ -52,10 +52,7 @@ class Solution {
             for(int lev : map.get(line).keySet())
             {
                 Collections.sort(map.get(line).get(lev));
-                for(int val : map.get(line).get(lev))
-                {
-                    current.add(val);
-                }
+                current.addAll(map.get(line).get(lev));
             }
             ans.add(current);
         }
