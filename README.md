@@ -223,6 +223,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
+| [0110-balanced-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
@@ -231,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
+| [0110-balanced-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
@@ -468,6 +470,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
+| [0110-balanced-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 ## Bitmask
