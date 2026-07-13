@@ -229,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0112-path-sum/) | Easy |
+| [0113-path-sum-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0113-path-sum-ii/) | Medium |
 | [0124-binary-tree-maximum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
@@ -245,6 +246,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0110-balanced-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0112-path-sum/) | Easy |
+| [0113-path-sum-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0113-path-sum-ii/) | Medium |
 | [0124-binary-tree-maximum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
@@ -316,6 +318,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0047-permutations-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0077-combinations](https://github.com/aadarshahuja99/leetcode/tree/main/0077-combinations/) | Medium |
 | [0090-subsets-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0090-subsets-ii/) | Medium |
+| [0113-path-sum-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0113-path-sum-ii/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
@@ -495,6 +498,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0100-same-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0100-same-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0112-path-sum/) | Easy |
+| [0113-path-sum-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0113-path-sum-ii/) | Medium |
 | [0124-binary-tree-maximum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
