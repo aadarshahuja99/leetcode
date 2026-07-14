@@ -38,7 +38,7 @@ class Codec {
                 {
                     queue.add(child);
                 }
-                queue.add(defaultEnd); // end of current nodes children in queue
+                queue.add(defaultEnd); // end of current node's children in queue
             }
             else
             {
@@ -64,23 +64,20 @@ class Codec {
         int n = values.length;
         while(!queue.isEmpty())
         {
-            int size = queue.size();
-            for(int i=0; i<size; i++)
+            var top = queue.poll();
+            for(int j=currentIndex; j<n; j++)
             {
-                var top = queue.poll();
-                for(int j=currentIndex; j<n; j++)
+                // all the child nodes of the current top are visited
+                if(values[j].equals("n"))
                 {
-                    if(values[j].equals("n"))
-                    {
-                        currentIndex = j+1;
-                        break;
-                    }
-                    else
-                    {
-                        Node newNode = new Node(Integer.parseInt(values[j]), new ArrayList<Node>());
-                        top.children.add(newNode);
-                        queue.add(newNode);
-                    }
+                    currentIndex = j+1;
+                    break;
+                }
+                else
+                {
+                    Node newNode = new Node(Integer.parseInt(values[j]), new ArrayList<Node>());
+                    top.children.add(newNode);
+                    queue.add(newNode);
                 }
             }
         }
