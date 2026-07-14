@@ -23,8 +23,9 @@ class Solution {
     {
         if(current == null)
         {
-            return 0;
+            return Integer.MIN_VALUE;
         }
+        // We are using inorder based encoding of the subtree into a string and storing the encoded string counts in hash map
         String encodedTree = dfs(current.left, stringToIdMap, counts, result) +  "," + current.val
         + "," + dfs(current.right, stringToIdMap, counts, result);
 
@@ -43,7 +44,6 @@ class Solution {
         {
             result.add(current);
         }
-        // System.out.println("at "+current.val+" encoded: "+encodedTree+" id: "+id);
         return id;
     }
 }
