@@ -21,18 +21,18 @@ class Solution {
         while(q.size() > 0)
         {
             int s = q.size();
-            int levelMin = -1;
-            int levelMax = -1;
+            int first = 0;
+            int last = 0;
             for(int i=0; i<s; i++)
             {
                 var top = q.poll();
                 if(i == 0)
                 {
-                    levelMin = top.index;
+                    first = top.index;
                 }
-                levelMax = Math.max(levelMax, top.index);
+                last = top.index;
                 // we are re-basing the values to 0 based indexes so that we can avoid int/long overflow in case of skewed binary tree (2^10^5 can happen if not rebased)
-                int current = top.index - levelMin;
+                int current = top.index - first;
                 if(top.node.left != null)
                 {
                     q.add(new Element(top.node.left, 2*current+1));
@@ -42,7 +42,7 @@ class Solution {
                     q.add(new Element(top.node.right, 2*current+2));
                 }
             }
-            ans = Math.max(ans, levelMax - levelMin + 1);
+            ans = Math.max(ans, last - first + 1);
         }
         return ans;
     }
