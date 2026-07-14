@@ -31,7 +31,8 @@ class Solution {
         }
         TreeNode curr = new TreeNode(post[end]);
         int idx = map.get(post[end]);
-        int rightSubTreeLength = inEnd - idx;
+        // in BT from preorder and inorder, it was leftSubtreeLength = idx - inStart
+        int rightSubTreeLength = inEnd - idx; 
         curr.left = helper(st, end-rightSubTreeLength-1, idx-1, post, map);
         curr.right = helper(end-rightSubTreeLength, end-1, inEnd, post, map);
         return curr;
