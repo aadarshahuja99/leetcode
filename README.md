@@ -157,6 +157,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0438-find-all-anagrams-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/aadarshahuja99/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
+| [0652-find-duplicate-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
@@ -253,6 +254,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0545-boundary-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0545-boundary-of-binary-tree/) | Medium |
+| [0652-find-duplicate-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
@@ -279,6 +281,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0545-boundary-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0545-boundary-of-binary-tree/) | Medium |
+| [0652-find-duplicate-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
@@ -549,6 +552,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0545-boundary-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0545-boundary-of-binary-tree/) | Medium |
+| [0652-find-duplicate-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
