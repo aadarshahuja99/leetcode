@@ -259,6 +259,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Binary Tree
@@ -287,6 +288,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 ## Linked List
@@ -560,6 +562,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 ## Bitmask
 | Problem Name | Difficulty |
