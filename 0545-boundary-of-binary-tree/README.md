@@ -1,10 +1,10 @@
-<h2><a href="https://leetcode.com/problems/boundary-of-binary-tree">545. Boundary of Binary Tree</a></h2><h3>Medium</h3><hr><p>The <strong>boundary</strong> of a binary tree is the concatenation of the <strong>root</strong>, the <strong>left boundary</strong>, the <strong>leaves</strong> ordered from left-to-right, and the <strong>reverse order</strong> of the <strong>right boundary</strong>.</p>
+<h2><a href="https://leetcode.com/problems/boundary-of-binary-tree/?envType=company&envId=microsoft&favoriteSlug=microsoft-more-than-six-months">545. Boundary of Binary Tree</a></h2><h3>Medium</h3><hr><p>The <strong>boundary</strong> of a binary tree is the concatenation of the <strong>root</strong>, the <strong>left boundary</strong>, the <strong>leaves</strong> ordered from left-to-right, and the <strong>reverse order</strong> of the <strong>right boundary</strong>.</p>
 
 <p>The <strong>left boundary</strong> is the set of nodes defined by the following:</p>
 
 <ul>
 	<li>The root node&#39;s left child is in the left boundary. If the root does not have a left child, then the left boundary is <strong>empty</strong>.</li>
-	<li>If a node in the left boundary and has a left child, then the left child is in the left boundary.</li>
+	<li>If a node is in the left boundary and has a left child, then the left child is in the left boundary.</li>
 	<li>If a node is in the left boundary, has <strong>no</strong> left child, but has a right child, then the right child is in the left boundary.</li>
 	<li>The leftmost leaf is <strong>not</strong> in the left boundary.</li>
 </ul>
