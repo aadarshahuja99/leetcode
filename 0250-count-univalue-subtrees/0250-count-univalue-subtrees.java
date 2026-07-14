@@ -25,17 +25,16 @@ class Solution {
         {
             return true;
         }
-        
+
         boolean rightTreeStatus = countSingleValueTrees(current.right, count);
         boolean leftTreeStatus = countSingleValueTrees(current.left, count);
         leftTreeStatus = current.left == null || (leftTreeStatus && current.val == current.left.val);
-        rightTreeStatus = current.right == null || (rightTreeStatus && current.val == current.right.val);   
-        
+        rightTreeStatus = current.right == null || (rightTreeStatus && current.val == current.right.val);
+
         if(leftTreeStatus && rightTreeStatus)
         {
             count[0] += 1;
         }
-        
         return leftTreeStatus && rightTreeStatus;
     }
 }
