@@ -209,6 +209,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0139-word-break](https://github.com/aadarshahuja99/leetcode/tree/main/0139-word-break/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
+| [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0438-find-all-anagrams-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
@@ -246,6 +247,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0250-count-univalue-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0250-count-univalue-subtrees/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
@@ -516,6 +518,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0322-coin-change](https://github.com/aadarshahuja99/leetcode/tree/main/0322-coin-change/) | Medium |
+| [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
@@ -537,6 +540,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0250-count-univalue-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0250-count-univalue-subtrees/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
