@@ -245,6 +245,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0095-unique-binary-search-trees-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0095-unique-binary-search-trees-ii/) | Medium |
 | [0096-unique-binary-search-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0098-validate-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
+| [0099-recover-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0099-recover-binary-search-tree/) | Medium |
 | [0100-same-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0100-same-tree/) | Easy |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
@@ -289,6 +290,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0095-unique-binary-search-trees-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0095-unique-binary-search-trees-ii/) | Medium |
 | [0096-unique-binary-search-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0098-validate-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
+| [0099-recover-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0099-recover-binary-search-tree/) | Medium |
 | [0100-same-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0100-same-tree/) | Easy |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
@@ -363,6 +365,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0095-unique-binary-search-trees-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0095-unique-binary-search-trees-ii/) | Medium |
 | [0096-unique-binary-search-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0098-validate-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
+| [0099-recover-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0099-recover-binary-search-tree/) | Medium |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0230-kth-smallest-element-in-a-bst/) | Medium |
@@ -599,6 +602,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0094-binary-tree-inorder-traversal/) | Easy |
 | [0098-validate-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
+| [0099-recover-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0099-recover-binary-search-tree/) | Medium |
 | [0100-same-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0100-same-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0110-balanced-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0112-path-sum/) | Easy |
