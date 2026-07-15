@@ -256,6 +256,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
+| [0450-delete-node-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0545-boundary-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0545-boundary-of-binary-tree/) | Medium |
@@ -290,6 +291,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0250-count-univalue-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0250-count-univalue-subtrees/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
+| [0450-delete-node-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0513-find-bottom-left-tree-value](https://github.com/aadarshahuja99/leetcode/tree/main/0513-find-bottom-left-tree-value/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0545-boundary-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0545-boundary-of-binary-tree/) | Medium |
@@ -342,6 +344,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0209-minimum-size-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
+| [0450-delete-node-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0611-valid-triangle-number](https://github.com/aadarshahuja99/leetcode/tree/main/0611-valid-triangle-number/) | Medium |
 | [0700-search-in-a-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0700-search-in-a-binary-search-tree/) | Easy |
