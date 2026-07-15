@@ -1,5 +1,7 @@
 class Solution {
     public void recoverTree(TreeNode root) {
+        // Intuition: if there is only one violation (only 2 nodes in incorrect places), then swap them (this happens when incorrect nodes are adjacent to each other in inorder)
+        // else if there is one more violation (when the incorrect nodes are not adjacent, then replace the initially set second incorrect node with the new smaller incorrect node 'b' in this solution)
         TreeNode a = null, b = null, prev = null;
         // Morris Traversal
         TreeNode node = root;
