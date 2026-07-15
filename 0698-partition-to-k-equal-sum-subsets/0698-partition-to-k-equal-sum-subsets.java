@@ -9,6 +9,7 @@ class Solution {
         {
             return getAns(state, count+1, 0, target, k, arr, cache);
         }
+        // sum is not a part of cache key as it is directly derivable from 'state' key.
         if(cache[state][count] != null)
         {
             return cache[state][count];
