@@ -34,7 +34,6 @@ class Solution {
                 else
                 {
                     iterator.right = null;
-                    // System.out.println("breaking the thread from "+iterator.val+" to "+current.val);
                     visited++;
                     if(visited == k)
                     {
