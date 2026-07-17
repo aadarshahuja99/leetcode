@@ -262,6 +262,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0230-kth-smallest-element-in-a-bst/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0250-count-univalue-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0250-count-univalue-subtrees/) | Medium |
+| [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
@@ -307,6 +308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0230-kth-smallest-element-in-a-bst/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0250-count-univalue-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0250-count-univalue-subtrees/) | Medium |
+| [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
 | [0449-serialize-and-deserialize-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
@@ -369,6 +371,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0230-kth-smallest-element-in-a-bst/) | Medium |
+| [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0449-serialize-and-deserialize-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
@@ -615,6 +618,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0230-kth-smallest-element-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0230-kth-smallest-element-in-a-bst/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0250-count-univalue-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0250-count-univalue-subtrees/) | Medium |
+| [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
