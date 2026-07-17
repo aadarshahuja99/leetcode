@@ -25,14 +25,6 @@ class Solution {
         {
             return null;
         }
-        if(node.neighbors == null)
-        {
-            return new Node(1,null);
-        }
-        if(node.neighbors.size() == 0)
-        {
-            return new Node(1,new ArrayList<Node>());
-        }
         return dfs(node);
     }
     private Node dfs(Node current)
