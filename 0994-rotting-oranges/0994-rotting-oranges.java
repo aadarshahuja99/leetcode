@@ -6,12 +6,14 @@ class Solution {
         int n = grid[0].length;
         boolean[][] vis = new boolean[m][n];
         int freshCount = 0;
+        int rottenCount = 0;
         for(int i=0; i<m; i++)
         {
             for(int j=0; j<n; j++)
             {
                 if(grid[i][j] == 2)
                 {
+                    rottenCount++;
                     vis[i][j] = true;
                     q.add(new int[] { i,j });
                 }
@@ -24,6 +26,10 @@ class Solution {
         if(freshCount == 0)
         {
             return 0;
+        }
+        if(rottenCount == 0)
+        {
+            return -1;
         }
         int levelsOfOranges = 0;
         while(q.size() > 0)
@@ -44,15 +50,18 @@ class Solution {
                     }
                     if(!vis[nr][nc] && grid[nr][nc] == 1)
                     {
-                        // System.out.println("inserted "+nr+", "+nc+" at level "+steps);
                         vis[nr][nc] = true;
                         freshCount--;
+                        if(freshCount == 0)
+                        {
+                            return levelsOfOranges+1;
+                        }
                         q.add(new int[] { nr, nc });
                     }
                 }
             }
             levelsOfOranges++;
         }
-        return freshCount == 0 ? levelsOfOranges-1 : -1;
+        return -1;
     }
 }
