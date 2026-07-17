@@ -73,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1406-stone-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1406-stone-game-iii/) | Hard |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/aadarshahuja99/leetcode/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
@@ -572,6 +573,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/aadarshahuja99/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0200-number-of-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0695-max-area-of-island](https://github.com/aadarshahuja99/leetcode/tree/main/0695-max-area-of-island/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -582,6 +584,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0221-maximal-square](https://github.com/aadarshahuja99/leetcode/tree/main/0221-maximal-square/) | Medium |
 | [0695-max-area-of-island](https://github.com/aadarshahuja99/leetcode/tree/main/0695-max-area-of-island/) | Medium |
 | [0994-rotting-oranges](https://github.com/aadarshahuja99/leetcode/tree/main/0994-rotting-oranges/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 ## Memoization
 | Problem Name | Difficulty |
@@ -612,6 +615,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [0994-rotting-oranges](https://github.com/aadarshahuja99/leetcode/tree/main/0994-rotting-oranges/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
@@ -652,6 +656,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1373-maximum-sum-bst-in-binary-tree/) | Hard |
 | [1644-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1644-lowest-common-ancestor-of-a-binary-tree-ii/) | Medium |
