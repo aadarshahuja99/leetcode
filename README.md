@@ -154,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/aadarshahuja99/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0133-clone-graph](https://github.com/aadarshahuja99/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0139-word-break](https://github.com/aadarshahuja99/leetcode/tree/main/0139-word-break/) | Medium |
 | [0141-linked-list-cycle](https://github.com/aadarshahuja99/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
@@ -594,6 +595,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0100-same-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0100-same-tree/) | Easy |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0112-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0112-path-sum/) | Easy |
+| [0133-clone-graph](https://github.com/aadarshahuja99/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0200-number-of-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
@@ -624,6 +626,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0113-path-sum-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0113-path-sum-ii/) | Medium |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 | [0124-binary-tree-maximum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
+| [0133-clone-graph](https://github.com/aadarshahuja99/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0144-binary-tree-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
@@ -670,4 +673,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0449-serialize-and-deserialize-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0133-clone-graph](https://github.com/aadarshahuja99/leetcode/tree/main/0133-clone-graph/) | Medium |
 <!---LeetCode Topics End-->
