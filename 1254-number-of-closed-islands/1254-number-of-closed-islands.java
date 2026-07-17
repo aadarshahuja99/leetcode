@@ -2,44 +2,45 @@ class Solution {
     public int closedIsland(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
-        int[][] visited = new int[m][n];
-        for(int i=0; i<m; i++)
-        {
-            for(int j=0; j<n; j++)
-            {
-                if((i == 0 || i == m-1 || j == 0 || j == n-1) && visited[i][j] == 0 && grid[i][j] == 0)
-                {
-                    dfs(i,j,visited,grid);
+        boolean[][] visit = new boolean[m][n];
+        int count = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 0 && !visit[i][j] && bfs(i, j, m, n, grid, visit)) {
+                    count++;
                 }
             }
         }
-        int ans = 0;
-        for(int i=0; i<m; i++)
-        {
-            for(int j=0; j<n; j++)
-            {
-                if(grid[i][j] == 0 && visited[i][j] == 0)
-                {
-                    dfs(i,j,visited,grid);
-                    ans++;
-                }
-            }
-        }
-        return ans;
+        return count;
     }
-    private void dfs(int row, int col, int[][] visited, int[][] grid)
-    {
-        visited[row][col] = 1;
-        int[] deltaRow = new int[] { 0,1,0,-1 };
-        int[] deltaCol = new int[] { 1,0,-1,0 };
-        for(int i=0; i<4; i++)
-        {
-            int newRow = deltaRow[i] + row;
-            int newCol = deltaCol[i] + col;
-            if(newRow >= 0 && newRow < grid.length && newCol >= 0 && newCol < grid[0].length && visited[newRow][newCol] == 0 && grid[newRow][newCol] == 0)
-            {
-                dfs(newRow, newCol, visited, grid);
+
+    public boolean bfs(int x, int y, int m, int n, int[][] grid, boolean[][] visit) {
+        Queue<int[]> q = new LinkedList<>();
+        q.offer(new int[]{x, y});
+        visit[x][y] = true;
+        boolean isClosed = true;
+
+        int[] dirx = {0, 1, 0, -1};
+        int[] diry = {-1, 0, 1, 0};
+
+        while (!q.isEmpty()) {
+            int[] temp = q.poll();
+            x = temp[0];
+            y = temp[1];
+
+            for (int i = 0; i < 4; i++) {
+                int r = x +dirx[i];
+                int c = y +diry[i];
+                if (r < 0 || r >= m || c < 0 || c >= n) {
+                    // (x, y) is a boundary cell.
+                    isClosed = false;
+                } else if (grid[r][c] == 0 && !visit[r][c]) {
+                    q.offer(new int[]{r, c});
+                    visit[r][c] = true;
+                }
             }
         }
+
+        return isClosed;
     }
 }
