@@ -18,7 +18,6 @@ class Solution {
             if(indeg[i] == 0)
             {
                 q.add(i);
-                ans.add(i);
             }
         }
         if(q.size() == 0)
@@ -28,13 +27,13 @@ class Solution {
         while(q.size() > 0)
         {
             int top = q.poll();
+            ans.add(top);
             for(int node : adj.get(top))
             {
                 indeg[node]--;
                 if(indeg[node] == 0)
                 {
                     q.add(node);
-                    ans.add(node);
                 }
             }
         }
@@ -42,13 +41,7 @@ class Solution {
         {
             return new int[0];
         }
-        int[] arr = new int[ans.size()];
-        int idx = 0;
-        for(int node : ans)
-        {
-            arr[idx] = node;
-            idx++;
-        }
-        return arr;
+        
+        return ans.stream().mapToInt(Integer::intValue).toArray();
     }
 }
