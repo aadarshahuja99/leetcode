@@ -555,6 +555,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0023-merge-k-sorted-lists/) | Hard |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -761,6 +762,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
 | [2204-distance-to-a-cycle-in-undirected-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2204-distance-to-a-cycle-in-undirected-graph/) | Hard |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Hash Function
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -782,4 +784,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0277-find-the-celebrity](https://github.com/aadarshahuja99/leetcode/tree/main/0277-find-the-celebrity/) | Medium |
+## Shortest Path
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 <!---LeetCode Topics End-->
