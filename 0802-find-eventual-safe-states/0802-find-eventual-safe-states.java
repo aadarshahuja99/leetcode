@@ -3,13 +3,46 @@ class Solution {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         ans = new ArrayList<>();
         int n = graph.length;
-        boolean[] vis = new boolean[n];
-        boolean[] pathVis = new boolean[n];
+        int[] indegree = new int[n];
+        ArrayList<List<Integer>> adj = new ArrayList<>();
         for(int i=0; i<n; i++)
         {
-            if(!vis[i])
+            adj.add(new ArrayList<>());
+        }
+        int idx = 0;
+        // reverse the graph edge storage
+        // Intuition: Every node that only has an incoming edge from a cycle will never be visited in Kahn's algo
+        // This is because every node in the cycle will never be visited itself
+        // Since the question mentions safe nodes must not have any outgoing edges to a cycle
+        // We can reverse the direction of edges: Cycles will stay unaffected and the nodes which are not visited are not safe
+        for(int[] edges : graph)
+        {
+            for(int vertex : edges)
             {
-                dfs(i, vis, pathVis, graph);
+                indegree[idx]++;
+                adj.get(vertex).add(idx);
+            }
+            idx++;
+        }
+        Queue<Integer> q = new LinkedList<>();
+        for(int i=0; i<n; i++)
+        {
+            if(indegree[i] == 0)
+            {
+                q.add(i);
+            }
+        }
+        while(q.size() > 0)
+        {
+            int top = q.poll();
+            ans.add(top);
+            for(int node : adj.get(top))
+            {
+                indegree[node]--;
+                if(indegree[node] == 0)
+                {
+                    q.add(node);
+                }
             }
         }
         Collections.sort(ans);
