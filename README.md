@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
+| [0444-sequence-reconstruction](https://github.com/aadarshahuja99/leetcode/tree/main/0444-sequence-reconstruction/) | Medium |
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
@@ -725,6 +726,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/aadarshahuja99/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0207-course-schedule](https://github.com/aadarshahuja99/leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0210-course-schedule-ii/) | Medium |
+| [0444-sequence-reconstruction](https://github.com/aadarshahuja99/leetcode/tree/main/0444-sequence-reconstruction/) | Medium |
 | [0841-keys-and-rooms](https://github.com/aadarshahuja99/leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 ## Hash Function
 | Problem Name | Difficulty |
@@ -735,4 +737,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/aadarshahuja99/leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0210-course-schedule-ii/) | Medium |
+| [0444-sequence-reconstruction](https://github.com/aadarshahuja99/leetcode/tree/main/0444-sequence-reconstruction/) | Medium |
 <!---LeetCode Topics End-->
