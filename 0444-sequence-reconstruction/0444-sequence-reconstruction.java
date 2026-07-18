@@ -25,7 +25,6 @@ class Solution {
         }
         if(n != uniqueElements.size())
         {
-            // System.out.println("e1");
             return false;
         }
         Queue<Integer> queue = new LinkedList<>();
@@ -34,20 +33,15 @@ class Solution {
             if(indegree[i] == 0)
             {
                 queue.add(i);
-                if(queue.size() > 1)
-                {
-                    // System.out.println("e2");
-                    return false;
-                }
             }
         }
         List<Integer> sequence = new ArrayList<>();
         while(queue.size() > 0)
         {
             int size = queue.size();
+            // size check is needed because we have to check that nums is the ONLY shortest supersequence
             if(size > 1)
             {
-                // System.out.println("e3");
                 return false;
             }
             var top = queue.poll();
@@ -63,17 +57,18 @@ class Solution {
         }
         if(sequence.size() != n)
         {
-            // System.out.println("e4");
+            // cycle detected in the graph
             return false;
         }
         for(int i=0; i<n; i++)
         {
             if(sequence.get(i) != nums[i])
             {
-                // System.out.println("e5");
+                // nums is not the correct shortest supersequence of the given sequences
                 return false;
             }
         }
+        // no issue found, it is the correct ans
         return true;
     }
 }
