@@ -2,8 +2,12 @@ class Solution {
     // Sieve array to store prime status up to 100,000
     private static final int MAX = 100_000;
     private static final boolean[] isPrime = new boolean[MAX + 1];
+    private static boolean isInitialized = false;
+
     // Generates primes once across all test cases
     private static void generatePrimes() {
+        if (isInitialized) return;
+        
         Arrays.fill(isPrime, true);
         isPrime[0] = false;
         isPrime[1] = false;
@@ -15,6 +19,7 @@ class Solution {
                 }
             }
         }
+        isInitialized = true;
     }
 
     public int minOperations(int n, int m) {
