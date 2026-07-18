@@ -28,7 +28,12 @@ class Solution {
             int top = q.poll();
             int col = colors.charAt(top) - 'a';
             colorCountsEndingAtNode[top][col]++;
-            answer = Math.max(answer, colorCountsEndingAtNode[top][col]);
+            int maxCur = 0;
+            for(int i=0; i<26; i++)
+            {
+                maxCur = Math.max(maxCur, colorCountsEndingAtNode[top][i]);
+            }
+            answer = Math.max(answer, maxCur);
             count++;
             for(int node : adj.get(top))
             {
