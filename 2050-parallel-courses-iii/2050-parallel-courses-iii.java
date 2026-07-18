@@ -1,12 +1,7 @@
 class Solution {
     public int minimumTime(int n, int[][] relations, int[] time) {
         // kahn's algorithm's slight modification
-        PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
-            public int compare(int[] a, int[] b)
-            {
-                return a[0] - b[0];
-            }
-        });
+        Queue<int[]> q = new LinkedList<>();
         int[] indegree = new int[n];
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<>();
         for(int i=0; i<n; i++)
@@ -22,21 +17,23 @@ class Solution {
         {
             if(indegree[i] == 0)
             {
-                pq.add(new int[] { time[i], i });
+                q.add(new int[] { time[i], i });
             }
         }
+        int[] starts = new int[n];
         int ans = 0;
-        while(pq.size() > 0)
+        while(q.size() > 0)
         {
-            int[] top = pq.poll();
+            int[] top = q.poll();
             int endTime = top[0];
-            ans = endTime;
+            ans = Math.max(ans, endTime);
             for(int node : adjList.get(top[1]))
             {
                 indegree[node]--;
+                starts[node] = Math.max(starts[node], endTime);
                 if(indegree[node] == 0)
                 {
-                    pq.add(new int[] { time[node]+endTime, node });
+                    q.add(new int[] { time[node]+starts[node], node });
                 }
             }
         }
