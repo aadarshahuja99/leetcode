@@ -1,6 +1,6 @@
 class Solution {
     public int minimumTime(int n, int[][] relations, int[] time) {
-        // kahn's algorithm's slight modification
+        // Kahn's algo
         Queue<int[]> q = new LinkedList<>();
         int[] indegree = new int[n];
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<>();
