@@ -1,53 +1,51 @@
 class Solution {
     public int maxDistance(int[][] grid) {
-        int ans = -1;
-        int n = grid.length;
-        int[][] dist = new int[n][n];
-        for(int[] r : dist)
-        {
-            Arrays.fill(r, Integer.MAX_VALUE);
-        }
+        // start bfs from land cells
+        int m = grid.length;
+        int n = grid[0].length;
         Queue<int[]> q = new LinkedList<>();
-        for(int i=0; i<n; i++)
+        int landCount = 0;
+        boolean[][] vis = new boolean[m][n];
+        for(int i=0; i<m; i++)
         {
             for(int j=0; j<n; j++)
             {
                 if(grid[i][j] == 1)
                 {
-                    q.add(new int[] { i, j });
-                    dist[i][j] = 0;
+                    landCount++;
+                    q.add(new int[] { i, j, 0 });
+                    vis[i][j] = true;
                 }
             }
         }
-        if(q.size() == 0 || q.size() == n*n)
+        if(landCount == 0 || landCount == m*n)
         {
-            return ans;
+            return -1;
         }
-        int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}};
-        int steps = 0;
+        int ans = 0;
+        int[][] DIRS = {{0,1}, {0,-1}, {1,0}, {-1,0}};
         while(q.size() > 0)
         {
-            int s = q.size();
-            steps++;
-            for(int i=0; i<s; i++)
+            int[] top = q.poll();
+            int r = top[0];
+            int c = top[1];
+            int d = top[2];
+            for(int[] dir : DIRS)
             {
-                int[] top = q.poll();
-                for(int[] d : dirs)
+                int nr = r + dir[0];
+                int nc = c + dir[1];
+                if(nr < 0 || nr == m || nc < 0 || nc == n)
                 {
-                    int nr = d[0] + top[0];
-                    int nc = d[1] + top[1];
-                    if(nr < 0 || nr == n || nc < 0 || nc == n)
-                    {
-                        continue;
-                    }
-                    if(dist[nr][nc] == Integer.MAX_VALUE)
-                    {
-                        dist[nr][nc] = steps;
-                        q.add(new int[] { nr, nc });
-                    }
+                    continue;
+                }
+                if(!vis[nr][nc] && grid[nr][nc] == 0)
+                {
+                    vis[nr][nc] = true;
+                    ans = Math.max(d+1, ans);
+                    q.add(new int[] { nr, nc, d+1 });
                 }
             }
         }
-        return steps-1;
+        return ans;
     }
 }
