@@ -47,6 +47,7 @@ class Solution {
                     letters.add(secondIndex);
                     break;
                 }
+                // System.out.println("adding "+firstWord.charAt(j)+" to other letters for being the same");
                 otherLetters.add(firstIndex);
                 j++;
                 k++;
@@ -57,12 +58,13 @@ class Solution {
             }
             while(j < firstWordLength)
             {
+                // System.out.println("adding "+firstWord.charAt(j)+" to other letters for being extra");
                 otherLetters.add(firstWord.charAt(j) - 'a');
                 j++;
             }
-
             while(k < secondWordLength)
             {
+                // System.out.println("adding "+secondWord.charAt(k)+" to other letters for being extra");
                 otherLetters.add(secondWord.charAt(k) - 'a');
                 k++;
             }
@@ -99,6 +101,7 @@ class Solution {
         {
             if(!letters.contains(node))
             {
+                // System.out.println("Adding "+(char)(node + 'a')+ " to ans for being extra");
                 sb.append((char)(node + 'a'));
             }
         }
