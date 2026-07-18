@@ -1,67 +1,78 @@
+import java.util.*;
+
 class Solution {
-    ArrayList<List<Integer>> commonCells = new ArrayList<>();
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        // apply a dfs from boundary
-        int numRows = heights.length;
-        int numColumns = heights[0].length;
-        int[][][] visited = new int[numRows][numColumns][2];
-        for(int i=0; i<numRows; i++)
-        {
-            // pacific boundary left
-            if(visited[i][0][1] == 0)
-            {
-                dfs(i,0,visited,heights,1);
-            }
+        List<List<Integer>> ans = new ArrayList<>();
+        if (heights == null || heights.length == 0 || heights[0].length == 0) {
+            return ans;
         }
-        for(int i=0; i<numColumns; i++)
-        {
-            // pacific boundary top
-            if(visited[0][i][1] == 0)
-            {
-                dfs(0,i,visited,heights,1);
-            }
-        }
+
+        int m = heights.length;
+        int n = heights[0].length;
         
-        for(int i=0; i<numRows; i++)
-        {
-            // atlantic boundary right
-            if(visited[i][numColumns-1][0] == 0)
-            {
-                dfs(i,numColumns-1,visited,heights,0);
+        // vis[r][c][0] for Pacific, vis[r][c][1] for Atlantic
+        boolean[][][] vis = new boolean[m][n][2];
+        Queue<int[]> q = new LinkedList<>();
+
+        // 1. Queue Pacific (top) and Atlantic (bottom) horizontal borders
+        for (int j = 0; j < n; j++) {
+            // Pacific: top row
+            q.add(new int[] { heights[0][j], 0, j, 0 });
+            vis[0][j][0] = true;
+            
+            // Atlantic: bottom row
+            q.add(new int[] { heights[m - 1][j], m - 1, j, 1 });
+            vis[m - 1][j][1] = true;
+        }
+
+        // 2. Queue Pacific (left) and Atlantic (right) vertical borders
+        for (int i = 0; i < m; i++) {
+            // Pacific: left column
+            if (!vis[i][0][0]) {
+                q.add(new int[] { heights[i][0], i, 0, 0 });
+                vis[i][0][0] = true;
+            }
+            // Atlantic: right column
+            if (!vis[i][n - 1][1]) {
+                q.add(new int[] { heights[i][n - 1], i, n - 1, 1 });
+                vis[i][n - 1][1] = true;
             }
         }
-        for(int i=0; i<numColumns; i++)
-        {
-            // atlantic boundary bottom
-            if(visited[numRows-1][i][0] == 0)
-            {
-                dfs(numRows-1,i,visited,heights,0);
+
+        int[][] DIRS = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+        // 3. Standard Multi-source BFS (Going Uphill)
+        while (!q.isEmpty()) {
+            int[] top = q.poll();
+            int val = top[0];
+            int r = top[1];
+            int c = top[2];
+            int isPacific = top[3];
+
+            for (int[] d : DIRS) {
+                int nr = r + d[0];
+                int nc = c + d[1];
+
+                if (nr < 0 || nr >= m || nc < 0 || nc >= n) {
+                    continue;
+                }
+
+                if (heights[nr][nc] >= val && !vis[nr][nc][isPacific]) {
+                    vis[nr][nc][isPacific] = true;
+                    q.add(new int[] { heights[nr][nc], nr, nc, isPacific });
+                }
             }
         }
-        return commonCells;
-    }
-    private void dfs(int row, int col, int[][][] visited, int[][] heights, int isPacificOcean)
-    {
-        visited[row][col][isPacificOcean] = 1;
-        if(visited[row][col][0] == visited[row][col][1])
-        {
-            ArrayList<Integer> current = new ArrayList<>();
-            current.add(row);
-            current.add(col);
-            commonCells.add(current);
-        }
-        int[] deltaRow = new int[] { 1,0,-1,0 };
-        int[] deltaColumn = new int[] { 0,1,0,-1 };
-        for(int i=0; i<4; i++)
-        {
-            int newRow = deltaRow[i] + row;
-            int newColumn = deltaColumn[i] + col;
-            if(newRow >= 0 && newRow < heights.length && newColumn >= 0 && newColumn < heights[0].length
-            && visited[newRow][newColumn][isPacificOcean] == 0 
-            && heights[newRow][newColumn] >= heights[row][col])
-            {
-                dfs(newRow,newColumn,visited,heights,isPacificOcean);
+
+        // 4. Find all cells visited by BOTH oceans
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (vis[i][j][0] && vis[i][j][1]) {
+                    ans.add(Arrays.asList(i, j));
+                }
             }
         }
+
+        return ans;
     }
 }
