@@ -423,6 +423,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
+| [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -695,6 +696,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 | [1905-count-sub-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1905-count-sub-islands/) | Medium |
 | [2204-distance-to-a-cycle-in-undirected-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2204-distance-to-a-cycle-in-undirected-graph/) | Hard |
+| [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -753,6 +755,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 | [1905-count-sub-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1905-count-sub-islands/) | Medium |
 | [2204-distance-to-a-cycle-in-undirected-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2204-distance-to-a-cycle-in-undirected-graph/) | Hard |
+| [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 ## Bitmask
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -797,6 +800,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2204-distance-to-a-cycle-in-undirected-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2204-distance-to-a-cycle-in-undirected-graph/) | Hard |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 | [3377-digit-operations-to-make-two-integers-equal](https://github.com/aadarshahuja99/leetcode/tree/main/3377-digit-operations-to-make-two-integers-equal/) | Medium |
+| [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Hash Function
 | Problem Name | Difficulty |
@@ -832,6 +836,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/aadarshahuja99/leetcode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 | [3377-digit-operations-to-make-two-integers-equal](https://github.com/aadarshahuja99/leetcode/tree/main/3377-digit-operations-to-make-two-integers-equal/) | Medium |
+| [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Number Theory
 | Problem Name | Difficulty |
