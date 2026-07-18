@@ -34,10 +34,6 @@ class Solution {
                 int top = queue.poll();
                 for(int node : adjList.get(top))
                 {
-                    if(indegree[node] == 0)
-                    {
-                        continue;
-                    }
                     indegree[node]--;
                     if(indegree[node] == 1)
                     {
