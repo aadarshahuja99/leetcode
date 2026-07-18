@@ -40,7 +40,6 @@ class Solution {
                 }
                 if(dist + node[1] < distances[node[0]])
                 {
-                    // System.out.println("pushing "+(dist + node[1])+" to pq for node "+node[0]);
                     distances[node[0]] = dist + node[1];
                     pq.add(new int[] { node[0], distances[node[0]] });
                 }
