@@ -25,7 +25,7 @@ class Solution {
         {
             var top = q.poll();
             int node = (int)top[0];
-            double dist = top[1];
+            double probability = top[1];
             if(vis[node])
             {
                 continue;
@@ -33,15 +33,15 @@ class Solution {
             vis[node] = true;
             if(node == end)
             {
-                return dist;
+                return probability;
             }
             for(double[] ed : adj.get(node))
             {
-                double newDist = dist*ed[1];
-                if(newDist > prob[(int)ed[0]])
+                double newProbability = probability*ed[1];
+                if(newProbability > prob[(int)ed[0]])
                 {
-                    prob[(int)ed[0]] = newDist;
-                    q.add(new double[] { ed[0], newDist });
+                    prob[(int)ed[0]] = newProbability;
+                    q.add(new double[] { ed[0], newProbability });
                 }
             }
         }
