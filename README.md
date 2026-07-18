@@ -101,6 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2574-left-and-right-sum-differences](https://github.com/aadarshahuja99/leetcode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2588-count-the-number-of-beautiful-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/2588-count-the-number-of-beautiful-subarrays/) | Medium |
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
+| [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 | [3026-maximum-good-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/3026-maximum-good-subarray-sum/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/aadarshahuja99/leetcode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 ## Two Pointers
@@ -251,6 +252,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
+| [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -762,6 +764,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
 | [2204-distance-to-a-cycle-in-undirected-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2204-distance-to-a-cycle-in-undirected-graph/) | Hard |
+| [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Hash Function
 | Problem Name | Difficulty |
@@ -787,5 +790,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Shortest Path
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 <!---LeetCode Topics End-->
