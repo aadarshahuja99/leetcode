@@ -72,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0915-partition-array-into-disjoint-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0915-partition-array-into-disjoint-intervals/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [0983-minimum-cost-for-tickets](https://github.com/aadarshahuja99/leetcode/tree/main/0983-minimum-cost-for-tickets/) | Medium |
+| [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [0992-subarrays-with-k-different-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [0994-rotting-oranges](https://github.com/aadarshahuja99/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
@@ -266,6 +267,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0449-serialize-and-deserialize-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
+| [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
@@ -654,6 +656,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0765-couples-holding-hands](https://github.com/aadarshahuja99/leetcode/tree/main/0765-couples-holding-hands/) | Hard |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
+| [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
@@ -859,6 +862,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0802-find-eventual-safe-states](https://github.com/aadarshahuja99/leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [0841-keys-and-rooms](https://github.com/aadarshahuja99/leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
+| [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard |
 | [1514-path-with-maximum-probability](https://github.com/aadarshahuja99/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 | [1786-number-of-restricted-paths-from-first-to-last-node](https://github.com/aadarshahuja99/leetcode/tree/main/1786-number-of-restricted-paths-from-first-to-last-node/) | Medium |
