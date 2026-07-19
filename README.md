@@ -97,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1905-count-sub-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1905-count-sub-islands/) | Medium |
+| [1928-minimum-cost-to-reach-destination-in-time](https://github.com/aadarshahuja99/leetcode/tree/main/1928-minimum-cost-to-reach-destination-in-time/) | Hard |
 | [1991-find-the-middle-index-in-array](https://github.com/aadarshahuja99/leetcode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
@@ -522,6 +523,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
 | [1786-number-of-restricted-paths-from-first-to-last-node](https://github.com/aadarshahuja99/leetcode/tree/main/1786-number-of-restricted-paths-from-first-to-last-node/) | Medium |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
+| [1928-minimum-cost-to-reach-destination-in-time](https://github.com/aadarshahuja99/leetcode/tree/main/1928-minimum-cost-to-reach-destination-in-time/) | Hard |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/aadarshahuja99/leetcode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
@@ -802,6 +804,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1514-path-with-maximum-probability](https://github.com/aadarshahuja99/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 | [1786-number-of-restricted-paths-from-first-to-last-node](https://github.com/aadarshahuja99/leetcode/tree/main/1786-number-of-restricted-paths-from-first-to-last-node/) | Medium |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
+| [1928-minimum-cost-to-reach-destination-in-time](https://github.com/aadarshahuja99/leetcode/tree/main/1928-minimum-cost-to-reach-destination-in-time/) | Hard |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/aadarshahuja99/leetcode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
