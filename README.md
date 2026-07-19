@@ -81,6 +81,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1162-as-far-from-land-as-possible](https://github.com/aadarshahuja99/leetcode/tree/main/1162-as-far-from-land-as-possible/) | Medium |
+| [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
@@ -200,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
 | [1171-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/1171-remove-zero-sum-consecutive-nodes-from-linked-list/) | Medium |
+| [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
@@ -227,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
+| [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1547-minimum-cost-to-cut-a-stick](https://github.com/aadarshahuja99/leetcode/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
@@ -255,6 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
+| [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1278-palindrome-partitioning-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1278-palindrome-partitioning-iii/) | Hard |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
@@ -634,6 +638,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/aadarshahuja99/leetcode/tree/main/0695-max-area-of-island/) | Medium |
 | [0765-couples-holding-hands](https://github.com/aadarshahuja99/leetcode/tree/main/0765-couples-holding-hands/) | Hard |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
+| [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1905-count-sub-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1905-count-sub-islands/) | Medium |
@@ -708,6 +713,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [0994-rotting-oranges](https://github.com/aadarshahuja99/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [1162-as-far-from-land-as-possible](https://github.com/aadarshahuja99/leetcode/tree/main/1162-as-far-from-land-as-possible/) | Medium |
+| [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
 | [1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard |
@@ -772,6 +778,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
+| [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1373-maximum-sum-bst-in-binary-tree/) | Hard |
