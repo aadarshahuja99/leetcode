@@ -5,7 +5,7 @@ class Solution {
         {
             if(equation.charAt(1) == '=')
             {
-                ds.union((int)equation.charAt(0)-97,(int)equation.charAt(3)-97);
+                ds.union((int)equation.charAt(0)-'a',(int)equation.charAt(3)-'a');
             }
         }
         for(String equation : equations)
@@ -29,8 +29,8 @@ class Solution {
             for(int i=0; i<26; i++)
             {
                 parent[i] = i;
+                size[i] = 1;
             }
-            Arrays.fill(size,1);
         }
         public void union(int u, int v)
         {
