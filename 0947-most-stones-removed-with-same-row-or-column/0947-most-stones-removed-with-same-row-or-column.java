@@ -1,7 +1,6 @@
 class Solution {
     public int removeStones(int[][] stones) {
         int m = stones.length;
-        int n = stones[0].length;
         int maxRow = 0;
         int maxCol = 0;
         for(int[] stone : stones)
@@ -16,7 +15,7 @@ class Solution {
         {
             ds.union(stone[0], maxRow + stone[1]);
         }
-        return stones.length - ds.getNumberOfComponents();
+        return m - ds.getNumberOfComponents();
     }
     class DisjointSet
     {
@@ -43,14 +42,8 @@ class Solution {
             {
                 return;
             }
-            if(size[uParent] == 0)
-            {
-                size[uParent] = 1;
-            }
-            if(size[vParent] == 0)
-            {
-                size[vParent] = 1;
-            }
+            size[uParent] = Math.max(size[uParent], 1);
+            size[vParent] = Math.max(size[vParent], 1);
             if(size[uParent] > size[vParent])
             {
                 parent[vParent] = uParent;
