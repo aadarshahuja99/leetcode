@@ -1,65 +1,49 @@
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
-        int[][] adjMatrix = new int[n][n];
-        for(int[] row : adjMatrix)
+        int[][] adj = new int[n][n];
+        for(int[] row : adj)
         {
-            Arrays.fill(row,Integer.MAX_VALUE);
+            Arrays.fill(row, Integer.MAX_VALUE);
         }
-        for(int i=0; i<n; i++)
+        for(int[] e : edges)
         {
-            for(int j=0; j<n; j++)
-            {
-                if(i==j)
-                {
-                    adjMatrix[i][j] = 0;
-                }
-            }
+            adj[e[0]][e[1]] = e[2];
+            adj[e[1]][e[0]] = e[2];
         }
-        for(int[] edge : edges)
-        {
-            adjMatrix[edge[0]][edge[1]] = edge[2];
-            adjMatrix[edge[1]][edge[0]] = edge[2];
-        }
+        for(int i=0; i<n; i++) adj[i][i] = 0;
         for(int k=0; k<n; k++)
         {
             for(int i=0; i<n; i++)
             {
                 for(int j=0; j<n; j++)
                 {
-                    if(adjMatrix[k][j] != Integer.MAX_VALUE && adjMatrix[i][k] != Integer.MAX_VALUE)
+                    if(adj[i][k] == Integer.MAX_VALUE || adj[k][j] == Integer.MAX_VALUE)
                     {
-                        adjMatrix[i][j] = Math.min(adjMatrix[i][k] + adjMatrix[k][j], adjMatrix[i][j]);
+                        continue;
                     }
+                    adj[i][j] = Math.min(adj[i][k] + adj[k][j], adj[i][j]);
                 }
             }
         }
-        int[] ans = new int[n];
+        int min = n+1;
+        int ans = -1;
         for(int i=0; i<n; i++)
         {
+            int count = 0;
             for(int j=0; j<n; j++)
             {
-                if(j==i)
-                {
-                    continue;
-                }
-                // System.out.println("i: " + i + "j: " + j + " adjMatrix[i][j]: " + adjMatrix[i][j]);
-                if(adjMatrix[i][j] <= distanceThreshold)
-                {
-                    ans[i] += 1;
-                }
+                if(adj[i][j] <= distanceThreshold) count++;
             }
-        }
-        int min = Integer.MAX_VALUE;
-        int city = -1;
-        for(int i=0; i<n; i++)
-        {
-            // System.out.println("ans[i] for i: " + i + " is  = " + ans[i]);
-            if(ans[i] <= min)
+            if(min > count)
             {
-                min = ans[i];
-                city = i;
+                min = count;
+                ans = i;
+            }
+            else if(min == count)
+            {
+                ans = i;
             }
         }
-        return city;
+        return ans;
     }
 }
