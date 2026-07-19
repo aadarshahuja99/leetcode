@@ -26,7 +26,7 @@ class Solution {
         }
         public int findParent(int u)
         {
-            return parent[u] == u ? u : findParent(parent[u]);
+            return parent[u] = (parent[u] == u ? u : findParent(parent[u]));
         }
         public boolean union(int u, int v)
         {
