@@ -1,70 +1,32 @@
 class Solution {
     public int minCostConnectPoints(int[][] points) {
-        // Create a MST using Kruskal's algorithm. n*n TC to create edges. Sort all the edges. Then, use a disjoint set to connect edges. total TC: (n*n)log(n*n). Total SC: n*n to store all the edges. Since, this is a dense graph. Use Prim's algo for better performance
-        if(points.length == 1)
-        {
-            return 0;
-        }
         int n = points.length;
-        PriorityQueue<QueueElement> pq = new PriorityQueue<QueueElement>(new Comparator<QueueElement>() {
-            public int compare(QueueElement q1, QueueElement q2)
-            {
-                return q1.getDistance()-q2.getDistance();
-            }
-        });
-        ArrayList<ArrayList<QueueElement>> adjList = new ArrayList<ArrayList<QueueElement>>();
-        for(int i=0; i<n; i++){
-            adjList.add(new ArrayList<QueueElement>());
-        }
-        for(int i=0; i<n; i++)
-        {
-            for(int j=i+1; j<n; j++)
-            {
-                int d = Math.abs(points[i][0]-points[j][0]) + Math.abs(points[i][1]-points[j][1]);
-                adjList.get(i).add(new QueueElement(j,d));
-                adjList.get(j).add(new QueueElement(i,d));
-            }
-        }
-        int[] visited = new int[n];
-        pq.add(new QueueElement(0,0));
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[2] - b[2]);
+        HashMap<Integer,HashSet<Integer>> vis = new HashMap<>();
+        pq.add(new int[] { points[0][0], points[0][1], 0 });
         int ans = 0;
         while(pq.size() > 0)
         {
-            var top = pq.poll();
-            int dist = top.getDistance();
-            int current = top.getNode();
-            if(visited[current] == 1)
+            int[] top = pq.poll();
+            int x = top[0];
+            int y = top[1];
+            if(vis.containsKey(x) && vis.get(x).contains(y)) continue;
+            if(!vis.containsKey(x))
             {
-                continue;
+                vis.put(x, new HashSet<>());
             }
-            ans += dist;
-            visited[current] = 1;
-            for(QueueElement node : adjList.get(current))
+            ans += top[2];
+            vis.get(x).add(y);
+            for(int[] point : points)
             {
-                if(visited[node.getNode()] == 0)
+                if(point[0] == x && point[1] == y) continue;
+                if(vis.containsKey(point[0]) && vis.get(point[0]).contains(point[1]))
                 {
-                    pq.add(node);
+                    continue;
                 }
+                pq.add(new int[] { point[0], point[1], Math.abs(x - point[0]) + Math.abs(y - point[1]) });
             }
         }
         return ans;
-    }
-    class QueueElement
-    {
-        private int node;
-        private int dist;
-        public QueueElement(int n, int d)
-        {
-            node=n;
-            dist=d;
-        }
-        public int getDistance()
-        {
-            return dist;
-        }
-        public int getNode()
-        {
-            return node;
-        }
     }
 }
