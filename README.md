@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0283-move-zeroes](https://github.com/aadarshahuja99/leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0300-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
+| [0305-number-of-islands-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0305-number-of-islands-ii/) | Hard |
 | [0312-burst-balloons](https://github.com/aadarshahuja99/leetcode/tree/main/0312-burst-balloons/) | Hard |
 | [0322-coin-change](https://github.com/aadarshahuja99/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
@@ -185,6 +186,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/aadarshahuja99/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
+| [0305-number-of-islands-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0305-number-of-islands-ii/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
@@ -638,6 +640,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/aadarshahuja99/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0130-surrounded-regions](https://github.com/aadarshahuja99/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0200-number-of-islands/) | Medium |
+| [0305-number-of-islands-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0305-number-of-islands-ii/) | Hard |
 | [0547-number-of-provinces](https://github.com/aadarshahuja99/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/aadarshahuja99/leetcode/tree/main/0684-redundant-connection/) | Medium |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
