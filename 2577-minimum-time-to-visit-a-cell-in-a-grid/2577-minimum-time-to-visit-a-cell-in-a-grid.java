@@ -58,6 +58,7 @@ class Solution {
                 if(newCost < distance[nr][nc])
                 {
                     pq.add(new long[] { nr, nc, newCost });
+                    distance[nr][nc] = newCost;
                 }
             }
         }
