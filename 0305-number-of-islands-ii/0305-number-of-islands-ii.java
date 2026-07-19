@@ -1,5 +1,6 @@
 class Solution {
     public List<Integer> numIslands2(int m, int n, int[][] positions) {
+        // Very similar to Making a large island, when a 0 is made 1, look at unconnected neighbor islands and connect them as the 0 was the missing link among them. Do count++ at each step and then do count - number of initial unconnected neighbor islands. Connect the neighbor islands with current island into one big island
         int totalCells = m*n;
         int queries = positions.length;
         DisjointSet ds = new DisjointSet(totalCells, queries);
@@ -78,10 +79,6 @@ class Solution {
                 size[vParent] += size[uParent];
             }
             components--;
-        }
-        int getComponents()
-        {
-            return components;
         }
     }
 }
