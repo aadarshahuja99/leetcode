@@ -55,9 +55,7 @@ class Solution {
             Collections.sort(mergedMail[i]);
             List<String> temp = new ArrayList<>();
             temp.add(accounts.get(i).get(0));
-            for (String it : mergedMail[i]) {
-                temp.add(it);
-            }
+            temp.addAll(mergedMail[i]);
             ans.add(temp);
         }
         return ans;
