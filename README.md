@@ -63,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0713-subarray-product-less-than-k](https://github.com/aadarshahuja99/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
+| [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
@@ -203,6 +204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
+| [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
@@ -275,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0449-serialize-and-deserialize-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
+| [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
@@ -748,6 +751,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/aadarshahuja99/leetcode/tree/main/0695-max-area-of-island/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0743-network-delay-time](https://github.com/aadarshahuja99/leetcode/tree/main/0743-network-delay-time/) | Medium |
+| [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
 | [0765-couples-holding-hands](https://github.com/aadarshahuja99/leetcode/tree/main/0765-couples-holding-hands/) | Hard |
 | [0787-cheapest-flights-within-k-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/aadarshahuja99/leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
