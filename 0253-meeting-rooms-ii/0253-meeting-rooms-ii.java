@@ -5,7 +5,7 @@ class Solution {
         {
             max = Math.max(max, interval[1]);
         }
-        int[] hash = new int[max+2];
+        int[] hash = new int[max+1];
         for(int[] interval : intervals)
         {
             hash[interval[0]]++;
