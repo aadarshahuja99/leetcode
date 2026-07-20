@@ -187,6 +187,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0076-minimum-window-substring](https://github.com/aadarshahuja99/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
+| [0127-word-ladder](https://github.com/aadarshahuja99/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0128-longest-consecutive-sequence](https://github.com/aadarshahuja99/leetcode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0133-clone-graph](https://github.com/aadarshahuja99/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0139-word-break](https://github.com/aadarshahuja99/leetcode/tree/main/0139-word-break/) | Medium |
@@ -262,6 +263,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0076-minimum-window-substring](https://github.com/aadarshahuja99/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0091-decode-ways](https://github.com/aadarshahuja99/leetcode/tree/main/0091-decode-ways/) | Medium |
 | [0097-interleaving-string](https://github.com/aadarshahuja99/leetcode/tree/main/0097-interleaving-string/) | Medium |
+| [0127-word-ladder](https://github.com/aadarshahuja99/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
 | [0132-palindrome-partitioning-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [0139-word-break](https://github.com/aadarshahuja99/leetcode/tree/main/0139-word-break/) | Medium |
@@ -721,6 +723,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0100-same-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0100-same-tree/) | Easy |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0112-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0112-path-sum/) | Easy |
+| [0127-word-ladder](https://github.com/aadarshahuja99/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0130-surrounded-regions](https://github.com/aadarshahuja99/leetcode/tree/main/0130-surrounded-regions/) | Medium |
 | [0133-clone-graph](https://github.com/aadarshahuja99/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/aadarshahuja99/leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
