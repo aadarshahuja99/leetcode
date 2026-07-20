@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0221-maximal-square](https://github.com/aadarshahuja99/leetcode/tree/main/0221-maximal-square/) | Medium |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/aadarshahuja99/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+| [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0283-move-zeroes](https://github.com/aadarshahuja99/leetcode/tree/main/0283-move-zeroes/) | Easy |
@@ -177,6 +178,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0003-longest-substring-without-repeating-characters](https://github.com/aadarshahuja99/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/aadarshahuja99/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0209-minimum-size-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+| [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/aadarshahuja99/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
@@ -624,6 +626,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0023-merge-k-sorted-lists/) | Hard |
+| [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0295-find-median-from-data-stream](https://github.com/aadarshahuja99/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
@@ -1005,4 +1008,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0295-find-median-from-data-stream](https://github.com/aadarshahuja99/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
+## Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
+## Monotonic Queue
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
 <!---LeetCode Topics End-->
