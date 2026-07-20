@@ -9,10 +9,10 @@ class Solution {
         {
             return -1;
         }
-        char[] start = {'0','0','0','0'};
-        Queue<char[]> q = new LinkedList<>();
+        Queue<String> q = new LinkedList<>();
         HashSet<String> vis = new HashSet<>();
-        q.add(start);
+        q.add("0000");
+        vis.add("0000");
         int levels = 0;
         while(q.size() > 0)
         {
@@ -21,53 +21,34 @@ class Solution {
             for(int i=0; i<s; i++)
             {
                 var top = q.poll();
-                String topString = new String(top);
-                if(topString.equals(target))
+                if(top.equals(target))
                 {
                     return levels-1;
                 }
+                char[] arr = top.toCharArray();
                 for(int j=0; j<4; j++)
                 {
-                    char c = top[j];
+                    char c = arr[j];
                     // increase
                     int next = ((c - '0') + 1)%10;
-                    String nextString = "";
-                    for(int k=0; k<4; k++)
-                    {
-                        if(j == k)
-                        {
-                            nextString += next;
-                        }
-                        else
-                        {
-                            nextString += top[k];
-                        }
-                    }
+                    arr[j] = (char)(next+'0');
+                    String nextString = new String(arr);
                     if(!vis.contains(nextString) && !badSet.contains(nextString))
                     {
                         vis.add(nextString);
-                        q.add(nextString.toCharArray());
+                        q.add(nextString);
                     }
-
+                    arr[j] = c;
                     // decrease
                     int prev = ((c - '0') - 1 + 10)%10; 
-                    String prevString = "";
-                    for(int k=0; k<4; k++)
-                    {
-                        if(j == k)
-                        {
-                            prevString += prev;
-                        }
-                        else
-                        {
-                            prevString += top[k];
-                        }
-                    }
+                    arr[j] = (char)(prev+'0');
+                    String prevString = new String(arr);
                     if(!vis.contains(prevString) && !badSet.contains(prevString))
                     {
                         vis.add(prevString);
-                        q.add(prevString.toCharArray());
+                        q.add(prevString);
                     }
+                    arr[j] = c;
                 }
             }
         }
