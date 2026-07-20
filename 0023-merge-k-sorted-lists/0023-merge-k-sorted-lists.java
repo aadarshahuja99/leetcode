@@ -28,22 +28,25 @@ class Solution {
         {
             return null;
         }
-        ListNode lastVisitedNode = minHeap.poll();
-        if(lastVisitedNode.next != null)
-        {
-            minHeap.add(lastVisitedNode.next);
-            lastVisitedNode.next = null;
-        }
-        ListNode head = lastVisitedNode;
+        ListNode head = null;
+        ListNode lastVisitedNode = null;
         while(minHeap.size() > 0)
         {
-            lastVisitedNode.next = minHeap.poll();
-            lastVisitedNode = lastVisitedNode.next;
-            if(lastVisitedNode.next != null)
+            ListNode currentNode = minHeap.poll();
+            if(head == null)
             {
-                minHeap.add(lastVisitedNode.next);
-                lastVisitedNode.next = null;
+                head = currentNode;
             }
+            if(lastVisitedNode != null)
+            {
+                lastVisitedNode.next = currentNode;
+            }
+            lastVisitedNode = currentNode;
+            if(currentNode.next != null)
+            {
+                minHeap.add(currentNode.next);
+            }
+            currentNode.next = null;
         }
         return head;
     }
