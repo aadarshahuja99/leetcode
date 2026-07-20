@@ -43,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0312-burst-balloons](https://github.com/aadarshahuja99/leetcode/tree/main/0312-burst-balloons/) | Hard |
 | [0322-coin-change](https://github.com/aadarshahuja99/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
@@ -197,6 +198,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0305-number-of-islands-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0305-number-of-islands-ii/) | Hard |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
@@ -238,6 +240,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0047-permutations-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0148-sort-list](https://github.com/aadarshahuja99/leetcode/tree/main/0148-sort-list/) | Medium |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
@@ -429,6 +432,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0148-sort-list](https://github.com/aadarshahuja99/leetcode/tree/main/0148-sort-list/) | Medium |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0912-sort-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0912-sort-an-array/) | Medium |
 ## Binary Search Tree
@@ -466,6 +470,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0992-subarrays-with-k-different-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 ## Counting Sort
@@ -607,6 +612,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0023-merge-k-sorted-lists/) | Hard |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0743-network-delay-time](https://github.com/aadarshahuja99/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0912-sort-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0912-sort-an-array/) | Medium |
@@ -969,9 +975,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bucket Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0912-sort-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0912-sort-an-array/) | Medium |
 ## Radix Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0912-sort-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0912-sort-an-array/) | Medium |
+## Quickselect
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 <!---LeetCode Topics End-->
