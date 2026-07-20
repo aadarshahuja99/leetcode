@@ -36,11 +36,7 @@ class Solution {
             if(visited[node] == 0)
             {
                 dfs(node,current,visited,adjList);
-                // System.out.println("for current: "+current+" node: "+node+" => "+time[current]+" "+low[node]);
-                if(low[current] > low[node])
-                {
-                    low[current] = low[node];
-                }
+                low[current] = Math.min(low[current], low[node]);
                 if(time[current] < low[node])
                 {
                     ArrayList<Integer> edge = new ArrayList<>();
