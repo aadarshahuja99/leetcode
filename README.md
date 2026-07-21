@@ -118,6 +118,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1928-minimum-cost-to-reach-destination-in-time](https://github.com/aadarshahuja99/leetcode/tree/main/1928-minimum-cost-to-reach-destination-in-time/) | Hard |
 | [1991-find-the-middle-index-in-array](https://github.com/aadarshahuja99/leetcode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
+| [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
@@ -272,6 +273,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
 | [1547-minimum-cost-to-cut-a-stick](https://github.com/aadarshahuja99/leetcode/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
+| [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
 ## String
@@ -487,6 +489,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
+| [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 ## Counting
@@ -592,6 +595,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1928-minimum-cost-to-reach-destination-in-time](https://github.com/aadarshahuja99/leetcode/tree/main/1928-minimum-cost-to-reach-destination-in-time/) | Hard |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/aadarshahuja99/leetcode/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
+| [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
@@ -652,6 +656,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1514-path-with-maximum-probability](https://github.com/aadarshahuja99/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1786-number-of-restricted-paths-from-first-to-last-node](https://github.com/aadarshahuja99/leetcode/tree/main/1786-number-of-restricted-paths-from-first-to-last-node/) | Medium |
+| [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
