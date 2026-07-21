@@ -48,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
+| [0373-find-k-pairs-with-smallest-sums](https://github.com/aadarshahuja99/leetcode/tree/main/0373-find-k-pairs-with-smallest-sums/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
@@ -666,6 +667,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0295-find-median-from-data-stream](https://github.com/aadarshahuja99/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
+| [0373-find-k-pairs-with-smallest-sums](https://github.com/aadarshahuja99/leetcode/tree/main/0373-find-k-pairs-with-smallest-sums/) | Medium |
 | [0502-ipo](https://github.com/aadarshahuja99/leetcode/tree/main/0502-ipo/) | Hard |
 | [0621-task-scheduler](https://github.com/aadarshahuja99/leetcode/tree/main/0621-task-scheduler/) | Medium |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0632-smallest-range-covering-elements-from-k-lists/) | Hard |
