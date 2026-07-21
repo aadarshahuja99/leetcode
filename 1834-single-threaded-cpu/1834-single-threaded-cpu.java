@@ -42,6 +42,7 @@ class Solution {
                 currentTime += top[1];
                 processed++;
             }
+            // if the else block executes and some other tasks got available during the execution of the last task, then we should add them. Whereas, If the 'if' block was executed, we will still need to add all the eligible tasks to the queue for them to be available for processing
             while(idx < numTasks && indexedTasks[idx][0] <= currentTime)
             {
                 availableTasks.add(indexedTasks[idx]);
