@@ -14,7 +14,7 @@ class Solution {
                 return a[0] - b[0];
             }
         });
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>() {
+        PriorityQueue<int[]> availableTasks = new PriorityQueue<int[]>(new Comparator<int[]>() {
             public int compare(int[] a, int[] b)
             {
                 if(a[1] == b[1])
@@ -24,33 +24,29 @@ class Solution {
                 return a[1] - b[1];
             }
         });
-        int minTime = indexedTasks[0][0];
-        idx = 0;
-        for(int i=0; i<numTasks; i++)
-        {
-            if(indexedTasks[i][0] != minTime)
-            {
-                break;
-            }
-            // System.out.println("adding "+indexedTasks[i][2]+" to the pq");
-            pq.add(indexedTasks[i]);
-            idx++;
-        }
-        int currentTime = minTime;
+        int currentTime = indexedTasks[0][0];
         int processed = 0;
+        idx = 0;
         int[] ans = new int[numTasks];
-        while(pq.size() > 0)
+        while(processed < numTasks)
         {
-            int[] top = pq.poll();
-            ans[processed] = top[2];
-            currentTime = top[1] + currentTime;
+            // some idle time to be spent by CPU until the next task becomes available
+            if(availableTasks.size() == 0)
+            {
+                currentTime = indexedTasks[idx][0];
+            }
+            else
+            {
+                int[] top = availableTasks.poll();
+                ans[processed] = top[2];
+                currentTime += top[1];
+                processed++;
+            }
             while(idx < numTasks && indexedTasks[idx][0] <= currentTime)
             {
-                // System.out.println("adding "+indexedTasks[idx][2]+" to the pq");
-                pq.add(indexedTasks[idx]);
+                availableTasks.add(indexedTasks[idx]);
                 idx++;
             }
-            processed++;
         }
         return ans;
     }
