@@ -4,7 +4,7 @@ class Solution {
             return b-a;
         });
         long levelEnd = startFuel;
-        int reFuels = 0;
+        int refuels = 0;
         int idx = 0;
         int n = stations.length;
         while (levelEnd < target) {
@@ -23,8 +23,8 @@ class Solution {
                 // dist is less than target and we do not have refueling stops
                 return -1;
             }
-            reFuels++;
+            refuels++;
         }
-        return reFuels;
+        return refuels;
     }
 }
