@@ -221,6 +221,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/aadarshahuja99/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
+| [0264-ugly-number-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0264-ugly-number-ii/) | Medium |
 | [0305-number-of-islands-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0305-number-of-islands-ii/) | Hard |
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
@@ -576,6 +577,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/aadarshahuja99/leetcode/tree/main/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0213-house-robber-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0213-house-robber-ii/) | Medium |
 | [0221-maximal-square](https://github.com/aadarshahuja99/leetcode/tree/main/0221-maximal-square/) | Medium |
+| [0264-ugly-number-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0264-ugly-number-ii/) | Medium |
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0312-burst-balloons](https://github.com/aadarshahuja99/leetcode/tree/main/0312-burst-balloons/) | Hard |
@@ -669,6 +671,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0023-merge-k-sorted-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0023-merge-k-sorted-lists/) | Hard |
 | [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
+| [0264-ugly-number-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0264-ugly-number-ii/) | Medium |
 | [0295-find-median-from-data-stream](https://github.com/aadarshahuja99/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/aadarshahuja99/leetcode/tree/main/0373-find-k-pairs-with-smallest-sums/) | Medium |
@@ -704,6 +707,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0062-unique-paths](https://github.com/aadarshahuja99/leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/aadarshahuja99/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0096-unique-binary-search-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0096-unique-binary-search-trees/) | Medium |
+| [0264-ugly-number-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0264-ugly-number-ii/) | Medium |
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0375-guess-number-higher-or-lower-ii/) | Medium |
