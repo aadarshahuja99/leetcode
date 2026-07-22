@@ -23,7 +23,6 @@ public class Solution {
         ListNode current1 = head;
         while(current2 != null)
         {
-            System.out.println(current2.val);
             ListNode next1 = current1.next;
             ListNode next2 = current2.next;
             current1.next = current2;
