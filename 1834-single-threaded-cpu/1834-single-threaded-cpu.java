@@ -24,7 +24,7 @@ class Solution {
                 return a[1] - b[1];
             }
         });
-        int currentTime = indexedTasks[0][0];
+        int currentTime = 0;
         int processed = 0;
         idx = 0;
         int[] ans = new int[numTasks];
