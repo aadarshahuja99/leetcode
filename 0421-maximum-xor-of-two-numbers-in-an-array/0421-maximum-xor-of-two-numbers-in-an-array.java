@@ -7,17 +7,13 @@ class Solution {
         for(int num : nums)
         {
             bitMap[idx] = getBits(num);
-            // for(int i=0; i<32; i++)
-            // {
-            //     System.out.print(bitMap[idx][i]+" ");
-            // }
-            // System.out.println();
             root.insert(bitMap[idx]);
             idx++;
         }
         int ans = 0;
         for(int i=0; i<n; i++)
         {
+            // System.out.println("Computing for " + nums[i]);
             ans = Math.max(ans, root.getAns(bitMap[i]));
         }
         return ans;
@@ -26,10 +22,10 @@ class Solution {
     {
         int[] ans = new int[32];
         int idx = 31;
-        while(num > 0)
+        while(idx >= 0)
         {
-            ans[idx] = num%2;
-            num = num/2;
+            // keeping the most significant bit first and so on
+            ans[31-idx] = (num&(1<<idx)) > 0 ? 1 : 0;
             idx--;
         }
         return ans;
@@ -71,7 +67,6 @@ class Solution {
                     current = current.refs[complement];
                 }
             }
-            // System.out.println(ans);
             return ans;
         }
     }
