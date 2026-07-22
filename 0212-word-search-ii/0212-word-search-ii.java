@@ -12,11 +12,11 @@ class Solution {
             it++;
         }
         HashSet<Integer> present = new HashSet<>();
+        boolean[][] visited = new boolean[m][n];
         for(int i=0; i<m; i++)
         {
             for(int j=0; j<n; j++)
             {
-                boolean[][] visited = new boolean[m][n];
                 dfs(i, j, board, visited, present, trie);
                 if(present.size() == words.length)
                 {
