@@ -31,12 +31,12 @@ class FileSystem {
     {
         HashMap<String,Trie> refs;
         boolean isFile;
-        String content;
+        StringBuilder content;
         public Trie()
         {
             refs = new HashMap<>();
             isFile = false;
-            content = "";
+            content = new StringBuilder();
         }
         public void insert(String[] path, boolean isFile, String content)
         {
@@ -53,7 +53,7 @@ class FileSystem {
             current.isFile = isFile;
             if(current.isFile)
             {
-                current.content += content;
+                current.content.append(content);
             }
         }
         public ArrayList<String> getAll(String[] path)
@@ -85,7 +85,7 @@ class FileSystem {
             {
                 current = current.refs.get(path[i]);
             }
-            return current.content;
+            return current.content.toString();
         }
     }
 }
