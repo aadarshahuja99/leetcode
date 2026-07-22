@@ -41,6 +41,7 @@ class Solution {
                 }
             }
         }
+        // back track if all the paths from the current row,col do not make a string that matches the word suffix from current idx onwards
         visited[row][col] = 0;
         return false;
     }
