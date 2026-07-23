@@ -1,7 +1,7 @@
 class Solution {
     public String simplifyPath(String path) {
         String[] components = path.split("/");
-        LinkedList<String> pathList = new LinkedList<>();
+        ArrayList<String> pathList = new ArrayList<>();
         for(String component : components)
         {
             if(component.equals(".") || component.equals(""))
@@ -12,12 +12,12 @@ class Solution {
             {
                 if(pathList.size() > 0)
                 {
-                    pathList.removeLast();
+                    pathList.remove(pathList.size() - 1);
                 }
             }
             else
             {
-                pathList.addLast(String.format("/%s", component));
+                pathList.add(String.format("/%s", component));
             }
         }
         if(pathList.isEmpty())
