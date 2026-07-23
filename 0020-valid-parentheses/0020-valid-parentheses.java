@@ -1,39 +1,17 @@
 class Solution {
+    Stack<Character> stack = new Stack<>();
+    HashMap<Character,Character> map = new HashMap<>();
     public boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
+        map.put(']','[');
+        map.put(')','(');
+        map.put('}','{');
         for(char ch : s.toCharArray())
         {
             if(ch == ')' || ch == '}' || ch == ']')
             {
-                if(stack.size() == 0)
+                if(!validate(ch, map.get(ch)))
                 {
                     return false;
-                }
-                if(ch == ')' && stack.peek() != '(')
-                {
-                    return false;
-                }
-                else if(ch == ')')
-                {
-                    stack.pop();
-                }
-
-                if(ch == '}' && stack.peek() != '{')
-                {
-                    return false;
-                }
-                else if(ch == '}')
-                {
-                    stack.pop();
-                }
-
-                if(ch == ']' && stack.peek() != '[')
-                {
-                    return false;
-                }
-                else if(ch == ']')
-                {
-                    stack.pop();
                 }
             }
             else
@@ -42,5 +20,14 @@ class Solution {
             }
         }
         return stack.size() == 0;
+    }
+    private boolean validate(char ch, char expected)
+    {
+        if(stack.isEmpty() || stack.peek() != expected)
+        {
+            return false;
+        }
+        stack.pop();
+        return true;
     }
 }
