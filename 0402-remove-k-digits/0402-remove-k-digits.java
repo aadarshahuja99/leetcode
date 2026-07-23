@@ -32,16 +32,12 @@ class Solution {
         {
             idx++;
         }
-        if(idx == intermediate.length())
-        {
-            return "0";
-        }
         StringBuilder ans = new StringBuilder();
         while(idx < intermediate.length())
         {
             ans.append(intermediate.charAt(idx));
             idx++;
         }
-        return ans.toString();
+        return ans.length() == 0 ? "0" : ans.toString();
     }
 }
