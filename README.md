@@ -332,6 +332,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0212-word-search-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0388-longest-absolute-file-path](https://github.com/aadarshahuja99/leetcode/tree/main/0388-longest-absolute-file-path/) | Medium |
 | [0402-remove-k-digits](https://github.com/aadarshahuja99/leetcode/tree/main/0402-remove-k-digits/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
@@ -689,6 +690,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0144-binary-tree-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
+| [0388-longest-absolute-file-path](https://github.com/aadarshahuja99/leetcode/tree/main/0388-longest-absolute-file-path/) | Medium |
 | [0402-remove-k-digits](https://github.com/aadarshahuja99/leetcode/tree/main/0402-remove-k-digits/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/aadarshahuja99/leetcode/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0739-daily-temperatures](https://github.com/aadarshahuja99/leetcode/tree/main/0739-daily-temperatures/) | Medium |
@@ -948,6 +950,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
+| [0388-longest-absolute-file-path](https://github.com/aadarshahuja99/leetcode/tree/main/0388-longest-absolute-file-path/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
