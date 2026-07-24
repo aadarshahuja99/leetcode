@@ -356,6 +356,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
+| [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 ## Greedy
@@ -701,6 +702,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-sum-of-subarray-minimums](https://github.com/aadarshahuja99/leetcode/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/aadarshahuja99/leetcode/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
+| [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
 ## Merge Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1140,5 +1142,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0735-asteroid-collision](https://github.com/aadarshahuja99/leetcode/tree/main/0735-asteroid-collision/) | Medium |
+| [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
 <!---LeetCode Topics End-->
