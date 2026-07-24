@@ -8,11 +8,10 @@ class Solution {
             {
                 stack.push(c);
             }
-            else if(stack.size() > 0)
+            else
             {
                 if(stack.peek() == 'S' && c == 'L')
                 {
-                    stack.push('S');
                     ans++;
                 }
                 else if(stack.peek() == 'R' && c != 'R')
