@@ -10,6 +10,7 @@ class Solution {
             }
             else
             {
+                // stack stores int[2] { previousGreater element, min seen till that element } It is a mono decreasing stack on the previous greater element
                 // consider the case:  3,5,0,2 ..... the next element can either be 1 or 4 for example, we have to support both cases
                 while(stack.size() > 0 && (stack.peek()[0] <= nums[i]))
                 {
