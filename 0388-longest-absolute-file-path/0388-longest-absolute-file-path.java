@@ -2,17 +2,18 @@ class Solution {
     public int lengthLongestPath(String input) {
         Stack<int[]> stack = new Stack<>();
         int maxLength = 0;
+        // Intuition: stack stores int[2] in the form {numberOfTabs (to determine the parent of the uninserted element), component (file or folder) length - number of tabs in its path}. Tabs are removed as during answer computation, the file component's length tabs already contain the total number of tabs needed to reach the file
         for(String component : input.split("\n"))
         {
             int tabs = getNumberOfTabs(component);
             while(stack.size() > 0 && tabs <= stack.peek()[0])
             {
+                // find the current component's parent
                 stack.pop();
             }
             boolean isAFile = isFile(component);
             if(stack.size() == 0)
             {
-                // System.out.println((component.length()) + "  " + tabs + " " + maxLength);
                 if(isAFile)
                 {
                     maxLength = Math.max(maxLength, component.length());
@@ -25,8 +26,7 @@ class Solution {
                 {
                     maxLength = Math.max(maxLength, stack.peek()[1] + component.length());
                 }
-                // we only push the length of the path without tabs count in the second parameter, if there is a file after the current path, then the file component's number of tabs will be equal to the total number of slashes needed in the file path length, which is why only component.length() + stack.peek()[1] is done in answer computation
-                stack.push(new int[] { tabs, component.length() + stack.peek()[1] - tabs });
+                stack.push(new int[] { tabs, (component.length() - tabs) + stack.peek()[1] });
             }
         }
         return maxLength;
