@@ -31,17 +31,11 @@ class Solution {
             }
         }
         int[] ans = new int[st.size()];
-        int idx = 0;
+        int idx = st.size()-1;
         while(!st.isEmpty())
         {
             ans[idx] = st.pop();
-            idx++;
-        }
-        for(int i=0; i<ans.length/2; i++)
-        {
-            int temp = ans[i];
-            ans[i] = ans[ans.length-i-1];
-            ans[ans.length-i-1] = temp;
+            idx--;
         }
         return ans;
     }
