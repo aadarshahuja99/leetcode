@@ -143,6 +143,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1834-single-threaded-cpu](https://github.com/aadarshahuja99/leetcode/tree/main/1834-single-threaded-cpu/) | Medium |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1905-count-sub-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1905-count-sub-islands/) | Medium |
 | [1928-minimum-cost-to-reach-destination-in-time](https://github.com/aadarshahuja99/leetcode/tree/main/1928-minimum-cost-to-reach-destination-in-time/) | Hard |
 | [1991-find-the-middle-index-in-array](https://github.com/aadarshahuja99/leetcode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
@@ -207,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/aadarshahuja99/leetcode/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/aadarshahuja99/leetcode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
 | [2574-left-and-right-sum-differences](https://github.com/aadarshahuja99/leetcode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2588-count-the-number-of-beautiful-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/2588-count-the-number-of-beautiful-subarrays/) | Medium |
@@ -230,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1052-grumpy-bookstore-owner](https://github.com/aadarshahuja99/leetcode/tree/main/1052-grumpy-bookstore-owner/) | Medium |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/aadarshahuja99/leetcode/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -322,6 +325,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1547-minimum-cost-to-cut-a-stick](https://github.com/aadarshahuja99/leetcode/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1834-single-threaded-cpu](https://github.com/aadarshahuja99/leetcode/tree/main/1834-single-threaded-cpu/) | Medium |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
@@ -400,6 +404,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1405-longest-happy-string](https://github.com/aadarshahuja99/leetcode/tree/main/1405-longest-happy-string/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/aadarshahuja99/leetcode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
@@ -575,6 +580,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
