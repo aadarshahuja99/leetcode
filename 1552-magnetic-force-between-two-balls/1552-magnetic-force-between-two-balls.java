@@ -1,6 +1,6 @@
 class Solution {
     public int maxDistance(int[] position, int m) {
-        // BF: place the first ball in the 1st basket. Then for every possible distance 'd', check if it is possible to place balls such that the min distance between them is 'd'.
+        // Brute force: place the first ball in the 1st basket. Then for every possible distance 'd', check if it is possible to place balls such that the min distance between them is 'd'.
         Arrays.sort(position);
         int min = position[0];
         int max = position[position.length-1];
@@ -29,21 +29,17 @@ class Solution {
         int count = 1;
         while(i<position.length)
         {
-            if(position[i]-last < current)
-            {
-                i++;
-            }
-            else
+            if(position[i]-last >= current)
             {
                 count++;
                 if(count == m)
                 {
-                    break;
+                    return true;
                 }
                 last = position[i];
-                i++;
             }
+            i++;
         }
-        return count == m;
+        return false;
     }
 }
