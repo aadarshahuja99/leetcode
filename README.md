@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0139-word-break](https://github.com/aadarshahuja99/leetcode/tree/main/0139-word-break/) | Medium |
 | [0150-evaluate-reverse-polish-notation](https://github.com/aadarshahuja99/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/0152-maximum-product-subarray/) | Medium |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/aadarshahuja99/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0174-dungeon-game](https://github.com/aadarshahuja99/leetcode/tree/main/0174-dungeon-game/) | Hard |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/aadarshahuja99/leetcode/tree/main/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0200-number-of-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0200-number-of-islands/) | Medium |
@@ -540,6 +541,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0098-validate-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0099-recover-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0099-recover-binary-search-tree/) | Medium |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/aadarshahuja99/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0230-kth-smallest-element-in-a-bst/) | Medium |
 | [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
