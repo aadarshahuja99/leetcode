@@ -20,6 +20,7 @@ class Solution {
                 {
                     continue;
                 }
+                // find the valid segment(s) that appear before this closing ')'
                 int sum = 0;
                 while(!stack.isEmpty() && stack.peek() != 1)
                 {
@@ -27,10 +28,13 @@ class Solution {
                 }
                 if(stack.isEmpty())
                 {
+                    // extra ')' is encountered. No need to push it to stack and the popped segment can be seen as a candidate as the extra ')' in between will stop it from combining with the next valid segment
                     ans = Math.max(ans,sum);
                 }
                 else
                 {
+                    // the current ')' has found a corresponding '(', so it can be a part of the segment
+                    // update the current valid segment by adding a wrapper of '()' around it
                     stack.pop();
                     stack.push(2+sum);
                 }
@@ -38,12 +42,13 @@ class Solution {
         }
         while(!stack.isEmpty())
         {
-            if(stack.peek() == 1)
+            int popped = stack.pop();
+            if(popped == 1)
             {
-                stack.pop();
+                // extra '(' is encountered, it will result in the candidate not being formed
                 continue;
             }
-            int candidate = 0;
+            int candidate = popped;
             while(!stack.isEmpty() && stack.peek() != 1)
             {
                 candidate += stack.pop();
