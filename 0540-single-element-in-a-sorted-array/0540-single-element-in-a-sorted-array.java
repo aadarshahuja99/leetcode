@@ -8,7 +8,6 @@ class Solution {
         int start = 0;
         while(start <= end)
         {
-            int count = end-start+1;
             int mid = (start+end)/2;
             if(mid > 0 && mid < nums.length - 1)
             {
