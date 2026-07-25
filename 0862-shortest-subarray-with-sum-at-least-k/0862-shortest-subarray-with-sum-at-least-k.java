@@ -1,7 +1,7 @@
 class Solution {
     public int shortestSubarray(int[] nums, int k) {
         // using a deque
-        LinkedList<long[]> list = new LinkedList<>();
+        LinkedList<long[]> queue = new LinkedList<>();
         int n = nums.length;
         long[] prefixSums = new long[n];
         int ans = n+1;
@@ -12,16 +12,18 @@ class Solution {
             {
                 ans = Math.min(ans, i+1);
             }
-            while(!list.isEmpty() && list.getLast()[1] > prefixSums[i])
+            // The current index i is a better starting point for future subarrays because it comes later (making subarrays shorter) and its prefix sum is smaller (making it easier for future elements to subtract from it and reach k). This step sanitizes the queue
+            while(!queue.isEmpty() && queue.getLast()[1] > prefixSums[i])
             {
-                list.removeLast();
+                queue.removeLast();
             }
-            while(!list.isEmpty() && (prefixSums[i] - list.getFirst()[1]) >= k)
+            // computing answer
+            while(!queue.isEmpty() && (prefixSums[i] - queue.getFirst()[1]) >= k)
             {
-                ans = Math.min(ans, i - (int)list.getFirst()[0]);
-                list.removeFirst();
+                ans = Math.min(ans, i - (int)queue.getFirst()[0]);
+                queue.removeFirst();
             }
-            list.addLast(new long[] { i, prefixSums[i] });
+            queue.addLast(new long[] { i, prefixSums[i] });
         }
         return ans == n+1 ? -1 : ans;
     }
