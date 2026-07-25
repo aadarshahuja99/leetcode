@@ -14,10 +14,6 @@ class HitCounter {
     }
     
     public int getHits(int timestamp) {
-        if(timeStamps.isEmpty())
-        {
-            return 0;
-        }
         while(!timeStamps.isEmpty() && (timestamp - timeStamps.peek()) >= MAX_LIMIT)
         {
             timeStamps.poll();
