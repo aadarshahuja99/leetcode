@@ -7,7 +7,8 @@ class Solution {
         int n = nums.length;
         for(int i=1; i<n; i++)
         {
-            if(nums[stack.peek()] > nums[i])
+            // the stack stores a decreasing subsequence of numbers
+            if(nums[stack.peek()] >= nums[i])
             {
                 stack.push(i);
             }
@@ -17,8 +18,7 @@ class Solution {
         {
             while(stack.size() > 0 && nums[stack.peek()] <= nums[i])
             {
-                longestWidth = Math.max(longestWidth, i - stack.peek());
-                stack.pop();
+                longestWidth = Math.max(longestWidth, i - stack.pop());
             }
             if(stack.size() == 0)
             {
