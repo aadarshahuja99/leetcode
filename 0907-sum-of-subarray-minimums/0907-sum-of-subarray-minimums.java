@@ -46,7 +46,7 @@ class Solution {
         {
             long greaterBefore = i - prev[i] - 1;
             long greaterAfter = next[i] - i - 1;
-            ans = (ans%MOD + (int)(((greaterBefore+1)*(greaterAfter+1)*(1l*nums[i]))%MOD))%MOD;
+            ans = (ans%MOD + (int)(((greaterBefore+1)*(greaterAfter+1)*(1l*nums[i]))%MOD));
         }
         return ans;
     }
