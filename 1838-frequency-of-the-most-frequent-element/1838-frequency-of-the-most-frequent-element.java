@@ -1,5 +1,25 @@
 class Solution {
     public int maxFrequency(int[] nums, int k) {
+        // // Approach 1: Prefix sum + BS + sorting
+        // Arrays.sort(nums);
+        // int n = nums.length;
+        // int[] pre = new int[n];
+        // int idx = 0;
+        // for(int num : nums)
+        // {
+        //     pre[idx] = idx > 0 ? pre[idx-1] + num : num;
+        //     System.out.println(pre[idx]);
+        //     idx++;
+        // }
+        // int ans = -1;
+        // idx = 0;
+        // for(int sum : pre)
+        // {
+        //     ans = Math.max(idx - lowestPossible(sum-k, pre) + 1, ans);
+        //     idx++;
+        // }
+        // return ans;
+        // Approach 2: Sorting + Max size Sliding window 
         Arrays.sort(nums);
         long total = 0;
         int start = 0;
