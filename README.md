@@ -113,6 +113,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0994-rotting-oranges](https://github.com/aadarshahuja99/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/aadarshahuja99/leetcode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
 | [1039-minimum-score-triangulation-of-polygon](https://github.com/aadarshahuja99/leetcode/tree/main/1039-minimum-score-triangulation-of-polygon/) | Medium |
 | [1043-partition-array-for-maximum-sum](https://github.com/aadarshahuja99/leetcode/tree/main/1043-partition-array-for-maximum-sum/) | Medium |
@@ -577,6 +578,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0875-koko-eating-bananas](https://github.com/aadarshahuja99/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/aadarshahuja99/leetcode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
 | [1201-ugly-number-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1201-ugly-number-iii/) | Medium |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
