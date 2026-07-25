@@ -1,115 +1,73 @@
 class Solution {
-    public int maximalRectangle(char[][] matrix) {
-        // buildings logic
-        int m = matrix.length;
-        int n = matrix[0].length;
-        int[] currentState = new int[n];
-        int ans = 0;
+    public int maximalRectangle(char[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        int[] nums = new int[n];
+        int ans = -1;
         for(int i=0; i<m; i++)
         {
             for(int j=0; j<n; j++)
             {
-                if(i == 0)
+                if(grid[i][j] == '1')
                 {
-                    currentState[j] = matrix[i][j] - 48;
-                }
-                else
-                {
-                    if(matrix[i][j] - 48 == 0)
+                    if(i == 0 || grid[i-1][j] == '1')
                     {
-                        currentState[j] = 0;
+                        nums[j]++;
                     }
                     else
                     {
-                        currentState[j] += matrix[i][j] - 48;
+                        nums[j] = 1;
                     }
-                }
-            }
-            // for(int h : currentState)
-            // {
-            //     System.out.print(h+" ");
-            // }
-            // System.out.println();
-            // apply the largest area histogram logic here
-            int currentMax = getLargestArea(currentState);
-            ans = Math.max(ans, currentMax);
-        }
-        return ans;
-    }
-    private int getLargestArea(int[] histograms)
-    {
-        int numHistograms = histograms.length;
-        int[] nsls = new int[numHistograms];
-        int[] nsrs = new int[numHistograms];
-        nsls[0] = -1;
-        nsrs[numHistograms-1] = -1;
-        Stack<Integer> nslStack = new Stack<>();
-        nslStack.push(0);
-        for(int i=1; i<numHistograms; i++)
-        {
-            int current = histograms[i];
-            while(nslStack.size() > 0 && histograms[nslStack.peek()] >= current)
-            {
-                nslStack.pop();
-            }
-            if(nslStack.isEmpty())
-            {
-                nsls[i] = -1;
-            }
-            else
-            {
-                nsls[i] = nslStack.peek();
-            }
-            nslStack.push(i);
-        }
-
-        Stack<Integer> nsrStack = new Stack<>();
-        nsrStack.push(numHistograms-1);
-        for(int i=numHistograms-2; i>=0; i--)
-        {
-            int current = histograms[i];
-            while(nsrStack.size() > 0 && histograms[nsrStack.peek()] >= current)
-            {
-                nsrStack.pop();
-            }
-            if(nsrStack.isEmpty())
-            {
-                nsrs[i] = -1;
-            }
-            else
-            {
-                nsrs[i] = nsrStack.peek();
-            }
-            nsrStack.push(i);
-        }
-
-        int maxArea = -1;
-        for(int i=0; i<numHistograms; i++)
-        {
-            if(nsls[i] == -1 && nsrs[i] == -1)
-            {
-                // System.out.println("i: "+i+" "+(numHistograms) + " " + histograms[i]);
-                maxArea = Math.max(maxArea, numHistograms*histograms[i]);
-            }
-            else
-            {
-                int length = 0;
-                if(nsrs[i] == -1)
-                {
-                    length = (i - nsls[i] - 1) + (numHistograms - i);
-                }
-                else if(nsls[i] == -1)
-                {
-                    length = (i + 1) + (nsrs[i] - 1 - i);
                 }
                 else
                 {
-                    length = (i - nsls[i]) + (nsrs[i] - i - 1);
+                    nums[j] = 0;
                 }
-                // System.out.println("length: "+length+" height "+histograms[i]+" left: "+nsls[i]+" right: "+nsrs[i]);
-                maxArea = Math.max(maxArea, length*histograms[i]);
             }
+            ans = Math.max(ans, largestRectangleArea(nums));
         }
-        return maxArea;
+        return ans;
+    }
+    private int largestRectangleArea(int[] nums) {
+        int n = nums.length;
+        int[] nextSmaller = new int[n];
+        int[] prevSmaller = new int[n];
+        Stack<Integer> stack = new Stack<>();
+        for(int i=0; i<n; i++)
+        {
+            while(stack.size() > 0 && nums[stack.peek()] >= nums[i])
+            {
+                stack.pop();
+            }
+            if(stack.isEmpty())
+            {
+                prevSmaller[i] = 0;
+            }
+            else
+            {
+                prevSmaller[i] = stack.peek()+1;
+            }
+            stack.push(i);
+        }
+        stack.clear();
+        int ans = Integer.MIN_VALUE;
+        for(int i=n-1; i>=0; i--)
+        {
+            while(stack.size() > 0 && nums[stack.peek()] >= nums[i])
+            {
+                stack.pop();
+            }
+            if(stack.isEmpty())
+            {
+                nextSmaller[i] = n-1;
+            }
+            else
+            {
+                nextSmaller[i] = stack.peek()-1;
+            }
+            stack.push(i);
+            ans = Math.max(ans, nums[i]*(nextSmaller[i]-prevSmaller[i]+1));
+        }
+        return ans;
     }
 }
