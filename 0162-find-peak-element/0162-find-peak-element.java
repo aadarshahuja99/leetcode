@@ -13,6 +13,7 @@ class Solution {
             {
                 return m;
             }
+            // move in the direction of increasing curve
             if(m < nums.length-1 && nums[m] < nums[m+1])
             {
                 s = m+1;
