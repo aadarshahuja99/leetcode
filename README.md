@@ -718,6 +718,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0021-merge-two-sorted-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
 | [0025-reverse-nodes-in-k-group](https://github.com/aadarshahuja99/leetcode/tree/main/0025-reverse-nodes-in-k-group/) | Hard |
 | [0044-wildcard-matching](https://github.com/aadarshahuja99/leetcode/tree/main/0044-wildcard-matching/) | Hard |
+| [0050-powx-n](https://github.com/aadarshahuja99/leetcode/tree/main/0050-powx-n/) | Medium |
 | [0143-reorder-list](https://github.com/aadarshahuja99/leetcode/tree/main/0143-reorder-list/) | Medium |
 | [0206-reverse-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0224-basic-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0224-basic-calculator/) | Hard |
@@ -802,6 +803,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/aadarshahuja99/leetcode/tree/main/0002-add-two-numbers/) | Medium |
+| [0050-powx-n](https://github.com/aadarshahuja99/leetcode/tree/main/0050-powx-n/) | Medium |
 | [0062-unique-paths](https://github.com/aadarshahuja99/leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0069-sqrtx](https://github.com/aadarshahuja99/leetcode/tree/main/0069-sqrtx/) | Easy |
 | [0070-climbing-stairs](https://github.com/aadarshahuja99/leetcode/tree/main/0070-climbing-stairs/) | Easy |
