@@ -1,12 +1,12 @@
 class HitCounter {
     Queue<Integer> timeStamps;
-    final static int MAX_QUEUE_SIZE = 300;
+    final static int MAX_LIMIT = 300;
     public HitCounter() {
         timeStamps = new LinkedList<>();
     }
     
     public void hit(int timestamp) {
-        while(!timeStamps.isEmpty() && (timestamp - timeStamps.peek()) >= 300)
+        while(!timeStamps.isEmpty() && (timestamp - timeStamps.peek()) >= MAX_LIMIT)
         {
             timeStamps.poll();
         }
@@ -18,7 +18,7 @@ class HitCounter {
         {
             return 0;
         }
-        while(!timeStamps.isEmpty() && (timestamp - timeStamps.peek()) >= MAX_QUEUE_SIZE)
+        while(!timeStamps.isEmpty() && (timestamp - timeStamps.peek()) >= MAX_LIMIT)
         {
             timeStamps.poll();
         }
