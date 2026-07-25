@@ -18,20 +18,20 @@ class Solution {
                 }
                 if(nums[mid] == nums[mid - 1])
                 {
-                    if((mid - start)%2 == 0)
+                    if((mid)%2 == 0)
                     {
-                        end=mid;
+                        end=mid - 1;
                     }
                     else
                     {
-                        start = mid+1;
+                        start = mid + 1;
                     }
                 }
                 else if(nums[mid] == nums[mid + 1])
                 {
-                    if((end-mid)%2 == 0)
+                    if((mid)%2 == 0)
                     {
-                        start = mid;
+                        start = mid + 1;
                     }
                     else
                     {
