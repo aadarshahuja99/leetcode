@@ -4,7 +4,7 @@ class Solution {
         Arrays.sort(heaters);
         int numHouses = houses.length;
         int start = 0;
-        int end = Math.max(houses[numHouses - 1] - houses[0] + 1, heaters[heaters.length - 1]);
+        int end = Integer.MAX_VALUE;
         int ans = 0;
         while(start <= end)
         {
@@ -40,10 +40,6 @@ class Solution {
                 heaterIndex++;
             }
         }
-        if(houseIndex == houses.length)
-        {
-            return true;
-        }
-        return false;
+        return houseIndex == houses.length;
     }
 }
