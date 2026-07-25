@@ -717,6 +717,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0150-evaluate-reverse-polish-notation](https://github.com/aadarshahuja99/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0224-basic-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0224-basic-calculator/) | Hard |
+| [0225-implement-stack-using-queues](https://github.com/aadarshahuja99/leetcode/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/aadarshahuja99/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0388-longest-absolute-file-path](https://github.com/aadarshahuja99/leetcode/tree/main/0388-longest-absolute-file-path/) | Medium |
@@ -1054,6 +1055,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0225-implement-stack-using-queues](https://github.com/aadarshahuja99/leetcode/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/aadarshahuja99/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0295-find-median-from-data-stream](https://github.com/aadarshahuja99/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
@@ -1176,6 +1178,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0225-implement-stack-using-queues](https://github.com/aadarshahuja99/leetcode/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/aadarshahuja99/leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0362-design-hit-counter](https://github.com/aadarshahuja99/leetcode/tree/main/0362-design-hit-counter/) | Medium |
