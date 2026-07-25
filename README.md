@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/aadarshahuja99/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0239-sliding-window-maximum](https://github.com/aadarshahuja99/leetcode/tree/main/0239-sliding-window-maximum/) | Hard |
+| [0240-search-a-2d-matrix-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0283-move-zeroes](https://github.com/aadarshahuja99/leetcode/tree/main/0283-move-zeroes/) | Easy |
@@ -548,6 +549,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0148-sort-list](https://github.com/aadarshahuja99/leetcode/tree/main/0148-sort-list/) | Medium |
+| [0240-search-a-2d-matrix-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0912-sort-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0912-sort-an-array/) | Medium |
@@ -570,6 +572,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0162-find-peak-element](https://github.com/aadarshahuja99/leetcode/tree/main/0162-find-peak-element/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0230-kth-smallest-element-in-a-bst/) | Medium |
+| [0240-search-a-2d-matrix-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
@@ -919,6 +922,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0212-word-search-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0221-maximal-square](https://github.com/aadarshahuja99/leetcode/tree/main/0221-maximal-square/) | Medium |
+| [0240-search-a-2d-matrix-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0542-01-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0542-01-matrix/) | Medium |
