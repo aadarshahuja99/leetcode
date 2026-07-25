@@ -9,12 +9,12 @@ class Solution {
                 ans.add(nums[i]);
                 continue;
             }
-            int ceil = getCeil(nums[i], ans);
+            int ceil = getLowerBound(nums[i], ans);
             ans.set(ceil, nums[i]);
         }
         return ans.size();
     }
-    private int getCeil(int t, List<Integer> nums)
+    private int getLowerBound(int t, List<Integer> nums)
     {
         int s = 0, e = nums.size()-1;
         int ans = -1;
