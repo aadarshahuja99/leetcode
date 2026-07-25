@@ -28,16 +28,13 @@ class Solution {
         {
             int mid1 = start + (end - start)/2;
             int mid2 = left - mid1 - 2;
-
             int l1 = smaller[mid1];
             int l2 = mid2 < 0 ? Integer.MIN_VALUE : larger[mid2];
             int r1 = mid1+1 == n1 ? Integer.MAX_VALUE : smaller[mid1+1];
             int r2 = mid2+1 == n2 ? Integer.MAX_VALUE : larger[mid2+1];
-
-            // System.out.println(l1+" "+l2+" "+r1+" "+r2+ " " +start+" "+end);
-
             if(l1 <= r2 && l2 <= r1)
             {
+                // a valid split is found
                 if(isOddLength)
                 {
                     return (double)Math.max(l1, l2);
@@ -56,6 +53,8 @@ class Solution {
                 start = mid1 + 1;
             }
         }
+        // this is only reached when n1 has all its elements in the right half of the combined array
+        // imagine cases: [10,11,12] [30,40] and [30] [10,11,12] and arr1 = [30] arr2 = [10]
         return isOddLength ? larger[left-1] : ((double)larger[left-1] + (left == n2 ? (double)smaller[0] : Math.min((double)larger[left], (double)smaller[0])))/2.0;
     }
 }
