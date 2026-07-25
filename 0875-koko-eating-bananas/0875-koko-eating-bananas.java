@@ -1,7 +1,11 @@
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
+        int e = Integer.MIN_VALUE;
+        for(int i=0; i<piles.length; i++)
+        {
+            e = Math.max(e, piles[i]);
+        }
         int s = 0;
-        int e = Integer.MAX_VALUE;
         int ans = 0;
         while(s <= e)
         {
@@ -23,7 +27,7 @@ class Solution {
         int total = 0;
         for(int p : piles)
         {
-            int val = (int)Math.ceil((double)p/(1.0*guess));
+            int val = (int)Math.ceil(1.0*p/(1.0*guess));
             total += val;
             if(total > h)
             {
