@@ -4,6 +4,10 @@ class Solution {
         int currentLevelStart = 0;
         int currentLevelEnd = 0;
         int n = nums.length;
+        if(n == 1)
+        {
+            return true;
+        }
         while(currentLevelEnd < n-1)
         {
             int farthestFromCurrentLevel = currentLevelEnd;
@@ -14,15 +18,11 @@ class Solution {
             }
             currentLevelStart = currentLevelEnd+1;
             currentLevelEnd = farthestFromCurrentLevel;
-            if(currentLevelEnd >= n-1)
-            {
-                return true;
-            }
             if(currentLevelStart > currentLevelEnd)
             {
                 return false;
             }
         }
-        return n == 1;
+        return true;
     }
 }
