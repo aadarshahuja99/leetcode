@@ -397,6 +397,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0856-score-of-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1233-remove-sub-folders-from-the-filesystem](https://github.com/aadarshahuja99/leetcode/tree/main/1233-remove-sub-folders-from-the-filesystem/) | Medium |
@@ -428,6 +429,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
 | [1405-longest-happy-string](https://github.com/aadarshahuja99/leetcode/tree/main/1405-longest-happy-string/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
@@ -803,6 +805,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-sum-of-subarray-minimums](https://github.com/aadarshahuja99/leetcode/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 | [0962-maximum-width-ramp](https://github.com/aadarshahuja99/leetcode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/aadarshahuja99/leetcode/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
 | [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
 ## Merge Sort
@@ -890,6 +893,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0907-sum-of-subarray-minimums](https://github.com/aadarshahuja99/leetcode/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 | [0962-maximum-width-ramp](https://github.com/aadarshahuja99/leetcode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
