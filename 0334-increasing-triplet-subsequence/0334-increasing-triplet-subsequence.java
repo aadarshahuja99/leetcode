@@ -2,17 +2,18 @@ class Solution {
     public boolean increasingTriplet(int[] nums) {
         // a less optimized solution would have been to involve LIS and check if an LIS of length three is present in the array. TC would have been nlogn with n extra space
         // greedy solution
-        int thirdMaxSoFar = Integer.MAX_VALUE;
-        int secondMaxSoFar = Integer.MAX_VALUE;
+        // consider the example: [2,3,0,1,4]
+        int minSoFar = Integer.MAX_VALUE;
+        int secondMinSoFar = Integer.MAX_VALUE;
         for(int num : nums)
         {
-            if(thirdMaxSoFar >= num)
+            if(minSoFar >= num)
             {
-                thirdMaxSoFar = num;
+                minSoFar = num;
             }
-            else if(secondMaxSoFar >= num)
+            else if(secondMinSoFar >= num)
             {
-                secondMaxSoFar = num;
+                secondMinSoFar = num;
             }
             else
             {
