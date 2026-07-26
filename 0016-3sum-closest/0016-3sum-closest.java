@@ -44,7 +44,7 @@ class Solution {
                     j = temp;
                 }
             }
-            // once all the valid combinations are found for the current value of clone[i], skip all other elements with the same value to avoid duplicate processing
+            // once all the combinations are checked for the current value of clone[i], skip all other elements with the same value to avoid duplicate processing
             int t = i+1;
             while(t < n && clone[t] == clone[i])
             {
