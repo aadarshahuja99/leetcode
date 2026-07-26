@@ -1,18 +1,17 @@
 class Solution {
     public int hIndex(int[] citations) {
         // a slight modification to standard BS
-        int numberOfCitations = citations.length;
+        int numberOfPapers = citations.length;
         int start = 0;
-        int end = numberOfCitations-1;
-        int hIndex = -1;
+        int end = numberOfPapers-1;
         while(start <= end)
         {
             int mid = start + (end-start)/2;
-            if(citations[mid] == numberOfCitations - mid)
+            if(citations[mid] == numberOfPapers - mid)
             {
                 return citations[mid];
             }
-            else if(citations[mid] < numberOfCitations - mid)
+            else if(citations[mid] < numberOfPapers - mid)
             {
                 start = mid + 1;
             }
@@ -21,6 +20,7 @@ class Solution {
                 end = mid - 1;
             }
         }
-        return numberOfCitations - start;
+        // case: [100], ans = 1
+        return numberOfPapers - start;
     }
 }
