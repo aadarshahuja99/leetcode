@@ -24,19 +24,6 @@ class Solution {
                 }
             }
         }
-        // for(int m : rowMask)
-        // {
-        //     System.out.println("row: "+m);
-        // }
-        // for(int m : colMask)
-        // {
-        //     System.out.println("col: "+m);
-        // }
-        // System.out.println();
-        // for(int m : matrixMask)
-        // {
-        //     System.out.println("mat: "+m);
-        // }
         solve(0,0,board);
     }
     private boolean solve(int r, int c, char[][] board)
@@ -54,10 +41,9 @@ class Solution {
                 int matrix = getMatrix(r,c);
                 if((rowMask[r]&mask) > 0 && (colMask[c]&mask) > 0 && (matrixMask[matrix]&mask) > 0)
                 {
-                    int unset = ~(1<<(i-1));
-                    rowMask[r] = rowMask[r]&unset;
-                    colMask[c] = colMask[c]&unset;
-                    matrixMask[matrix] = matrixMask[matrix]&unset;
+                    rowMask[r] = rowMask[r]^mask;
+                    colMask[c] = colMask[c]^mask;
+                    matrixMask[matrix] = matrixMask[matrix]^mask;
                     board[r][c] = (char)(i+'0');
                     if(c+1 == 9)
                     {
@@ -72,9 +58,9 @@ class Solution {
                         return true;
                     }
                     // reverting the changes
-                    rowMask[r] = rowMask[r]|mask;
-                    colMask[c] = colMask[c]|mask;
-                    matrixMask[matrix] = matrixMask[matrix]|mask;
+                    rowMask[r] = rowMask[r]^mask;
+                    colMask[c] = colMask[c]^mask;
+                    matrixMask[matrix] = matrixMask[matrix]^mask;
                     board[r][c] = '.';
                 }
             }
