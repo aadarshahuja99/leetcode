@@ -9,6 +9,7 @@ class Solution {
             max = Math.max(max, citations[i]);
             // set.add(citations[i]);
         }
+        // nums[i] represents the number of papers that have received i citations
         int[] nums = new int[max+1];
         for(int citation : citations)
         {
@@ -20,6 +21,8 @@ class Solution {
         }
         for(int i=max-1; i>=0; i--)
         {
+            // addition is being done because each of the later papers have received more than i citations
+            // so they satisfy the criteria of at least i citations
             nums[i] += nums[i+1];
             // System.out.println(i+" "+nums[i]);
             if(nums[i] >= i)
