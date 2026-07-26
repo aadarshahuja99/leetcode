@@ -16,6 +16,7 @@ class Solution {
         if(current == size)
         {
             ans.add(String.join(" ", sentence));
+            return;
         }
         String temp = "";
         Trie node = root;
