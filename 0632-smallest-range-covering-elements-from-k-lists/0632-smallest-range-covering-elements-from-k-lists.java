@@ -2,9 +2,7 @@ class Solution {
     // most efficient approach, similar to merging k sorted lists
     public int[] smallestRange(List<List<Integer>> nums) {
         // Priority queue to store (value, list index, element index)
-        PriorityQueue<int[]> pq = new PriorityQueue<>(
-            Comparator.comparingInt(a -> a[0])
-        );
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[0]-b[0]);
         int maxVal = Integer.MIN_VALUE, rangeStart = 0, rangeEnd =
             Integer.MAX_VALUE;
 
