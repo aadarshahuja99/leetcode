@@ -12,7 +12,6 @@ class Solution {
         int ans = 0;
         for(var entry : meets.entrySet())
         {
-            // System.out.println(entry.getKey()+" "+entry.getValue()+" "+lastEnd);
             ans += entry.getKey() - lastEnd;
             lastEnd = entry.getValue();
         }
