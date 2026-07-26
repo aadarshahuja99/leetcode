@@ -1,5 +1,6 @@
 class Solution {
     public int candy(int[] ratings) {
+        // take example: [1,2,3,4,5,3,2,1], ans expected = 21
         int n = ratings.length;
         if(n==1)
         {
@@ -18,7 +19,6 @@ class Solution {
                 candies[i] = 1;
             }
         }
-
         int sum = candies[n-1];
         for(int i=n-2; i>=0; i--)
         {
