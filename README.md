@@ -361,6 +361,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0076-minimum-window-substring](https://github.com/aadarshahuja99/leetcode/tree/main/0076-minimum-window-substring/) | Hard |
 | [0079-word-search](https://github.com/aadarshahuja99/leetcode/tree/main/0079-word-search/) | Medium |
 | [0091-decode-ways](https://github.com/aadarshahuja99/leetcode/tree/main/0091-decode-ways/) | Medium |
+| [0093-restore-ip-addresses](https://github.com/aadarshahuja99/leetcode/tree/main/0093-restore-ip-addresses/) | Medium |
 | [0097-interleaving-string](https://github.com/aadarshahuja99/leetcode/tree/main/0097-interleaving-string/) | Medium |
 | [0127-word-ladder](https://github.com/aadarshahuja99/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
@@ -638,6 +639,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0077-combinations](https://github.com/aadarshahuja99/leetcode/tree/main/0077-combinations/) | Medium |
 | [0079-word-search](https://github.com/aadarshahuja99/leetcode/tree/main/0079-word-search/) | Medium |
 | [0090-subsets-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0090-subsets-ii/) | Medium |
+| [0093-restore-ip-addresses](https://github.com/aadarshahuja99/leetcode/tree/main/0093-restore-ip-addresses/) | Medium |
 | [0095-unique-binary-search-trees-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0095-unique-binary-search-trees-ii/) | Medium |
 | [0113-path-sum-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0113-path-sum-ii/) | Medium |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
