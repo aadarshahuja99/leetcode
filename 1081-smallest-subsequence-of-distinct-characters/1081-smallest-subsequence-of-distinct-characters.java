@@ -12,15 +12,16 @@ class Solution {
         idx = 0;
         for(char c : s.toCharArray())
         {
-            if(used[c-97])
+            if(used[c-'a'])
             {
                 idx++;
                 continue;
             }
-            used[c-97] = true;
-            while(!stack.isEmpty() && (lasts[stack.peekLast() - 97] > idx && stack.peekLast() - 97 > c - 97))
+            used[c-'a'] = true;
+            // if there is a character before me that is greater than me and also appears after me in the string, then remove that character from the string
+            while(!stack.isEmpty() && (lasts[stack.peekLast() - 'a'] > idx && stack.peekLast() - 'a' > c - 'a'))
             {
-                used[stack.peekLast() - 97] = false;
+                used[stack.peekLast() - 'a'] = false;
                 stack.removeLast();
             }
             idx++;
