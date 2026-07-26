@@ -12,12 +12,12 @@ class Solution {
             return;
         }
         int n = nums.length;
-        HashSet<Integer> visitedNumbersForCurrentChoice = new HashSet<>();
+        HashSet<Integer> visitedNumbersForCurrentIndex = new HashSet<>();
         for(int i=0; i<n; i++)
         {
-            if((statusMask&(1<<i)) > 0 && !visitedNumbersForCurrentChoice.contains(nums[i]))
+            if((statusMask&(1<<i)) > 0 && !visitedNumbersForCurrentIndex.contains(nums[i]))
             {
-                visitedNumbersForCurrentChoice.add(nums[i]);
+                visitedNumbersForCurrentIndex.add(nums[i]);
                 currentList.addLast(nums[i]);
                 getAllUniquePermutations(currentIndex+1, statusMask^(1<<i), nums, permutations, currentList);
                 currentList.removeLast();
