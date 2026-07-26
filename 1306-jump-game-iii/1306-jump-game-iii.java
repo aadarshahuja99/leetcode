@@ -1,32 +1,33 @@
 class Solution {
     public boolean canReach(int[] arr, int start) {
-        return getAns(start,arr,new int[arr.length]);
-    }
-    private boolean getAns(int current, int[] arr, int[] visited)
-    {
-        if(arr[current] == 0)
+        // apply bfs and check what all indices can be reached from start
+        Queue<Integer> bfsQueue = new LinkedList<>();
+        int n = arr.length;
+        bfsQueue.add(start);
+        boolean[] vis = new boolean[n];
+        vis[start] = true;
+        while(bfsQueue.size() > 0)
         {
-            return true;
-        }
-        visited[current] = 1;
-        boolean ans = false;
-        if(current-arr[current] >= 0 && visited[current-arr[current]] == 0)
-        {
-            ans = ans || getAns(current-arr[current],arr,visited);
-            if(ans)
+            int s = bfsQueue.size();
+            for(int i=0; i<s; i++)
             {
-                return true;
+                int top = bfsQueue.poll();
+                if(arr[top] == 0)
+                {
+                    return true;
+                }
+                if(top - arr[top] >= 0 && !vis[top - arr[top]])
+                {
+                    vis[top - arr[top]] = true;
+                    bfsQueue.add(top - arr[top]);
+                }
+
+                if(top + arr[top] < n && !vis[top + arr[top]])
+                {
+                    vis[top + arr[top]] = true;
+                    bfsQueue.add(top + arr[top]);
+                }
             }
-            visited[current-arr[current]] = 0;
-        }
-        if(current+arr[current] <= arr.length-1 && visited[current+arr[current]] == 0)
-        {
-            ans = ans || getAns(current+arr[current],arr,visited);
-            if(ans)
-            {
-                return true;
-            }
-            visited[current+arr[current]] = 0;
         }
         return false;
     }
