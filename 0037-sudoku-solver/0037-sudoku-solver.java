@@ -84,38 +84,6 @@ class Solution {
     }
     private int getMatrix(int r, int c)
     {
-        if(r >=0 && r<=2 && c >= 0 && c <= 2)
-        {
-            return 0;
-        }
-        if(r >=3 && r <= 5 && c >= 0 && c <= 2)
-        {
-            return 1;
-        }
-        if(r >= 6 && r <= 8 && c >= 0 && c <= 2)
-        {
-            return 2;
-        }
-        if(r >= 0 && r <= 2 && c >= 3 && c <= 5)
-        {
-            return 3;
-        }
-        if(r >= 3 && r <= 5 && c >= 3 && c <= 5)
-        {
-            return 4;
-        }
-        if(r >= 6 && r <= 8 && c >= 3 && c <= 5)
-        {
-            return 5;
-        }
-        if(r >= 0 && r <= 2 && c >= 6 && c <= 8)
-        {
-            return 6;
-        }
-        if(r >= 3 && r <= 5 && c >= 6 && c <= 8)
-        {
-            return 7;
-        }
-        return 8;
+        return r/3 + 3*(c/3);
     }
 }
