@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0045-jump-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0045-jump-game-ii/) | Medium |
 | [0046-permutations](https://github.com/aadarshahuja99/leetcode/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0047-permutations-ii/) | Medium |
+| [0051-n-queens](https://github.com/aadarshahuja99/leetcode/tree/main/0051-n-queens/) | Hard |
 | [0063-unique-paths-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0063-unique-paths-ii/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/aadarshahuja99/leetcode/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0074-search-a-2d-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0074-search-a-2d-matrix/) | Medium |
@@ -639,6 +640,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0040-combination-sum-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0040-combination-sum-ii/) | Medium |
 | [0046-permutations](https://github.com/aadarshahuja99/leetcode/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0047-permutations-ii/) | Medium |
+| [0051-n-queens](https://github.com/aadarshahuja99/leetcode/tree/main/0051-n-queens/) | Hard |
 | [0077-combinations](https://github.com/aadarshahuja99/leetcode/tree/main/0077-combinations/) | Medium |
 | [0079-word-search](https://github.com/aadarshahuja99/leetcode/tree/main/0079-word-search/) | Medium |
 | [0090-subsets-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0090-subsets-ii/) | Medium |
