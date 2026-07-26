@@ -2,10 +2,10 @@ class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Arrays.sort(candidates);
         ArrayList<List<Integer>> ans = new ArrayList<>();
-        createSubsets(0, target, candidates, ans, new LinkedList<>());
+        createSubsets(0, target, candidates, ans, new ArrayList<>());
         return ans;
     }
-    private void createSubsets(int currentIndex, int rem, int[] nums, ArrayList<List<Integer>> subsets, LinkedList<Integer> currentSubset)
+    private void createSubsets(int currentIndex, int rem, int[] nums, ArrayList<List<Integer>> subsets, List<Integer> currentSubset)
     {
         if(rem == 0)
         {
@@ -27,8 +27,8 @@ class Solution {
         // dont take all the remaining numbers with the same value
         createSubsets(i, rem, nums, subsets, currentSubset);
         // take
-        currentSubset.addLast(nums[currentIndex]);
+        currentSubset.add(nums[currentIndex]);
         createSubsets(currentIndex+1, rem-nums[currentIndex], nums, subsets, currentSubset);
-        currentSubset.removeLast(); // backtrack
+        currentSubset.remove(currentSubset.size() - 1); // backtrack
     }
 }
