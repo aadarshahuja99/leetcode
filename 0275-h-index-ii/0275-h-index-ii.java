@@ -21,6 +21,7 @@ class Solution {
             }
         }
         // case: [100], ans = 1
+        // 3 cases: too many citations: [100,100,100] or too less citations [0,0,0] or start is inside the array [1,2]
         return numberOfPapers - start;
     }
 }
