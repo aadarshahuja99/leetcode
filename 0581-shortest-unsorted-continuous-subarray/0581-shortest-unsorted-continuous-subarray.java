@@ -1,46 +1,46 @@
 class Solution {
     public int findUnsortedSubarray(int[] nums) {
-        int start = 0;
-        int end = nums.length-1;
-        while(start < nums.length-1 && nums[start] <= nums[start+1])
+        int unsortedStart = 0;
+        int unsortedEnd = nums.length-1;
+        while(unsortedStart < nums.length-1 && nums[unsortedStart] <= nums[unsortedStart+1])
         {
-            start++;
+            unsortedStart++;
         }
-        if(start == nums.length-1)
-        {
-            return 0;
-        }
-        while(end > 0 && nums[end] >= nums[end-1])
-        {
-            end--;
-        }
-        if(end == 0)
+        if(unsortedStart == nums.length-1)
         {
             return 0;
         }
-        int it = start;
+        while(unsortedEnd > 0 && nums[unsortedEnd] >= nums[unsortedEnd-1])
+        {
+            unsortedEnd--;
+        }
+        if(unsortedEnd == 0)
+        {
+            return 0;
+        }
+        int it = unsortedStart;
         int rangeMax = Integer.MIN_VALUE;
         int rangeMin = Integer.MAX_VALUE;
-        while(it <= end)
+        while(it <= unsortedEnd)
         {
             rangeMax = Math.max(rangeMax,nums[it]);
             rangeMin = Math.min(rangeMin,nums[it]);
             it++;
         }
-        for(int idx=start; idx>=0; idx--)
+        for(int idx=unsortedStart; idx>=0; idx--)
         {
             if(nums[idx] > rangeMin)
             {
-                start = idx;
+                unsortedStart = idx;
             }
         }
-        for(int j=end+1; j<nums.length; j++)
+        for(int idx=unsortedEnd+1; idx<nums.length; idx++)
         {
-            if(nums[j] < rangeMax)
+            if(nums[idx] < rangeMax)
             {
-                end = j;
+                unsortedEnd = idx;
             }
         }
-        return end-start+1;
+        return unsortedEnd-unsortedStart+1;
     }
 }
