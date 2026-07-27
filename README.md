@@ -450,6 +450,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
+| [0991-broken-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0991-broken-calculator/) | Medium |
 | [1029-two-city-scheduling](https://github.com/aadarshahuja99/leetcode/tree/main/1029-two-city-scheduling/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
@@ -902,6 +903,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0375-guess-number-higher-or-lower-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0375-guess-number-higher-or-lower-ii/) | Medium |
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0877-stone-game](https://github.com/aadarshahuja99/leetcode/tree/main/0877-stone-game/) | Medium |
+| [0991-broken-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0991-broken-calculator/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1201-ugly-number-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1201-ugly-number-iii/) | Medium |
 | [1406-stone-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1406-stone-game-iii/) | Hard |
