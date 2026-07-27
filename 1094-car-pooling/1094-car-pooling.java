@@ -1,6 +1,6 @@
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
-        // simple range sum problem
+        // simple range sum problem, very similar to meeting rooms 2
         int[] numberOfPassengers = new int[1001];
         for(int i=0; i<trips.length; i++)
         {
