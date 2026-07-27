@@ -79,6 +79,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0421-maximum-xor-of-two-numbers-in-an-array/) | Medium |
+| [0435-non-overlapping-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [0444-sequence-reconstruction](https://github.com/aadarshahuja99/leetcode/tree/main/0444-sequence-reconstruction/) | Medium |
 | [0456-132-pattern](https://github.com/aadarshahuja99/leetcode/tree/main/0456-132-pattern/) | Medium |
@@ -349,6 +350,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
+| [0435-non-overlapping-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [0475-heaters](https://github.com/aadarshahuja99/leetcode/tree/main/0475-heaters/) | Medium |
 | [0502-ipo](https://github.com/aadarshahuja99/leetcode/tree/main/0502-ipo/) | Hard |
@@ -450,6 +452,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0135-candy](https://github.com/aadarshahuja99/leetcode/tree/main/0135-candy/) | Hard |
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0402-remove-k-digits](https://github.com/aadarshahuja99/leetcode/tree/main/0402-remove-k-digits/) | Medium |
+| [0435-non-overlapping-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0502-ipo](https://github.com/aadarshahuja99/leetcode/tree/main/0502-ipo/) | Hard |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/0581-shortest-unsorted-continuous-subarray/) | Medium |
 | [0611-valid-triangle-number](https://github.com/aadarshahuja99/leetcode/tree/main/0611-valid-triangle-number/) | Medium |
@@ -748,6 +751,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0375-guess-number-higher-or-lower-ii/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
+| [0435-non-overlapping-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
