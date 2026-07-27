@@ -1,57 +1,30 @@
 class Solution {
+    // One more solution in addition to this one: BS on answer 0 to k-1 query index. For each index, perform a line sweep on the array to check if all elements can be zero in check function.
     public int minZeroArray(int[] nums, int[][] queries) {
-        int min = 0;
-        int max = queries.length-1;
-        int ans = -1;
-        boolean val = true;
-        for(int num : nums)
-        {
-            if(num != 0)
-            {
-                val = false;
-                break;
+        int n = nums.length, carriedOperations = 0, k = 0;
+        int[] differenceArray = new int[n + 1];
+        int q = queries.length;
+        // Iterate through nums
+        for (int index = 0; index < n; index++) {
+            // Iterate through queries while current index of nums cannot equal zero
+            while (carriedOperations + differenceArray[index] < nums[index]) {
+                // Zero array isn't formed after all queries are processed
+                if (k == q) {
+                    return -1;
+                }
+                int left = queries[k][0];
+                int right = queries[k][1];
+                int val = queries[k][2];
+                // Process start and end of range
+                if (right >= index) {
+                    differenceArray[Math.max(left, index)] += val;
+                    differenceArray[right + 1] -= val;
+                }
+                k++;
             }
+            // Update prefix carriedOperations at current index
+            carriedOperations += differenceArray[index];
         }
-        if(val)
-        {
-            return 0;
-        }
-        while(min <= max)
-        {
-            int mid = min + (max - min)/2;
-            if(check(mid, nums, queries))
-            {
-                ans = mid;
-                max = mid-1;
-            }
-            else
-            {
-                min = mid+1;
-            }
-        }
-        return ans == -1 ? -1 : ans+1;
-    }
-    private boolean check(int guess, int[] nums, int[][] queries)
-    {
-        int n = nums.length;
-        int[] decr = new int[n+1];
-        for(int it=0; it<=guess; it++)
-        {
-            int[] q = queries[it];
-            decr[q[0]] -= q[2];
-            decr[q[1]+1] += q[2];
-        }
-        int sum = 0;
-        for(int i=0; i<n; i++)
-        {
-            sum += decr[i];
-            if(Math.abs(sum) < nums[i])
-            {
-                // System.out.println(false+" for "+guess);
-                return false;
-            }
-        }
-        // System.out.println(true+" for "+guess);
-        return true;
+        return k;
     }
 }
