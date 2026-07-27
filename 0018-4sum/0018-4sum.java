@@ -17,7 +17,7 @@ class Solution {
             return twoSumHelper(start, end, target, nums);
         }
         int n = nums.length;
-        for(int i=start; i<n; i++)
+        for(int i=start; i<end-1; i++)
         {
             if(i > start && nums[i] == nums[i-1])
             {
