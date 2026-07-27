@@ -32,6 +32,7 @@ class Solution {
             {
                 break;
             }
+            // union of two intervals
             start = Math.min(floor.getKey(), start);
             end = Math.max(floor.getValue(), end);
             map.remove(floor.getKey());
