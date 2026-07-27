@@ -164,6 +164,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
+| [1674-minimum-moves-to-make-array-complementary](https://github.com/aadarshahuja99/leetcode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/aadarshahuja99/leetcode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
@@ -239,6 +240,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/aadarshahuja99/leetcode/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
+| [1674-minimum-moves-to-make-array-complementary](https://github.com/aadarshahuja99/leetcode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/aadarshahuja99/leetcode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
@@ -316,6 +318,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
+| [1674-minimum-moves-to-make-array-complementary](https://github.com/aadarshahuja99/leetcode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
