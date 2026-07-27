@@ -1,15 +1,8 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
         // sort the intervals by start time and end time
-        Arrays.sort(intervals, new Comparator<int[]>() {
-            public int compare(int[] interval1, int[] interval2)
-            {
-                if(interval1[0] != interval2[0])
-                {
-                    return interval1[0] - interval2[0];
-                }
-                return interval1[1] - interval2[1];
-            }
+        Arrays.sort(intervals, (a,b) -> {
+            return a[0] - b[0];
         });
         ArrayList<int[]> ans = new ArrayList<>();        
         int i=0;
@@ -21,7 +14,6 @@ class Solution {
             while(j<intervals.length && intervals[j][0] <= currentEnd)
             {
                 currentEnd = Math.max(currentEnd, intervals[j][1]);
-                // System.out.println(currentEnd);
                 j++;
             }
             ans.add(new int[] { currentStart, currentEnd });
