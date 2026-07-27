@@ -16,11 +16,11 @@ class Solution {
         for(int i=1; i<points.length; i++)
         {
             int[] current = points[i];
-            if(currentEnd >= current[0])
-            {
-                currentEnd = Math.min(current[1], currentEnd);
-            }
-            else
+            if(currentEnd < current[0])
+            // {
+            //     currentEnd = Math.min(current[1], currentEnd);
+            // }
+            // else
             {
                 currentEnd = current[1];
                 ans++;
