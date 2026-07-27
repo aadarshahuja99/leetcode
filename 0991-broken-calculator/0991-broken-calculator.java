@@ -1,53 +1,22 @@
 class Solution {
     public int brokenCalc(int startValue, int target) {
-        if(startValue > target)
-        {
-            return startValue - target;
-        }
-        if(startValue == target)
-        {
-            return 0;
-        }
-        int count = 0;
+        // work backwards: if target is greater than start:
+        // if it is even, then we can divide by 2
+        // else we will need to make it even by adding 1 to it
+        // once it is <= start, we will need to return start-target + ops as (start-target) increments will be needed to target
+        int ans = 0;
         while(target > startValue)
         {
             if(target%2 == 0)
             {
-                target /= 2;
-                count++;
+                target = target/2;
             }
             else
             {
-                target += 1;
-                count++;
+                target++;
             }
+            ans++;
         }
-        return count + (startValue - target);
+        return ans + (startValue - target);
     }
-
-    // public int getAns(int current, int target, HashMap<Integer,Integer> dp) {
-    //     // System.out.println(current+" "+target);
-    //     if (current == target) {
-    //         return 0;
-    //     }
-    //     if (current < target) {
-    //         return target - current;
-    //     }
-    //     int div = (current / target);
-    //     if (current % target == 0 && ((Math.log(div) / Math.log(2)) % 1) == 0) {
-    //         return (int) (Math.log(div) / Math.log(2));
-    //     }
-    //     if(dp.containsKey(current))
-    //     {
-    //         return dp.get(current);
-    //     }
-    //     if (current % 2 == 0) {
-    //         int ans = 1 + Math.min(getAns(current + 1, target, dp), getAns(current / 2, target, dp));
-    //         dp.put(current,ans);
-    //         return ans;
-    //     }
-    //     int ans = 1 + getAns(current + 1, target, dp);
-    //     dp.put(current,ans);
-    //     return ans;
-    // }
 }
