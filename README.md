@@ -185,6 +185,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
+| [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2387-median-of-a-row-wise-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/2387-median-of-a-row-wise-sorted-matrix/) | Medium |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
@@ -254,6 +255,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1991-find-the-middle-index-in-array](https://github.com/aadarshahuja99/leetcode/tree/main/1991-find-the-middle-index-in-array/) | Easy |
+| [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/aadarshahuja99/leetcode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2588-count-the-number-of-beautiful-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/2588-count-the-number-of-beautiful-subarrays/) | Medium |
 | [3026-maximum-good-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/3026-maximum-good-subarray-sum/) | Medium |
@@ -448,6 +450,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
 | [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
+| [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 ## Greedy
