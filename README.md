@@ -166,6 +166,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1552-magnetic-force-between-two-balls](https://github.com/aadarshahuja99/leetcode/tree/main/1552-magnetic-force-between-two-balls/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1584-min-cost-to-connect-all-points](https://github.com/aadarshahuja99/leetcode/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/aadarshahuja99/leetcode/tree/main/1589-maximum-sum-obtained-of-any-permutation/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
@@ -247,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1094-car-pooling](https://github.com/aadarshahuja99/leetcode/tree/main/1094-car-pooling/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/aadarshahuja99/leetcode/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/aadarshahuja99/leetcode/tree/main/1589-maximum-sum-obtained-of-any-permutation/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/aadarshahuja99/leetcode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
@@ -382,6 +384,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
 | [1547-minimum-cost-to-cut-a-stick](https://github.com/aadarshahuja99/leetcode/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 | [1552-magnetic-force-between-two-balls](https://github.com/aadarshahuja99/leetcode/tree/main/1552-magnetic-force-between-two-balls/) | Medium |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/aadarshahuja99/leetcode/tree/main/1589-maximum-sum-obtained-of-any-permutation/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1834-single-threaded-cpu](https://github.com/aadarshahuja99/leetcode/tree/main/1834-single-threaded-cpu/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
@@ -476,6 +479,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
 | [1405-longest-happy-string](https://github.com/aadarshahuja99/leetcode/tree/main/1405-longest-happy-string/) | Medium |
 | [1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/aadarshahuja99/leetcode/tree/main/1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard |
+| [1589-maximum-sum-obtained-of-any-permutation](https://github.com/aadarshahuja99/leetcode/tree/main/1589-maximum-sum-obtained-of-any-permutation/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
