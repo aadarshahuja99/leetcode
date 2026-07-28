@@ -1,6 +1,6 @@
 class Solution {
     public String shiftingLetters(String s, int[][] shifts) {
-        // accumulate the total number of shifts per index
+        // accumulate the total number of shifts per index using line sweep
         int n = s.length();
         long[] operations = new long[n+1];
         for(int[] shift : shifts)
