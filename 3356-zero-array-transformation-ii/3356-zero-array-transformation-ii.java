@@ -4,6 +4,7 @@ class Solution {
         int n = nums.length, carriedOperations = 0, k = 0;
         int[] differenceArray = new int[n + 1];
         int q = queries.length;
+        // Note that we can not sort queries as order matters here
         // Iterate through nums
         for (int index = 0; index < n; index++) {
             // Iterate through queries while current index of nums cannot equal zero
@@ -22,7 +23,7 @@ class Solution {
                 }
                 k++;
             }
-            // Update prefix carriedOperations at current index
+            // Update prefix carriedOperations at current index so that it can be used by the next index
             carriedOperations += differenceArray[index];
         }
         return k;
