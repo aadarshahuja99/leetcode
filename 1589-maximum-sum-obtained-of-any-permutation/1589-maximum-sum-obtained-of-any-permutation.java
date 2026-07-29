@@ -34,10 +34,7 @@ class Solution {
         int n = A.length, count[] = new int[n+1];
         for (int[] r: req) {
             count[r[0]] += 1;
-            if(r[1] + 1 < n)
-            {
-                count[r[1] + 1] -= 1;
-            }
+            count[r[1] + 1] -= 1;
         }
         for (int i = 1; i <= n; i++)
         {
