@@ -1,13 +1,9 @@
 class Solution {
     public int findMinArrowShots(int[][] points) {
-        // not a range sum problem
+        // same question as LC 435 non-overlapping intervals
         Arrays.sort(points, new Comparator<int[]>() {
             public int compare(int[] a, int[] b)
             {
-                if(a[1] == b[1])
-                {
-                    return Long.compare(a[0],b[0]);
-                }
                 return Long.compare(a[1],b[1]);
             }
         });
@@ -17,10 +13,6 @@ class Solution {
         {
             int[] current = points[i];
             if(currentEnd < current[0])
-            // {
-            //     currentEnd = Math.min(current[1], currentEnd);
-            // }
-            // else
             {
                 currentEnd = current[1];
                 ans++;
