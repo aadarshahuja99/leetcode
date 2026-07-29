@@ -457,6 +457,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1233-remove-sub-folders-from-the-filesystem](https://github.com/aadarshahuja99/leetcode/tree/main/1233-remove-sub-folders-from-the-filesystem/) | Medium |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
 | [1278-palindrome-partitioning-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1278-palindrome-partitioning-iii/) | Hard |
+| [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 | [1405-longest-happy-string](https://github.com/aadarshahuja99/leetcode/tree/main/1405-longest-happy-string/) | Medium |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/aadarshahuja99/leetcode/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
@@ -1283,6 +1284,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
+| [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 ## Topological Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1371,4 +1373,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1094-car-pooling](https://github.com/aadarshahuja99/leetcode/tree/main/1094-car-pooling/) | Medium |
 | [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 <!---LeetCode Topics End-->
