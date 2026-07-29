@@ -34,7 +34,7 @@
 // }
 
 
-// Approach 2: Count the number of starts <= time_queries_i and number of ends <= time_queries_i
+// Approach 2: Count the number of starts <= time_queries_i and number of ends <= time_queries_i using BS
 class Solution {
     public int[] fullBloomFlowers(int[][] flowers, int[] people) {
         List<Integer> starts = new ArrayList();
@@ -60,7 +60,6 @@ class Solution {
             // System.out.println(s+" "+e+" for "+person);
             ans[index] = Math.max(0, (s+1) - (e+1));
         }
-        
         return ans;
     }
     
