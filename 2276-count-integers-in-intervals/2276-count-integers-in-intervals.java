@@ -1,4 +1,5 @@
 class CountIntervals {
+    // Same insertion logic using tree map as LC 3169, 2158 and 759
     TreeMap<Integer,Integer> map;
     int uniqueIntegersPresentOverall;
     public CountIntervals() {
