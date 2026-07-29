@@ -436,6 +436,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0140-word-break-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0140-word-break-ii/) | Hard |
 | [0208-implement-trie-prefix-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0212-word-search-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0212-word-search-ii/) | Hard |
+| [0214-shortest-palindrome](https://github.com/aadarshahuja99/leetcode/tree/main/0214-shortest-palindrome/) | Hard |
 | [0224-basic-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0224-basic-calculator/) | Hard |
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
@@ -1290,6 +1291,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Function
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0214-shortest-palindrome](https://github.com/aadarshahuja99/leetcode/tree/main/0214-shortest-palindrome/) | Hard |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 ## Topological Sort
@@ -1383,11 +1385,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Rolling Hash
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0214-shortest-palindrome](https://github.com/aadarshahuja99/leetcode/tree/main/0214-shortest-palindrome/) | Hard |
 | [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0028-find-the-index-of-the-first-occurrence-in-a-string/) | Easy |
+| [0214-shortest-palindrome](https://github.com/aadarshahuja99/leetcode/tree/main/0214-shortest-palindrome/) | Hard |
 | [0459-repeated-substring-pattern](https://github.com/aadarshahuja99/leetcode/tree/main/0459-repeated-substring-pattern/) | Easy |
 | [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 <!---LeetCode Topics End-->
