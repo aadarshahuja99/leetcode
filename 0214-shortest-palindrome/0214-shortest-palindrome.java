@@ -19,6 +19,7 @@ class Solution {
             int charStart = s.charAt(start) - 'a' + 1;
             int charEnd = rev.charAt(end) - 'a' + 1;
             hashStart = (hashStart*base + charStart)%MOD;
+            // reverse hash is being computed for the reversed string as the current character is added to the string from the left instead of right
             hashEnd = (hash*charEnd + hashEnd)%MOD;
             hash = (hash*base)%MOD;
             if(hashStart == hashEnd)
