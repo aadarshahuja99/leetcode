@@ -10,7 +10,8 @@ class Solution {
         List<List<Long>> result = new ArrayList<>();
         int prev = 0;
         long sum = 0;
-        // every single segment point (either start or end will be making its own contribution to the colour running "sum", so we only focus on the starts and ends of segments to compute answer based on running sum till the current start or end point)
+        // every single segment point (either start or end) will be making its own contribution to the colour running "sum", so we only focus on the starts and ends of segments to compute answer based on running sum till the current start or end point
+        // consider the example: [8,10,7] [8,10,5] [1,4,7] [1,4,5]
         for(int key: map.keySet()) {
             if(sum != 0) { // Ignore the unpainted interval
                 result.add(Arrays.asList(1l*prev, 1l*key, sum)); // Add the interval
