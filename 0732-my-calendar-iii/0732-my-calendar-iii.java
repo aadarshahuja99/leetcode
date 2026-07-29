@@ -3,7 +3,7 @@ class MyCalendarThree {
     public MyCalendarThree() {
         map = new TreeMap<>();
     }
-    
+    // O(N) algorithm at each book call due to line sweep
     public int book(int startTime, int endTime) {
         map.put(startTime, map.getOrDefault(startTime,0)+1);
         map.put(endTime, map.getOrDefault(endTime,0)-1);
