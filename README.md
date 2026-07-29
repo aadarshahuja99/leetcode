@@ -409,6 +409,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
 | [3169-count-days-without-meetings](https://github.com/aadarshahuja99/leetcode/tree/main/3169-count-days-without-meetings/) | Medium |
 | [3346-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/aadarshahuja99/leetcode/tree/main/3346-maximum-frequency-of-an-element-after-performing-operations-i/) | Medium |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/aadarshahuja99/leetcode/tree/main/3517-smallest-palindromic-rearrangement-i/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -471,6 +472,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/aadarshahuja99/leetcode/tree/main/3517-smallest-palindromic-rearrangement-i/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -723,6 +725,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0274-h-index](https://github.com/aadarshahuja99/leetcode/tree/main/0274-h-index/) | Medium |
 | [0912-sort-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0912-sort-an-array/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/aadarshahuja99/leetcode/tree/main/3517-smallest-palindromic-rearrangement-i/) | Medium |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
