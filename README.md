@@ -238,6 +238,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0962-maximum-width-ramp](https://github.com/aadarshahuja99/leetcode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
+| [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
 | [3356-zero-array-transformation-ii](https://github.com/aadarshahuja99/leetcode/tree/main/3356-zero-array-transformation-ii/) | Medium |
@@ -462,6 +463,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
+| [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1233-remove-sub-folders-from-the-filesystem](https://github.com/aadarshahuja99/leetcode/tree/main/1233-remove-sub-folders-from-the-filesystem/) | Medium |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
@@ -503,6 +505,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0991-broken-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0991-broken-calculator/) | Medium |
 | [1029-two-city-scheduling](https://github.com/aadarshahuja99/leetcode/tree/main/1029-two-city-scheduling/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
 | [1405-longest-happy-string](https://github.com/aadarshahuja99/leetcode/tree/main/1405-longest-happy-string/) | Medium |
 | [1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/aadarshahuja99/leetcode/tree/main/1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard |
@@ -819,6 +822,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
+| [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1162-as-far-from-land-as-possible](https://github.com/aadarshahuja99/leetcode/tree/main/1162-as-far-from-land-as-possible/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
 | [1278-palindrome-partitioning-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1278-palindrome-partitioning-iii/) | Hard |
@@ -1304,6 +1308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0214-shortest-palindrome](https://github.com/aadarshahuja99/leetcode/tree/main/0214-shortest-palindrome/) | Hard |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
+| [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 ## Topological Sort
 | Problem Name | Difficulty |
@@ -1397,6 +1402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0214-shortest-palindrome](https://github.com/aadarshahuja99/leetcode/tree/main/0214-shortest-palindrome/) | Hard |
+| [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1392-longest-happy-prefix](https://github.com/aadarshahuja99/leetcode/tree/main/1392-longest-happy-prefix/) | Hard |
 ## String Matching
 | Problem Name | Difficulty |
