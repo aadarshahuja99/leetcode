@@ -89,6 +89,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0502-ipo](https://github.com/aadarshahuja99/leetcode/tree/main/0502-ipo/) | Hard |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
+| [0525-contiguous-array](https://github.com/aadarshahuja99/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/aadarshahuja99/leetcode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0542-01-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0546-remove-boxes](https://github.com/aadarshahuja99/leetcode/tree/main/0546-remove-boxes/) | Hard |
@@ -249,6 +250,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0209-minimum-size-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/aadarshahuja99/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
+| [0525-contiguous-array](https://github.com/aadarshahuja99/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/aadarshahuja99/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/aadarshahuja99/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
@@ -323,6 +325,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
+| [0525-contiguous-array](https://github.com/aadarshahuja99/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/aadarshahuja99/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
 | [0621-task-scheduler](https://github.com/aadarshahuja99/leetcode/tree/main/0621-task-scheduler/) | Medium |
