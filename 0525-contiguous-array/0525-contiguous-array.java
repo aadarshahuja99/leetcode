@@ -15,10 +15,6 @@ class Solution {
             {
                 sum++;
             }
-            if(sum == 0)
-            {
-                ans = Math.max(ans, idx-map.get(0));
-            }
             if(!map.containsKey(sum))
             {
                 map.put(sum, idx);
