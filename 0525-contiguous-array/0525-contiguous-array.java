@@ -17,6 +17,7 @@ class Solution {
             }
             if(!map.containsKey(sum))
             {
+                // store only first occurrences
                 map.put(sum, idx);
             }
             else
