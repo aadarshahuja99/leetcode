@@ -19,7 +19,7 @@ class Solution {
             }
             absDividend -= tempDivisor;
             ans += multiple;
-        } 
+        }
         return isNegative ? -ans : ans;
     }
 }
