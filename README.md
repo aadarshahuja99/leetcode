@@ -329,6 +329,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/aadarshahuja99/leetcode/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/aadarshahuja99/leetcode/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
+| [0460-lfu-cache](https://github.com/aadarshahuja99/leetcode/tree/main/0460-lfu-cache/) | Hard |
 | [0525-contiguous-array](https://github.com/aadarshahuja99/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/aadarshahuja99/leetcode/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
@@ -650,6 +651,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0206-reverse-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0328-odd-even-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0328-odd-even-linked-list/) | Medium |
+| [0460-lfu-cache](https://github.com/aadarshahuja99/leetcode/tree/main/0460-lfu-cache/) | Hard |
 | [0622-design-circular-queue](https://github.com/aadarshahuja99/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0725-split-linked-list-in-parts](https://github.com/aadarshahuja99/leetcode/tree/main/0725-split-linked-list-in-parts/) | Medium |
 | [1171-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/1171-remove-zero-sum-consecutive-nodes-from-linked-list/) | Medium |
@@ -1277,6 +1279,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0362-design-hit-counter](https://github.com/aadarshahuja99/leetcode/tree/main/0362-design-hit-counter/) | Medium |
 | [0449-serialize-and-deserialize-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
+| [0460-lfu-cache](https://github.com/aadarshahuja99/leetcode/tree/main/0460-lfu-cache/) | Hard |
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
 | [0622-design-circular-queue](https://github.com/aadarshahuja99/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
@@ -1438,4 +1441,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0146-lru-cache](https://github.com/aadarshahuja99/leetcode/tree/main/0146-lru-cache/) | Medium |
+| [0460-lfu-cache](https://github.com/aadarshahuja99/leetcode/tree/main/0460-lfu-cache/) | Hard |
 <!---LeetCode Topics End-->
