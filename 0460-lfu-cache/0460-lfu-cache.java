@@ -35,6 +35,8 @@ public class LFUCache {
             get(key);
             return;
         }
+        // we need to remove the least freq used element first because since the element is not in cache, its count will be one and if there is no other element with count 1 then it will get removed
+        // think of this case: [2.2,1], cap = 2
         if(vals.size() == cap) {
             int evit = lists.get(min).iterator().next();
             lists.get(min).remove(evit);
