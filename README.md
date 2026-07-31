@@ -338,6 +338,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
 | [0621-task-scheduler](https://github.com/aadarshahuja99/leetcode/tree/main/0621-task-scheduler/) | Medium |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0632-smallest-range-covering-elements-from-k-lists/) | Hard |
+| [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
 | [0652-find-duplicate-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
@@ -472,6 +473,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0459-repeated-substring-pattern](https://github.com/aadarshahuja99/leetcode/tree/main/0459-repeated-substring-pattern/) | Easy |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
+| [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/aadarshahuja99/leetcode/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
@@ -1045,6 +1047,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0456-132-pattern](https://github.com/aadarshahuja99/leetcode/tree/main/0456-132-pattern/) | Medium |
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
+| [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
 | [2276-count-integers-in-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/2276-count-integers-in-intervals/) | Hard |
@@ -1292,6 +1295,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0460-lfu-cache](https://github.com/aadarshahuja99/leetcode/tree/main/0460-lfu-cache/) | Hard |
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
 | [0622-design-circular-queue](https://github.com/aadarshahuja99/leetcode/tree/main/0622-design-circular-queue/) | Medium |
+| [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
 | [2276-count-integers-in-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/2276-count-integers-in-intervals/) | Hard |
 ## Graph Theory
