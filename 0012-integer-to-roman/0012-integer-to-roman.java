@@ -14,27 +14,27 @@ class Solution {
         vals[10] = 5;
         vals[11] = 4;
         vals[12] = 1;
-        HashMap<Integer,String> map = new HashMap<>();
-        map.put(0, "M");
-        map.put(1, "CM");
-        map.put(2, "D");
-        map.put(3, "CD");
-        map.put(4, "C");
-        map.put(5, "XC");
-        map.put(6, "L");
-        map.put(7, "XL");
-        map.put(8, "X");
-        map.put(9, "IX");
-        map.put(10, "V");
-        map.put(11, "IV");
-        map.put(12, "I");
+        String[] arr = new String[13];
+        arr[0] = "M";
+        arr[1] = "CM";
+        arr[2] = "D";
+        arr[3] = "CD";
+        arr[4] = "C";
+        arr[5] = "XC";
+        arr[6] = "L";
+        arr[7] = "XL";
+        arr[8] = "X";
+        arr[9] = "IX";
+        arr[10] = "V";
+        arr[11] = "IV";
+        arr[12] = "I";
         int idx = 0;
         StringBuilder sb = new StringBuilder("");
         while(num > 0)
         {
             for(int i=0; i<(num/vals[idx]); i++)
             {
-                sb.append(map.get(idx));
+                sb.append(arr[idx]);
             }
             num = (num%vals[idx]);
             idx++;
