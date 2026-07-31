@@ -2,12 +2,13 @@ class RandomizedSet {
     HashMap<Integer,Integer> map;
     List<Integer> list;
     Random r;
+    
     public RandomizedSet() {
         map = new HashMap<>();
         list = new ArrayList<>();
         r = new Random();
     }
-    
+
     public boolean insert(int val) {
         if(map.containsKey(val))
         {
@@ -17,19 +18,20 @@ class RandomizedSet {
         map.put(val, list.size() - 1);
         return true;
     }
-    
+
     public boolean remove(int val) {
         if(!map.containsKey(val))
         {
             return false;
         }
+        int n = list.size();
         int index = map.get(val);
-        int temp = list.get(list.size()-1);
-        list.set(list.size()-1, val);
+        int temp = list.get(n-1);
+        list.set(n-1, val);
         list.set(index, temp);
         map.put(temp, index);
         map.remove(val);
-        list.remove(list.size() - 1);
+        list.remove(n - 1);
         return true;
     }
     
