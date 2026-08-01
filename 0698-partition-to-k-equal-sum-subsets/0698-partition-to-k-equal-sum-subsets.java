@@ -19,7 +19,7 @@ class Solution {
         {
             if((state&(1<<i)) == 0 && (sum + arr[i]) <= target)
             {
-                ans = ans || getAns((state^(1<<i)), count, sum+arr[i], target, k, arr, cache);
+                ans = ans | getAns((state^(1<<i)), count, sum+arr[i], target, k, arr, cache);
                 if(ans)
                 {
                     return cache[state][count] = true;
