@@ -403,6 +403,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0611-valid-triangle-number](https://github.com/aadarshahuja99/leetcode/tree/main/0611-valid-triangle-number/) | Medium |
 | [0621-task-scheduler](https://github.com/aadarshahuja99/leetcode/tree/main/0621-task-scheduler/) | Medium |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0632-smallest-range-covering-elements-from-k-lists/) | Hard |
+| [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 | [0658-find-k-closest-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/aadarshahuja99/leetcode/tree/main/0719-find-k-th-smallest-pair-distance/) | Hard |
@@ -478,6 +479,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
 | [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
+| [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 | [0678-valid-parenthesis-string](https://github.com/aadarshahuja99/leetcode/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
@@ -963,6 +965,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0502-ipo](https://github.com/aadarshahuja99/leetcode/tree/main/0502-ipo/) | Hard |
 | [0621-task-scheduler](https://github.com/aadarshahuja99/leetcode/tree/main/0621-task-scheduler/) | Medium |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0632-smallest-range-covering-elements-from-k-lists/) | Hard |
+| [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 | [0658-find-k-closest-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0743-network-delay-time](https://github.com/aadarshahuja99/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0759-employee-free-time](https://github.com/aadarshahuja99/leetcode/tree/main/0759-employee-free-time/) | Hard |
@@ -1201,6 +1204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0212-word-search-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0421-maximum-xor-of-two-numbers-in-an-array/) | Medium |
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
+| [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 | [1233-remove-sub-folders-from-the-filesystem](https://github.com/aadarshahuja99/leetcode/tree/main/1233-remove-sub-folders-from-the-filesystem/) | Medium |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
 ## Depth-First Search
@@ -1240,6 +1244,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0543-diameter-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0545-boundary-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0545-boundary-of-binary-tree/) | Medium |
 | [0547-number-of-provinces](https://github.com/aadarshahuja99/leetcode/tree/main/0547-number-of-provinces/) | Medium |
+| [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 | [0652-find-duplicate-subtrees](https://github.com/aadarshahuja99/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
@@ -1310,6 +1315,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0588-design-in-memory-file-system](https://github.com/aadarshahuja99/leetcode/tree/main/0588-design-in-memory-file-system/) | Hard |
 | [0622-design-circular-queue](https://github.com/aadarshahuja99/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
+| [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
 | [2276-count-integers-in-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/2276-count-integers-in-intervals/) | Hard |
 ## Graph Theory
@@ -1427,6 +1433,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0295-find-median-from-data-stream](https://github.com/aadarshahuja99/leetcode/tree/main/0295-find-median-from-data-stream/) | Hard |
 | [0362-design-hit-counter](https://github.com/aadarshahuja99/leetcode/tree/main/0362-design-hit-counter/) | Medium |
+| [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
