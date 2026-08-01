@@ -28,7 +28,6 @@ public class LogSystem {
         long start = granularity(s, gra, false);
         long end = granularity(e, gra, true);
         
-        // Highly efficient range query: [start, end)
         // subMap(start, true, end, false) means start is inclusive, end is exclusive
         for (List<Integer> ids : map.subMap(start, true, end, false).values()) {
             res.addAll(ids);
