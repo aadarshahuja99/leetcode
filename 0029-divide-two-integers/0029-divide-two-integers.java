@@ -18,7 +18,7 @@ class Solution {
                 multiple <<= 1;
             }
             absDividend -= tempDivisor;
-            ans += multiple;
+            ans = (ans|multiple);
         }
         return isNegative ? -ans : ans;
     }
