@@ -180,6 +180,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/aadarshahuja99/leetcode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/aadarshahuja99/leetcode/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
+| [1723-find-minimum-time-to-finish-all-jobs](https://github.com/aadarshahuja99/leetcode/tree/main/1723-find-minimum-time-to-finish-all-jobs/) | Hard |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1834-single-threaded-cpu](https://github.com/aadarshahuja99/leetcode/tree/main/1834-single-threaded-cpu/) | Medium |
@@ -781,6 +782,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0212-word-search-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0212-word-search-ii/) | Hard |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
+| [1723-find-minimum-time-to-finish-all-jobs](https://github.com/aadarshahuja99/leetcode/tree/main/1723-find-minimum-time-to-finish-all-jobs/) | Hard |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -861,6 +863,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1547-minimum-cost-to-cut-a-stick](https://github.com/aadarshahuja99/leetcode/tree/main/1547-minimum-cost-to-cut-a-stick/) | Hard |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/aadarshahuja99/leetcode/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
+| [1723-find-minimum-time-to-finish-all-jobs](https://github.com/aadarshahuja99/leetcode/tree/main/1723-find-minimum-time-to-finish-all-jobs/) | Hard |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/1749-maximum-absolute-sum-of-any-subarray/) | Medium |
 | [1786-number-of-restricted-paths-from-first-to-last-node](https://github.com/aadarshahuja99/leetcode/tree/main/1786-number-of-restricted-paths-from-first-to-last-node/) | Medium |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/aadarshahuja99/leetcode/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
@@ -882,6 +885,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1434-number-of-ways-to-wear-different-hats-to-each-other](https://github.com/aadarshahuja99/leetcode/tree/main/1434-number-of-ways-to-wear-different-hats-to-each-other/) | Hard |
+| [1723-find-minimum-time-to-finish-all-jobs](https://github.com/aadarshahuja99/leetcode/tree/main/1723-find-minimum-time-to-finish-all-jobs/) | Hard |
 | [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/aadarshahuja99/leetcode/tree/main/2571-minimum-operations-to-reduce-an-integer-to-0/) | Medium |
 | [2588-count-the-number-of-beautiful-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/2588-count-the-number-of-beautiful-subarrays/) | Medium |
 ## Recursion
@@ -1275,6 +1279,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1434-number-of-ways-to-wear-different-hats-to-each-other](https://github.com/aadarshahuja99/leetcode/tree/main/1434-number-of-ways-to-wear-different-hats-to-each-other/) | Hard |
+| [1723-find-minimum-time-to-finish-all-jobs](https://github.com/aadarshahuja99/leetcode/tree/main/1723-find-minimum-time-to-finish-all-jobs/) | Hard |
 ## Game Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
