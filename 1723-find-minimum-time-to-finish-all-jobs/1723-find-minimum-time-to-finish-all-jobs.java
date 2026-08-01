@@ -34,12 +34,12 @@ class Solution {
             return dp[k][state];
         }
         int currentMinTimeToComplete = Integer.MAX_VALUE;
-        for(int i=state; i>=0; i--)
-        {
-            if((state&(i)) == i)
-            {
-                currentMinTimeToComplete = Math.min(currentMinTimeToComplete, Math.max(sums[i], getAns(state^i,k-1,sums,dp)));
-            }
+        // Trick to iterate ONLY through the submasks of 'state'
+        for (int submask = state; submask > 0; submask = (submask - 1) & state) {
+            currentMinTimeToComplete = Math.min(
+                currentMinTimeToComplete, 
+                Math.max(sums[submask], getAns(state ^ submask, k - 1, sums, dp))
+            );
         }
         return dp[k][state] = currentMinTimeToComplete;
     }
