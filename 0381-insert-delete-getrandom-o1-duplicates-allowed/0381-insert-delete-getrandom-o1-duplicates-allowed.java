@@ -32,7 +32,6 @@ class RandomizedCollection {
         numbers.set(index, lastElement);
         indexMap.get(lastElement).add(index);
         indexMap.get(lastElement).remove(numbers.size() - 1);
-
         numbers.remove(numbers.size() - 1);
 
         if(indexMap.get(val).size() == 0)
