@@ -46,6 +46,7 @@ class LRUCache {
         dic.put(key, node);
         add(node);
 
+        // deletion of excess can happen post insertion unlike LFU cache as the new element gets inserted at the top/most recent part of the list
         if (dic.size() > capacity) {
             ListNode nodeToDelete = head.next;
             remove(nodeToDelete);
