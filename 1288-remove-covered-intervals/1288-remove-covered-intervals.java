@@ -11,19 +11,12 @@ class Solution {
         int ans = n;
         while(ptr < n)
         {
-            currentEnd = copied[ptr][1] - 1;
+            currentEnd = copied[ptr][1];
             int j = ptr+1;
             // think of example: [[1,4],[1,6],[1,8],[2,9],[2,10]]
-            while(j < n && copied[j][0] <= currentEnd)
+            while(j < n && copied[j][1] <= currentEnd)
             {
-                if(currentEnd >= copied[j][1]-1)
-                {
-                    ans--;
-                }
-                else
-                {
-                    break;
-                }
+                ans--;
                 j++;
             }
             ptr = j;
