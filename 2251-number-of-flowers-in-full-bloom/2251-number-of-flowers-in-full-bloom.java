@@ -53,10 +53,6 @@ class Solution {
             int person = people[index];
             int s = findFloor(starts, person);
             int e = findFloor(ends, person);
-            if(s == -1)
-            {
-                continue;
-            }
             // System.out.println(s+" "+e+" for "+person);
             ans[index] = Math.max(0, (s+1) - (e+1));
         }
