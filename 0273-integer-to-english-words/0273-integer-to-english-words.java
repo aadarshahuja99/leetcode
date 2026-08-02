@@ -21,12 +21,14 @@ class Solution {
             // Extract the specific 3-digit chunk for the current scale
             int divisor = (int) Math.pow(1000, i);
             int chunk = num / divisor;
-            
-            if (chunk != 0) {
-                words.append(helper(chunk));
-                if (i > 0) {
-                    words.append(THOUSANDS[i]).append(" ");
-                }
+
+            if(chunk == 0)
+            {
+                continue;
+            }
+            words.append(helper(chunk));
+            if (i > 0) {
+                words.append(THOUSANDS[i]).append(" ");
             }
             
             // Keep the remainder for the next loops
