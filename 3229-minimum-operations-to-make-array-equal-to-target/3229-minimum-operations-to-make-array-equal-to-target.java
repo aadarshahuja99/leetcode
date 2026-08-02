@@ -33,7 +33,7 @@ class Solution {
                 // decreasing direction for current diff
                 if(directionOfChange == -1)
                 {
-                    // if current direction is increasing, try to re-use the last guy's ops
+                    // if current direction is decreasing (same as the one needed for the current operation), try to re-use the last guy's ops
                     ops += Math.max(diff - previousDiff, 0);
                 }
                 else
