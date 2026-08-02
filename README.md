@@ -138,6 +138,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0992-subarrays-with-k-different-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [0994-rotting-oranges](https://github.com/aadarshahuja99/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1007-minimum-domino-rotations-for-equal-row](https://github.com/aadarshahuja99/leetcode/tree/main/1007-minimum-domino-rotations-for-equal-row/) | Medium |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/aadarshahuja99/leetcode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
@@ -535,6 +536,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0991-broken-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0991-broken-calculator/) | Medium |
+| [1007-minimum-domino-rotations-for-equal-row](https://github.com/aadarshahuja99/leetcode/tree/main/1007-minimum-domino-rotations-for-equal-row/) | Medium |
 | [1029-two-city-scheduling](https://github.com/aadarshahuja99/leetcode/tree/main/1029-two-city-scheduling/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
