@@ -21,6 +21,7 @@ class CountIntervals {
             {
                 break;
             }
+            // same exact logic as amount of area to be painted each day, we subtract the intersection
             total -= (Math.min(floor.getValue(), end) - Math.max(floor.getKey(), start) + 1);
             start = Math.min(start, floor.getKey());
             end = Math.max(end, floor.getValue());
