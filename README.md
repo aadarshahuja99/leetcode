@@ -193,6 +193,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
+| [2158-amount-of-new-area-painted-each-day](https://github.com/aadarshahuja99/leetcode/tree/main/2158-amount-of-new-area-painted-each-day/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
@@ -1065,6 +1066,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
+| [2158-amount-of-new-area-painted-each-day](https://github.com/aadarshahuja99/leetcode/tree/main/2158-amount-of-new-area-painted-each-day/) | Hard |
 | [2276-count-integers-in-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/2276-count-integers-in-intervals/) | Hard |
 ## Ordered Set
 | Problem Name | Difficulty |
@@ -1073,6 +1075,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
+| [2158-amount-of-new-area-painted-each-day](https://github.com/aadarshahuja99/leetcode/tree/main/2158-amount-of-new-area-painted-each-day/) | Hard |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
 | [2276-count-integers-in-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/2276-count-integers-in-intervals/) | Hard |
 ## Union-Find
