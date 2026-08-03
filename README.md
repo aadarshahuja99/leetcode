@@ -1505,5 +1505,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1114-print-in-order](https://github.com/aadarshahuja99/leetcode/tree/main/1114-print-in-order/) | Easy |
 | [1115-print-foobar-alternately](https://github.com/aadarshahuja99/leetcode/tree/main/1115-print-foobar-alternately/) | Medium |
+| [1117-building-h2o](https://github.com/aadarshahuja99/leetcode/tree/main/1117-building-h2o/) | Medium |
 | [1188-design-bounded-blocking-queue](https://github.com/aadarshahuja99/leetcode/tree/main/1188-design-bounded-blocking-queue/) | Medium |
 <!---LeetCode Topics End-->
