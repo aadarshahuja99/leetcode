@@ -1500,4 +1500,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/aadarshahuja99/leetcode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/aadarshahuja99/leetcode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+## Concurrency
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1188-design-bounded-blocking-queue](https://github.com/aadarshahuja99/leetcode/tree/main/1188-design-bounded-blocking-queue/) | Medium |
 <!---LeetCode Topics End-->
