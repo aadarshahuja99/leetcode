@@ -1,6 +1,6 @@
 class FooBar {
     private int n;
-    String lastWord = "";
+    volatile String lastWord = "";
     public FooBar(int n) {
         this.n = n;
     }
@@ -29,9 +29,9 @@ class FooBar {
             {
                 while(!(lastWord.equals("foo")))
                 {
+                    // releases the lock for another thread goes into WAITING state
                     wait();
                 }
-                // printBar.run() outputs "bar". Do not change or remove this line.
                 printBar.run();
                 lastWord = "bar";
                 notifyAll();
