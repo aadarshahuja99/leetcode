@@ -1,6 +1,6 @@
 class H2O {
-    int currentHydrogenCount;
-    int currentOxygenCount;
+    volatile int currentHydrogenCount;
+    volatile int currentOxygenCount;
     Object lock;
     public H2O() {
         lock = new Object();
