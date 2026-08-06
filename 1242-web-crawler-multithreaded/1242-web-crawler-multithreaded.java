@@ -67,7 +67,7 @@ public class Solution {
 
     /**
      * Helper Method: Extracts the hostname from a standard URL string
-     * Input: "http://yahoo.com" -> Output: "://yahoo.com"
+     * Input: "http://yahoo.com" -> Output: "yahoo.com"
      */
     private String getHostname(String url) {
         // Strip the protocol prefix "http://"
