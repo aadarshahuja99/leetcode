@@ -1198,6 +1198,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0994-rotting-oranges](https://github.com/aadarshahuja99/leetcode/tree/main/0994-rotting-oranges/) | Medium |
 | [1162-as-far-from-land-as-possible](https://github.com/aadarshahuja99/leetcode/tree/main/1162-as-far-from-land-as-possible/) | Medium |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
+| [1242-web-crawler-multithreaded](https://github.com/aadarshahuja99/leetcode/tree/main/1242-web-crawler-multithreaded/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
 | [1306-jump-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1306-jump-game-iii/) | Medium |
@@ -1284,6 +1285,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1192-critical-connections-in-a-network](https://github.com/aadarshahuja99/leetcode/tree/main/1192-critical-connections-in-a-network/) | Hard |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1233-remove-sub-folders-from-the-filesystem](https://github.com/aadarshahuja99/leetcode/tree/main/1233-remove-sub-folders-from-the-filesystem/) | Medium |
+| [1242-web-crawler-multithreaded](https://github.com/aadarshahuja99/leetcode/tree/main/1242-web-crawler-multithreaded/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1306-jump-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1306-jump-game-iii/) | Medium |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
@@ -1507,6 +1509,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1115-print-foobar-alternately](https://github.com/aadarshahuja99/leetcode/tree/main/1115-print-foobar-alternately/) | Medium |
 | [1117-building-h2o](https://github.com/aadarshahuja99/leetcode/tree/main/1117-building-h2o/) | Medium |
 | [1188-design-bounded-blocking-queue](https://github.com/aadarshahuja99/leetcode/tree/main/1188-design-bounded-blocking-queue/) | Medium |
+| [1242-web-crawler-multithreaded](https://github.com/aadarshahuja99/leetcode/tree/main/1242-web-crawler-multithreaded/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
