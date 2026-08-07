@@ -43,19 +43,17 @@ public class Solution {
         
         // Step B: Once the network call finishes, process the results on the same thread
         .thenCompose(discoveredUrls -> {
-            List<CompletableFuture<Void>> subTasks = new ArrayList<>();
+            // 1. Convert the list of discovered URLs into a functional stream
+            CompletableFuture<Void>[] subTasksArray = discoveredUrls.stream()
+                // 2. Filter out URLs that don't match the hostname or have already been visited
+                .filter(nextUrl -> getHostname(nextUrl).equals(targetHostname) && visited.add(nextUrl))
+                // 3. Map each valid URL string into an active asynchronous future task
+                .map(nextUrl -> crawlAsync(nextUrl, targetHostname, visited, htmlParser))
+                // 4. Collect the stream directly into a raw CompletableFuture array
+                .toArray(CompletableFuture[]::new);
 
-            for (String nextUrl : discoveredUrls) {
-                // Constraint Check: Must match the hostname AND must not be crawled already
-                if (getHostname(nextUrl).equals(targetHostname) && visited.add(nextUrl)) {
-                    // Fork: Recursively spawn a new asynchronous sub-pipeline for this link
-                    subTasks.add(crawlAsync(nextUrl, targetHostname, visited, htmlParser));
-                }
-            }
-
-            // Step C: Collective Orchestration
-            // Combines all sub-tasks into a single future that finishes only when ALL sub-links are done
-            return CompletableFuture.allOf(subTasks.toArray(new CompletableFuture[0]));
+            // 5. Pass the cleanly generated array into the collective orchestration barrier
+            return CompletableFuture.allOf(subTasksArray);
         })
         
         // Step D: Graceful Error Resilience
