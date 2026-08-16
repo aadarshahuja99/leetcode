@@ -1,35 +1,50 @@
 class BoundedBlockingQueue {
     Queue<Integer> queue;
     int limit;
+    ReentrantLock lock;
+    Condition notFull;
+    Condition notEmpty;
     public BoundedBlockingQueue(int capacity) {
         queue = new LinkedList<>();
         limit = capacity;
+        lock = new ReentrantLock();
+        notFull = lock.newCondition();
+        notEmpty = lock.newCondition();
     }
     
     public void enqueue(int element) throws InterruptedException {
-        synchronized(this)
+        lock.lock();
+        try
         {
             while(queue.size() == limit)
             {
-                this.wait();
+                notFull.await();
             }
             queue.add(element);
-            this.notifyAll();
+            notEmpty.signal();
+        }
+        finally
+        {
+            lock.unlock();
         }
     }
     
     public int dequeue() throws InterruptedException {
-        int top = -1;
-        synchronized(this)
+        lock.lock();
+        try
         {
             while(queue.isEmpty())
             {
-                this.wait();
+                notEmpty.await();
             }
-            top = queue.poll();
-            this.notifyAll();
+            int top = queue.poll();
+            notFull.signal();
+            return top;
         }
-        return top;
+        finally
+        {
+            lock.unlock();
+        }
     }
     
     public int size() {
