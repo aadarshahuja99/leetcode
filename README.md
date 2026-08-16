@@ -162,6 +162,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1288-remove-covered-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
 | [1306-jump-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1306-jump-game-iii/) | Medium |
+| [1345-jump-game-iv](https://github.com/aadarshahuja99/leetcode/tree/main/1345-jump-game-iv/) | Hard |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
 | [1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard |
@@ -368,6 +369,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
 | [1248-count-number-of-nice-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1248-count-number-of-nice-subarrays/) | Medium |
+| [1345-jump-game-iv](https://github.com/aadarshahuja99/leetcode/tree/main/1345-jump-game-iv/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/aadarshahuja99/leetcode/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
@@ -1202,6 +1204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
 | [1306-jump-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1306-jump-game-iii/) | Medium |
+| [1345-jump-game-iv](https://github.com/aadarshahuja99/leetcode/tree/main/1345-jump-game-iv/) | Hard |
 | [1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard |
 | [1559-detect-cycles-in-2d-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
