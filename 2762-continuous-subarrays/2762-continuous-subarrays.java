@@ -1,5 +1,6 @@
 class Solution {
     public long continuousSubarrays(int[] nums) {
+        // Same logic and question as: https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/?envType=problem-list-v2&envId=monotonic-queue , only diff is hardcoded threshold limit of 2 instead of input param and counting the subarrays instead of finding max length
         int n = nums.length;
         int s = 0;
         int e = 0;
@@ -22,15 +23,15 @@ class Solution {
             min.add(nums[e]);
             e++;
 
-            while(max.peek() - min.peek() > 2)
+            while(max.peekFirst() - min.peekFirst() > 2)
             {
                 int element = nums[s];
-                if(max.peek() == element)
+                if(max.peekFirst() == element)
                 {
                     max.poll();
                 }
 
-                if(min.peek() == element)
+                if(min.peekFirst() == element)
                 {
                     min.poll();
                 }
