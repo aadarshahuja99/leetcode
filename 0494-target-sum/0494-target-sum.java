@@ -6,15 +6,15 @@ class Solution {
         {
             s += num;
         }
-        int[][] cache = new int[n][1000 + s + 1];
+        int[][] cache = new int[n][2*s + 1];
         for(int[] r : cache)
         {
             Arrays.fill(r, -1);
         }
-        int ans = getAns(0, 0, nums, target, cache);
+        int ans = getAns(0, 0, nums, target, cache, s);
         return ans;
     }
-    private int getAns(int current, int currentSum, int[] nums, int target, int[][] cache)
+    private int getAns(int current, int currentSum, int[] nums, int target, int[][] cache, int sum)
     {
         if(current == nums.length)
         {
@@ -24,12 +24,12 @@ class Solution {
             }
             return 0;
         }
-        if(cache[current][currentSum + 1000] != -1)
+        if(cache[current][currentSum + sum] != -1)
         {
-            return cache[current][currentSum + 1000];
+            return cache[current][currentSum + sum];
         }
-        int plus = getAns(current+1, currentSum + nums[current], nums, target, cache);
-        int minus = getAns(current+1, currentSum - nums[current], nums, target, cache);
-        return cache[current][currentSum + 1000] = plus + minus;
+        int plus = getAns(current+1, currentSum + nums[current], nums, target, cache, sum);
+        int minus = getAns(current+1, currentSum - nums[current], nums, target, cache, sum);
+        return cache[current][currentSum + sum] = plus + minus;
     }
 }
