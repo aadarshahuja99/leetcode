@@ -1579,6 +1579,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Knapsack Problem
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0322-coin-change](https://github.com/aadarshahuja99/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
@@ -1591,6 +1592,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Complete Knapsack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0322-coin-change](https://github.com/aadarshahuja99/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
 ## Longest Common Subsequence
