@@ -1,11 +1,28 @@
 class Solution {
     public int numDistinct(String s, String t) {
-        int[][] cache = new int[s.length()][t.length()];
-        for(int[] row : cache)
+        int m=s.length();
+        int n=t.length();
+        int[][] cache = new int[m+1][n+1];
+        for(int i=0; i<=m; i++)
         {
-            Arrays.fill(row, -1);
+            cache[i][0] = 1;
         }
-        return getAns(0, 0, s, t, s.length(), t.length(), cache);
+        for(int i=1; i<=m; i++)
+        {
+            for(int j=1; j<=n; j++)
+            {
+                if(s.charAt(i-1) == t.charAt(j-1))
+                {
+                    cache[i][j] = cache[i-1][j] + cache[i-1][j-1];
+                }
+                else
+                {
+                    cache[i][j] = cache[i-1][j];
+                }
+            }
+        }
+        return cache[m][n];
+        // return getAns(0, 0, s, t, s.length(), t.length(), cache);
     }
     private int getAns(int i, int j, String s, String t, int m, int n, int[][] cache)
     {
