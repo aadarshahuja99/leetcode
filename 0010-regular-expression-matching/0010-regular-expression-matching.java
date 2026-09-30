@@ -20,10 +20,12 @@ class Solution {
                 {
                     if(p.charAt(j-1) == '*' && (s.charAt(i-1) == p.charAt(j-2) || p.charAt(j-2) == '.'))
                     {
+                        // 1st cache[i-1][j] means at least one match with the j-2 guy and i-1 guy so we only move i pointer. 2nd read means 0 match with the j-2 guy and we skip the j-2 guy
                         cache[i][j] = cache[i-1][j] || cache[i][j-2];
                     }
                     else if(p.charAt(j-1) == '*')
                     {
+                        // since s[i-1] != p[j-2] there is no other choice but to skip the (j-2)th guy
                         cache[i][j] = cache[i][j-2];
                     }
                 }
@@ -61,7 +63,7 @@ class Solution {
         {
             if(p.charAt(j-1) == '*' && (s.charAt(i-1) == p.charAt(j-2) || p.charAt(j-2) == '.'))
             {
-                // 1st call tries for at least 1 matching, third call is for zero matching
+                // 1st call tries for at least 1 matching, second call is for zero matching
                 return dp[i][j] = getAns(i-1, j, s, p, dp) || getAns(i, j-2, s, p, dp);
             }
             else if(p.charAt(j-1) == '*')
