@@ -3,31 +3,34 @@ class Solution {
         int m = s.length();
         int n = p.length();
         boolean[][] cache = new boolean[m+1][n+1];
-        cache[0][0] = true;
+        boolean[]  lastRowOfCache = new boolean[n+1];
+        lastRowOfCache[0] = true;
         for(int j=1; j<=n; j++)
         {
-            cache[0][j] = cache[0][j-1] && p.charAt(j-1) == '*';
+            lastRowOfCache[j] = lastRowOfCache[j-1] && p.charAt(j-1) == '*';
         }
         for(int i=1; i<=m; i++)
         {
+            boolean[] currentRowOfCache = new boolean[n+1];
             for(int j=1; j<=n; j++)
             {
                 if(s.charAt(i-1) == p.charAt(j-1) || p.charAt(j-1) == '?')
                 {
-                    cache[i][j] = cache[i-1][j-1];
+                    currentRowOfCache[j] = lastRowOfCache[j-1];
                 }
                 else if(p.charAt(j-1) == '*')
                 {
                     // 1st cache[i-1][j-1] means exactly one char match using the *, 2nd cache[i-1][j] means atleast one char match using the * and 3rd cache[i][j-1] means empty match using the * and * means nothing in that case.
-                    cache[i][j] = cache[i-1][j-1] || cache[i-1][j] || cache[i][j-1];
+                    currentRowOfCache[j] = lastRowOfCache[j-1] || lastRowOfCache[j] || currentRowOfCache[j-1];
                 }
                 else
                 {
-                    cache[i][j] = false;
+                    currentRowOfCache[j] = false;
                 }
             }
+            lastRowOfCache = currentRowOfCache;
         }
-        return cache[m][n];
+        return lastRowOfCache[n];
         // return checkForPatternMatch(s.length(), p.length(), s, p, cache);
     }
     private boolean checkForPatternMatch(int currentIndexS, int currentIndexP, String s, String p, Boolean[][] cache)
