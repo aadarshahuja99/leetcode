@@ -474,6 +474,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0091-decode-ways](https://github.com/aadarshahuja99/leetcode/tree/main/0091-decode-ways/) | Medium |
 | [0093-restore-ip-addresses](https://github.com/aadarshahuja99/leetcode/tree/main/0093-restore-ip-addresses/) | Medium |
 | [0097-interleaving-string](https://github.com/aadarshahuja99/leetcode/tree/main/0097-interleaving-string/) | Medium |
+| [0115-distinct-subsequences](https://github.com/aadarshahuja99/leetcode/tree/main/0115-distinct-subsequences/) | Hard |
 | [0127-word-ladder](https://github.com/aadarshahuja99/leetcode/tree/main/0127-word-ladder/) | Hard |
 | [0131-palindrome-partitioning](https://github.com/aadarshahuja99/leetcode/tree/main/0131-palindrome-partitioning/) | Medium |
 | [0132-palindrome-partitioning-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0132-palindrome-partitioning-ii/) | Hard |
@@ -833,6 +834,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0095-unique-binary-search-trees-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0095-unique-binary-search-trees-ii/) | Medium |
 | [0096-unique-binary-search-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0096-unique-binary-search-trees/) | Medium |
 | [0097-interleaving-string](https://github.com/aadarshahuja99/leetcode/tree/main/0097-interleaving-string/) | Medium |
+| [0115-distinct-subsequences](https://github.com/aadarshahuja99/leetcode/tree/main/0115-distinct-subsequences/) | Hard |
 | [0120-triangle](https://github.com/aadarshahuja99/leetcode/tree/main/0120-triangle/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/aadarshahuja99/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0123-best-time-to-buy-and-sell-stock-iii/) | Hard |
