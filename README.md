@@ -1586,5 +1586,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Longest Common Subsequence
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1143-longest-common-subsequence/) | Medium |
 <!---LeetCode Topics End-->
