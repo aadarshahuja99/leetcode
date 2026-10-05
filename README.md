@@ -211,6 +211,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2387-median-of-a-row-wise-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/2387-median-of-a-row-wise-sorted-matrix/) | Medium |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
+| [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/2435-paths-in-matrix-whose-sum-is-divisible-by-k/) | Hard |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/aadarshahuja99/leetcode/tree/main/2574-left-and-right-sum-differences/) | Easy |
@@ -919,6 +920,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
 | [2304-minimum-path-cost-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2304-minimum-path-cost-in-a-grid/) | Medium |
+| [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/2435-paths-in-matrix-whose-sum-is-divisible-by-k/) | Hard |
 | [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/aadarshahuja99/leetcode/tree/main/2571-minimum-operations-to-reduce-an-integer-to-0/) | Medium |
 | [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2850-minimum-moves-to-spread-stones-over-grid/) | Medium |
 | [3229-minimum-operations-to-make-array-equal-to-target](https://github.com/aadarshahuja99/leetcode/tree/main/3229-minimum-operations-to-make-array-equal-to-target/) | Hard |
@@ -1180,6 +1182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
 | [2304-minimum-path-cost-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2304-minimum-path-cost-in-a-grid/) | Medium |
 | [2387-median-of-a-row-wise-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/2387-median-of-a-row-wise-sorted-matrix/) | Medium |
+| [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/2435-paths-in-matrix-whose-sum-is-divisible-by-k/) | Hard |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2850-minimum-moves-to-spread-stones-over-grid/) | Medium |
