@@ -1,5 +1,6 @@
 class Solution {
     public int minDistance(String word1, String word2) {
+        // slight modification of actual LCS algo
         int m = word1.length();
         int n = word2.length();
         int[][] cache = new int[m+1][n+1];
