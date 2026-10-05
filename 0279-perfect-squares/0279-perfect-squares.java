@@ -8,7 +8,7 @@ class Solution {
             while(current*current <= i)
             {
                 ans = Math.min(ans, 1+dp[i-current*current]);
-                current = current+1;
+                current++;
             }
             dp[i] = ans;
         }
