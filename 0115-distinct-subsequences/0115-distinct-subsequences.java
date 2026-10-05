@@ -11,6 +11,7 @@ class Solution {
         {
             for(int j=1; j<=n; j++)
             {
+                // in case the characters match, we have a choice to either take the current s character or not take it in the subsequence. First cache read is the notTake one
                 if(s.charAt(i-1) == t.charAt(j-1))
                 {
                     cache[i][j] = cache[i-1][j] + cache[i-1][j-1];
