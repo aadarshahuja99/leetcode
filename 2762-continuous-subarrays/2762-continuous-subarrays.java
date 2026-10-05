@@ -23,6 +23,7 @@ class Solution {
             min.add(nums[e]);
             e++;
 
+            // find the longest valid subarray
             while(max.peekFirst() - min.peekFirst() > 2)
             {
                 int element = nums[s];
