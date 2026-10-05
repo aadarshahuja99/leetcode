@@ -36,8 +36,7 @@ class Solution {
         if(canRob == 1)
         {
             int maxAns = Math.max(root.val + getMaxMoney(root.left, 0, cache) + getMaxMoney(root.right, 0, cache), dontRob);
-            cache.get(root)[canRob] = maxAns;
-            return maxAns;
+            return cache.get(root)[canRob] = maxAns;
         }
         cache.get(root)[canRob] = dontRob;
         return dontRob;
