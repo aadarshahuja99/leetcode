@@ -16,23 +16,21 @@ class Solution {
         {
             for(int j=numColumns-1; j>=0; j--)
             {
-                if(i == numRows - 1 && j == numColumns - 1)
-                {
-                    continue;
-                }
+                // if(i == numRows - 1 && j == numColumns - 1)
+                // {
+                //     continue;
+                // }
                 int[] rowChange = { 0,1 };
                 int[] columnChange = { 1,0 };
-                int paths = 0;
                 for(int k=0; k<2; k++)
                 {
                     int nextRow = i + rowChange[k];
                     int nextColumn = j + columnChange[k];
                     if(validatePosition(nextRow, nextColumn, numRows, numColumns) && obstacleGrid[nextRow][nextColumn] != 1)
                     {
-                        paths += dp[nextRow][nextColumn];
+                        dp[i][j] += dp[nextRow][nextColumn];
                     }
                 }
-                dp[i][j] = paths;
             }
         }
 
