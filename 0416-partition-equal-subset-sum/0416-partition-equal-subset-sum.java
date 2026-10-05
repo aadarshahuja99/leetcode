@@ -18,15 +18,11 @@ class Solution {
         {
             for(int t = 1; t <= s/2; t++)
             {
-                var notTake = cache[current+1][t];
+                cache[current][t] = cache[current+1][t];
                 if(nums[current] <= t)
                 {
                     var take = cache[current+1][t-nums[current]];
-                    cache[current][t] = take || notTake;
-                }
-                else
-                {
-                    cache[current][t] = notTake;
+                    cache[current][t] = take || cache[current][t];
                 }
             }
         }
