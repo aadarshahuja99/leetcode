@@ -21,7 +21,7 @@ class Solution {
                 else if(p.charAt(j-1) == '*')
                 {
                     // 1st cache[i-1][j-1] means exactly one char match using the *, 2nd cache[i-1][j] means atleast one char match using the * and 3rd cache[i][j-1] means empty match using the * and * means nothing in that case.
-                    currentRowOfCache[j] = lastRowOfCache[j-1] || lastRowOfCache[j] || currentRowOfCache[j-1];
+                    currentRowOfCache[j] = lastRowOfCache[j] || currentRowOfCache[j-1];
                 }
                 else
                 {
