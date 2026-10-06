@@ -5,10 +5,6 @@ class Solution {
         while(s <= e)
         {
             int m = s + (e-s)/2;
-            if(s == e)
-            {
-                return s;
-            }
             if(m > 0 && m < arr.length-1 && arr[m] > arr[m-1] && arr[m] > arr[m+1])
             {
                 return m;
