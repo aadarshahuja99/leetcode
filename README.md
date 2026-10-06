@@ -124,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0774-minimize-max-distance-to-gas-station](https://github.com/aadarshahuja99/leetcode/tree/main/0774-minimize-max-distance-to-gas-station/) | Hard |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
+| [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0853-car-fleet](https://github.com/aadarshahuja99/leetcode/tree/main/0853-car-fleet/) | Medium |
 | [0862-shortest-subarray-with-sum-at-least-k](https://github.com/aadarshahuja99/leetcode/tree/main/0862-shortest-subarray-with-sum-at-least-k/) | Hard |
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
@@ -752,6 +753,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0719-find-k-th-smallest-pair-distance](https://github.com/aadarshahuja99/leetcode/tree/main/0719-find-k-th-smallest-pair-distance/) | Hard |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
 | [0774-minimize-max-distance-to-gas-station](https://github.com/aadarshahuja99/leetcode/tree/main/0774-minimize-max-distance-to-gas-station/) | Hard |
+| [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0862-shortest-subarray-with-sum-at-least-k](https://github.com/aadarshahuja99/leetcode/tree/main/0862-shortest-subarray-with-sum-at-least-k/) | Hard |
 | [0875-koko-eating-bananas](https://github.com/aadarshahuja99/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
@@ -1618,4 +1620,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0673-number-of-longest-increasing-subsequence/) | Medium |
+## Ternary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 <!---LeetCode Topics End-->
