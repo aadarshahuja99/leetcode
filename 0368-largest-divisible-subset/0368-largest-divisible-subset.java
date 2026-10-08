@@ -1,15 +1,13 @@
 class Solution {
     public List<Integer> largestDivisibleSubset(int[] nums) {
+        // sorting because its a subset so the order of selected elements for the answer does not matter
         Arrays.sort(nums);
         int n = nums.length;
         int ans = 0;
         int[] lasts = new int[n];
         int[] dp = new int[n];
         int ending = 0;
-        for(int i=0; i<n; i++)
-        {
-            lasts[i] = -1;
-        }
+        Arrays.fill(lasts, -1);
         for(int i=0; i<n; i++)
         {
             for(int j=0; j<i; j++)
