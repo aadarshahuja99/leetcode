@@ -1610,6 +1610,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
+| [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1143-longest-common-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1143-longest-common-subsequence/) | Medium |
 ## DP on Trees
 | Problem Name | Difficulty |
