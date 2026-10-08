@@ -18,7 +18,6 @@ class Solution {
             ans.add(String.join(" ", sentence));
             return;
         }
-        String temp = "";
         Trie node = root;
         for(int i = current; i<size; i++)
         {
