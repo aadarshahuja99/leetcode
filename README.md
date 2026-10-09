@@ -1632,4 +1632,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
+## Triangulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1039-minimum-score-triangulation-of-polygon](https://github.com/aadarshahuja99/leetcode/tree/main/1039-minimum-score-triangulation-of-polygon/) | Medium |
+## Polygons
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1039-minimum-score-triangulation-of-polygon](https://github.com/aadarshahuja99/leetcode/tree/main/1039-minimum-score-triangulation-of-polygon/) | Medium |
 <!---LeetCode Topics End-->
