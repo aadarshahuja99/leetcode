@@ -32,7 +32,8 @@ class Solution {
         int max = remove;
         for(int it=i; it<=end; it++)
         {
-            if(boxes[it] == boxes[i-1])
+            // if the same colour as boxes[start] is seen again in future, then we have a choice between (immediate removal) and (solving for the intermediate boxes and take the current left range with the future start of the same colour)
+            if(boxes[it] == boxes[start])
             {
                 max = Math.max(max, getAns(i, it-1, 0, boxes, cache) + getAns(it, end, boxesOfTheSameColorFromTheLeft, boxes, cache));
             }
