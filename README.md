@@ -124,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0759-employee-free-time](https://github.com/aadarshahuja99/leetcode/tree/main/0759-employee-free-time/) | Hard |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0774-minimize-max-distance-to-gas-station](https://github.com/aadarshahuja99/leetcode/tree/main/0774-minimize-max-distance-to-gas-station/) | Hard |
+| [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
 | [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0853-car-fleet](https://github.com/aadarshahuja99/leetcode/tree/main/0853-car-fleet/) | Medium |
@@ -371,6 +372,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
+| [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
@@ -434,6 +436,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0759-employee-free-time](https://github.com/aadarshahuja99/leetcode/tree/main/0759-employee-free-time/) | Hard |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
+| [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
 | [0853-car-fleet](https://github.com/aadarshahuja99/leetcode/tree/main/0853-car-fleet/) | Medium |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0912-sort-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0912-sort-an-array/) | Medium |
@@ -892,6 +895,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0741-cherry-pickup](https://github.com/aadarshahuja99/leetcode/tree/main/0741-cherry-pickup/) | Hard |
 | [0787-cheapest-flights-within-k-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
 | [0877-stone-game](https://github.com/aadarshahuja99/leetcode/tree/main/0877-stone-game/) | Medium |
