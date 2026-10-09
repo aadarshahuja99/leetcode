@@ -1,5 +1,6 @@
 class Solution {
     public int minCost(int n, int[] cuts) {
+        // Select first MCM
         Arrays.sort(cuts);
         int[][] dp = new int[cuts.length][cuts.length];
         for(int[] row : dp)
