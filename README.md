@@ -895,6 +895,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/aadarshahuja99/leetcode/tree/main/0678-valid-parenthesis-string/) | Medium |
+| [0688-knight-probability-in-chessboard](https://github.com/aadarshahuja99/leetcode/tree/main/0688-knight-probability-in-chessboard/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
