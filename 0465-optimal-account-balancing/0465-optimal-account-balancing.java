@@ -1,35 +1,52 @@
 class Solution {
     public int minTransfers(int[][] transactions) {
-        // Recursion + backtracking (try all possible next people to transfer the debt to)
-        int[] debt = new int[12];
-        for(int[] transaction : transactions)
-        {
-            debt[transaction[0]] -= transaction[2];
-            debt[transaction[1]] += transaction[2];
+        // 1. Calculate Net Balances
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int[] t : transactions) {
+            map.put(t[0], map.getOrDefault(t[0], 0) - t[2]);
+            map.put(t[1], map.getOrDefault(t[1], 0) + t[2]);
         }
-        return getAns(0, debt);
-    }
-    private int getAns(int current, int[] debt)
-    {
-        while(current < debt.length && debt[current] == 0)
-        {
-            current++;
+
+        // 2. Filter non-zero debts into a list
+        List<Integer> debt = new ArrayList<>();
+        for (int val : map.values()) {
+            if (val != 0) debt.add(val);
         }
-        if(current == debt.length)
-        {
-            return 0;
-        }
-        int txns = Integer.MAX_VALUE;
-        for(int i = current+1; i<debt.length; i++)
-        {
-            if(debt[i]*debt[current] < 0)
-            {
-                // a valid candidate
-                debt[i] += debt[current];
-                txns = Math.min(txns, 1 + getAns(current+1, debt));
-                debt[i] -= debt[current];
+        
+        int n = debt.size();
+        if (n == 0) return 0;
+        
+        // 3. Precompute sums for all 2^N masks
+        int limit = 1 << n;
+        int[] sums = new int[limit];
+        
+        for (int mask = 1; mask < limit; mask++) {
+            for (int i = 0; i < n; i++) {
+                // If the i-th bit is set, add that person's debt
+                if ((mask & (1 << i)) != 0) {
+                    sums[mask] = sums[mask ^ (1 << i)] + debt.get(i);
+                    break; // Optimization: we calculated sum using the previous submask
+                }
             }
         }
-        return txns;
+
+        // 4. DP: Find max number of zero-sum subsets
+        int[] dp = new int[limit];
+        for (int mask = 1; mask < limit; mask++) {
+            // If the current subset doesn't sum to 0, it can't be partitioned into valid zero-sum groups
+            // But wait: disjoint unions might sum to 0. 
+            // Actually, we only care if the mask *can* be partitioned.
+            if (sums[mask] == 0) {
+                dp[mask] = 1; // Base case: the whole set is one zero-sum group
+                // Try to break this mask into two smaller independent zero-sum masks
+                // Iterate submasks: (i - 1) & mask efficiently iterates subsets
+                for (int sub = (mask - 1) & mask; sub > 0; sub = (sub - 1) & mask) {
+                    dp[mask] = Math.max(dp[mask], dp[sub] + dp[mask ^ sub]);
+                }
+            }
+        }
+
+        // Answer is Total People - Max Independent Groups
+        return n - dp[limit - 1];
     }
 }
