@@ -2,14 +2,14 @@ class Solution {
     int MOD = 1000000007;
     public int numberWays(List<List<Integer>> hats) {
         int n = hats.size();
-        HashSet<Integer>[] set = new HashSet[n];
+        HashSet<Integer>[] sets = new HashSet[n];
         int idx = 0;
         for(var list : hats)
         {
-            set[idx] = new HashSet<>();
+            sets[idx] = new HashSet<>();
             for(int hat : list)
             {
-                set[idx].add(hat);
+                sets[idx].add(hat);
             }
             idx++;
         }
@@ -19,16 +19,16 @@ class Solution {
         {
             Arrays.fill(row, -1);
         }
-        return getAns(1, 0, set, dp);
+        return getAns(1, 0, sets, dp);
     }
-    private int getAns(int current, int state, HashSet<Integer>[] set, int[][] dp)
+    private int getAns(int current, int state, HashSet<Integer>[] sets, int[][] dp)
     {
         // initial approach was iterating people and setting hats in state but it would have caused TC and SC exceeded issues as hats are 40 and iterating 2^40 states is not optimal. So it is better to use hats as the index and people as state. In each function call, we assign the 'current' hat to one person and move on to the next call. This ensures atmost-once selection of a hat 
         if(current == 41)
         {
-            return state == (1<<(set.length))-1 ? 1 : 0;
+            return state == (1<<(sets.length))-1 ? 1 : 0;
         }
-        if(state == (1<<(set.length))-1)
+        if(state == (1<<(sets.length))-1)
         {
             return 1;
         }
@@ -36,12 +36,13 @@ class Solution {
         {
             return dp[current][state];
         }
-        int ans = getAns(current+1, state, set, dp);
-        for(int i=0; i<set.length; i++)
+        // ans count set to the case of not using the current hat initially
+        int ans = getAns(current+1, state, sets, dp);
+        for(int i=0; i<sets.length; i++)
         {
-            if(set[i].contains(current) && (state&(1<<i)) == 0)
+            if(sets[i].contains(current) && (state&(1<<i)) == 0)
             {
-                ans = (ans + getAns(current+1, (state|(1<<i)), set, dp))%MOD;
+                ans = (ans + getAns(current+1, (state|(1<<i)), sets, dp))%MOD;
             }
         }
         return dp[current][state] = ans;
