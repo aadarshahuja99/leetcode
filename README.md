@@ -99,6 +99,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0502-ipo](https://github.com/aadarshahuja99/leetcode/tree/main/0502-ipo/) | Hard |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
 | [0525-contiguous-array](https://github.com/aadarshahuja99/leetcode/tree/main/0525-contiguous-array/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/aadarshahuja99/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/aadarshahuja99/leetcode/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0542-01-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0546-remove-boxes](https://github.com/aadarshahuja99/leetcode/tree/main/0546-remove-boxes/) | Hard |
@@ -829,6 +830,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0465-optimal-account-balancing](https://github.com/aadarshahuja99/leetcode/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0473-matchsticks-to-square](https://github.com/aadarshahuja99/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/aadarshahuja99/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1723-find-minimum-time-to-finish-all-jobs](https://github.com/aadarshahuja99/leetcode/tree/main/1723-find-minimum-time-to-finish-all-jobs/) | Hard |
 | [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2850-minimum-moves-to-spread-stones-over-grid/) | Medium |
@@ -887,6 +889,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0473-matchsticks-to-square](https://github.com/aadarshahuja99/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/aadarshahuja99/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0542-01-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0546-remove-boxes](https://github.com/aadarshahuja99/leetcode/tree/main/0546-remove-boxes/) | Hard |
 | [0583-delete-operation-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
@@ -952,6 +955,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0465-optimal-account-balancing](https://github.com/aadarshahuja99/leetcode/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0473-matchsticks-to-square](https://github.com/aadarshahuja99/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/aadarshahuja99/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1434-number-of-ways-to-wear-different-hats-to-each-other](https://github.com/aadarshahuja99/leetcode/tree/main/1434-number-of-ways-to-wear-different-hats-to-each-other/) | Hard |
@@ -1372,6 +1376,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0465-optimal-account-balancing](https://github.com/aadarshahuja99/leetcode/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0473-matchsticks-to-square](https://github.com/aadarshahuja99/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/aadarshahuja99/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/aadarshahuja99/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1434-number-of-ways-to-wear-different-hats-to-each-other](https://github.com/aadarshahuja99/leetcode/tree/main/1434-number-of-ways-to-wear-different-hats-to-each-other/) | Hard |
