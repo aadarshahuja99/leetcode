@@ -27,15 +27,13 @@ class Solution {
         // 2. Corrected upper limit: current + 2 * M
         for (int i = current; i < Math.min(n, current + 2 * M); i++) {
             int diff = i - current + 1;
-            
+            int nextM = Math.min(n, Math.max(diff, M));
             // Only Alice accumulates the score into her answer
             if (isAlice == 1) {
                 sum += piles[i];
-                int nextM = Math.min(n, Math.max(diff, M));
                 ans = Math.max(ans, sum + getAns(i + 1, 0, nextM, piles, cache));
             } else {
                 // Bob minimizes Alice's total score
-                int nextM = Math.min(n, Math.max(diff, M));
                 ans = Math.min(ans, getAns(i + 1, 1, nextM, piles, cache));
             }
         }
