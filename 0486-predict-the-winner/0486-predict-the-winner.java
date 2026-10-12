@@ -1,5 +1,6 @@
 class Solution {
     public boolean predictTheWinner(int[] nums) {
+        // same question as stone game
         int n = nums.length;
         int[][] cache = new int[n+1][n+1];
         for(int i=n-1; i>=0; i--)
