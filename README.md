@@ -1658,4 +1658,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1039-minimum-score-triangulation-of-polygon](https://github.com/aadarshahuja99/leetcode/tree/main/1039-minimum-score-triangulation-of-polygon/) | Medium |
+## Graph Coloring
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1411-number-of-ways-to-paint-n-3-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1411-number-of-ways-to-paint-n-3-grid/) | Hard |
 <!---LeetCode Topics End-->
