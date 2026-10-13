@@ -28,6 +28,7 @@ class Solution {
     }
     private boolean iterative(TreeNode c1, TreeNode c2)
     {
+        // we do iterative pre-order in parallel for both the trees
         TreeNode current1 = c1;
         TreeNode current2 = c2;
         Stack<TreeNode> s1 = new Stack<>();
