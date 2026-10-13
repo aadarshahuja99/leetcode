@@ -8,10 +8,16 @@ class Solution {
         {
             return true;
         }
-        return getAns(1, 0, max, 0, desired, new Boolean[1<<(max)]);
+        return getAns(0, 0, max, desired, new Boolean[1<<(max)]);
     }
-    private boolean getAns(int isFirstPlayer, int state, int max, int total, int desired, Boolean[] cache)
+    private boolean getAns(int state, int total, int max, int desired, Boolean[] cache)
     {
+        int selections = Integer.bitCount(state);
+        int isFirstPlayer = 0;
+        if(selections%2 == 0)
+        {
+            isFirstPlayer = 1;
+        }
         if(total >= desired)
         {
             return isFirstPlayer == 0;
@@ -27,7 +33,7 @@ class Solution {
             {
                 if((state&(1<<i)) == 0)
                 {
-                    ans = ans | getAns(0, state|(1<<i), max, total + i + 1, desired, cache);
+                    ans = ans | getAns(state|(1<<i), total + i + 1, max, desired, cache);
                 }
             }
         }
@@ -38,7 +44,7 @@ class Solution {
             {
                 if((state&(1<<i)) == 0)
                 {
-                    ans = ans && getAns(1, state|(1<<i), max, total + i + 1, desired, cache);
+                    ans = ans && getAns(state|(1<<i), total + i + 1, max, desired, cache);
                 }
             }
         }
