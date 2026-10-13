@@ -15,8 +15,7 @@
  */
 class Solution {
     public boolean isBalanced(TreeNode root) {
-        int ans = check(root);
-        return ans != -1;
+        return checkForBalancedTree(root);
     }
     private int check(TreeNode root)
     {
@@ -42,7 +41,7 @@ class Solution {
         HashMap<TreeNode,Integer> heights = new HashMap<>();
         heights.put(null, 0);
         Stack<TreeNode> stack = new Stack<>();
-        while(!stack.isEmpty() || current != null)
+        while(true)
         {
             if(current != null)
             {
@@ -51,27 +50,25 @@ class Solution {
             }
             else
             {
+                if(stack.isEmpty())
+                {
+                    break;
+                }
                 var top = stack.peek().right;
                 if(top == null)
                 {
                     // both left and rigth subtrees have been traversed
-                    int leftHeight = heights.get(stack.peek().left);
-                    int rightHeight = heights.get(stack.peek().right);
-                    if(Math.abs(leftHeight - rightHeight) > 1)
+                    if(!checkIfCurrentNodeIsValid(stack.peek(), heights))
                     {
                         return false;
                     }
-                    heights.put(stack.peek(), 1 + Math.max(leftHeight, rightHeight));
                     top = stack.pop();
                     while(!stack.isEmpty() && top == stack.peek().right)
                     {
-                        int left = heights.get(stack.peek().left);
-                        int right = heights.get(stack.peek().right);
-                        if(Math.abs(left - right) > 1)
+                        if(!checkIfCurrentNodeIsValid(stack.peek(), heights))
                         {
                             return false;
                         }
-                        heights.put(stack.peek(), 1 + Math.max(left, right));
                         top = stack.pop();
                     }
                 }
@@ -81,6 +78,17 @@ class Solution {
                 }
             }
         }
+        return true;
+    }
+    private boolean checkIfCurrentNodeIsValid(TreeNode current, HashMap<TreeNode,Integer> heights)
+    {
+        int left = heights.get(current.left);
+        int right = heights.get(current.right);
+        if(Math.abs(left - right) > 1)
+        {
+            return false;
+        }
+        heights.put(current, 1 + Math.max(left, right));
         return true;
     }
 }
