@@ -61,14 +61,6 @@ class Solution {
         }
         return ans;
     }
-    class Element
-    {
-        TreeNode node;
-        int c;
-        Element(TreeNode n, int col)
-        {
-            node = n;
-            c = col;
-        }
-    }
+    // Records are implicitly static, so they work seamlessly as nested classes
+    private record Element(TreeNode node, int c) {}
 }
