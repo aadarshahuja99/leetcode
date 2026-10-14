@@ -25,38 +25,26 @@
  */
 class Solution {
     public TreeNode sortedListToBST(ListNode head) {
-        return getBST(head);
+        List<ListNode> list = new ArrayList<>();
+        ListNode current = head;
+        while(current != null)
+        {
+            list.add(current);
+            current = current.next;
+        }
+        return getBST(list, 0, list.size() - 1);
     }
-    private TreeNode getBST(ListNode current)
+    private TreeNode getBST(List<ListNode> list, int start, int end)
     {
-        if(current == null)
+        if(start > end)
         {
             return null;
         }
-        ListNode[] temp = getMiddle(current);
-        ListNode middle = temp[1];
-        ListNode prev = temp[0];
-        ListNode next = middle.next;
-        TreeNode newNode = new TreeNode(middle.val);
-        newNode.right = getBST(next);
-        if(prev != null)
-        {
-            prev.next = null;
-            newNode.left = getBST(current);
-        }
+        int mid = start + (end - start)/2;
+        ListNode midNode = list.get(mid);
+        TreeNode newNode = new TreeNode(midNode.val);
+        newNode.right = getBST(list, mid+1, end);
+        newNode.left = getBST(list, start, mid-1);
         return newNode;
-    }
-    private ListNode[] getMiddle(ListNode start)
-    {
-        ListNode prev = null;
-        ListNode slow = start;
-        ListNode fast = start.next;
-        while(fast != null && fast.next != null)
-        {
-            prev = slow;
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        return new ListNode[]  { prev, slow };
     }
 }
