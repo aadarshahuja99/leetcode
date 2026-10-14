@@ -20,51 +20,37 @@ class Solution {
             return true;
         }
         Queue<TreeNode> bfsQueue = new LinkedList<>();
-        int lastLevel = -1;
-        int lastLevelNodes = 0;
-        int expectedNullNodes = 0;
         bfsQueue.add(root);
+        boolean wasLastLevelIncomplete = false;
         while(bfsQueue.size() > 0)
         {
-            ArrayList<TreeNode> currentLevelNodes = new ArrayList<>();
+            boolean hasNullBeenSeen = false;
             int size = bfsQueue.size();
-            if(expectedNullNodes == size)
-            {
-                // System.out.println("exit 2");
-                return true;
-            }
-            if(lastLevel >= 0 && lastLevelNodes != (int)Math.pow(2, lastLevel))
-            {
-                // System.out.println("exit 1 ");
-                return false;
-            }
-            expectedNullNodes = 0;
-            lastLevelNodes = 0;
-            lastLevel++;
             for(int i=0; i<size; i++)
             {
                 var top = bfsQueue.poll();
-                if(currentLevelNodes.size() > 0 && currentLevelNodes.get(currentLevelNodes.size() - 1) == null && top != null)
+                if(top == null)
                 {
-                    System.out.println("exit 3");
-                    return false;
-                }
-                currentLevelNodes.add(top);
-                if(top != null)
-                {
-                    lastLevelNodes++;
-                    if(top.left == null)
+                    if(hasNullBeenSeen)
                     {
-                        expectedNullNodes++;
+                        continue;
                     }
-                    if(top.right == null)
+                    else
                     {
-                        expectedNullNodes++;
+                        hasNullBeenSeen = true;
+                    }
+                }
+                else
+                {
+                    if(hasNullBeenSeen || wasLastLevelIncomplete)
+                    {
+                        return false;
                     }
                     bfsQueue.add(top.left);
                     bfsQueue.add(top.right);
                 }
             }
+            wasLastLevelIncomplete = hasNullBeenSeen;
         }
         return true;
     }
