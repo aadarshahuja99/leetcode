@@ -8,7 +8,6 @@
  * }
  */
 public class Codec {
-
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         StringBuilder serializedTree = new StringBuilder();
@@ -31,10 +30,8 @@ public class Codec {
         }
         return serializedTree.toString();
     }
-
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        System.out.println(data);
         String[] values = data.split(" ");
         if(values[0].equals("n"))
         {
@@ -44,7 +41,7 @@ public class Codec {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         int size = values.length;
-        for(int i=1; i<size; i++)
+        for(int i=1; i<size; i+=2)
         {
             var top = queue.poll();
             if(!values[i].equals("n"))
@@ -54,9 +51,9 @@ public class Codec {
                 queue.add(left);
             }
 
-            if(!values[++i].equals("n"))
+            if(!values[i+1].equals("n"))
             {
-                var right = new TreeNode(Integer.parseInt(values[i]));
+                var right = new TreeNode(Integer.parseInt(values[i+1]));
                 top.right = right;
                 queue.add(right);
             }
