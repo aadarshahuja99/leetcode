@@ -39,6 +39,7 @@ class Solution {
         list.add(current.val);
         dfs(current.left, rem - current.val, list);
         dfs(current.right, rem - current.val, list);
+        // backtrack as in the base case we update the answer with the complete path
         list.remove(list.size()-1);
         return;
     }
