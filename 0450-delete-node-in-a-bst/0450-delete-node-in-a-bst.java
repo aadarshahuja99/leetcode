@@ -29,7 +29,7 @@ class Solution {
         }
         else
         {
-            // root val is the key
+            // current val is the key and current node is a leaf node
             if(root.left == null && root.right == null)
             {
                 // key node is a leaf node
