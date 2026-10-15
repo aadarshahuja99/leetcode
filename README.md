@@ -637,6 +637,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
+| [1361-validate-binary-tree-nodes](https://github.com/aadarshahuja99/leetcode/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1367-linked-list-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1373-maximum-sum-bst-in-binary-tree/) | Hard |
@@ -698,6 +699,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
+| [1361-validate-binary-tree-nodes](https://github.com/aadarshahuja99/leetcode/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1367-linked-list-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1373-maximum-sum-bst-in-binary-tree/) | Hard |
@@ -1186,6 +1188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1135-connecting-cities-with-minimum-cost](https://github.com/aadarshahuja99/leetcode/tree/main/1135-connecting-cities-with-minimum-cost/) | Medium |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1361-validate-binary-tree-nodes](https://github.com/aadarshahuja99/leetcode/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1584-min-cost-to-connect-all-points](https://github.com/aadarshahuja99/leetcode/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
@@ -1303,6 +1306,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
 | [1306-jump-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/aadarshahuja99/leetcode/tree/main/1345-jump-game-iv/) | Hard |
+| [1361-validate-binary-tree-nodes](https://github.com/aadarshahuja99/leetcode/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard |
 | [1559-detect-cycles-in-2d-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
@@ -1398,6 +1402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1306-jump-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1306-jump-game-iii/) | Medium |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1339-maximum-product-of-splitted-binary-tree/) | Medium |
+| [1361-validate-binary-tree-nodes](https://github.com/aadarshahuja99/leetcode/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1367-linked-list-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1372-longest-zigzag-path-in-a-binary-tree/) | Medium |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1373-maximum-sum-bst-in-binary-tree/) | Hard |
@@ -1474,6 +1479,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1135-connecting-cities-with-minimum-cost](https://github.com/aadarshahuja99/leetcode/tree/main/1135-connecting-cities-with-minimum-cost/) | Medium |
 | [1192-critical-connections-in-a-network](https://github.com/aadarshahuja99/leetcode/tree/main/1192-critical-connections-in-a-network/) | Hard |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/aadarshahuja99/leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
+| [1361-validate-binary-tree-nodes](https://github.com/aadarshahuja99/leetcode/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard |
 | [1514-path-with-maximum-probability](https://github.com/aadarshahuja99/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 | [1584-min-cost-to-connect-all-points](https://github.com/aadarshahuja99/leetcode/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
