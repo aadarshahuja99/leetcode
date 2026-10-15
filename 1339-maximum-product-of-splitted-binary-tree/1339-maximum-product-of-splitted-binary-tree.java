@@ -14,20 +14,26 @@
  * }
  */
 class Solution {
-    HashMap<TreeNode,Integer> childSums;
     long ans = 0;
     int modulo = 1000000007;
+    long total = 0;
     public int maxProduct(TreeNode root) {
-        childSums = new HashMap<>();
+        dfsForTotalSum(root);
         dfs(root);
-        int totalSum = childSums.get(root);
-        for(Map.Entry<TreeNode,Integer> sumPair : childSums.entrySet())
-        {
-            long current = 1L*sumPair.getValue()*(1L*totalSum - 1L*sumPair.getValue());
-            ans = Math.max(ans, current);
-        }
         return (int)(ans%modulo);
     }
+    private void dfsForTotalSum(TreeNode current)
+    {
+        if(current == null)
+        {
+            return;
+        }
+        dfsForTotalSum(current.left);
+        dfsForTotalSum(current.right);
+        total += current.val;
+        return;
+    }
+
     private int dfs(TreeNode current)
     {
         if(current == null)
@@ -36,7 +42,8 @@ class Solution {
         }
         int left = dfs(current.left);
         int right = dfs(current.right);
-        childSums.put(current, left+right+current.val);
-        return current.val + left + right;
+        int currentSum = current.val + left + right;
+        ans = Math.max(ans, 1L*currentSum*(total - currentSum));
+        return currentSum;
     }
 }
