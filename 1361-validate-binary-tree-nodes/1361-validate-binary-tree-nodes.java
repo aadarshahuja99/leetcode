@@ -8,10 +8,18 @@ class Solution {
             if(leftChild[i] != -1)
             {
                 indegree[leftChild[i]] += 1;
+                if(indegree[leftChild[i]] > 1)
+                {
+                    return false;
+                }
             }
             if(rightChild[i] != -1)
             {
                 indegree[rightChild[i]] += 1;
+                if(indegree[rightChild[i]] > 1)
+                {
+                    return false;
+                }
             }
         }
         for(int i=0; i<n; i++)
