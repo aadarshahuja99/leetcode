@@ -35,7 +35,7 @@ class Solution {
             return new DFSElement(root.val+left.sum+right.sum,Math.max(right.max,root.val),
             Math.min(root.val,left.min),true);
         }
-        return new DFSElement(0,right.max,left.min,false);
+        return new DFSElement(0, Integer.MAX_VALUE, Integer.MIN_VALUE, false);
     }
     private record DFSElement(int sum, int max, int min, boolean isBST) {};
     // class DFSElement
