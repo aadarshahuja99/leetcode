@@ -37,18 +37,19 @@ class Solution {
         }
         return new DFSElement(0,right.max,left.min,false);
     }
-    class DFSElement
-    {
-        public int sum;
-        public int max;
-        public int min;
-        public boolean isBST;
-        public DFSElement(int s, int ma, int mi, boolean isbst)
-        {
-            sum = s;
-            max = ma;
-            min = mi;
-            isBST = isbst;
-        }
-    }
+    private record DFSElement(int sum, int max, int min, boolean isBST) {};
+    // class DFSElement
+    // {
+    //     public int sum;
+    //     public int max;
+    //     public int min;
+    //     public boolean isBST;
+    //     public DFSElement(int s, int ma, int mi, boolean isbst)
+    //     {
+    //         sum = s;
+    //         max = ma;
+    //         min = mi;
+    //         isBST = isbst;
+    //     }
+    // }
 }
