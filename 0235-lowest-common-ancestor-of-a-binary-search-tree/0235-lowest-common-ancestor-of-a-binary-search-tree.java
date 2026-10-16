@@ -12,20 +12,20 @@ class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         return findLCA(root, Math.min(p.val, q.val), Math.max(p.val, q.val));
     }
-    private TreeNode findLCA(TreeNode current, int p, int q)
+    private TreeNode findLCA(TreeNode current, int minVal, int maxVal)
     {
         if(current == null)
         {
             return null;
         }
-        if(current.val >= p && current.val <= q)
+        if(current.val >= minVal && current.val <= maxVal)
         {
             return current;
         }
-        if(current.val < p)
+        if(current.val < minVal)
         {
-            return findLCA(current.right, p, q);
+            return findLCA(current.right, minVal, maxVal);
         }
-        return findLCA(current.left, p, q);
+        return findLCA(current.left, minVal, maxVal);
     }
 }
