@@ -2,8 +2,16 @@ class Solution {
     public boolean findSafeWalk(List<List<Integer>> grid, int k) {
         int m = grid.size();
         int n = grid.get(0).size();
-        Queue<int[]> q = new LinkedList<>();
-        boolean[][][] v = new boolean[m][n][k+1];
+        PriorityQueue<int[]> q = new PriorityQueue<>((a,b) -> {
+            return a[2] - b[2];
+        });
+        int[][] dist = new int[m][n];
+        for(int[] row : dist)
+        {
+            Arrays.fill(row, Integer.MAX_VALUE);
+        }
+        dist[0][0] = 0;
+        boolean[][] v = new boolean[m][n];
         q.add(new int[] { 0, 0, grid.get(0).get(0) });
         int[][] dirs = {{0,1}, {1,0}, {0,-1}, {-1,0}};
         while(q.size() > 0)
@@ -13,15 +21,15 @@ class Solution {
             int c = top[1];
             int currentObs = top[2];
             // System.out.println(current+" "+currentObs+" for "+r+" "+c);
-            if(v[r][c][currentObs])
+            if(v[r][c])
             {
                 continue;
             }
-            v[r][c][currentObs] = true;
-            if(r == m-1 && c == n-1 && k - currentObs >= 1)
+            if(k - currentObs >= 1 && r == m-1 && c == n-1)
             {
                 return true;
             }
+            v[r][c] = true;
             for(int[] d : dirs)
             {
                 int nr = r + d[0];
@@ -31,8 +39,9 @@ class Solution {
                     continue;
                 }
                 int addedCost = grid.get(nr).get(nc);
-                if(currentObs + addedCost < k && !v[nr][nc][currentObs + addedCost])
+                if(currentObs + addedCost < k && !v[nr][nc] && (currentObs + addedCost) < dist[nr][nc])
                 {
+                    dist[nr][nc] = currentObs + addedCost;
                     q.add(new int[] { nr, nc, addedCost + currentObs });
                 }
             }
