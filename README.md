@@ -1751,4 +1751,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/aadarshahuja99/leetcode/tree/main/0173-binary-search-tree-iterator/) | Medium |
+## 0-1 BFS
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
+## Dijkstra's Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
 <!---LeetCode Topics End-->
