@@ -1673,10 +1673,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Kosaraju's Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0802-find-eventual-safe-states](https://github.com/aadarshahuja99/leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [2360-longest-cycle-in-a-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
 ## Tarjan's SCC Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0802-find-eventual-safe-states](https://github.com/aadarshahuja99/leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [2360-longest-cycle-in-a-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
 ## Knapsack Problem
 | Problem Name | Difficulty |
