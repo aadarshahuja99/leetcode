@@ -85,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0410-split-array-largest-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
+| [0419-battleships-in-a-board](https://github.com/aadarshahuja99/leetcode/tree/main/0419-battleships-in-a-board/) | Medium |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0421-maximum-xor-of-two-numbers-in-an-array/) | Medium |
 | [0427-construct-quad-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0427-construct-quad-tree/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
@@ -1227,6 +1228,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0240-search-a-2d-matrix-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
+| [0419-battleships-in-a-board](https://github.com/aadarshahuja99/leetcode/tree/main/0419-battleships-in-a-board/) | Medium |
 | [0427-construct-quad-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0427-construct-quad-tree/) | Medium |
 | [0542-01-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
@@ -1382,6 +1384,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0337-house-robber-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0337-house-robber-iii/) | Medium |
 | [0388-longest-absolute-file-path](https://github.com/aadarshahuja99/leetcode/tree/main/0388-longest-absolute-file-path/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
+| [0419-battleships-in-a-board](https://github.com/aadarshahuja99/leetcode/tree/main/0419-battleships-in-a-board/) | Medium |
 | [0428-serialize-and-deserialize-n-ary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0428-serialize-and-deserialize-n-ary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0437-path-sum-iii/) | Medium |
 | [0449-serialize-and-deserialize-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
