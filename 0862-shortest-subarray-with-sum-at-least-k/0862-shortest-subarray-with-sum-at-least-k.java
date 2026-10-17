@@ -17,7 +17,7 @@ class Solution {
             {
                 queue.removeLast();
             }
-            // computing answer
+            // computing answer. Opposite of maximum width ramp. In this case, an earlier element in future ('i' in this case) gets the privilege of choosing a smaller start point from the beginning
             while(!queue.isEmpty() && (prefixSums[i] - queue.getFirst()[1]) >= k)
             {
                 ans = Math.min(ans, i - (int)queue.getFirst()[0]);
