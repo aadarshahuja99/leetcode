@@ -235,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3281-maximize-score-of-numbers-in-ranges](https://github.com/aadarshahuja99/leetcode/tree/main/3281-maximize-score-of-numbers-in-ranges/) | Medium |
 | [3346-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/aadarshahuja99/leetcode/tree/main/3346-maximum-frequency-of-an-element-after-performing-operations-i/) | Medium |
 | [3356-zero-array-transformation-ii](https://github.com/aadarshahuja99/leetcode/tree/main/3356-zero-array-transformation-ii/) | Medium |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/aadarshahuja99/leetcode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -1210,6 +1211,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/aadarshahuja99/leetcode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1252,6 +1254,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2850-minimum-moves-to-spread-stones-over-grid/) | Medium |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1334,6 +1337,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1433,6 +1437,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2360-longest-cycle-in-a-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/aadarshahuja99/leetcode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Bitmask
 | Problem Name | Difficulty |
 | ------- | ------- |
