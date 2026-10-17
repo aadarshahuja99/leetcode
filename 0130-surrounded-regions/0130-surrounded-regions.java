@@ -4,7 +4,7 @@ class Solution {
         int c = board[0].length;
         Queue<int[]> bfsQueue = new LinkedList<>();
         boolean[][] vis = new boolean[r][c];
-        // top
+        // top and bottom
         for(int i=0; i<c; i++)
         {
             if(board[0][i] == 'O' && !vis[0][i])
@@ -12,19 +12,13 @@ class Solution {
                 bfsQueue.add(new int[] { 0, i });
                 vis[0][i] = true;
             }
-        }
-
-        // bottom
-        for(int i=0; i<c; i++)
-        {
             if(board[r-1][i] == 'O' && !vis[r-1][i])
             {
                 bfsQueue.add(new int[] { r-1, i });
                 vis[r-1][i] = true;
             }
         }
-
-        // left
+        // left and right
         for(int i=0; i<r; i++)
         {
             if(board[i][0] == 'O' && !vis[i][0])
@@ -32,17 +26,12 @@ class Solution {
                 bfsQueue.add(new int[] { i, 0 });
                 vis[i][0] = true;
             }
-        }
-
-        // left
-        for(int i=0; i<r; i++)
-        {
             if(board[i][c-1] == 'O' && !vis[i][c-1])
             {
                 bfsQueue.add(new int[] { i, c-1 });
                 vis[i][c-1] = true;
             }
-        }
+        } 
         int[][] DIRS = {{0,1}, {0,-1}, {-1,0}, {1,0}};
         while(bfsQueue.size() > 0)
         {
