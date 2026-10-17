@@ -16,14 +16,13 @@ class Solution {
         int levels = 0;
         while(q.size() > 0)
         {
-            levels++;
             int s = q.size();
             for(int i=0; i<s; i++)
             {
                 var top = q.poll();
                 if(top.equals(target))
                 {
-                    return levels-1;
+                    return levels;
                 }
                 char[] arr = top.toCharArray();
                 for(int j=0; j<4; j++)
@@ -51,6 +50,7 @@ class Solution {
                     arr[j] = c;
                 }
             }
+            levels++;
         }
         return -1;
     }
