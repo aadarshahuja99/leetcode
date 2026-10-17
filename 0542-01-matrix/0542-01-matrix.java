@@ -31,7 +31,7 @@ class Solution {
                 {
                     continue;
                 }
-                if(!vis[nr][nc] && grid[nr][nc] == 1)
+                if(!vis[nr][nc])
                 {
                     vis[nr][nc] = true;
                     ans[nr][nc] = d+1;
