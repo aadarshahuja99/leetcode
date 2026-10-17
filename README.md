@@ -1768,5 +1768,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bidirectional Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0433-minimum-genetic-mutation](https://github.com/aadarshahuja99/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 | [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
 <!---LeetCode Topics End-->
