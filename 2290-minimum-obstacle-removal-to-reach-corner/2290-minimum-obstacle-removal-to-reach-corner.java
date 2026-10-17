@@ -1,7 +1,7 @@
 public class Solution {
 
     // Directions for movement: right, left, down, up
-    private final int[][] directions = {
+    private final int[][] DIRECTIONS = {
         { 0, 1 },
         { 0, -1 },
         { 1, 0 },
@@ -35,7 +35,7 @@ public class Solution {
             }
 
             // Explore all four possible directions from the current cell
-            for (int[] dir : directions) {
+            for (int[] dir : DIRECTIONS) {
                 int newRow = row + dir[0], newCol = col + dir[1];
 
                 if (
