@@ -646,6 +646,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1644-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1644-lowest-common-ancestor-of-a-binary-tree-ii/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
+| [2236-root-equals-sum-of-children](https://github.com/aadarshahuja99/leetcode/tree/main/2236-root-equals-sum-of-children/) | Easy |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -710,6 +711,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1644-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1644-lowest-common-ancestor-of-a-binary-tree-ii/) | Medium |
 | [1740-find-distance-in-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1740-find-distance-in-a-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
+| [2236-root-equals-sum-of-children](https://github.com/aadarshahuja99/leetcode/tree/main/2236-root-equals-sum-of-children/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
