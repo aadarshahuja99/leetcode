@@ -233,6 +233,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3169-count-days-without-meetings](https://github.com/aadarshahuja99/leetcode/tree/main/3169-count-days-without-meetings/) | Medium |
 | [3229-minimum-operations-to-make-array-equal-to-target](https://github.com/aadarshahuja99/leetcode/tree/main/3229-minimum-operations-to-make-array-equal-to-target/) | Hard |
 | [3281-maximize-score-of-numbers-in-ranges](https://github.com/aadarshahuja99/leetcode/tree/main/3281-maximize-score-of-numbers-in-ranges/) | Medium |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 | [3346-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/aadarshahuja99/leetcode/tree/main/3346-maximum-frequency-of-an-element-after-performing-operations-i/) | Medium |
 | [3356-zero-array-transformation-ii](https://github.com/aadarshahuja99/leetcode/tree/main/3356-zero-array-transformation-ii/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
@@ -1102,6 +1103,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2762-continuous-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/2762-continuous-subarrays/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 | [3377-digit-operations-to-make-two-integers-equal](https://github.com/aadarshahuja99/leetcode/tree/main/3377-digit-operations-to-make-two-integers-equal/) | Medium |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Math
@@ -1254,6 +1256,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2850-minimum-moves-to-spread-stones-over-grid/) | Medium |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Memoization
 | Problem Name | Difficulty |
@@ -1336,6 +1339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/aadarshahuja99/leetcode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 | [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 ## Trie
@@ -1519,6 +1523,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/aadarshahuja99/leetcode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 | [3377-digit-operations-to-make-two-integers-equal](https://github.com/aadarshahuja99/leetcode/tree/main/3377-digit-operations-to-make-two-integers-equal/) | Medium |
 | [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
@@ -1562,6 +1567,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
+| [3286-find-a-safe-walk-through-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 | [3377-digit-operations-to-make-two-integers-equal](https://github.com/aadarshahuja99/leetcode/tree/main/3377-digit-operations-to-make-two-integers-equal/) | Medium |
 | [3419-minimize-the-maximum-edge-weight-of-graph](https://github.com/aadarshahuja99/leetcode/tree/main/3419-minimize-the-maximum-edge-weight-of-graph/) | Medium |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/aadarshahuja99/leetcode/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
