@@ -13,37 +13,40 @@ class Solution {
         while(queue.size() > 0)
         {
             int size = queue.size();
-            moves++;
             for(int idx = 0; idx < size; idx++)
             {
                 String currentGene = queue.poll();
                 if(currentGene.equals(endGene))
                 {
-                    return moves-1;
+                    return moves;
                 }
-                char[] charArray = currentGene.toCharArray();
-                for(int i=0; i<8; i++)
+                for(String gene : bank)
                 {
-                    char originalChar = charArray[i];
-                    for(int charIndex = 0; charIndex < 4; charIndex++)
+                    if(checkIfGenesDifferByOne(currentGene, gene) && !visited.contains(gene))
                     {
-                        if(originalChar == chars[charIndex])
-                        {
-                            continue;
-                        }
-                        charArray[i] = chars[charIndex];
-                        String updatedGene = new String(charArray);
-                        if(visited.contains(updatedGene) || !allowedGenes.contains(updatedGene))
-                        {
-                            continue;
-                        }
-                        visited.add(updatedGene);
-                        queue.add(updatedGene);
+                        visited.add(gene);
+                        queue.add(gene);
                     }
-                    charArray[i] = originalChar;
+                }
+            }
+            moves++;
+        }
+        return -1;
+    }
+    private boolean checkIfGenesDifferByOne(String s, String t)
+    {
+        int diff = 0;
+        for(int i=0; i<8; i++)
+        {
+            if(s.charAt(i) != t.charAt(i))
+            {
+                diff++;
+                if(diff > 1)
+                {
+                    return false;
                 }
             }
         }
-        return -1;
+        return diff == 1;
     }
 }
