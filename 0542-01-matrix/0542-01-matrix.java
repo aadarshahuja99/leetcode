@@ -11,33 +11,38 @@ class Solution {
             {
                 if(grid[i][j] == 0)
                 {
-                    q.add(new int[] { i, j, 0 });
+                    q.add(new int[] { i, j });
                     vis[i][j] = true;
                 }
             }
         }
+        int levels = 0;
         int[][] DIRS = {{0,1}, {0,-1}, {1,0}, {-1,0}};
         while(q.size() > 0)
         {
-            int[] top = q.poll();
-            int r = top[0];
-            int c = top[1];
-            int d = top[2];
-            for(int[] dir : DIRS)
+            int s = q.size();
+            for(int i=0; i<s; i++)
             {
-                int nr = r + dir[0];
-                int nc = c + dir[1];
-                if(nr < 0 || nr == m || nc < 0 || nc == n)
+                int[] top = q.poll();
+                int r = top[0];
+                int c = top[1];
+                for(int[] dir : DIRS)
                 {
-                    continue;
-                }
-                if(!vis[nr][nc])
-                {
-                    vis[nr][nc] = true;
-                    ans[nr][nc] = d+1;
-                    q.add(new int[] { nr, nc, d+1 });
+                    int nr = r + dir[0];
+                    int nc = c + dir[1];
+                    if(nr < 0 || nr == m || nc < 0 || nc == n)
+                    {
+                        continue;
+                    }
+                    if(!vis[nr][nc])
+                    {
+                        vis[nr][nc] = true;
+                        ans[nr][nc] = levels+1;
+                        q.add(new int[] { nr, nc });
+                    }
                 }
             }
+            levels++;
         }
         return ans;
     }
