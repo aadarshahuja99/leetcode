@@ -1,40 +1,31 @@
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        ArrayList<ArrayList<int[]>> adjList = new ArrayList<>();
-        for(int i=0; i<n; i++)
-        {
-            adjList.add(new ArrayList<int[]>());
-        }
-        for(int[] flight : flights)
-        {
-            adjList.get(flight[0]).add(new int[] { flight[1], flight[2] });
-        }
-        int[] distances = new int[n];
-        Arrays.fill(distances,Integer.MAX_VALUE);
-        distances[src] = 0;
-        Queue<int[]> queue = new LinkedList<>();
-        // node, distance, k
-        queue.add(new int[] { src, 0, k });
-        while(queue.size() > 0)
-        {
-            var top = queue.poll();
-            int node = top[0];
-            int distance = top[1];
-            int stops = top[2];
-            if(stops < 0)
-            {
-                break;
-            }
-            for(int[] neighbor : adjList.get(node))
-            {
-                int newDistance = neighbor[1] + distance;
-                if(newDistance < distances[neighbor[0]])
-                {
-                    distances[neighbor[0]] = newDistance;
-                    queue.add(new int[] { neighbor[0], newDistance, stops-1 });
+        // Distance array representing the minimum cost to reach each node
+        int[] prices = new int[n];
+        Arrays.fill(prices, Integer.MAX_VALUE);
+        prices[src] = 0;
+
+        // Perform Bellman-Ford style relaxation K + 1 times
+        // (Since k stops means at most k + 1 flights)
+        for (int i = 0; i <= k; i++) {
+            // Use a temporary array to prevent using updates from the same iteration
+            int[] tempPrices = Arrays.copyOf(prices, n);
+
+            for (int[] flight : flights) {
+                int u = flight[0];
+                int v = flight[1];
+                int cost = flight[2];
+
+                // If node u is reachable, try relaxing the edge to v
+                if (prices[u] != Integer.MAX_VALUE) {
+                    if (prices[u] + cost < tempPrices[v]) {
+                        tempPrices[v] = prices[u] + cost;
+                    }
                 }
             }
+            prices = tempPrices;
         }
-        return distances[dst] == Integer.MAX_VALUE ? -1 : distances[dst];
+
+        return prices[dst] == Integer.MAX_VALUE ? -1 : prices[dst];
     }
 }
