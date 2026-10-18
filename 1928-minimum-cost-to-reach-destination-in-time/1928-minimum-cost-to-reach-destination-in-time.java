@@ -1,8 +1,10 @@
-public class Solution {
+class Solution {
+    private static final int INF = 1_000_000_000;
+
     public int minCost(int maxTime, int[][] edges, int[] passingFees) {
         int n = passingFees.length;
         
-        // 1. Build adjacency list: node -> List of [neighbor, travel_time]
+        // 1. Build adjacency list
         List<List<int[]>> graph = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             graph.add(new ArrayList<>());
@@ -15,51 +17,44 @@ public class Solution {
             graph.get(v).add(new int[]{u, time});
         }
         
-        // 2. Track the minimum time to reach each node
-        // minTime[i] stores the minimum time taken to reach node i so far
-        int[][] costs = new int[n][maxTime+1];
-        for(int[] row : costs)
-        {
-            Arrays.fill(row, Integer.MAX_VALUE);
+        // 2. Memoization table: memo[u][timeSpent]
+        Integer[][] memo = new Integer[n][maxTime + 1];
+        
+        // FIX: Include passingFees[0] for the starting node, then add the cost of the rest of the path
+        int result = passingFees[0] + dfs(0, 0, maxTime, n, graph, passingFees, memo);
+        
+        return result >= INF ? -1 : result;
+    }
+    
+    private int dfs(int u, int timeSpent, int maxTime, int n, List<List<int[]>> graph, int[] passingFees, Integer[][] memo) {
+        // Base case 1: Exceeded time limit
+        if (timeSpent > maxTime) {
+            return INF;
         }
-        boolean[][] vis = new boolean[n][maxTime+1];
-        for(int i=0; i<= maxTime; i++)
-        {
-            costs[0][i] = 0;
+        
+        // Base case 2: Reached destination (n-1)
+        if (u == n - 1) {
+            return 0; // No further cost needed from destination
         }
-        // 3. Min-Heap ordered by cost: [cost, node, timeSpent]
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
-        // Push starting node (0) with its passing fee, node index, and 0 time spent
-        pq.offer(new int[]{passingFees[0], 0, 0});
-        while (!pq.isEmpty()) {
-            int[] curr = pq.poll();
-            int currCost = curr[0];
-            int u = curr[1];
-            int currTime = curr[2];
-            if(vis[u][currTime])
-            {
-                continue;
-            }
-            vis[u][currTime] = true;
-            // Explore neighbors
-            for (int[] neighbor : graph.get(u)) {
-                int v = neighbor[0];
-                int travelTime = neighbor[1];
-                int nextTime = currTime + travelTime;
-                int newCost = currCost + passingFees[v];
-                // Only proceed if within the allowed time limit
-                if (nextTime <= maxTime && newCost < costs[v][nextTime]) {
-                    // Update minTime if we found a strictly faster way to reach node v
-                    pq.offer(new int[]{newCost, v, nextTime});
-                    costs[v][nextTime] = newCost;
-                }
+        
+        // Return cached result
+        if (memo[u][timeSpent] != null) {
+            return memo[u][timeSpent];
+        }
+        
+        int minCostToDest = INF;
+        
+        // Explore all adjacent roads
+        for (int[] neighbor : graph.get(u)) {
+            int v = neighbor[0];
+            int travelTime = neighbor[1];
+            
+            if (timeSpent + travelTime <= maxTime) {
+                int cost = passingFees[v] + dfs(v, timeSpent + travelTime, maxTime, n, graph, passingFees, memo);
+                minCostToDest = Math.min(minCostToDest, cost);
             }
         }
-        int ans = Integer.MAX_VALUE;
-        for(int i=0; i<=maxTime; i++)
-        {
-            ans = Math.min(ans, costs[n-1][i]);
-        }
-        return ans == Integer.MAX_VALUE ? -1 : ans;
+        
+        return memo[u][timeSpent] = minCostToDest;
     }
 }
