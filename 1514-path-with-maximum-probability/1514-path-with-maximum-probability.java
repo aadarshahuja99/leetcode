@@ -38,7 +38,7 @@ class Solution {
             for(double[] ed : adj.get(node))
             {
                 double newProbability = probability*ed[1];
-                if(newProbability > prob[(int)ed[0]])
+                if(newProbability > prob[(int)ed[0]] && !vis[(int)ed[0]])
                 {
                     prob[(int)ed[0]] = newProbability;
                     q.add(new double[] { ed[0], newProbability });
