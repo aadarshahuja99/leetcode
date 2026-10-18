@@ -12,6 +12,7 @@ class Solution {
             {
                 int current = 1;
                 int it = num+1;
+                set.remove(num);
                 while(set.contains(it))
                 {
                     set.remove(it);
