@@ -1293,6 +1293,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0310-minimum-height-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0310-minimum-height-trees/) | Medium |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0314-binary-tree-vertical-order-traversal/) | Medium |
 | [0322-coin-change](https://github.com/aadarshahuja99/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
@@ -1389,6 +1390,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0285-inorder-successor-in-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0285-inorder-successor-in-bst/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0310-minimum-height-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0310-minimum-height-trees/) | Medium |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0314-binary-tree-vertical-order-traversal/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0337-house-robber-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0337-house-robber-iii/) | Medium |
@@ -1494,6 +1496,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0210-course-schedule-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0210-course-schedule-ii/) | Medium |
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
 | [0277-find-the-celebrity](https://github.com/aadarshahuja99/leetcode/tree/main/0277-find-the-celebrity/) | Medium |
+| [0310-minimum-height-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0310-minimum-height-trees/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0444-sequence-reconstruction](https://github.com/aadarshahuja99/leetcode/tree/main/0444-sequence-reconstruction/) | Medium |
 | [0547-number-of-provinces](https://github.com/aadarshahuja99/leetcode/tree/main/0547-number-of-provinces/) | Medium |
@@ -1544,6 +1547,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0207-course-schedule](https://github.com/aadarshahuja99/leetcode/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0210-course-schedule-ii/) | Medium |
 | [0269-alien-dictionary](https://github.com/aadarshahuja99/leetcode/tree/main/0269-alien-dictionary/) | Hard |
+| [0310-minimum-height-trees](https://github.com/aadarshahuja99/leetcode/tree/main/0310-minimum-height-trees/) | Medium |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0329-longest-increasing-path-in-a-matrix/) | Hard |
 | [0444-sequence-reconstruction](https://github.com/aadarshahuja99/leetcode/tree/main/0444-sequence-reconstruction/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/aadarshahuja99/leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
