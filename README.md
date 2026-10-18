@@ -217,6 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2304-minimum-path-cost-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2304-minimum-path-cost-in-a-grid/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2387-median-of-a-row-wise-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/2387-median-of-a-row-wise-sorted-matrix/) | Medium |
+| [2392-build-a-matrix-with-conditions](https://github.com/aadarshahuja99/leetcode/tree/main/2392-build-a-matrix-with-conditions/) | Hard |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/2435-paths-in-matrix-whose-sum-is-divisible-by-k/) | Hard |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
@@ -1253,6 +1254,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
 | [2304-minimum-path-cost-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2304-minimum-path-cost-in-a-grid/) | Medium |
 | [2387-median-of-a-row-wise-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/2387-median-of-a-row-wise-sorted-matrix/) | Medium |
+| [2392-build-a-matrix-with-conditions](https://github.com/aadarshahuja99/leetcode/tree/main/2392-build-a-matrix-with-conditions/) | Hard |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/2435-paths-in-matrix-whose-sum-is-divisible-by-k/) | Hard |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
@@ -1526,6 +1528,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2204-distance-to-a-cycle-in-undirected-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2204-distance-to-a-cycle-in-undirected-graph/) | Hard |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
 | [2360-longest-cycle-in-a-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
+| [2392-build-a-matrix-with-conditions](https://github.com/aadarshahuja99/leetcode/tree/main/2392-build-a-matrix-with-conditions/) | Hard |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/aadarshahuja99/leetcode/tree/main/2492-minimum-score-of-a-path-between-two-cities/) | Medium |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
@@ -1558,6 +1561,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
 | [2204-distance-to-a-cycle-in-undirected-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2204-distance-to-a-cycle-in-undirected-graph/) | Hard |
 | [2360-longest-cycle-in-a-graph](https://github.com/aadarshahuja99/leetcode/tree/main/2360-longest-cycle-in-a-graph/) | Hard |
+| [2392-build-a-matrix-with-conditions](https://github.com/aadarshahuja99/leetcode/tree/main/2392-build-a-matrix-with-conditions/) | Hard |
 ## Interactive
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1785,6 +1789,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/aadarshahuja99/leetcode/tree/main/0207-course-schedule/) | Medium |
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
+| [2392-build-a-matrix-with-conditions](https://github.com/aadarshahuja99/leetcode/tree/main/2392-build-a-matrix-with-conditions/) | Hard |
 ## Bipartite Graph
 | Problem Name | Difficulty |
 | ------- | ------- |
