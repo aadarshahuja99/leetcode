@@ -17,16 +17,12 @@ class Solution {
         Arrays.fill(colors, -1);
         for(int i=0; i<n; i++)
         {
-            if(colors[i] == -1)
+            if(colors[i] == -1 && !bfs(i))
             {
-                if(!bfs(i))
-                {
-                    return false;
-                }
+                return false;
             }
         }
         return true;
-        
     }
     private boolean bfs(int start)
     {
