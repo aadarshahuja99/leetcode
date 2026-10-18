@@ -1784,6 +1784,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0207-course-schedule](https://github.com/aadarshahuja99/leetcode/tree/main/0207-course-schedule/) | Medium |
+| [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 ## Bipartite Graph
 | Problem Name | Difficulty |
 | ------- | ------- |
