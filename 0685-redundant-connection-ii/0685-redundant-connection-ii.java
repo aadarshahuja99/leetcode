@@ -1,13 +1,11 @@
 class Solution {
         public int[] findRedundantDirectedConnection(int[][] edges) {
         int numNodes = edges.length, edgeRemoved = -1, edgeMakesCycle = -1;
-        int[] parent = new int[numNodes + 1];      
-        
+        int[] parent = new int[numNodes + 1];
         for (int i = 0; i < numNodes; i++) {
             int u = edges[i][0];
             int v = edges[i][1];
             if (parent[v] != 0) {
-                
                 /* Assume we removed the second edge. */
                 edgeRemoved = i; 
                 break;
