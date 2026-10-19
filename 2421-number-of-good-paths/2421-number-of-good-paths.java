@@ -44,7 +44,6 @@ class Solution {
             for(Map.Entry<Integer,Integer> entry : nodeGroupsByComponent.entrySet())
             {
                 int numberOfNodesForCurrentParent = entry.getValue();
-                // System.out.println(numberOfNodesForCurrentParent+" for "+value);
                 numberOfGoodPaths += (numberOfNodesForCurrentParent)*(numberOfNodesForCurrentParent-1)/2;
             }
         }
