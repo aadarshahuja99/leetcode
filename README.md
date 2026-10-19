@@ -129,6 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0774-minimize-max-distance-to-gas-station](https://github.com/aadarshahuja99/leetcode/tree/main/0774-minimize-max-distance-to-gas-station/) | Hard |
 | [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
+| [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0853-car-fleet](https://github.com/aadarshahuja99/leetcode/tree/main/0853-car-fleet/) | Medium |
 | [0862-shortest-subarray-with-sum-at-least-k](https://github.com/aadarshahuja99/leetcode/tree/main/0862-shortest-subarray-with-sum-at-least-k/) | Hard |
@@ -381,6 +382,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
 | [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
+| [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
@@ -523,6 +525,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/aadarshahuja99/leetcode/tree/main/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0752-open-the-lock](https://github.com/aadarshahuja99/leetcode/tree/main/0752-open-the-lock/) | Medium |
+| [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0856-score-of-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0856-score-of-parentheses/) | Medium |
 | [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
@@ -1201,6 +1204,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0765-couples-holding-hands](https://github.com/aadarshahuja99/leetcode/tree/main/0765-couples-holding-hands/) | Hard |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
+| [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0886-possible-bipartition](https://github.com/aadarshahuja99/leetcode/tree/main/0886-possible-bipartition/) | Medium |
 | [0924-minimize-malware-spread](https://github.com/aadarshahuja99/leetcode/tree/main/0924-minimize-malware-spread/) | Hard |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
@@ -1322,6 +1326,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0787-cheapest-flights-within-k-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/aadarshahuja99/leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
+| [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0841-keys-and-rooms](https://github.com/aadarshahuja99/leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0886-possible-bipartition](https://github.com/aadarshahuja99/leetcode/tree/main/0886-possible-bipartition/) | Medium |
@@ -1426,6 +1431,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0787-cheapest-flights-within-k-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/aadarshahuja99/leetcode/tree/main/0802-find-eventual-safe-states/) | Medium |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
+| [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0841-keys-and-rooms](https://github.com/aadarshahuja99/leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0886-possible-bipartition](https://github.com/aadarshahuja99/leetcode/tree/main/0886-possible-bipartition/) | Medium |
