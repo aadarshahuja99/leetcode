@@ -1837,4 +1837,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0952-largest-component-size-by-common-factor](https://github.com/aadarshahuja99/leetcode/tree/main/0952-largest-component-size-by-common-factor/) | Hard |
+## Bridge (Graph)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1192-critical-connections-in-a-network](https://github.com/aadarshahuja99/leetcode/tree/main/1192-critical-connections-in-a-network/) | Hard |
 <!---LeetCode Topics End-->
