@@ -1195,6 +1195,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0305-number-of-islands-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0305-number-of-islands-ii/) | Hard |
 | [0547-number-of-provinces](https://github.com/aadarshahuja99/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/aadarshahuja99/leetcode/tree/main/0684-redundant-connection/) | Medium |
+| [0685-redundant-connection-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0695-max-area-of-island](https://github.com/aadarshahuja99/leetcode/tree/main/0695-max-area-of-island/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
@@ -1311,6 +1312,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0684-redundant-connection](https://github.com/aadarshahuja99/leetcode/tree/main/0684-redundant-connection/) | Medium |
+| [0685-redundant-connection-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0695-max-area-of-island](https://github.com/aadarshahuja99/leetcode/tree/main/0695-max-area-of-island/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
@@ -1415,6 +1417,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0684-redundant-connection](https://github.com/aadarshahuja99/leetcode/tree/main/0684-redundant-connection/) | Medium |
+| [0685-redundant-connection-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [0694-number-of-distinct-islands](https://github.com/aadarshahuja99/leetcode/tree/main/0694-number-of-distinct-islands/) | Medium |
 | [0695-max-area-of-island](https://github.com/aadarshahuja99/leetcode/tree/main/0695-max-area-of-island/) | Medium |
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
@@ -1508,6 +1511,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0444-sequence-reconstruction](https://github.com/aadarshahuja99/leetcode/tree/main/0444-sequence-reconstruction/) | Medium |
 | [0547-number-of-provinces](https://github.com/aadarshahuja99/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0684-redundant-connection](https://github.com/aadarshahuja99/leetcode/tree/main/0684-redundant-connection/) | Medium |
+| [0685-redundant-connection-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0685-redundant-connection-ii/) | Hard |
 | [0743-network-delay-time](https://github.com/aadarshahuja99/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0765-couples-holding-hands](https://github.com/aadarshahuja99/leetcode/tree/main/0765-couples-holding-hands/) | Hard |
 | [0787-cheapest-flights-within-k-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
