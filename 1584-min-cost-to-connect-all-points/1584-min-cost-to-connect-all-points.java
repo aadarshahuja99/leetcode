@@ -15,8 +15,8 @@ class Solution {
             {
                 vis.put(x, new HashSet<>());
             }
-            ans += top[2];
             vis.get(x).add(y);
+            ans += top[2];
             for(int[] point : points)
             {
                 if(point[0] == x && point[1] == y) continue;
