@@ -144,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0915-partition-array-into-disjoint-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0915-partition-array-into-disjoint-intervals/) | Medium |
 | [0918-maximum-sum-circular-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/0918-maximum-sum-circular-subarray/) | Medium |
 | [0924-minimize-malware-spread](https://github.com/aadarshahuja99/leetcode/tree/main/0924-minimize-malware-spread/) | Hard |
+| [0952-largest-component-size-by-common-factor](https://github.com/aadarshahuja99/leetcode/tree/main/0952-largest-component-size-by-common-factor/) | Hard |
 | [0962-maximum-width-ramp](https://github.com/aadarshahuja99/leetcode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [0974-subarray-sums-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [0983-minimum-cost-for-tickets](https://github.com/aadarshahuja99/leetcode/tree/main/0983-minimum-cost-for-tickets/) | Medium |
@@ -388,6 +389,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0924-minimize-malware-spread](https://github.com/aadarshahuja99/leetcode/tree/main/0924-minimize-malware-spread/) | Hard |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
+| [0952-largest-component-size-by-common-factor](https://github.com/aadarshahuja99/leetcode/tree/main/0952-largest-component-size-by-common-factor/) | Hard |
 | [0974-subarray-sums-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/0974-subarray-sums-divisible-by-k/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [0992-subarrays-with-k-different-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
@@ -1133,6 +1135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/aadarshahuja99/leetcode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0877-stone-game](https://github.com/aadarshahuja99/leetcode/tree/main/0877-stone-game/) | Medium |
+| [0952-largest-component-size-by-common-factor](https://github.com/aadarshahuja99/leetcode/tree/main/0952-largest-component-size-by-common-factor/) | Hard |
 | [0991-broken-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0991-broken-calculator/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1201-ugly-number-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1201-ugly-number-iii/) | Medium |
@@ -1208,6 +1211,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0886-possible-bipartition](https://github.com/aadarshahuja99/leetcode/tree/main/0886-possible-bipartition/) | Medium |
 | [0924-minimize-malware-spread](https://github.com/aadarshahuja99/leetcode/tree/main/0924-minimize-malware-spread/) | Hard |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
+| [0952-largest-component-size-by-common-factor](https://github.com/aadarshahuja99/leetcode/tree/main/0952-largest-component-size-by-common-factor/) | Hard |
 | [0990-satisfiability-of-equality-equations](https://github.com/aadarshahuja99/leetcode/tree/main/0990-satisfiability-of-equality-equations/) | Medium |
 | [1135-connecting-cities-with-minimum-cost](https://github.com/aadarshahuja99/leetcode/tree/main/1135-connecting-cities-with-minimum-cost/) | Medium |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
@@ -1602,6 +1606,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0952-largest-component-size-by-common-factor](https://github.com/aadarshahuja99/leetcode/tree/main/0952-largest-component-size-by-common-factor/) | Hard |
 | [1201-ugly-number-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1201-ugly-number-iii/) | Medium |
 | [3377-digit-operations-to-make-two-integers-equal](https://github.com/aadarshahuja99/leetcode/tree/main/3377-digit-operations-to-make-two-integers-equal/) | Medium |
 ## Minimum Spanning Tree
@@ -1828,4 +1833,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1584-min-cost-to-connect-all-points](https://github.com/aadarshahuja99/leetcode/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
+## Prime Factorization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0952-largest-component-size-by-common-factor](https://github.com/aadarshahuja99/leetcode/tree/main/0952-largest-component-size-by-common-factor/) | Hard |
 <!---LeetCode Topics End-->
