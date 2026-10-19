@@ -47,10 +47,7 @@ class Solution {
             }
             else if(node != par)
             {
-                if(low[node] < low[current])
-                {
-                    low[current] = low[node];
-                }
+                low[current] = Math.min(low[current], low[node]);
             }
         }
     }
