@@ -1,7 +1,7 @@
 class FooBar {
     private int n;
     volatile String lastWord = "";
-    ReentrantLock lock = new ReentrantLock();
+    ReentrantLock lock = new ReentrantLock(true);
     Condition foo = lock.newCondition();
     Condition bar = lock.newCondition();
     public FooBar(int n) {
