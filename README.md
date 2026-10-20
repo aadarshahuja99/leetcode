@@ -1698,6 +1698,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1115-print-foobar-alternately](https://github.com/aadarshahuja99/leetcode/tree/main/1115-print-foobar-alternately/) | Medium |
 | [1117-building-h2o](https://github.com/aadarshahuja99/leetcode/tree/main/1117-building-h2o/) | Medium |
 | [1188-design-bounded-blocking-queue](https://github.com/aadarshahuja99/leetcode/tree/main/1188-design-bounded-blocking-queue/) | Medium |
+| [1226-the-dining-philosophers](https://github.com/aadarshahuja99/leetcode/tree/main/1226-the-dining-philosophers/) | Medium |
 | [1242-web-crawler-multithreaded](https://github.com/aadarshahuja99/leetcode/tree/main/1242-web-crawler-multithreaded/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
