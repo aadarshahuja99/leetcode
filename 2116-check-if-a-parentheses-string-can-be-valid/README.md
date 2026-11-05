@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid">2116. Check if a Parentheses String Can Be Valid</a></h2><h3>Medium</h3><hr><p>A parentheses string is a <strong>non-empty</strong> string consisting only of <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code>. It is valid if <strong>any</strong> of the following conditions is <strong>true</strong>:</p>
+<h2><a href="https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/">2116. Check if a Parentheses String Can Be Valid</a></h2><h3>Medium</h3><hr><p>A parentheses string is a <strong>non-empty</strong> string consisting only of <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code>. It is valid if <strong>any</strong> of the following conditions is <strong>true</strong>:</p>
 
 <ul>
 	<li>It is <code>()</code>.</li>
@@ -39,6 +39,15 @@ We change s[0] and s[4] to &#39;(&#39; while leaving s[2] and s[5] unchanged to 
 <strong>Output:</strong> false
 <strong>Explanation:</strong> locked permits us to change s[0]. 
 Changing s[0] to either &#39;(&#39; or &#39;)&#39; will not make s valid.
+</pre>
+
+<p><strong class="example">Example 4:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;(((())(((())&quot;, locked = &quot;111111010111&quot;
+<strong>Output:</strong> true
+<strong>Explanation:</strong> locked permits us to change s[6] and s[8]. 
+We change s[6] and s[8] to &#39;)&#39; to make s valid.
 </pre>
 
 <p>&nbsp;</p>
