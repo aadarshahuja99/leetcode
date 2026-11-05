@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 class Solution {
     public String removeDuplicateLetters(String s) {
         int[] lastIndex = new int[26];
