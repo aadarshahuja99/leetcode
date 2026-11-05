@@ -233,6 +233,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
 | [2850-minimum-moves-to-spread-stones-over-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2850-minimum-moves-to-spread-stones-over-grid/) | Medium |
+| [2865-beautiful-towers-i](https://github.com/aadarshahuja99/leetcode/tree/main/2865-beautiful-towers-i/) | Medium |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/aadarshahuja99/leetcode/tree/main/2976-minimum-cost-to-convert-string-i/) | Medium |
 | [3026-maximum-good-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/3026-maximum-good-subarray-sum/) | Medium |
 | [3169-count-days-without-meetings](https://github.com/aadarshahuja99/leetcode/tree/main/3169-count-days-without-meetings/) | Medium |
@@ -1068,6 +1069,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/aadarshahuja99/leetcode/tree/main/1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/aadarshahuja99/leetcode/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
 | [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
+| [2865-beautiful-towers-i](https://github.com/aadarshahuja99/leetcode/tree/main/2865-beautiful-towers-i/) | Medium |
 | [3229-minimum-operations-to-make-array-equal-to-target](https://github.com/aadarshahuja99/leetcode/tree/main/3229-minimum-operations-to-make-array-equal-to-target/) | Hard |
 ## Merge Sort
 | Problem Name | Difficulty |
@@ -1173,6 +1175,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/aadarshahuja99/leetcode/tree/main/1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard |
+| [2865-beautiful-towers-i](https://github.com/aadarshahuja99/leetcode/tree/main/2865-beautiful-towers-i/) | Medium |
 | [3229-minimum-operations-to-make-array-equal-to-target](https://github.com/aadarshahuja99/leetcode/tree/main/3229-minimum-operations-to-make-array-equal-to-target/) | Hard |
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
