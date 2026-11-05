@@ -4,8 +4,6 @@ class Solution {
         Stack<Integer> st = new Stack<>();
         int n = nums.length;
         int[] next = new int[n];
-        int[] prev = new int[n];
-        
         // next smaller
         for(int i=n-1; i>=0; i--)
         {
@@ -15,38 +13,37 @@ class Solution {
             }
             if(st.isEmpty())
             {
-                next[i] = n;
+                next[i] = n-1;
             }
             else
             {
-                next[i] = st.peek();
+                next[i] = st.peek()-1;
             }
             st.push(i);
         }
         st.clear();
         // prev smaller
+        int ans = 0;
         for(int i=0; i<n; i++)
         {
+            int prev = 0;
             while(!st.isEmpty() && nums[i] < nums[st.peek()])
             {
                 st.pop();
             }
             if(st.isEmpty())
             {
-                prev[i] = -1;
+                prev = 0;
             }
             else
             {
-                prev[i] = st.peek();
+                prev = st.peek()+1;
             }
+            // compute the answer
+            int lengthBefore = i - prev;
+            int lengthAfter = next[i] - i;
+            ans = (ans%MOD + (int)((1l*(lengthBefore+1)*nums[i]*(lengthAfter+1))%MOD))%MOD;
             st.push(i);
-        }
-        int ans = 0;
-        for(int i=0; i<n; i++)
-        {
-            long greaterBefore = i - prev[i] - 1;
-            long greaterAfter = next[i] - i - 1;
-            ans = (ans%MOD + (int)(((greaterBefore+1)*(greaterAfter+1)*(1l*nums[i]))%MOD));
         }
         return ans;
     }
