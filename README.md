@@ -1863,6 +1863,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0020-valid-parentheses/) | Easy |
+| [0032-longest-valid-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0032-longest-valid-parentheses/) | Hard |
 | [0678-valid-parenthesis-string](https://github.com/aadarshahuja99/leetcode/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0856-score-of-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0856-score-of-parentheses/) | Medium |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/aadarshahuja99/leetcode/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
