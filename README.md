@@ -388,6 +388,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
+| [0895-maximum-frequency-stack](https://github.com/aadarshahuja99/leetcode/tree/main/0895-maximum-frequency-stack/) | Hard |
 | [0904-fruit-into-baskets](https://github.com/aadarshahuja99/leetcode/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0924-minimize-malware-spread](https://github.com/aadarshahuja99/leetcode/tree/main/0924-minimize-malware-spread/) | Hard |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/aadarshahuja99/leetcode/tree/main/0947-most-stones-removed-with-same-row-or-column/) | Medium |
@@ -1065,6 +1066,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0853-car-fleet](https://github.com/aadarshahuja99/leetcode/tree/main/0853-car-fleet/) | Medium |
 | [0856-score-of-parentheses](https://github.com/aadarshahuja99/leetcode/tree/main/0856-score-of-parentheses/) | Medium |
+| [0895-maximum-frequency-stack](https://github.com/aadarshahuja99/leetcode/tree/main/0895-maximum-frequency-stack/) | Hard |
 | [0907-sum-of-subarray-minimums](https://github.com/aadarshahuja99/leetcode/tree/main/0907-sum-of-subarray-minimums/) | Medium |
 | [0962-maximum-width-ramp](https://github.com/aadarshahuja99/leetcode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/1008-construct-binary-search-tree-from-preorder-traversal/) | Medium |
@@ -1201,6 +1203,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
+| [0895-maximum-frequency-stack](https://github.com/aadarshahuja99/leetcode/tree/main/0895-maximum-frequency-stack/) | Hard |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/aadarshahuja99/leetcode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [2158-amount-of-new-area-painted-each-day](https://github.com/aadarshahuja99/leetcode/tree/main/2158-amount-of-new-area-painted-each-day/) | Hard |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
@@ -1522,6 +1525,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0635-design-log-storage-system](https://github.com/aadarshahuja99/leetcode/tree/main/0635-design-log-storage-system/) | Medium |
 | [0642-design-search-autocomplete-system](https://github.com/aadarshahuja99/leetcode/tree/main/0642-design-search-autocomplete-system/) | Hard |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
+| [0895-maximum-frequency-stack](https://github.com/aadarshahuja99/leetcode/tree/main/0895-maximum-frequency-stack/) | Hard |
 | [2276-count-integers-in-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/2276-count-integers-in-intervals/) | Hard |
 ## Graph Theory
 | Problem Name | Difficulty |
