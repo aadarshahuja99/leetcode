@@ -549,6 +549,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2024-maximize-the-confusion-of-an-exam](https://github.com/aadarshahuja99/leetcode/tree/main/2024-maximize-the-confusion-of-an-exam/) | Medium |
 | [2063-vowels-of-all-substrings](https://github.com/aadarshahuja99/leetcode/tree/main/2063-vowels-of-all-substrings/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/aadarshahuja99/leetcode/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 | [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
 | [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
@@ -591,6 +592,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/1671-minimum-number-of-removals-to-make-mountain-array/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/aadarshahuja99/leetcode/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
 | [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/aadarshahuja99/leetcode/tree/main/2571-minimum-operations-to-reduce-an-integer-to-0/) | Medium |
@@ -1068,6 +1070,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/aadarshahuja99/leetcode/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/aadarshahuja99/leetcode/tree/main/1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/aadarshahuja99/leetcode/tree/main/1653-minimum-deletions-to-make-string-balanced/) | Medium |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/aadarshahuja99/leetcode/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 | [2211-count-collisions-on-a-road](https://github.com/aadarshahuja99/leetcode/tree/main/2211-count-collisions-on-a-road/) | Medium |
 | [2865-beautiful-towers-i](https://github.com/aadarshahuja99/leetcode/tree/main/2865-beautiful-towers-i/) | Medium |
 | [3229-minimum-operations-to-make-array-equal-to-target](https://github.com/aadarshahuja99/leetcode/tree/main/3229-minimum-operations-to-make-array-equal-to-target/) | Hard |
@@ -1860,4 +1863,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0678-valid-parenthesis-string](https://github.com/aadarshahuja99/leetcode/tree/main/0678-valid-parenthesis-string/) | Medium |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/aadarshahuja99/leetcode/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 <!---LeetCode Topics End-->
