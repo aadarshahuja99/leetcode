@@ -10,7 +10,7 @@ class Solution {
             {
                 if(grid[i][j] == '1')
                 {
-                    if(i == 0 || grid[i-1][j] == '1')
+                    if(i > 0 && grid[i-1][j] == '1')
                     {
                         nums[j]++;
                     }
