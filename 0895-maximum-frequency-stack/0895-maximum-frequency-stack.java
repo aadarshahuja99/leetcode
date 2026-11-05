@@ -24,7 +24,7 @@ class FreqStack {
         Stack<Integer> stack = freqStack.get(maxFreq);
         int val = stack.pop();
         
-        freq.put(val, freq.get(val) - 1);
+        freq.put(val, maxFreq - 1);
         
         if (stack.isEmpty()) {
             maxFreq--;
