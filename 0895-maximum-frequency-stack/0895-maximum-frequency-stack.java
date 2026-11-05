@@ -4,36 +4,27 @@ class FreqStack {
     int insertIndex;
     public FreqStack() {
         countMap = new HashMap<Integer,Integer>();
-        pq = new PriorityQueue<int[]>(new Comparator<int[]>() {
-            public int compare(int[] e1, int[] e2)
-            {
-                if(e1[1] != e2[1])
-                {
-                    return e2[1] - e1[1];
-                }
-                return e2[2] - e1[2];
-            }
+        pq = new PriorityQueue<int[]>((int[] a, int[] b) -> {
+            return a[1] == b[1] ? b[2] - a[2] : b[1] - a[1];
         });
         insertIndex = 0;
     }
     
     public void push(int val) {
         insertIndex++;
-        if(countMap.containsKey(val))
-        {
-            countMap.replace(val, countMap.get(val) + 1);
-        }
-        else
-        {
-            countMap.put(val,1);
-        }
+        countMap.put(val, countMap.getOrDefault(val, 0) + 1);
         int[] element = new int[] { val, countMap.get(val), insertIndex };
         pq.add(element);
     }
     
     public int pop() {
         var top = pq.poll();
-        countMap.replace(top[0], countMap.get(top[0]) - 1);
+        int val = top[0];
+        countMap.put(val, countMap.get(val) - 1);
+        if(countMap.get(val) == 0)
+        {
+            countMap.remove(val);
+        }
         return top[0];
     }
 }
