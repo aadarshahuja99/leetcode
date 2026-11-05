@@ -5,7 +5,7 @@ class MinStack {
         st = new Stack<>();
     }
     public void push(int val) {
-        if(minVal == null)
+        if(st.isEmpty())
         {
             minVal = 1l*val;
             st.push(1l*val);
