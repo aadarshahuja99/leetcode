@@ -99,6 +99,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0502-ipo](https://github.com/aadarshahuja99/leetcode/tree/main/0502-ipo/) | Hard |
+| [0503-next-greater-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
 | [0525-contiguous-array](https://github.com/aadarshahuja99/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/aadarshahuja99/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
@@ -1049,6 +1050,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0388-longest-absolute-file-path](https://github.com/aadarshahuja99/leetcode/tree/main/0388-longest-absolute-file-path/) | Medium |
 | [0402-remove-k-digits](https://github.com/aadarshahuja99/leetcode/tree/main/0402-remove-k-digits/) | Medium |
 | [0456-132-pattern](https://github.com/aadarshahuja99/leetcode/tree/main/0456-132-pattern/) | Medium |
+| [0503-next-greater-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/0581-shortest-unsorted-continuous-subarray/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/aadarshahuja99/leetcode/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0735-asteroid-collision](https://github.com/aadarshahuja99/leetcode/tree/main/0735-asteroid-collision/) | Medium |
@@ -1157,6 +1159,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0085-maximal-rectangle](https://github.com/aadarshahuja99/leetcode/tree/main/0085-maximal-rectangle/) | Hard |
 | [0402-remove-k-digits](https://github.com/aadarshahuja99/leetcode/tree/main/0402-remove-k-digits/) | Medium |
 | [0456-132-pattern](https://github.com/aadarshahuja99/leetcode/tree/main/0456-132-pattern/) | Medium |
+| [0503-next-greater-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/aadarshahuja99/leetcode/tree/main/0581-shortest-unsorted-continuous-subarray/) | Medium |
 | [0739-daily-temperatures](https://github.com/aadarshahuja99/leetcode/tree/main/0739-daily-temperatures/) | Medium |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
