@@ -11,13 +11,13 @@ class Solution {
         {
             while(minQueue.size() > 0 && minQueue.peekLast() > nums[j])
             {
-                minQueue.pollLast();
+                minQueue.removeLast();
             }
             minQueue.addLast(nums[j]);
 
             while(maxQueue.size() > 0 && maxQueue.peekLast() < nums[j])
             {
-                maxQueue.pollLast();
+                maxQueue.removeLast();
             }
             maxQueue.addLast(nums[j]);
 
@@ -27,11 +27,11 @@ class Solution {
             {
                 if(maxQueue.peekFirst() == nums[i])
                 {
-                    maxQueue.pollFirst();
+                    maxQueue.removeFirst();
                 }
                 if(minQueue.peekFirst() == nums[i])
                 {
-                    minQueue.pollFirst();
+                    minQueue.removeFirst();
                 }
                 i++;
             }
