@@ -1,5 +1,3 @@
-import java.util.PriorityQueue;
-
 class Solution {
     public String longestDiverseString(int a, int b, int c) {
         // Priority queue to store the characters and their counts.
