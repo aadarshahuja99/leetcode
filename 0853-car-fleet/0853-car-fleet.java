@@ -1,27 +1,28 @@
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
-        int[][] info = new int[position.length][2];
-        for(int i=0; i<position.length; i++)
-        {
-            int dist = target - position[i];
-            info[i][0] = dist;
-            info[i][1] = speed[i];
+        int n = position.length;
+        int[][] cars = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            cars[i][0] = position[i];
+            cars[i][1] = speed[i];
         }
-        Arrays.sort(info, new Comparator<int[]>() {
-            public int compare(int[] a, int[] b)
-            {
-                return a[0] - b[0];
-            }
-        });
-        Stack<Double> stack = new Stack<>();
-        for(int i=0; i<info.length; i++)
-        {
-            double currentTime = (double)info[i][0]/(double)info[i][1];
-            if(stack.size() == 0 || stack.peek() < currentTime)
-            {
-                stack.push(currentTime);
+        
+        // Sort by starting position in descending order (closest to target first)
+        Arrays.sort(cars, (a, b) -> Integer.compare(b[0], a[0]));
+        
+        int fleets = 0;
+        double maxTime = 0.0;
+        
+        for (int i = 0; i < n; i++) {
+            double time = (double) (target - cars[i][0]) / cars[i][1];
+            // If this car takes MORE time than the fleet ahead of it,
+            // it can never catch up. It starts a new fleet.
+            if (time > maxTime) {
+                fleets++;
+                maxTime = time; 
             }
         }
-        return stack.size();
+        
+        return fleets;
     }
 }
