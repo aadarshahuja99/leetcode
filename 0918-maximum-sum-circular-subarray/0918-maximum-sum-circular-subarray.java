@@ -2,7 +2,7 @@ class Solution {
     public int maxSubarraySumCircular(int[] nums) {
         /*
             approaches:
-            1. Find out the min subarray sum and subtract it from the total aray sum
+            1. Find out the min subarray sum and subtract it from the total aray sum - Optmial using Kadane's algorithm
             2. create a new array that contains 2 instances of the given array. apply sliding window
         */
         int minSoFar = 0;
