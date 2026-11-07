@@ -20,7 +20,6 @@ class Solution {
                 }
                 else if(p.charAt(j-1) == '*')
                 {
-                    // 1st cache[i-1][j-1] means exactly one char match using the *, 2nd cache[i-1][j] means atleast one char match using the * and 3rd cache[i][j-1] means empty match using the * and * means nothing in that case.
                     currentRowOfCache[j] = lastRowOfCache[j] || currentRowOfCache[j-1];
                 }
                 else
@@ -31,7 +30,6 @@ class Solution {
             lastRowOfCache = currentRowOfCache;
         }
         return lastRowOfCache[n];
-        // return checkForPatternMatch(s.length(), p.length(), s, p, cache);
     }
     private boolean checkForPatternMatch(int currentIndexS, int currentIndexP, String s, String p, Boolean[][] cache)
     {
