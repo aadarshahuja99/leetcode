@@ -26,10 +26,10 @@ class Solution {
             return 0;
         }
         
-        int left = dfs(current.left, ans);
-        int right = dfs(current.right, ans);
+        int leftSubTreeNetBalance = dfs(current.left, ans);
+        int rightSubTreeNetBalance = dfs(current.right, ans);
 
-        ans[0] += Math.abs(left) + Math.abs(right); // add the moves from left and right subtrees to the answer
+        ans[0] += Math.abs(leftSubTreeNetBalance) + Math.abs(rightSubTreeNetBalance); // add the moves from left and right subtrees to the answer
 
         // return the total surplus/deficit of the subtree rooted at node 'current'
         // if current node has one coin, then current.val - 1 is 0, implying no moves are needed for the current node
@@ -37,6 +37,6 @@ class Solution {
         // similarly, if current.val < 1, incoming moves will be needed
         // left and right are added because the current node's dfs method will return the net incoming/outgoings
         // that will be needed to make the tree rooted at the current node balanced
-        return (current.val - 1) + left + right;
+        return (current.val - 1) + leftSubTreeNetBalance + rightSubTreeNetBalance;
     }
 }
