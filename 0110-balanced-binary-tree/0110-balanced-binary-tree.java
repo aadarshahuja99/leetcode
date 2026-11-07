@@ -25,10 +25,12 @@ class Solution {
         }
         int leftHeight = check(root.left);
         int rightHeight = check(root.right);
+        // If either of the subtrees is invalid, then bubble up the invalid status
         if(leftHeight == -1 || rightHeight == -1)
         {
             return -1;
         }
+        // If the current tree is invalid then bubble up the status
         if(Math.abs(leftHeight - rightHeight) > 1)
         {
             return -1;
