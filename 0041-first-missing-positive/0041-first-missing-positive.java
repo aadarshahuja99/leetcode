@@ -7,6 +7,8 @@ class Solution {
         while(j < n)
         {
             int idx = nums[j]-1;
+            // Intuition:
+            // if the current element is in the range of [1,n] then it must be moved to its correct index i.e. nums[j] - 1, else skip the current element with j++
             if(nums[j] > 0 && nums[j] <=n && nums[idx] != nums[j])
             {
                 int temp = nums[idx];
@@ -25,6 +27,7 @@ class Solution {
                 return i+1;
             }
         }
+        // this handles the case when all the elements in the array are from 1 to n and are unique
         return n+1;
     }
 }
