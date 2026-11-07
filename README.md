@@ -129,6 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0759-employee-free-time](https://github.com/aadarshahuja99/leetcode/tree/main/0759-employee-free-time/) | Hard |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
 | [0774-minimize-max-distance-to-gas-station](https://github.com/aadarshahuja99/leetcode/tree/main/0774-minimize-max-distance-to-gas-station/) | Hard |
+| [0786-k-th-smallest-prime-fraction](https://github.com/aadarshahuja99/leetcode/tree/main/0786-k-th-smallest-prime-fraction/) | Medium |
 | [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
 | [0827-making-a-large-island](https://github.com/aadarshahuja99/leetcode/tree/main/0827-making-a-large-island/) | Hard |
 | [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
@@ -274,6 +275,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/aadarshahuja99/leetcode/tree/main/0653-two-sum-iv-input-is-a-bst/) | Easy |
 | [0658-find-k-closest-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/aadarshahuja99/leetcode/tree/main/0719-find-k-th-smallest-pair-distance/) | Hard |
+| [0786-k-th-smallest-prime-fraction](https://github.com/aadarshahuja99/leetcode/tree/main/0786-k-th-smallest-prime-fraction/) | Medium |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0962-maximum-width-ramp](https://github.com/aadarshahuja99/leetcode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
@@ -454,6 +456,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0721-accounts-merge](https://github.com/aadarshahuja99/leetcode/tree/main/0721-accounts-merge/) | Medium |
 | [0759-employee-free-time](https://github.com/aadarshahuja99/leetcode/tree/main/0759-employee-free-time/) | Hard |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
+| [0786-k-th-smallest-prime-fraction](https://github.com/aadarshahuja99/leetcode/tree/main/0786-k-th-smallest-prime-fraction/) | Medium |
 | [0823-binary-trees-with-factors](https://github.com/aadarshahuja99/leetcode/tree/main/0823-binary-trees-with-factors/) | Medium |
 | [0853-car-fleet](https://github.com/aadarshahuja99/leetcode/tree/main/0853-car-fleet/) | Medium |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
@@ -821,6 +824,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0719-find-k-th-smallest-pair-distance](https://github.com/aadarshahuja99/leetcode/tree/main/0719-find-k-th-smallest-pair-distance/) | Hard |
 | [0732-my-calendar-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0732-my-calendar-iii/) | Hard |
 | [0774-minimize-max-distance-to-gas-station](https://github.com/aadarshahuja99/leetcode/tree/main/0774-minimize-max-distance-to-gas-station/) | Hard |
+| [0786-k-th-smallest-prime-fraction](https://github.com/aadarshahuja99/leetcode/tree/main/0786-k-th-smallest-prime-fraction/) | Medium |
 | [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0862-shortest-subarray-with-sum-at-least-k](https://github.com/aadarshahuja99/leetcode/tree/main/0862-shortest-subarray-with-sum-at-least-k/) | Hard |
 | [0875-koko-eating-bananas](https://github.com/aadarshahuja99/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
@@ -1105,6 +1109,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0658-find-k-closest-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0743-network-delay-time](https://github.com/aadarshahuja99/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0759-employee-free-time](https://github.com/aadarshahuja99/leetcode/tree/main/0759-employee-free-time/) | Hard |
+| [0786-k-th-smallest-prime-fraction](https://github.com/aadarshahuja99/leetcode/tree/main/0786-k-th-smallest-prime-fraction/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0862-shortest-subarray-with-sum-at-least-k](https://github.com/aadarshahuja99/leetcode/tree/main/0862-shortest-subarray-with-sum-at-least-k/) | Hard |
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
