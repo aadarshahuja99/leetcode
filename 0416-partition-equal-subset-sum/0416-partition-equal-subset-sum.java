@@ -27,7 +27,6 @@ class Solution {
             }
         }
         return cache[0][s/2];
-        // return getAns(0, s/2, nums, cache);
     }
     private Boolean getAns(int current, int t, int[] nums, Boolean[][] cache)
     {
