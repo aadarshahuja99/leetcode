@@ -46,14 +46,5 @@ class Solution {
         }
         return ans;
     }
-    class Element
-    {
-        int index;
-        TreeNode node;
-        public Element(TreeNode r, int v)
-        {
-            node = r;
-            index = v;
-        }
-    }
+    private record Element(TreeNode node, int index) {}
 }
