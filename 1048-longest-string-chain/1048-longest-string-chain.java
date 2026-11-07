@@ -17,7 +17,6 @@ class Solution {
                     {
                         dp[i] = dp[j] + 1;
                     }
-                    System.out.println(dp[i]);
                     ans = Math.max(ans, dp[i]);
                 }
             }
