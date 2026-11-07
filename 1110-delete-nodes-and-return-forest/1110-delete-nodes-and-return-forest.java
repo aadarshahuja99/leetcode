@@ -27,10 +27,10 @@ class Solution {
 
     private TreeNode helper(TreeNode node, boolean is_root) {
         if (node == null) return null;
-        boolean deleted = to_delete_set.contains(node.val);
-        if (is_root && !deleted) res.add(node);
-        node.left = helper(node.left, deleted);
-        node.right =  helper(node.right, deleted);
-        return deleted ? null : node;
+        boolean isdeleted = to_delete_set.contains(node.val);
+        if (is_root && !isdeleted) res.add(node);
+        node.left = helper(node.left, isdeleted);
+        node.right =  helper(node.right, isdeleted);
+        return isdeleted ? null : node;
     }
 }
