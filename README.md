@@ -177,6 +177,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1248-count-number-of-nice-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1248-count-number-of-nice-subarrays/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
+| [1277-count-square-submatrices-with-all-ones](https://github.com/aadarshahuja99/leetcode/tree/main/1277-count-square-submatrices-with-all-ones/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/aadarshahuja99/leetcode/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1288-remove-covered-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
@@ -981,6 +982,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1162-as-far-from-land-as-possible](https://github.com/aadarshahuja99/leetcode/tree/main/1162-as-far-from-land-as-possible/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
+| [1277-count-square-submatrices-with-all-ones](https://github.com/aadarshahuja99/leetcode/tree/main/1277-count-square-submatrices-with-all-ones/) | Medium |
 | [1278-palindrome-partitioning-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1278-palindrome-partitioning-iii/) | Hard |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/aadarshahuja99/leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
 | [1335-minimum-difficulty-of-a-job-schedule](https://github.com/aadarshahuja99/leetcode/tree/main/1335-minimum-difficulty-of-a-job-schedule/) | Hard |
@@ -1284,6 +1286,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1091-shortest-path-in-binary-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
 | [1162-as-far-from-land-as-possible](https://github.com/aadarshahuja99/leetcode/tree/main/1162-as-far-from-land-as-possible/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1277-count-square-submatrices-with-all-ones](https://github.com/aadarshahuja99/leetcode/tree/main/1277-count-square-submatrices-with-all-ones/) | Medium |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/aadarshahuja99/leetcode/tree/main/1293-shortest-path-in-a-grid-with-obstacles-elimination/) | Hard |
 | [1349-maximum-students-taking-exam](https://github.com/aadarshahuja99/leetcode/tree/main/1349-maximum-students-taking-exam/) | Hard |
 | [1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/1368-minimum-cost-to-make-at-least-one-valid-path-in-a-grid/) | Hard |
