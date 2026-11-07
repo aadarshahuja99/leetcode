@@ -16,7 +16,7 @@
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         // return dfs(p, q);
-        return iterative(p, q);
+        return iterativePreorder(p, q);
     }
     private boolean dfs(TreeNode c1, TreeNode c2)
     {
@@ -26,9 +26,8 @@ class Solution {
         }
         return c1.val == c2.val && dfs(c1.left, c2.left) && dfs(c1.right, c2.right);
     }
-    private boolean iterative(TreeNode c1, TreeNode c2)
+    private boolean iterativePreorder(TreeNode c1, TreeNode c2)
     {
-        // we do iterative pre-order in parallel for both the trees
         TreeNode current1 = c1;
         TreeNode current2 = c2;
         Stack<TreeNode> s1 = new Stack<>();
