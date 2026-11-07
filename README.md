@@ -164,6 +164,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1039-minimum-score-triangulation-of-polygon](https://github.com/aadarshahuja99/leetcode/tree/main/1039-minimum-score-triangulation-of-polygon/) | Medium |
 | [1043-partition-array-for-maximum-sum](https://github.com/aadarshahuja99/leetcode/tree/main/1043-partition-array-for-maximum-sum/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
+| [1049-last-stone-weight-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1049-last-stone-weight-ii/) | Medium |
 | [1052-grumpy-bookstore-owner](https://github.com/aadarshahuja99/leetcode/tree/main/1052-grumpy-bookstore-owner/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
 | [1094-car-pooling](https://github.com/aadarshahuja99/leetcode/tree/main/1094-car-pooling/) | Medium |
@@ -976,6 +977,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1039-minimum-score-triangulation-of-polygon](https://github.com/aadarshahuja99/leetcode/tree/main/1039-minimum-score-triangulation-of-polygon/) | Medium |
 | [1043-partition-array-for-maximum-sum](https://github.com/aadarshahuja99/leetcode/tree/main/1043-partition-array-for-maximum-sum/) | Medium |
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
+| [1049-last-stone-weight-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1049-last-stone-weight-ii/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1143-longest-common-subsequence/) | Medium |
@@ -1762,11 +1764,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
 | [0518-coin-change-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0518-coin-change-ii/) | Medium |
+| [1049-last-stone-weight-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1049-last-stone-weight-ii/) | Medium |
 ## 0-1 Knapsack
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0494-target-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0494-target-sum/) | Medium |
+| [1049-last-stone-weight-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1049-last-stone-weight-ii/) | Medium |
 ## Complete Knapsack
 | Problem Name | Difficulty |
 | ------- | ------- |
