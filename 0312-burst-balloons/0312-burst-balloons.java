@@ -9,10 +9,6 @@ class Solution {
             updated[i] = nums[i-1];
         }
         int[][] dp = new int[updated.length][updated.length];
-        // for(int[] row : dp)
-        // {
-        //     Arrays.fill(row, -1);
-        // }
         for(int i=updated.length-2; i>=1; i--)
         {
             for(int j=1; j<=updated.length-2; j++)
