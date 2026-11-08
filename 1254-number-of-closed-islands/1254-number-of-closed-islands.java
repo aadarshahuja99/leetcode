@@ -29,8 +29,8 @@ class Solution {
             y = temp[1];
 
             for (int i = 0; i < 4; i++) {
-                int r = x +dirx[i];
-                int c = y +diry[i];
+                int r = x + dirx[i];
+                int c = y + diry[i];
                 if (r < 0 || r >= m || c < 0 || c >= n) {
                     // (x, y) is a boundary cell.
                     isClosed = false;
