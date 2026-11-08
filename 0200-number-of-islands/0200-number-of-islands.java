@@ -3,7 +3,6 @@ class Solution {
         int m = grid.length;
         int n = grid[0].length;
         int count = 0;
-        Queue<int[]> q = new LinkedList<>();
         boolean[][] vis = new boolean[m][n];
         for(int i=0; i<m; i++)
         {
@@ -11,15 +10,16 @@ class Solution {
             {
                 if(grid[i][j] == '1' && !vis[i][j])
                 {
-                    bfs(i,j,q,vis,grid);
+                    bfs(i,j,vis,grid);
                     count++;
                 }
             }
         }
         return count;
     }
-    private void bfs(int sr, int sc, Queue<int[]> q, boolean[][] vis, char[][] grid)
+    private void bfs(int sr, int sc, boolean[][] vis, char[][] grid)
     {
+        Queue<int[]> q = new LinkedList<>();
         int[][] delta = {{0,1}, {1,0}, {0,-1}, {-1,0}};
         q.add(new int[] { sr, sc });
         while(q.size() > 0)
