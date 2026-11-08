@@ -1,38 +1,45 @@
 class Solution {
+    int[][] DELTA = {{0,1}, {1,0}, {0,-1}, {-1,0}};
     public int maxAreaOfIsland(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
-        int[][] visited = new int[m][n];
-        int maxComponentSize = 0;
+        boolean[][] vis = new boolean[m][n];
+        int ans = 0;
         for(int i=0; i<m; i++)
         {
             for(int j=0; j<n; j++)
             {
-                if(visited[i][j] == 0 && grid[i][j] == 1)
+                if(grid[i][j] == 1 && !vis[i][j])
                 {
-                    maxComponentSize = Math.max(maxComponentSize, calculateSize(i,j,visited,grid));
+                    ans = Math.max(ans, bfs(i, j, vis, grid));
                 }
             }
         }
-        return maxComponentSize;
+        return ans;
     }
-    private int calculateSize(int row, int col, int[][] visited, int[][] grid)
+    private int bfs(int r, int c, boolean[][] vis,  int[][] grid)
     {
-        visited[row][col] = 1;
-        int[] deltaRow = new int[] { 0,1,0,-1 };
-        int[] deltaColumn = new int[] { 1,0,-1,0 };
-        int m = grid.length;
-        int n = grid[0].length;
-        int size = 1;
-        for(int i=0; i<4; i++)
+        Queue<int[]> q = new LinkedList<>();
+        q.add(new int[] { r, c });
+        int ans = 0;
+        vis[r][c] = true;
+        
+        while(q.size() > 0)
         {
-            int newRow = deltaRow[i] + row;
-            int newColumn = deltaColumn[i] + col;
-            if(newRow >= 0 && newRow < m && newColumn >= 0 && newColumn < n && visited[newRow][newColumn] == 0 && grid[newRow][newColumn] == 1)
+            int[] top = q.poll();
+            ans++;
+            for(int[] d : DELTA)
             {
-                size += calculateSize(newRow, newColumn, visited, grid);
+                int nr = top[0] + d[0];
+                int nc = top[1] + d[1];
+                if(nr < 0 || nr == grid.length || nc < 0 || nc == grid[0].length || grid[nr][nc] == 0 || vis[nr][nc])
+                {
+                    continue;
+                }
+                q.add(new int[] {nr, nc});
+                vis[nr][nc] = true;
             }
         }
-        return size;
+        return ans;
     }
 }
