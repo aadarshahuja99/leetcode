@@ -27,10 +27,11 @@ class Solution {
                     continue;
                 }
                 int addedCost = grid[nr][nc];
-                if(currentObs + addedCost <= k && !v[nr][nc][currentObs + addedCost])
+                int newCostToReachNewNode = addedCost + currentObs;
+                if(newCostToReachNewNode <= k && !v[nr][nc][currentObs + addedCost])
                 {
-                    v[nr][nc][currentObs + addedCost] = true;
-                    q.add(new int[] { nr, nc, addedCost + currentObs, current+1 });
+                    v[nr][nc][newCostToReachNewNode] = true;
+                    q.add(new int[] { nr, nc, newCostToReachNewNode, current+1 });
                 }
             }
         }
