@@ -17,7 +17,7 @@ class Solution {
     public Node copyRandomList(Node head) {
         // 1st solution: HM<OriginalNode, NewNode>
         // optimized
-        // 1. Insert a copied node of each current node next to it in the original list
+        // 1. Insert a clone node of each current node next to it in the original list
         if(head == null)
         {
             return null;
@@ -33,7 +33,7 @@ class Solution {
         }
         cur = head;
         Node newHead = cur.next;
-        // copy random pointers
+        // 2. copy random pointers
         while(cur != null)
         {
             if(cur.random != null)
@@ -44,7 +44,7 @@ class Solution {
         }
 
         cur = head;
-        // copy next pointers
+        // 3. copy next pointers
         while(cur != null)
         {
             Node next = cur.next.next;
