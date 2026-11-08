@@ -1,32 +1,48 @@
 class Solution {
     public int minCostConnectPoints(int[][] points) {
         int n = points.length;
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[2] - b[2]);
-        HashMap<Integer,HashSet<Integer>> vis = new HashMap<>();
-        pq.add(new int[] { points[0][0], points[0][1], 0 });
+        
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+        boolean[] visited = new boolean[n];
+        
+        // NEW: Track the absolute best distance found so far for each node
+        int[] minDist = new int[n];
+        Arrays.fill(minDist, Integer.MAX_VALUE);
+        
+        pq.add(new int[]{0, 0});
+        minDist[0] = 0; // Distance to start node is 0
+        
         int ans = 0;
-        while(pq.size() > 0)
-        {
+        int edgesConnected = 0;
+        
+        while (!pq.isEmpty()) {
             int[] top = pq.poll();
-            int x = top[0];
-            int y = top[1];
-            if(vis.containsKey(x) && vis.get(x).contains(y)) continue;
-            if(!vis.containsKey(x))
-            {
-                vis.put(x, new HashSet<>());
-            }
-            vis.get(x).add(y);
-            ans += top[2];
-            for(int[] point : points)
-            {
-                if(point[0] == x && point[1] == y) continue;
-                if(vis.containsKey(point[0]) && vis.get(point[0]).contains(point[1]))
-                {
-                    continue;
+            int currNode = top[0];
+            int edgeWeight = top[1];
+            
+            if (visited[currNode]) continue;
+            
+            visited[currNode] = true;
+            ans += edgeWeight;
+            edgesConnected++;
+            
+            if (edgesConnected == n) break;
+            
+            for (int nextNode = 0; nextNode < n; nextNode++) {
+                if (!visited[nextNode]) {
+                    int dist = Math.abs(points[currNode][0] - points[nextNode][0]) 
+                             + Math.abs(points[currNode][1] - points[nextNode][1]);
+                    
+                    // NEW CONDITION: Only push to the heap if this new edge 
+                    // is strictly better than any edge previously found for nextNode
+                    if (dist < minDist[nextNode]) {
+                        minDist[nextNode] = dist; // Update best-known distance
+                        pq.add(new int[]{nextNode, dist}); 
+                    }
                 }
-                pq.add(new int[] { point[0], point[1], Math.abs(x - point[0]) + Math.abs(y - point[1]) });
             }
         }
+        
         return ans;
     }
 }
