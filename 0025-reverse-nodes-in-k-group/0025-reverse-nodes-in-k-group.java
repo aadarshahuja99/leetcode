@@ -17,11 +17,11 @@ class Solution {
         ListNode lastGroupEnd = null;
         ListNode cur = head;
         ListNode prev = null;
-        int c = 0;
         while(cur != null)
         {
             ListNode unreversedGroupStart = cur;
             ListNode tmp = cur;
+            int c = 0;
             while(c < k && tmp != null)
             {
                 tmp = tmp.next;
@@ -30,7 +30,7 @@ class Solution {
             if(c == k)
             {
                 c = 0;
-                while(cur != null && c < k)
+                while(c < k)
                 {
                     ListNode next = cur.next;
                     cur.next = prev;
@@ -48,7 +48,6 @@ class Solution {
                 }
                 lastGroupEnd = unreversedGroupStart;
                 lastGroupEnd.next = null;
-                c = 0;
             }
             else
             {
