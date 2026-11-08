@@ -1,52 +1,72 @@
 class Solution {
-    int redundantEdges = 0;
     public int makeConnected(int n, int[][] connections) {
-        if(n<=2)
+        // intuition: find the number of extra edges during union of two nodes and also compute number of components. Number of components - 1 is the answer if extra edges >= number of Components - 1
+        DS ds = new DS(n);
+        int extraEdges = 0;
+        for(int[] edge : connections)
         {
-            return 0;
-        }
-        ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
-        for(int i=0; i<n; i++)
-        {
-            adjList.add(new ArrayList<Integer>());
-        }
-        for(int[] connection : connections)
-        {
-            adjList.get(connection[0]).add(connection[1]);
-            adjList.get(connection[1]).add(connection[0]);
-        }
-        int components = 0;
-        int last = -1;
-        int[] visited = new int[n];
-        for(int i=0; i<n; i++)
-        {
-            if(visited[i] == 0)
+            if(ds.union(edge[0], edge[1]))
             {
-                components++;
-                dfs(i,adjList,visited,last);
+                extraEdges++;
             }
         }
-        // System.out.println(components + " " + (redundantEdges/2));
-        if(components-1 > (redundantEdges/2))
-        {
-            return -1;
-        }
-        return components-1;
+        int components = ds.getNumberOfComponents();
+        return components - 1 > extraEdges ? -1 : components - 1;
     }
-    private void dfs(int current, ArrayList<ArrayList<Integer>> adjList, int[] visited, int parent)
+    class DS
     {
-        visited[current] = 1;
-        for(int node : adjList.get(current))
+        int[] p;
+        int[] s;
+        DS(int n)
         {
-            // System.out.println("current: " + current + ", " + node + " " + visited[node]);
-            if (visited[node] == 0)
+            p = new int[n];
+            s = new int[n];
+            for(int i=0; i<n; i++)
             {
-                dfs(node,adjList,visited,current);
+                s[i] = 1;
+                p[i] = i;
             }
-            else if (node != parent)
+        }
+        public int findParent(int u)
+        {
+            if(p[u] == u)
             {
-                redundantEdges += 1;
+                return u;
             }
+            return p[u] = findParent(p[u]);
+        }
+        public boolean union(int u, int v)
+        {
+            int up = findParent(u);
+            int vp = findParent(v);
+            if(up == vp)
+            {
+                return true;
+            }
+            if(s[up] >= s[vp])
+            {
+                s[up] += s[vp];
+                p[vp] = up;
+            }
+            else
+            {
+                s[vp] += s[up];
+                p[up] = vp;
+            }
+            return false;
+        }
+        public int getNumberOfComponents()
+        {
+            int count = 0;
+            for(int i=0; i<p.length; i++)
+            {
+                int parent = findParent(i);
+                if(parent == i)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
