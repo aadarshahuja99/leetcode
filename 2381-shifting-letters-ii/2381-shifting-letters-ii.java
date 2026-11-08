@@ -24,7 +24,7 @@ class Solution {
         char[] chars = new char[n];
         for(int i=0; i<n; i++)
         {
-            chars[i] = (char)(97+(((long)s.charAt(i)-97l+operations[i])%26 + 26)%26);
+            chars[i] = (char)(97+(((long)s.charAt(i)-'a'+operations[i])%26 + 26)%26);
         }
         return new String(chars);
     }
