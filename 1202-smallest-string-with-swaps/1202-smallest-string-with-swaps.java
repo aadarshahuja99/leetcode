@@ -11,7 +11,7 @@ class Solution {
         }
         var groups = ds.getGroups();
         char[] sortedString = new char[n];
-        for(ArrayList<Integer> group : groups)
+        for(List<Integer> group : groups)
         {
             char[] chars = new char[group.size()];
             int it = 0;
@@ -67,9 +67,9 @@ class Solution {
                 size[vParent] += size[uParent];
             }
         }
-        public ArrayList<ArrayList<Integer>> getGroups()
+        public List<List<Integer>> getGroups()
         {
-            ArrayList<ArrayList<Integer>> groups = new ArrayList<ArrayList<Integer>>();
+            ArrayList<List<Integer>> groups = new ArrayList<>();
             HashMap<Integer,ArrayList<Integer>> parentToChildMap = new HashMap<>();
             for(int i=0; i<parent.length; i++)
             {
@@ -86,10 +86,7 @@ class Solution {
                     parentToChildMap.get(p).add(i);
                 }
             }
-            for(Map.Entry<Integer,ArrayList<Integer>> entry : parentToChildMap.entrySet())
-            {
-                groups.add(entry.getValue());
-            }
+            groups.addAll(parentToChildMap.values());
             return groups;
         }
     }
