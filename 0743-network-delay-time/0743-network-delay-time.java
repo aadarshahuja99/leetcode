@@ -24,7 +24,6 @@ class Solution {
             int[] top = pq.poll();
             int current = top[0];
             int dist = top[1];
-            // System.out.println("removed "+top[0]+", "+top[1]+" from pq");
             if(vis[current])
             {
                 continue;
