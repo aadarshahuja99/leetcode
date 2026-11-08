@@ -31,7 +31,7 @@ class Solution {
                 bfsQueue.add(new int[] { i, c-1 });
                 vis[i][c-1] = true;
             }
-        } 
+        }
         int[][] DIRS = {{0,1}, {0,-1}, {-1,0}, {1,0}};
         while(bfsQueue.size() > 0)
         {
