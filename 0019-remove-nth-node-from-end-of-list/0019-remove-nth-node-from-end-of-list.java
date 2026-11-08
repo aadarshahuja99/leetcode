@@ -12,6 +12,7 @@ class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode current = head;
         int numberOfJumps = 0;
+        // reach the nth node from the start of the list by making n-1 jumps
         while(numberOfJumps < n-1)
         {
             current = current.next;
