@@ -31,7 +31,7 @@ class Solution {
         {
             return -1;
         }
-        int levelsOfOranges = 0;
+        int distanceOfFarthestFreshOrange = 0;
         while(q.size() > 0)
         {
             int s = q.size();
@@ -50,17 +50,19 @@ class Solution {
                     }
                     if(!vis[nr][nc] && grid[nr][nc] == 1)
                     {
+                        // insert karte time hi visited mark karna = bfs
+                        // poll karne ke baad visited mark katna = dijkstra
                         vis[nr][nc] = true;
                         freshCount--;
                         if(freshCount == 0)
                         {
-                            return levelsOfOranges+1;
+                            return distanceOfFarthestFreshOrange+1;
                         }
                         q.add(new int[] { nr, nc });
                     }
                 }
             }
-            levelsOfOranges++;
+            distanceOfFarthestFreshOrange++;
         }
         return -1;
     }
