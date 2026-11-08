@@ -44,9 +44,8 @@ class Solution {
         }
         ArrayList<String>[] mergedMail = new ArrayList[n];
         for (int i = 0; i < n; i++) mergedMail[i] = new ArrayList<String>();
-        for (Map.Entry<String, Integer> it : h.entrySet()) {
-            String mail = it.getKey();
-            int node = ds.find(it.getValue());
+        for (String mail : h.keySet()) {
+            int node = ds.find(h.get(mail));
             mergedMail[node].add(mail);
         }
         List<List<String>> ans= new ArrayList<>();
