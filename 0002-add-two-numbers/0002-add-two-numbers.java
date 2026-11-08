@@ -13,18 +13,18 @@ class Solution {
         int carry = 0;
         ListNode c1 = l1;
         ListNode c2 = l2;
-        ListNode ans = new ListNode();
-        ListNode ansHead = ans;
-        ListNode ansPrev = null;
+        ListNode current = new ListNode();
+        ListNode currentHead = current;
+        ListNode prev = null;
         while(c1 != null && c2 != null)
         {
             int sum = carry + c1.val + c2.val;
             carry = sum/10;
             sum = sum%10;
-            ans.val = sum;
-            ans.next = new ListNode();
-            ansPrev = ans;
-            ans = ans.next;
+            current.val = sum;
+            current.next = new ListNode();
+            prev = current;
+            current = current.next;
             c1 = c1.next;
             c2 = c2.next;
         }
@@ -33,30 +33,29 @@ class Solution {
             int sum = c1.val + carry;
             carry = sum/10;
             sum = sum%10;
-            ans.val = sum;
-            ans.next = new ListNode();
-            ansPrev = ans;
-            ans = ans.next;
+            current.val = sum;
+            current.next = new ListNode();
+            prev = current;
+            current = current.next;
             c1 = c1.next;
         }
-
         while(c2 != null)
         {
             int sum = c2.val + carry;
             carry = sum/10;
             sum = sum%10;
-            ans.val = sum;
-            ans.next = new ListNode();
-            ansPrev = ans;
-            ans = ans.next;
+            current.val = sum;
+            current.next = new ListNode();
+            prev = current;
+            current = current.next;
             c2 = c2.next;
         }
         if(carry > 0)
         {
-            ans.val = carry;
-            return ansHead;
+            current.val = carry;
+            return currentHead;
         }
-        ansPrev.next = null;
-        return ansHead;
+        prev.next = null;
+        return currentHead;
     }
 }
