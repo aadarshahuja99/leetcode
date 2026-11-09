@@ -53,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/aadarshahuja99/leetcode/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0162-find-peak-element](https://github.com/aadarshahuja99/leetcode/tree/main/0162-find-peak-element/) | Medium |
+| [0169-majority-element](https://github.com/aadarshahuja99/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0174-dungeon-game](https://github.com/aadarshahuja99/leetcode/tree/main/0174-dungeon-game/) | Hard |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/aadarshahuja99/leetcode/tree/main/0188-best-time-to-buy-and-sell-stock-iv/) | Hard |
 | [0198-house-robber](https://github.com/aadarshahuja99/leetcode/tree/main/0198-house-robber/) | Medium |
@@ -380,6 +381,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0146-lru-cache](https://github.com/aadarshahuja99/leetcode/tree/main/0146-lru-cache/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/aadarshahuja99/leetcode/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
+| [0169-majority-element](https://github.com/aadarshahuja99/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0208-implement-trie-prefix-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0264-ugly-number-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0264-ugly-number-ii/) | Medium |
@@ -450,6 +452,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/aadarshahuja99/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0056-merge-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0056-merge-intervals/) | Medium |
 | [0148-sort-list](https://github.com/aadarshahuja99/leetcode/tree/main/0148-sort-list/) | Medium |
+| [0169-majority-element](https://github.com/aadarshahuja99/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0253-meeting-rooms-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0253-meeting-rooms-ii/) | Medium |
 | [0274-h-index](https://github.com/aadarshahuja99/leetcode/tree/main/0274-h-index/) | Medium |
@@ -798,6 +801,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/aadarshahuja99/leetcode/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0109-convert-sorted-list-to-binary-search-tree/) | Medium |
 | [0148-sort-list](https://github.com/aadarshahuja99/leetcode/tree/main/0148-sort-list/) | Medium |
+| [0169-majority-element](https://github.com/aadarshahuja99/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0240-search-a-2d-matrix-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0427-construct-quad-tree](https://github.com/aadarshahuja99/leetcode/tree/main/0427-construct-quad-tree/) | Medium |
@@ -881,6 +885,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0169-majority-element](https://github.com/aadarshahuja99/leetcode/tree/main/0169-majority-element/) | Easy |
 | [0229-majority-element-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0229-majority-element-ii/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/aadarshahuja99/leetcode/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0621-task-scheduler](https://github.com/aadarshahuja99/leetcode/tree/main/0621-task-scheduler/) | Medium |
@@ -1952,4 +1957,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0141-linked-list-cycle](https://github.com/aadarshahuja99/leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
+## Boyer–Moore Majority Vote Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/aadarshahuja99/leetcode/tree/main/0169-majority-element/) | Easy |
 <!---LeetCode Topics End-->
