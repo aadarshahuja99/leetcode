@@ -6,6 +6,7 @@ class Solution {
         {
             return new int[] { -1, -1 };
         }
+        System.out.println("floor "+floor+" ceil "+ceil);
         return new int[] { floor, ceil };
     }
     private int getFloor(int x, int[] nums)
