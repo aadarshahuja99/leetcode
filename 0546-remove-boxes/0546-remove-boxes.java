@@ -35,7 +35,7 @@ class Solution {
             // if the same colour as boxes[start] is seen again in future, then we have a choice between (immediate removal) and (solving for the intermediate boxes and take the current left range with the future start of the same colour)
             if(boxes[it] == boxes[start])
             {
-                max = Math.max(max, getAns(i, it-1, 0, boxes, cache) + getAns(it, end, boxesOfTheSameColorFromTheLeft, boxes, cache));
+                max = Math.max(max, getAns(i, it-1, 0, boxes, cache) + getAns(it, end,boxesOfTheSameColorFromTheLeft, boxes, cache));
             }
         }
         return cache[start][end][temp] = max;
