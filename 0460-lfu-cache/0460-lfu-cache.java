@@ -9,7 +9,6 @@ public class LFUCache {
         vals = new HashMap<>();
         counts = new HashMap<>();
         lists = new HashMap<>();
-        lists.put(1, new LinkedHashSet<>());
     }
     
     public int get(int key) {
@@ -41,14 +40,15 @@ public class LFUCache {
             int evit = lists.get(min).iterator().next();
             lists.get(min).remove(evit);
             vals.remove(evit);
+            counts.remove(evit);
         }
         vals.put(key, value);
         counts.put(key, 1);
         min = 1;
-        if(!lists.containsKey(1))
+        if(!lists.containsKey(min))
         {
-            lists.put(1, new LinkedHashSet<>());
+            lists.put(min, new LinkedHashSet<>());
         }
-        lists.get(1).add(key);
+        lists.get(min).add(key);
     }
 }
