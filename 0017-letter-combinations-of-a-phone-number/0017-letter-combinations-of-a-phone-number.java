@@ -4,7 +4,7 @@ class Solution {
     public List<String> letterCombinations(String digits) {
         if(digits.equals(""))
         {
-            return new ArrayList<String>();
+            return answer;
         }
         numberMap.put(2, Arrays.asList('a','b','c'));
         numberMap.put(3, Arrays.asList('d','e','f'));
