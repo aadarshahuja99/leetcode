@@ -55,15 +55,11 @@ class Solution {
             for(char ch : s.toCharArray())
             {
                 int index = ch - 'a';
-                if(current.refs[index] != null)
-                {
-                    current = current.refs[index];
-                }
-                else
+                if(current.refs[index] == null)
                 {
                     current.refs[index] = new Trie();
-                    current = current.refs[index];
                 }
+                current = current.refs[index];
             }
             current.isEnd = true;
         }
