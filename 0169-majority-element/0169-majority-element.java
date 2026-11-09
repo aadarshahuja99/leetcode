@@ -18,6 +18,10 @@ class Solution {
                 c--;
             }
         }
+        if(c == 0)
+        {
+            return -1;
+        }
         int count = 0;
         for(int num : nums)
         {
