@@ -187,6 +187,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
 | [1233-remove-sub-folders-from-the-filesystem](https://github.com/aadarshahuja99/leetcode/tree/main/1233-remove-sub-folders-from-the-filesystem/) | Medium |
+| [1235-maximum-profit-in-job-scheduling](https://github.com/aadarshahuja99/leetcode/tree/main/1235-maximum-profit-in-job-scheduling/) | Hard |
 | [1248-count-number-of-nice-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1248-count-number-of-nice-subarrays/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/aadarshahuja99/leetcode/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
@@ -506,6 +507,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1094-car-pooling](https://github.com/aadarshahuja99/leetcode/tree/main/1094-car-pooling/) | Medium |
 | [1202-smallest-string-with-swaps](https://github.com/aadarshahuja99/leetcode/tree/main/1202-smallest-string-with-swaps/) | Medium |
+| [1235-maximum-profit-in-job-scheduling](https://github.com/aadarshahuja99/leetcode/tree/main/1235-maximum-profit-in-job-scheduling/) | Hard |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
 | [1288-remove-covered-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/aadarshahuja99/leetcode/tree/main/1353-maximum-number-of-events-that-can-be-attended/) | Medium |
@@ -886,6 +888,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/aadarshahuja99/leetcode/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1027-longest-arithmetic-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1027-longest-arithmetic-subsequence/) | Medium |
 | [1201-ugly-number-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1201-ugly-number-iii/) | Medium |
+| [1235-maximum-profit-in-job-scheduling](https://github.com/aadarshahuja99/leetcode/tree/main/1235-maximum-profit-in-job-scheduling/) | Hard |
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/aadarshahuja99/leetcode/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1373-maximum-sum-bst-in-binary-tree/) | Hard |
@@ -1037,6 +1040,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1162-as-far-from-land-as-possible](https://github.com/aadarshahuja99/leetcode/tree/main/1162-as-far-from-land-as-possible/) | Medium |
 | [1218-longest-arithmetic-subsequence-of-given-difference](https://github.com/aadarshahuja99/leetcode/tree/main/1218-longest-arithmetic-subsequence-of-given-difference/) | Medium |
+| [1235-maximum-profit-in-job-scheduling](https://github.com/aadarshahuja99/leetcode/tree/main/1235-maximum-profit-in-job-scheduling/) | Hard |
 | [1277-count-square-submatrices-with-all-ones](https://github.com/aadarshahuja99/leetcode/tree/main/1277-count-square-submatrices-with-all-ones/) | Medium |
 | [1278-palindrome-partitioning-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1278-palindrome-partitioning-iii/) | Hard |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/aadarshahuja99/leetcode/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
