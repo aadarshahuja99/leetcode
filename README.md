@@ -2005,4 +2005,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0069-sqrtx](https://github.com/aadarshahuja99/leetcode/tree/main/0069-sqrtx/) | Easy |
+## Brute-Force Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0139-word-break](https://github.com/aadarshahuja99/leetcode/tree/main/0139-word-break/) | Medium |
 <!---LeetCode Topics End-->
