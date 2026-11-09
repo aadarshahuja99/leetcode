@@ -8,6 +8,7 @@ class Solution {
         int ans = 0;
         for(int num : nums)
         {
+            // if the following if evaluates to true then the current num can act as a starting element for a potential answer
             if(!set.contains(num-1))
             {
                 int current = 1;
