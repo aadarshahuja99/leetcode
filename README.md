@@ -223,6 +223,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
+| [2134-minimum-swaps-to-group-all-1s-together-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2134-minimum-swaps-to-group-all-1s-together-ii/) | Medium |
 | [2158-amount-of-new-area-painted-each-day](https://github.com/aadarshahuja99/leetcode/tree/main/2158-amount-of-new-area-painted-each-day/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
@@ -352,6 +353,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/aadarshahuja99/leetcode/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2024-maximize-the-confusion-of-an-exam](https://github.com/aadarshahuja99/leetcode/tree/main/2024-maximize-the-confusion-of-an-exam/) | Medium |
+| [2134-minimum-swaps-to-group-all-1s-together-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2134-minimum-swaps-to-group-all-1s-together-ii/) | Medium |
 | [2762-continuous-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/2762-continuous-subarrays/) | Medium |
 | [3346-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/aadarshahuja99/leetcode/tree/main/3346-maximum-frequency-of-an-element-after-performing-operations-i/) | Medium |
 ## Hash Table
