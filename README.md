@@ -237,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
 | [2387-median-of-a-row-wise-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/2387-median-of-a-row-wise-sorted-matrix/) | Medium |
 | [2392-build-a-matrix-with-conditions](https://github.com/aadarshahuja99/leetcode/tree/main/2392-build-a-matrix-with-conditions/) | Hard |
+| [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/aadarshahuja99/leetcode/tree/main/2435-paths-in-matrix-whose-sum-is-divisible-by-k/) | Hard |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
@@ -299,6 +300,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
 | [1712-ways-to-split-array-into-three-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/1712-ways-to-split-array-into-three-subarrays/) | Medium |
+| [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
 | [3356-zero-array-transformation-ii](https://github.com/aadarshahuja99/leetcode/tree/main/3356-zero-array-transformation-ii/) | Medium |
 ## Prefix Sum
@@ -332,6 +334,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2024-maximize-the-confusion-of-an-exam](https://github.com/aadarshahuja99/leetcode/tree/main/2024-maximize-the-confusion-of-an-exam/) | Medium |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
 | [2381-shifting-letters-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2381-shifting-letters-ii/) | Medium |
+| [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2574-left-and-right-sum-differences](https://github.com/aadarshahuja99/leetcode/tree/main/2574-left-and-right-sum-differences/) | Easy |
 | [2588-count-the-number-of-beautiful-subarrays](https://github.com/aadarshahuja99/leetcode/tree/main/2588-count-the-number-of-beautiful-subarrays/) | Medium |
 | [3026-maximum-good-subarray-sum](https://github.com/aadarshahuja99/leetcode/tree/main/3026-maximum-good-subarray-sum/) | Medium |
@@ -508,6 +511,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1943-describe-the-painting](https://github.com/aadarshahuja99/leetcode/tree/main/1943-describe-the-painting/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
+| [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
 | [2780-minimum-index-of-a-valid-split](https://github.com/aadarshahuja99/leetcode/tree/main/2780-minimum-index-of-a-valid-split/) | Medium |
@@ -633,6 +637,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/aadarshahuja99/leetcode/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
+| [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
 | [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/aadarshahuja99/leetcode/tree/main/2571-minimum-operations-to-reduce-an-integer-to-0/) | Medium |
 | [3229-minimum-operations-to-make-array-equal-to-target](https://github.com/aadarshahuja99/leetcode/tree/main/3229-minimum-operations-to-make-array-equal-to-target/) | Hard |
@@ -1169,6 +1174,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1834-single-threaded-cpu](https://github.com/aadarshahuja99/leetcode/tree/main/1834-single-threaded-cpu/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/aadarshahuja99/leetcode/tree/main/2290-minimum-obstacle-removal-to-reach-corner/) | Hard |
+| [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2462-total-cost-to-hire-k-workers](https://github.com/aadarshahuja99/leetcode/tree/main/2462-total-cost-to-hire-k-workers/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
 | [2577-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/aadarshahuja99/leetcode/tree/main/2577-minimum-time-to-visit-a-cell-in-a-grid/) | Hard |
