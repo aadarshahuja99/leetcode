@@ -205,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1434-number-of-ways-to-wear-different-hats-to-each-other](https://github.com/aadarshahuja99/leetcode/tree/main/1434-number-of-ways-to-wear-different-hats-to-each-other/) | Hard |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/aadarshahuja99/leetcode/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [1463-cherry-pickup-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1463-cherry-pickup-ii/) | Hard |
+| [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/aadarshahuja99/leetcode/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1514-path-with-maximum-probability](https://github.com/aadarshahuja99/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 | [1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/aadarshahuja99/leetcode/tree/main/1526-minimum-number-of-increments-on-subarrays-to-form-a-target-array/) | Hard |
 | [1539-kth-missing-positive-number](https://github.com/aadarshahuja99/leetcode/tree/main/1539-kth-missing-positive-number/) | Easy |
@@ -887,6 +888,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1268-search-suggestions-system](https://github.com/aadarshahuja99/leetcode/tree/main/1268-search-suggestions-system/) | Medium |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/aadarshahuja99/leetcode/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/aadarshahuja99/leetcode/tree/main/1373-maximum-sum-bst-in-binary-tree/) | Hard |
+| [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/aadarshahuja99/leetcode/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/aadarshahuja99/leetcode/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1552-magnetic-force-between-two-balls](https://github.com/aadarshahuja99/leetcode/tree/main/1552-magnetic-force-between-two-balls/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/aadarshahuja99/leetcode/tree/main/1631-path-with-minimum-effort/) | Medium |
