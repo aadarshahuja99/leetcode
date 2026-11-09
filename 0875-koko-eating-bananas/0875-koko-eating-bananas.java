@@ -5,7 +5,7 @@ class Solution {
         {
             e = Math.max(e, piles[i]);
         }
-        int s = 0;
+        int s = 1;
         int ans = 0;
         while(s <= e)
         {
