@@ -17,13 +17,16 @@ class Solution {
                 end--;
                 continue;
             }
+            // right half is unsorted
             if(nums[mid] > nums[end])
             {
+                // check if the min of the sorted half is a potential answer
                 int current = nums[start];
                 if(current < min)
                 {
                     min = current;
                 }
+                // move in the unsorted half
                 start = mid+1;
             }
             else
