@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0045-jump-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0045-jump-game-ii/) | Medium |
 | [0046-permutations](https://github.com/aadarshahuja99/leetcode/tree/main/0046-permutations/) | Medium |
 | [0047-permutations-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0047-permutations-ii/) | Medium |
+| [0048-rotate-image](https://github.com/aadarshahuja99/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/aadarshahuja99/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0051-n-queens](https://github.com/aadarshahuja99/leetcode/tree/main/0051-n-queens/) | Hard |
 | [0055-jump-game](https://github.com/aadarshahuja99/leetcode/tree/main/0055-jump-game/) | Medium |
@@ -1175,6 +1176,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/aadarshahuja99/leetcode/tree/main/0002-add-two-numbers/) | Medium |
 | [0012-integer-to-roman](https://github.com/aadarshahuja99/leetcode/tree/main/0012-integer-to-roman/) | Medium |
 | [0029-divide-two-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0029-divide-two-integers/) | Medium |
+| [0048-rotate-image](https://github.com/aadarshahuja99/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0050-powx-n](https://github.com/aadarshahuja99/leetcode/tree/main/0050-powx-n/) | Medium |
 | [0062-unique-paths](https://github.com/aadarshahuja99/leetcode/tree/main/0062-unique-paths/) | Medium |
 | [0069-sqrtx](https://github.com/aadarshahuja99/leetcode/tree/main/0069-sqrtx/) | Easy |
@@ -1294,6 +1296,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0037-sudoku-solver](https://github.com/aadarshahuja99/leetcode/tree/main/0037-sudoku-solver/) | Hard |
+| [0048-rotate-image](https://github.com/aadarshahuja99/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0063-unique-paths-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0063-unique-paths-ii/) | Medium |
 | [0064-minimum-path-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0064-minimum-path-sum/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/aadarshahuja99/leetcode/tree/main/0073-set-matrix-zeroes/) | Medium |
