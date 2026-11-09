@@ -146,6 +146,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0839-similar-string-groups](https://github.com/aadarshahuja99/leetcode/tree/main/0839-similar-string-groups/) | Hard |
 | [0852-peak-index-in-a-mountain-array](https://github.com/aadarshahuja99/leetcode/tree/main/0852-peak-index-in-a-mountain-array/) | Medium |
 | [0853-car-fleet](https://github.com/aadarshahuja99/leetcode/tree/main/0853-car-fleet/) | Medium |
+| [0860-lemonade-change](https://github.com/aadarshahuja99/leetcode/tree/main/0860-lemonade-change/) | Easy |
 | [0862-shortest-subarray-with-sum-at-least-k](https://github.com/aadarshahuja99/leetcode/tree/main/0862-shortest-subarray-with-sum-at-least-k/) | Hard |
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
 | [0873-length-of-longest-fibonacci-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0873-length-of-longest-fibonacci-subsequence/) | Medium |
@@ -627,6 +628,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/aadarshahuja99/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0765-couples-holding-hands](https://github.com/aadarshahuja99/leetcode/tree/main/0765-couples-holding-hands/) | Hard |
 | [0768-max-chunks-to-make-sorted-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0768-max-chunks-to-make-sorted-ii/) | Hard |
+| [0860-lemonade-change](https://github.com/aadarshahuja99/leetcode/tree/main/0860-lemonade-change/) | Easy |
 | [0871-minimum-number-of-refueling-stops](https://github.com/aadarshahuja99/leetcode/tree/main/0871-minimum-number-of-refueling-stops/) | Hard |
 | [0881-boats-to-save-people](https://github.com/aadarshahuja99/leetcode/tree/main/0881-boats-to-save-people/) | Medium |
 | [0991-broken-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0991-broken-calculator/) | Medium |
