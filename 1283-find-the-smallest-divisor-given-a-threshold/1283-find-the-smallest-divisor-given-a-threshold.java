@@ -1,34 +1,37 @@
 class Solution {
     public int smallestDivisor(int[] nums, int threshold) {
-        int max = 0;
-        for(int num : nums)
+        int max = Integer.MIN_VALUE;
+        int n = nums.length;
+        for(int i=0; i<n; i++)
         {
-            max = Math.max(max, num);
+            max = Math.max(max, nums[i]);
         }
-        int start = 1;
+        int s = 1;
+        int e = max;
         int ans = -1;
-        while(start <= max)
+        while(s <= e)
         {
-            int mid = start + (max - start)/2;
-            if(check(mid, threshold, nums))
+            int m = s + (e - s)/2;
+            if(check(m, nums, threshold))
             {
-                ans = mid;
-                max = mid-1;
+                ans = m;
+                e = m-1;
             }
             else
             {
-                start = mid+1;
+                s = m+1;
             }
         }
         return ans;
     }
-    private boolean check(int current, int threshold, int[] nums)
+    private boolean check(int guess, int[] nums, int t)
     {
-        int count = 0;
+        long current = 0l;
         for(int num : nums)
         {
-            count += (int)Math.ceil((double)num/(double)current);
-            if(count > threshold)
+            current += (long)Math.ceil(1.0*num/guess);
+            // System.out.println("current = " + current+" for num, guess = "+num+" "+guess);
+            if(current > t)
             {
                 return false;
             }
