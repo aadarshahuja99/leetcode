@@ -20,6 +20,7 @@ class Solution {
         int[] range = new int[max-min+2];
         for(int[] interval : intervals)
         {
+            // rebasing logic being applied here
             range[interval[0]-min]++;
             range[interval[1]-min+1]--;
         }
