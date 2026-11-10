@@ -1090,6 +1090,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0029-divide-two-integers](https://github.com/aadarshahuja99/leetcode/tree/main/0029-divide-two-integers/) | Medium |
 | [0090-subsets-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0090-subsets-ii/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/aadarshahuja99/leetcode/tree/main/0222-count-complete-tree-nodes/) | Medium |
+| [0231-power-of-two](https://github.com/aadarshahuja99/leetcode/tree/main/0231-power-of-two/) | Easy |
 | [0260-single-number-iii](https://github.com/aadarshahuja99/leetcode/tree/main/0260-single-number-iii/) | Medium |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0421-maximum-xor-of-two-numbers-in-an-array/) | Medium |
 | [0464-can-i-win](https://github.com/aadarshahuja99/leetcode/tree/main/0464-can-i-win/) | Medium |
@@ -1115,6 +1116,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0143-reorder-list](https://github.com/aadarshahuja99/leetcode/tree/main/0143-reorder-list/) | Medium |
 | [0206-reverse-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0206-reverse-linked-list/) | Easy |
 | [0224-basic-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0224-basic-calculator/) | Hard |
+| [0231-power-of-two](https://github.com/aadarshahuja99/leetcode/tree/main/0231-power-of-two/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/aadarshahuja99/leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0273-integer-to-english-words](https://github.com/aadarshahuja99/leetcode/tree/main/0273-integer-to-english-words/) | Hard |
 ## Stack
@@ -1228,6 +1230,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0150-evaluate-reverse-polish-notation](https://github.com/aadarshahuja99/leetcode/tree/main/0150-evaluate-reverse-polish-notation/) | Medium |
 | [0189-rotate-array](https://github.com/aadarshahuja99/leetcode/tree/main/0189-rotate-array/) | Medium |
 | [0224-basic-calculator](https://github.com/aadarshahuja99/leetcode/tree/main/0224-basic-calculator/) | Hard |
+| [0231-power-of-two](https://github.com/aadarshahuja99/leetcode/tree/main/0231-power-of-two/) | Easy |
 | [0264-ugly-number-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0264-ugly-number-ii/) | Medium |
 | [0273-integer-to-english-words](https://github.com/aadarshahuja99/leetcode/tree/main/0273-integer-to-english-words/) | Hard |
 | [0279-perfect-squares](https://github.com/aadarshahuja99/leetcode/tree/main/0279-perfect-squares/) | Medium |
