@@ -235,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2050-parallel-courses-iii](https://github.com/aadarshahuja99/leetcode/tree/main/2050-parallel-courses-iii/) | Hard |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/aadarshahuja99/leetcode/tree/main/2115-find-all-possible-recipes-from-given-supplies/) | Medium |
+| [2126-destroying-asteroids](https://github.com/aadarshahuja99/leetcode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2134-minimum-swaps-to-group-all-1s-together-ii](https://github.com/aadarshahuja99/leetcode/tree/main/2134-minimum-swaps-to-group-all-1s-together-ii/) | Medium |
 | [2158-amount-of-new-area-painted-each-day](https://github.com/aadarshahuja99/leetcode/tree/main/2158-amount-of-new-area-painted-each-day/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/aadarshahuja99/leetcode/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
@@ -521,6 +522,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [1943-describe-the-painting](https://github.com/aadarshahuja99/leetcode/tree/main/1943-describe-the-painting/) | Medium |
 | [2054-two-best-non-overlapping-events](https://github.com/aadarshahuja99/leetcode/tree/main/2054-two-best-non-overlapping-events/) | Medium |
+| [2126-destroying-asteroids](https://github.com/aadarshahuja99/leetcode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2251-number-of-flowers-in-full-bloom](https://github.com/aadarshahuja99/leetcode/tree/main/2251-number-of-flowers-in-full-bloom/) | Hard |
 | [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2421-number-of-good-paths](https://github.com/aadarshahuja99/leetcode/tree/main/2421-number-of-good-paths/) | Hard |
@@ -650,6 +652,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1833-maximum-ice-cream-bars](https://github.com/aadarshahuja99/leetcode/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/aadarshahuja99/leetcode/tree/main/1838-frequency-of-the-most-frequent-element/) | Medium |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/aadarshahuja99/leetcode/tree/main/2116-check-if-a-parentheses-string-can-be-valid/) | Medium |
+| [2126-destroying-asteroids](https://github.com/aadarshahuja99/leetcode/tree/main/2126-destroying-asteroids/) | Medium |
 | [2405-optimal-partition-of-string](https://github.com/aadarshahuja99/leetcode/tree/main/2405-optimal-partition-of-string/) | Medium |
 | [2406-divide-intervals-into-minimum-number-of-groups](https://github.com/aadarshahuja99/leetcode/tree/main/2406-divide-intervals-into-minimum-number-of-groups/) | Medium |
 | [2542-maximum-subsequence-score](https://github.com/aadarshahuja99/leetcode/tree/main/2542-maximum-subsequence-score/) | Medium |
