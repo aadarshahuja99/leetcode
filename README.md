@@ -91,6 +91,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0378-kth-smallest-element-in-a-sorted-matrix/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/aadarshahuja99/leetcode/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/aadarshahuja99/leetcode/tree/main/0381-insert-delete-getrandom-o1-duplicates-allowed/) | Hard |
+| [0406-queue-reconstruction-by-height](https://github.com/aadarshahuja99/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0410-split-array-largest-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0410-split-array-largest-sum/) | Hard |
 | [0416-partition-equal-subset-sum](https://github.com/aadarshahuja99/leetcode/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0417-pacific-atlantic-water-flow](https://github.com/aadarshahuja99/leetcode/tree/main/0417-pacific-atlantic-water-flow/) | Medium |
@@ -479,6 +480,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0354-russian-doll-envelopes](https://github.com/aadarshahuja99/leetcode/tree/main/0354-russian-doll-envelopes/) | Hard |
 | [0368-largest-divisible-subset](https://github.com/aadarshahuja99/leetcode/tree/main/0368-largest-divisible-subset/) | Medium |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/0378-kth-smallest-element-in-a-sorted-matrix/) | Medium |
+| [0406-queue-reconstruction-by-height](https://github.com/aadarshahuja99/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/aadarshahuja99/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0442-find-all-duplicates-in-an-array](https://github.com/aadarshahuja99/leetcode/tree/main/0442-find-all-duplicates-in-an-array/) | Medium |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/aadarshahuja99/leetcode/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
@@ -1261,11 +1263,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0406-queue-reconstruction-by-height](https://github.com/aadarshahuja99/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0673-number-of-longest-increasing-subsequence/) | Medium |
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0406-queue-reconstruction-by-height](https://github.com/aadarshahuja99/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0493-reverse-pairs](https://github.com/aadarshahuja99/leetcode/tree/main/0493-reverse-pairs/) | Hard |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/0673-number-of-longest-increasing-subsequence/) | Medium |
 | [0731-my-calendar-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0731-my-calendar-ii/) | Medium |
