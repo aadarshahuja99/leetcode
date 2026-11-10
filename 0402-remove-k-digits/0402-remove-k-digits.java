@@ -1,6 +1,6 @@
 class Solution {
     public String removeKdigits(String num, int k) {
-        // maintain a monotonic increasing stack
+        // maintain a monotonic decreasing stack
         Stack<Integer> stack = new Stack<>();
         for(char c : num.toCharArray())
         {
