@@ -182,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1052-grumpy-bookstore-owner](https://github.com/aadarshahuja99/leetcode/tree/main/1052-grumpy-bookstore-owner/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/aadarshahuja99/leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
 | [1094-car-pooling](https://github.com/aadarshahuja99/leetcode/tree/main/1094-car-pooling/) | Medium |
+| [1105-filling-bookcase-shelves](https://github.com/aadarshahuja99/leetcode/tree/main/1105-filling-bookcase-shelves/) | Medium |
 | [1109-corporate-flight-bookings](https://github.com/aadarshahuja99/leetcode/tree/main/1109-corporate-flight-bookings/) | Medium |
 | [1110-delete-nodes-and-return-forest](https://github.com/aadarshahuja99/leetcode/tree/main/1110-delete-nodes-and-return-forest/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
@@ -1049,6 +1050,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1048-longest-string-chain](https://github.com/aadarshahuja99/leetcode/tree/main/1048-longest-string-chain/) | Medium |
 | [1049-last-stone-weight-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1049-last-stone-weight-ii/) | Medium |
 | [1092-shortest-common-supersequence](https://github.com/aadarshahuja99/leetcode/tree/main/1092-shortest-common-supersequence/) | Hard |
+| [1105-filling-bookcase-shelves](https://github.com/aadarshahuja99/leetcode/tree/main/1105-filling-bookcase-shelves/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1143-longest-common-subsequence](https://github.com/aadarshahuja99/leetcode/tree/main/1143-longest-common-subsequence/) | Medium |
 | [1147-longest-chunked-palindrome-decomposition](https://github.com/aadarshahuja99/leetcode/tree/main/1147-longest-chunked-palindrome-decomposition/) | Hard |
