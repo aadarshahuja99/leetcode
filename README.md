@@ -1838,6 +1838,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0375-guess-number-higher-or-lower-ii](https://github.com/aadarshahuja99/leetcode/tree/main/0375-guess-number-higher-or-lower-ii/) | Medium |
 | [1140-stone-game-ii](https://github.com/aadarshahuja99/leetcode/tree/main/1140-stone-game-ii/) | Medium |
 | [1406-stone-game-iii](https://github.com/aadarshahuja99/leetcode/tree/main/1406-stone-game-iii/) | Hard |
 ## Zero-Sum Game
