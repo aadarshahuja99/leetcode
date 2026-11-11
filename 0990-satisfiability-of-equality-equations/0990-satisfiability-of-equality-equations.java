@@ -40,7 +40,7 @@ class Solution {
             {
                 return;
             }
-            if(size[parV] > size[parU])
+            if(size[parV] <= size[parU])
             {
                 parent[parV] = parU;
                 size[parU] += size[parV];
@@ -53,13 +53,7 @@ class Solution {
         }
         public int findParent(int node)
         {
-            int temp = node;
-            while(temp != parent[temp])
-            {
-                temp = parent[temp];
-            }
-            parent[node] = temp;
-            return temp;
+            return parent[node] = parent[node] == node ? node : findParent(parent[node]);
         }
     }
 }
